@@ -113,7 +113,10 @@ $headerTemplate = @'
 <section class="section-alt">
   <div class="container split">
     <div class="split-media">
-      <img src="../images/{IMAGE}" alt="{NAME} scooter">
+      <img id="mainPhoto" src="../images/{IMAGE}" alt="{NAME} scooter">
+    </div>
+    <div class="gallery-thumbs" style="grid-column:1;">
+{GALLERY_THUMBS}
     </div>
     <div class="split-text">
       <p class="eyebrow">Scooter</p>
@@ -218,12 +221,30 @@ foreach ($s in $scooters) {
     $priceDisplay = "`$" + "{0:N0}" -f $s.Price
   }
 
+  $stem = [System.IO.Path]::GetFileNameWithoutExtension($s.Image)
+  $imagesDir = Join-Path $root "images"
+  $galleryFiles = @($s.Image)
+  for ($i = 2; $i -le 6; $i++) {
+    $candidate = "$stem-$i.jpg"
+    if (Test-Path (Join-Path $imagesDir $candidate)) {
+      $galleryFiles += $candidate
+    }
+  }
+
+  $thumbLines = for ($i = 0; $i -lt $galleryFiles.Count; $i++) {
+    $activeClass = if ($i -eq 0) { " active" } else { "" }
+    $photoNum = $i + 1
+    "      <img src=`"../images/$($galleryFiles[$i])`" class=`"thumb$activeClass`" alt=`"$($s.Name) photo $photoNum`" onclick=`"document.getElementById('mainPhoto').src=this.src;document.querySelectorAll('.gallery-thumbs .thumb').forEach(function(t){t.classList.remove('active')});this.classList.add('active');`">"
+  }
+  $galleryThumbs = $thumbLines -join "`n"
+
   $page = $headerTemplate
   $page = $page.Replace("{NAME}", $s.Name)
   $page = $page.Replace("{IMAGE}", $s.Image)
   $page = $page.Replace("{PRICE_DISPLAY}", $priceDisplay)
   $page = $page.Replace("{BUY_BLOCK}", $buyBlock)
   $page = $page.Replace("{SPEC_ITEMS}", $specItems)
+  $page = $page.Replace("{GALLERY_THUMBS}", $galleryThumbs)
 
   $outPath = Join-Path $outDir ($s.Slug + ".html")
   [System.IO.File]::WriteAllText($outPath, $page, (New-Object System.Text.UTF8Encoding($false)))

@@ -57,7 +57,15 @@
 <section class="section-alt">
   <div class="container split">
     <div class="split-media">
-      <img src="../images/tanksportx200.jpg" alt="Tank Sport X200 scooter">
+      <img id="mainPhoto" src="../images/tanksportx200.jpg" alt="Tank Sport X200 scooter">
+    </div>
+    <div class="gallery-thumbs" style="grid-column:1;">
+      <img src="../images/tanksportx200.jpg" class="thumb active" alt="Tank Sport X200 photo 1" onclick="document.getElementById('mainPhoto').src=this.src;document.querySelectorAll('.gallery-thumbs .thumb').forEach(function(t){t.classList.remove('active')});this.classList.add('active');">
+      <img src="../images/tanksportx200-2.jpg" class="thumb" alt="Tank Sport X200 photo 2" onclick="document.getElementById('mainPhoto').src=this.src;document.querySelectorAll('.gallery-thumbs .thumb').forEach(function(t){t.classList.remove('active')});this.classList.add('active');">
+      <img src="../images/tanksportx200-3.jpg" class="thumb" alt="Tank Sport X200 photo 3" onclick="document.getElementById('mainPhoto').src=this.src;document.querySelectorAll('.gallery-thumbs .thumb').forEach(function(t){t.classList.remove('active')});this.classList.add('active');">
+      <img src="../images/tanksportx200-4.jpg" class="thumb" alt="Tank Sport X200 photo 4" onclick="document.getElementById('mainPhoto').src=this.src;document.querySelectorAll('.gallery-thumbs .thumb').forEach(function(t){t.classList.remove('active')});this.classList.add('active');">
+      <img src="../images/tanksportx200-5.jpg" class="thumb" alt="Tank Sport X200 photo 5" onclick="document.getElementById('mainPhoto').src=this.src;document.querySelectorAll('.gallery-thumbs .thumb').forEach(function(t){t.classList.remove('active')});this.classList.add('active');">
+      <img src="../images/tanksportx200-6.jpg" class="thumb" alt="Tank Sport X200 photo 6" onclick="document.getElementById('mainPhoto').src=this.src;document.querySelectorAll('.gallery-thumbs .thumb').forEach(function(t){t.classList.remove('active')});this.classList.add('active');">
     </div>
     <div class="split-text">
       <p class="eyebrow">Scooter</p>

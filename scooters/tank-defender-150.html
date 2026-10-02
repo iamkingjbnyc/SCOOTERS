@@ -57,7 +57,15 @@
 <section class="section-alt">
   <div class="container split">
     <div class="split-media">
-      <img src="../images/tankdefender150.jpg" alt="Tank Defender 150 scooter">
+      <img id="mainPhoto" src="../images/tankdefender150.jpg" alt="Tank Defender 150 scooter">
+    </div>
+    <div class="gallery-thumbs" style="grid-column:1;">
+      <img src="../images/tankdefender150.jpg" class="thumb active" alt="Tank Defender 150 photo 1" onclick="document.getElementById('mainPhoto').src=this.src;document.querySelectorAll('.gallery-thumbs .thumb').forEach(function(t){t.classList.remove('active')});this.classList.add('active');">
+      <img src="../images/tankdefender150-2.jpg" class="thumb" alt="Tank Defender 150 photo 2" onclick="document.getElementById('mainPhoto').src=this.src;document.querySelectorAll('.gallery-thumbs .thumb').forEach(function(t){t.classList.remove('active')});this.classList.add('active');">
+      <img src="../images/tankdefender150-3.jpg" class="thumb" alt="Tank Defender 150 photo 3" onclick="document.getElementById('mainPhoto').src=this.src;document.querySelectorAll('.gallery-thumbs .thumb').forEach(function(t){t.classList.remove('active')});this.classList.add('active');">
+      <img src="../images/tankdefender150-4.jpg" class="thumb" alt="Tank Defender 150 photo 4" onclick="document.getElementById('mainPhoto').src=this.src;document.querySelectorAll('.gallery-thumbs .thumb').forEach(function(t){t.classList.remove('active')});this.classList.add('active');">
+      <img src="../images/tankdefender150-5.jpg" class="thumb" alt="Tank Defender 150 photo 5" onclick="document.getElementById('mainPhoto').src=this.src;document.querySelectorAll('.gallery-thumbs .thumb').forEach(function(t){t.classList.remove('active')});this.classList.add('active');">
+      <img src="../images/tankdefender150-6.jpg" class="thumb" alt="Tank Defender 150 photo 6" onclick="document.getElementById('mainPhoto').src=this.src;document.querySelectorAll('.gallery-thumbs .thumb').forEach(function(t){t.classList.remove('active')});this.classList.add('active');">
     </div>
     <div class="split-text">
       <p class="eyebrow">Scooter</p>
