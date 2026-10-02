@@ -799,3 +799,13 @@ body.nav-open .main-nav {
   border-color: var(--accent);
   opacity: 1;
 }
+
+/* Header call button */
+.btn-call { padding: 11px 20px; font-size: 0.95rem; white-space: nowrap; }
+@media (max-width: 760px) {
+  .header-cta { gap: 10px; }
+  .btn-call { padding: 10px 14px; }
+}
+@media (max-width: 480px) {
+  .header-cta .btn-primary { display: none; }
+}
