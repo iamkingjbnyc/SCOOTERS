@@ -40,8 +40,9 @@ foreach ($group in $byFile) {
         $indent = ($priceLine -replace '^(\s*)<p.*$', '$1')
 
         if ($item.mode -eq "deposit") {
-          $label = "Reserve with `$200 Deposit"
-          $note = "$indent<p class=`"deposit-note`">Deposit only &mdash; total price `$$(Format-Money $item.price). Balance due at pickup.</p>"
+          # Reserve/deposit buttons have been removed from the site; skip these items.
+          Write-Host "Skipped deposit item $($item.name) (reserve buttons disabled)"
+          break
         } else {
           $label = "Buy Now &mdash; `$$(Format-Money $item.price)"
           $note = $null

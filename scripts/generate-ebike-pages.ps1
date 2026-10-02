@@ -176,7 +176,7 @@ foreach ($b in $bikes) {
     $buyBlock = "      <a href=`"$($b.Stripe)`" target=`"_blank`" rel=`"noopener`" class=`"btn btn-buy btn-block`">Buy Now &mdash; `$$($b.Price)</a>"
   } else {
     $priceDisplay = "`$" + "{0:N0}" -f $b.Price
-    $buyBlock = "      <a href=`"$($b.Stripe)`" target=`"_blank`" rel=`"noopener`" class=`"btn btn-buy btn-block`">Reserve with `$200 Deposit</a>`n      <p class=`"deposit-note`">Deposit only &mdash; total price `$$('{0:N0}' -f $b.Price). Balance due at pickup.</p>"
+    $buyBlock = ""  # reserve/deposit buttons removed
   }
 
   $nameHtml = $b.Name

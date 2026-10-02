@@ -215,7 +215,7 @@ foreach ($s in $scooters) {
   if ($s.Buy -eq "full") {
     $buyBlock = "      <a href=`"$($s.Stripe)`" target=`"_blank`" rel=`"noopener`" class=`"btn btn-buy btn-block`">Buy Now &mdash; `$$($s.Price)</a>"
   } elseif ($s.Buy -eq "deposit") {
-    $buyBlock = "      <a href=`"$($s.Stripe)`" target=`"_blank`" rel=`"noopener`" class=`"btn btn-buy btn-block`">Reserve with `$200 Deposit</a>`n      <p class=`"deposit-note`">Deposit only &mdash; total price `$$('{0:N0}' -f $s.Price). Balance due at pickup.</p>"
+    $buyBlock = ""  # reserve/deposit buttons removed
   } else {
     $buyBlock = ""
     $priceDisplay = "`$" + "{0:N0}" -f $s.Price

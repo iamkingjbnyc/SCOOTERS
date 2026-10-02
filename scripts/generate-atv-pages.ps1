@@ -215,7 +215,7 @@ foreach ($a in $atvs) {
 
   if ($a.Buy -eq "deposit") {
     $priceDisplay = "`$" + "{0:N0}" -f $a.Price
-    $buyBlock = "      <a href=`"$($a.Stripe)`" target=`"_blank`" rel=`"noopener`" class=`"btn btn-buy btn-block`">Reserve with `$200 Deposit</a>`n      <p class=`"deposit-note`">Deposit only &mdash; total price `$$('{0:N0}' -f $a.Price). Balance due at pickup.</p>"
+    $buyBlock = ""  # reserve/deposit buttons removed
   } else {
     $priceDisplay = "Call for Pricing"
     $buyBlock = ""
