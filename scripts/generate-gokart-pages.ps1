@@ -1,0 +1,197 @@
+$root = "C:\Users\HI\Desktop\NYCATVS"
+$outDir = Join-Path $root "gokarts"
+New-Item -ItemType Directory -Force -Path $outDir | Out-Null
+
+$karts = @(
+  @{ Slug="t-rex-125cc"; Name="T-Rex 125cc"; Image="trex125.jpg";
+     Specs=@("Engine|125cc","Seating|2-seat off-road buggy","Frame|Full roll cage with roof","Note|Full performance spec sheet not published online &mdash; ask in-store for complete details") },
+  @{ Slug="jaguar-200-efi"; Name="Jaguar 200 EFI"; Image="jaguar200efi.jpg";
+     Specs=@("Engine|200cc EFI","Seating|2-seat off-road buggy","Frame|Full roll cage, LED light bar","Note|Full performance spec sheet not published online &mdash; ask in-store for complete details") }
+)
+
+$headerTemplate = @'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{NAME} | Go-Karts | NYC ATV Warehouse</title>
+<meta name="description" content="{NAME} go-kart for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="../index.html#top" class="logo">
+      <img class="logo-mark" src="../images/logo.png" alt="NYC ATV Warehouse Scooter Co.">
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="../index.html#inventory">Inventory</a>
+      <a href="../index.html#why-us">Why Us</a>
+      <a href="../index.html#financing">Financing</a>
+      <a href="../index.html#service">Service</a>
+      <a href="../index.html#reviews">Reviews</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+
+    <div class="header-cta">
+      <div class="header-phone">
+        <span>Call the warehouse</span>
+        <strong><a href="tel:16469431858">646-943-1858</a></strong>
+      </div>
+      <a href="../index.html#contact" class="btn btn-primary">Get Directions</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="hazard-strip"></div>
+
+<!-- ===== Page intro ===== -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow"><a href="../gokarts.html" style="color:inherit;">Go-Karts</a> / {NAME}</p>
+      <h1 class="section-title">{NAME}</h1>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Product Detail ===== -->
+<section class="section-alt">
+  <div class="container split">
+    <div class="split-media">
+      <img id="mainPhoto" src="../images/{IMAGE}" alt="{NAME} go-kart">
+    </div>
+    <div class="gallery-thumbs" style="grid-column:1;">
+{GALLERY_THUMBS}
+    </div>
+    <div class="split-text">
+      <p class="eyebrow">Go-Kart</p>
+      <h2 class="section-title">{NAME}</h2>
+      <p class="spec-price">Call for Pricing</p>
+      <ul class="spec-list">
+{SPEC_ITEMS}
+      </ul>
+      <a href="../index.html#contact" class="btn btn-primary">Ask About This Go-Kart</a>
+      <p style="margin-top:16px;"><a href="../gokarts.html" style="color:inherit;">&larr; Back to all Go-Karts</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA Banner ===== -->
+<div class="cta-banner">
+  <div class="container">
+    <h2>Don't see what you're looking for?</h2>
+    <p>We carry more go-kart models than what's shown here — call the warehouse and we'll check current stock and pricing.</p>
+    <a href="tel:16469431858" class="btn btn-primary">Call 646-943-1858</a>
+  </div>
+</div>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html#top" class="logo">
+          <img class="logo-mark" src="../images/logo.png" alt="NYC ATV Warehouse Scooter Co.">
+        </a>
+        <p>Scooters, ATVs, dirt bikes, go-karts, UTVs and e-bikes — all under one roof in Little Ferry, NJ.</p>
+        <div class="social-row">
+          <a href="https://www.facebook.com/NYCATVWAREHOUSE" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0022 12z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="../scooters.html">Scooters</a></li>
+          <li><a href="../atvs.html">ATVs</a></li>
+          <li><a href="../dirtbikes.html">Dirt Bikes</a></li>
+          <li><a href="../gokarts.html">Go-Karts</a></li>
+          <li><a href="../utvs.html">UTVs</a></li>
+          <li><a href="../ebikes.html">E-Bikes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../index.html#why-us">Why Us</a></li>
+          <li><a href="../index.html#financing">Financing</a></li>
+          <li><a href="../index.html#service">Service &amp; Parts</a></li>
+          <li><a href="../index.html#reviews">Reviews</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>120 Industrial Ave<br>Little Ferry, NJ 07643</li>
+          <li><a href="tel:16469431858">646-943-1858</a></li>
+          <li>Mon&ndash;Sat: 9am&ndash;6pm</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> NYC ATV Warehouse. All rights reserved.</span>
+      <span>Little Ferry, NJ &middot; Serving the NYC Metro Area</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
+'@
+
+foreach ($k in $karts) {
+  $specItems = ($k.Specs | ForEach-Object {
+    $parts = $_ -split '\|', 2
+    "        <li><strong>$($parts[0]):</strong> $($parts[1])</li>"
+  }) -join "`n"
+
+  $stem = [System.IO.Path]::GetFileNameWithoutExtension($k.Image)
+  $imagesDir = Join-Path $root "images"
+  $galleryFiles = @($k.Image)
+  for ($i = 2; $i -le 6; $i++) {
+    $candidate = "$stem-$i.jpg"
+    if (Test-Path (Join-Path $imagesDir $candidate)) {
+      $galleryFiles += $candidate
+    }
+  }
+
+  $thumbLines = for ($i = 0; $i -lt $galleryFiles.Count; $i++) {
+    $activeClass = if ($i -eq 0) { " active" } else { "" }
+    $photoNum = $i + 1
+    "      <img src=`"../images/$($galleryFiles[$i])`" class=`"thumb$activeClass`" alt=`"$($k.Name) photo $photoNum`" onclick=`"document.getElementById('mainPhoto').src=this.src;document.querySelectorAll('.gallery-thumbs .thumb').forEach(function(t){t.classList.remove('active')});this.classList.add('active');`">"
+  }
+  $galleryThumbs = $thumbLines -join "`n"
+
+  $page = $headerTemplate
+  $page = $page.Replace("{NAME}", $k.Name)
+  $page = $page.Replace("{IMAGE}", $k.Image)
+  $page = $page.Replace("{SPEC_ITEMS}", $specItems)
+  $page = $page.Replace("{GALLERY_THUMBS}", $galleryThumbs)
+
+  $outPath = Join-Path $outDir ($k.Slug + ".html")
+  [System.IO.File]::WriteAllText($outPath, $page, (New-Object System.Text.UTF8Encoding($false)))
+  Write-Host "Wrote $outPath"
+}
+
+Write-Host "Done: $($karts.Count) pages generated."
