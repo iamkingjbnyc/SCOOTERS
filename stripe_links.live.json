@@ -1,0 +1,236 @@
+﻿[
+    {
+        "name":  "SPARK 48V",
+        "file":  "ebikes.html",
+        "price":  599,
+        "mode":  "full",
+        "product_id":  "prod_VDguZ7XKOH5frd",
+        "price_id":  "price_1UDFX2BhPNqJoGSZsu624b6f",
+        "payment_link":  "https://buy.stripe.com/fZu00i75veab7safnW97G0q"
+    },
+    {
+        "name":  "OUXI V8",
+        "file":  "ebikes.html",
+        "price":  749,
+        "mode":  "full",
+        "product_id":  "prod_VDgubrQUJRiIZD",
+        "price_id":  "price_1UDFX3BhPNqJoGSZAhccFDff",
+        "payment_link":  "https://buy.stripe.com/6oU8wO3Tj9TVfYG1x697G0r"
+    },
+    {
+        "name":  "GT06 E-Scooter",
+        "file":  "ebikes.html",
+        "price":  599,
+        "mode":  "full",
+        "product_id":  "prod_VDguf7g38hpWPM",
+        "price_id":  "price_1UDFX4BhPNqJoGSZtBej9cWE",
+        "payment_link":  "https://buy.stripe.com/dRmbJ089z8PR9Ai1x697G0s"
+    },
+    {
+        "name":  "RFN EVO 18",
+        "file":  "ebikes.html",
+        "price":  1099,
+        "mode":  "deposit",
+        "product_id":  "prod_VDgul5Dy0VfYLj",
+        "price_id":  "price_1UDFX5BhPNqJoGSZBxBnSIXo",
+        "payment_link":  "https://buy.stripe.com/6oU00iblLgijfYGa3C97G0t"
+    },
+    {
+        "name":  "OUXI GT-2000",
+        "file":  "ebikes.html",
+        "price":  1299,
+        "mode":  "deposit",
+        "product_id":  "prod_VDgugi33zQiVTv",
+        "price_id":  "price_1UDFX5BhPNqJoGSZbUULOdac",
+        "payment_link":  "https://buy.stripe.com/9B69AScpP7LN6o6cbK97G0u"
+    },
+    {
+        "name":  "VIPER VTR 150cc",
+        "file":  "scooters.html",
+        "price":  799,
+        "mode":  "full",
+        "product_id":  "prod_VDguKUHaIOXC9M",
+        "price_id":  "price_1UDFX6BhPNqJoGSZTUnIZPEO",
+        "payment_link":  "https://buy.stripe.com/5kQ00iexX0jl27Q7Vu97G0v"
+    },
+    {
+        "name":  "Tank Pro X200 Elite",
+        "file":  "scooters.html",
+        "price":  1299,
+        "mode":  "deposit",
+        "product_id":  "prod_VDgu2ah5tCNTwz",
+        "price_id":  "price_1UDFX7BhPNqJoGSZaCuSWEbb",
+        "payment_link":  "https://buy.stripe.com/eVq28q1LbeabeUCgs097G0w"
+    },
+    {
+        "name":  "Tank Defender 150",
+        "file":  "scooters.html",
+        "price":  1099,
+        "mode":  "deposit",
+        "product_id":  "prod_VDguSUkmVn90ai",
+        "price_id":  "price_1UDFX8BhPNqJoGSZBqmLZdeo",
+        "payment_link":  "https://buy.stripe.com/fZucN4blL5DF7saa3C97G0x"
+    },
+    {
+        "name":  "Marchal X200 Delivery Edition",
+        "file":  "scooters.html",
+        "price":  1299,
+        "mode":  "deposit",
+        "product_id":  "prod_VDguhvF9Xz4dVY",
+        "price_id":  "price_1UDFX9BhPNqJoGSZn5QZUHrl",
+        "payment_link":  "https://buy.stripe.com/4gM28qdtT1np27QdfO97G0y"
+    },
+    {
+        "name":  "Intrepid 200",
+        "file":  "scooters.html",
+        "price":  1399,
+        "mode":  "deposit",
+        "product_id":  "prod_VDgvfvOUrCUGTV",
+        "price_id":  "price_1UDFXABhPNqJoGSZG8sYLlyT",
+        "payment_link":  "https://buy.stripe.com/8x200i2Pffef8we7Vu97G0z"
+    },
+    {
+        "name":  "Cyber Roamer 300 EFI",
+        "file":  "atvs.html",
+        "price":  5499,
+        "mode":  "deposit",
+        "product_id":  "prod_VDgvhVWerURWsR",
+        "price_id":  "price_1UDFXBBhPNqJoGSZWqrbHwHD",
+        "payment_link":  "https://buy.stripe.com/4gM9AS2Pf8PRdQygs097G0A"
+    },
+    {
+        "name":  "Pentora Hunter 200 EFI",
+        "file":  "atvs.html",
+        "price":  2499,
+        "mode":  "deposit",
+        "product_id":  "prod_VDgvHMZC1sr7Be",
+        "price_id":  "price_1UDFXCBhPNqJoGSZyMZ6exel",
+        "payment_link":  "https://buy.stripe.com/14AfZgahH4zBfYG1x697G0B"
+    },
+    {
+        "name":  "Pentora Sport 250cc",
+        "file":  "atvs.html",
+        "price":  2599,
+        "mode":  "deposit",
+        "product_id":  "prod_VDgvJc9MZtsjuv",
+        "price_id":  "price_1UDFXDBhPNqJoGSZ1sIB5nPV",
+        "payment_link":  "https://buy.stripe.com/8x2bJ075vc239Ai7Vu97G0C"
+    },
+    {
+        "name":  "Commander 200cc",
+        "file":  "atvs.html",
+        "price":  2499,
+        "mode":  "deposit",
+        "product_id":  "prod_VDgviTELb3fbAc",
+        "price_id":  "price_1UDFXEBhPNqJoGSZB3zzgAZ4",
+        "payment_link":  "https://buy.stripe.com/6oU8wO9dDaXZaEmejS97G0D"
+    },
+    {
+        "name":  "Cougar UT 200cc",
+        "file":  "atvs.html",
+        "price":  2299,
+        "mode":  "deposit",
+        "product_id":  "prod_VDgvIoLkdJuBFr",
+        "price_id":  "price_1UDFXFBhPNqJoGSZ96brzC9E",
+        "payment_link":  "https://buy.stripe.com/00w00i9dD3vx6o61x697G0E"
+    },
+    {
+        "name":  "Cougar Sport 200cc",
+        "file":  "atvs.html",
+        "price":  2499,
+        "mode":  "deposit",
+        "product_id":  "prod_VDgvgpmJNSMaqr",
+        "price_id":  "price_1UDFXFBhPNqJoGSZuXCJy4TD",
+        "payment_link":  "https://buy.stripe.com/5kQ6oG61r2rtfYG6Rq97G0F"
+    },
+    {
+        "name":  "Pentora 200 EFI",
+        "file":  "atvs.html",
+        "price":  2499,
+        "mode":  "deposit",
+        "product_id":  "prod_VDgvsTUSJm96f2",
+        "price_id":  "price_1UDFXGBhPNqJoGSZuWUYtS0L",
+        "payment_link":  "https://buy.stripe.com/eVq4gydtT4zBcMu6Rq97G0G"
+    },
+    {
+        "name":  "Pentora Iride 125cc",
+        "file":  "atvs.html",
+        "price":  1499,
+        "mode":  "deposit",
+        "product_id":  "prod_VDgvqUEPeKvsWT",
+        "price_id":  "price_1UDFXHBhPNqJoGSZm6dZfJ4z",
+        "payment_link":  "https://buy.stripe.com/dRm14m61r1npbIq3Fe97G0H"
+    },
+    {
+        "name":  "Pentora 125cc",
+        "file":  "atvs.html",
+        "price":  1599,
+        "mode":  "deposit",
+        "product_id":  "prod_VDgvs8Gl7pngWW",
+        "price_id":  "price_1UDFXIBhPNqJoGSZgawTKqvM",
+        "payment_link":  "https://buy.stripe.com/8x28wOblL6HJ8web7G97G0I"
+    },
+    {
+        "name":  "Falcon X 125cc",
+        "file":  "atvs.html",
+        "price":  1499,
+        "mode":  "deposit",
+        "product_id":  "prod_VDgvKwszsR9acH",
+        "price_id":  "price_1UDFXJBhPNqJoGSZiLHTB37p",
+        "payment_link":  "https://buy.stripe.com/dRmeVc9dD7LNeUC8Zy97G0J"
+    },
+    {
+        "name":  "Commander 125cc",
+        "file":  "atvs.html",
+        "price":  1499,
+        "mode":  "deposit",
+        "product_id":  "prod_VDgvqykEWGzQZT",
+        "price_id":  "price_1UDFXKBhPNqJoGSZXjTpTQw0",
+        "payment_link":  "https://buy.stripe.com/7sYcN49dD1np4fYb7G97G0K"
+    },
+    {
+        "name":  "Blazer 9 125cc",
+        "file":  "atvs.html",
+        "price":  1499,
+        "mode":  "deposit",
+        "product_id":  "prod_VDgvkuIzs2YQtg",
+        "price_id":  "price_1UDFXLBhPNqJoGSZ22TB0dy2",
+        "payment_link":  "https://buy.stripe.com/aFaaEW9dD3vxdQy1x697G0L"
+    },
+    {
+        "name":  "Racer 125cc",
+        "file":  "atvs.html",
+        "price":  1499,
+        "mode":  "deposit",
+        "product_id":  "prod_VDgvTg5HVTMh3i",
+        "price_id":  "price_1UDFXMBhPNqJoGSZWSXmS1hJ",
+        "payment_link":  "https://buy.stripe.com/6oU00i75veab9Ai7Vu97G0M"
+    },
+    {
+        "name":  "Rider 10 - 125cc",
+        "file":  "atvs.html",
+        "price":  1499,
+        "mode":  "deposit",
+        "product_id":  "prod_VDgv0ArGtwfjAM",
+        "price_id":  "price_1UDFXMBhPNqJoGSZU8R00HsR",
+        "payment_link":  "https://buy.stripe.com/dRmdR8ahHfef13Mb7G97G0N"
+    },
+    {
+        "name":  "Mini Commander 110cc",
+        "file":  "atvs.html",
+        "price":  1399,
+        "mode":  "deposit",
+        "product_id":  "prod_VDgvTUXudxUPRz",
+        "price_id":  "price_1UDFXNBhPNqJoGSZ3mWM3RCZ",
+        "payment_link":  "https://buy.stripe.com/9B628qfC13vx13McbK97G0O"
+    },
+    {
+        "name":  "RXR 110cc",
+        "file":  "atvs.html",
+        "price":  1399,
+        "mode":  "deposit",
+        "product_id":  "prod_VDgvC1VJ8BdS1O",
+        "price_id":  "price_1UDFXOBhPNqJoGSZqcJg02R9",
+        "payment_link":  "https://buy.stripe.com/dRm4gy3Tj9TV5k26Rq97G0P"
+    }
+]
