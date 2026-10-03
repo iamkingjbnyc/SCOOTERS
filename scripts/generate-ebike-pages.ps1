@@ -182,7 +182,7 @@ foreach ($b in $bikes) {
 
   if ($b.Buy -eq "full") {
     $priceDisplay = "`$" + "{0:N0}" -f $b.Price
-    $buyBlock = "      <a href=`"$($b.Stripe)`" target=`"_blank`" rel=`"noopener`" class=`"btn btn-buy btn-block`">Buy Now &mdash; `$$($b.Price)</a>"
+    $buyBlock = ""  # Buy Now buttons removed
   } else {
     $priceDisplay = "`$" + "{0:N0}" -f $b.Price
     $buyBlock = ""  # reserve/deposit buttons removed

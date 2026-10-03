@@ -44,7 +44,9 @@ foreach ($group in $byFile) {
           Write-Host "Skipped deposit item $($item.name) (reserve buttons disabled)"
           break
         } else {
-          $label = "Buy Now &mdash; `$$(Format-Money $item.price)"
+          # Buy Now buttons removed from the site; skip these items.
+          Write-Host "Skipped $($item.name) (Buy Now disabled)"
+          break
           $note = $null
         }
 
