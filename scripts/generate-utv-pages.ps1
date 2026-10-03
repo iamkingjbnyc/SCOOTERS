@@ -37,7 +37,7 @@ $headerTemplate = @'
       <a href="../index.html#financing">Financing</a>
       <a href="../index.html#service">Service</a>
       <a href="../index.html#reviews">Reviews</a>
-      <a href="../index.html#contact">Contact</a>
+      <a href="../contact.html">Contact</a>
     </nav>
 
     <div class="header-cta">
@@ -45,7 +45,7 @@ $headerTemplate = @'
         <span>Call the warehouse</span>
         <strong><a href="tel:16469431858">646-943-1858</a></strong>
       </div>
-      <a href="../index.html#contact" class="btn btn-primary">Get Directions</a>
+      <a href="../contact.html" class="btn btn-primary">Get Directions</a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
@@ -81,7 +81,7 @@ $headerTemplate = @'
       <ul class="spec-list">
 {SPEC_ITEMS}
       </ul>
-      <a href="../index.html#contact" class="btn btn-primary">Ask About This UTV</a>
+      <a href="../contact.html" class="btn btn-primary">Ask About This UTV</a>
       <p style="margin-top:16px;"><a href="../utvs.html" style="color:inherit;">&larr; Back to all UTVs</a></p>
     </div>
   </div>
@@ -134,7 +134,7 @@ $headerTemplate = @'
           <li><a href="../index.html#financing">Financing</a></li>
           <li><a href="../index.html#service">Service &amp; Parts</a></li>
           <li><a href="../index.html#reviews">Reviews</a></li>
-          <li><a href="../index.html#contact">Contact</a></li>
+          <li><a href="../contact.html">Contact</a></li>
         </ul>
       </div>
 

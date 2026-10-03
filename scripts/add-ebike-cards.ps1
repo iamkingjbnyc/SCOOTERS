@@ -41,7 +41,7 @@ $cardHtml = foreach ($c in $cards) {
           <ul>
 $bulletsHtml
           </ul>
-          <a href="index.html#contact" class="btn btn-outline btn-block">Ask About This Bike</a>
+          <a href="contact.html" class="btn btn-outline btn-block">Ask About This Bike</a>
         </div>
       </div>
 "@
