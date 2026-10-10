@@ -822,3 +822,44 @@ body.nav-open .main-nav {
 .header-call-number:hover { color: var(--accent); }
 
 #contact-form { scroll-margin-top: 140px; }
+
+/* Floating Text / Messenger buttons */
+.contact-fab {
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+.contact-fab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border-radius: 999px;
+  color: #fff;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.contact-fab-btn:hover,
+.contact-fab-btn:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
+  color: #fff;
+}
+.contact-fab-btn svg { width: 22px; height: 22px; flex-shrink: 0; }
+.contact-fab-sms { background: #2fb344; }
+.contact-fab-messenger { background: linear-gradient(135deg, #0a7cff, #a033ff 70%, #ff5280); }
+@media (max-width: 600px) {
+  .contact-fab { left: 12px; bottom: 12px; gap: 8px; }
+  .contact-fab-btn { padding: 0; width: 52px; height: 52px; justify-content: center; }
+  .contact-fab-btn span { display: none; }
+  .contact-fab-btn svg { width: 26px; height: 26px; }
+}
