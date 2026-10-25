@@ -27,7 +27,7 @@ PRODUCTS = json.load(open("data/products.json", encoding="utf-8"))["products"]
 CONTENT = json.load(open("data/content.json", encoding="utf-8"))
 STORE = json.load(open("data/store.json", encoding="utf-8"))
 GTAG = open("scripts/snippets/gtag.html", encoding="utf-8").read()
-LIVECHAT = open("scripts/snippets/livechat.html", encoding="utf-8").read()
+LIVECHAT = ""  # live chat widget removed at owner request
 TESTIMONIALS = open("scripts/snippets/testimonials.html", encoding="utf-8").read()
 BY_ID = {p["id"]: p for p in PRODUCTS}
 
