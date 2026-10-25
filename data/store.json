@@ -69,5 +69,14 @@
  "maxQtyPerItem": 5,
  "checkoutEndpoint": "",
  "orderRequestEndpoint": "https://formsubmit.co/sales@nycatvwarehouse.com",
- "showPreviewBanner": false
+ "showPreviewBanner": false,
+ "deposit": {
+  "amount": 100,
+  "methods": [
+   "pickup",
+   "local"
+  ],
+  "_confirm": true,
+  "note": "Pickup and local delivery: this deposit is paid online; the balance is collected at pickup/delivery. Shipping is paid in full online."
+ }
 }

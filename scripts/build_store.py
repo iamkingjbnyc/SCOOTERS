@@ -285,11 +285,12 @@ def product_jsonld(p, c):
 
 def fulfil_opts(p):
     s = STORE
+    dep = money(s["deposit"]["amount"])
     rate = s["shipping"]["perUnitByCategory"].get(p["category"], 0)
     return f'''<div class="fulfil-opts">
-  <div class="fulfil-opt"><span class="ic">{ICON["pin"]}</span><div><strong>Free pickup &mdash; <span class="free">Free</span></strong><span class="d">Ready at our Little Ferry, NJ warehouse. Mon&ndash;Fri 10am&ndash;5pm.</span></div></div>
-  <div class="fulfil-opt"><span class="ic">{ICON["truck"]}</span><div><strong>Free local delivery{"" if not s["localDelivery"]["fee"] else " &mdash; " + fee_text(s["localDelivery"]["fee"])}</strong><span class="d">Delivered to your door across {s["localDelivery"]["zoneLabel"]}.</span></div></div>
-  <div class="fulfil-opt"><span class="ic">{ICON["box"]}</span><div><strong>Shipped to your address &mdash; <span data-ship-rate="{p["category"]}">{money(rate)}</span> per unit</strong><span class="d">Shipping is calculated at checkout.</span></div></div>
+  <div class="fulfil-opt"><span class="ic">{ICON["pin"]}</span><div><strong>Free pickup &mdash; <span class="free">Free</span></strong><span class="d">Ready at our Little Ferry, NJ warehouse. Mon&ndash;Fri 10am&ndash;5pm. {dep} deposit online, balance at pickup.</span></div></div>
+  <div class="fulfil-opt"><span class="ic">{ICON["truck"]}</span><div><strong>Free local delivery{"" if not s["localDelivery"]["fee"] else " &mdash; " + fee_text(s["localDelivery"]["fee"])}</strong><span class="d">Delivered to your door across {s["localDelivery"]["zoneLabel"]}. {dep} deposit online, balance on delivery.</span></div></div>
+  <div class="fulfil-opt"><span class="ic">{ICON["box"]}</span><div><strong>Shipped to your address &mdash; <span data-ship-rate="{p["category"]}">{money(rate)}</span> per unit</strong><span class="d">Pay in full online. Shipping is calculated at checkout.</span></div></div>
 </div>'''
 
 
@@ -508,14 +509,19 @@ def build_shipping():
   <p>Order online, then choose the way you want to get it at checkout. Every in-stock model can be shipped, delivered locally for free, or picked up.</p></div>
 
   <div class="info-cards">
-    <div class="info-card"><span class="ic">{ICON["pin"]}</span><h3>Free pickup</h3><p>Pick up your order at our warehouse: {s["business"]["address"]}. {s["business"]["hours"].replace("-", "&ndash;")}. We&rsquo;ll contact you when it&rsquo;s ready.</p><div class="price free">Free</div></div>
-    <div class="info-card"><span class="ic">{ICON["truck"]}</span><h3>Free local delivery</h3><p>We deliver to your address across {s["localDelivery"]["zoneLabel"]}. Enter your ZIP at checkout to confirm you&rsquo;re in the delivery area.</p><div class="price free">{fee_text(s["localDelivery"]["fee"])}</div></div>
-    <div class="info-card"><span class="ic">{ICON["box"]}</span><h3>Shipped to you</h3><p>Ordering from out of town? We ship to your address. The rate depends on the type of vehicle and is shown before you pay.</p><div class="price">Rate at checkout</div></div>
+    <div class="info-card"><span class="ic">{ICON["pin"]}</span><h3>Free pickup</h3><p>Pick up your order at our warehouse: {s["business"]["address"]}. {s["business"]["hours"].replace("-", "&ndash;")}. We&rsquo;ll contact you when it&rsquo;s ready. Pay a {money(s["deposit"]["amount"])} deposit online; the balance is due at pickup.</p><div class="price free">Free</div></div>
+    <div class="info-card"><span class="ic">{ICON["truck"]}</span><h3>Free local delivery</h3><p>We deliver to your address across {s["localDelivery"]["zoneLabel"]}. Enter your ZIP at checkout to confirm you&rsquo;re in the delivery area. Pay a {money(s["deposit"]["amount"])} deposit online; the balance is due on delivery.</p><div class="price free">{fee_text(s["localDelivery"]["fee"])}</div></div>
+    <div class="info-card"><span class="ic">{ICON["box"]}</span><h3>Shipped to you</h3><p>Ordering from out of town? We ship to your address. The rate depends on the type of vehicle and is shown before you pay. Shipped orders are paid in full online.</p><div class="price">Rate at checkout</div></div>
   </div>
 
   <div class="prose">
     <h2>Shipping rates</h2>
     <ul>{rows}</ul>
+    <h2>How payment works</h2>
+    <ul>
+      <li><strong>Free pickup and free local delivery:</strong> pay a {money(s["deposit"]["amount"])} deposit online. You pay the remaining balance when you pick up or when we deliver.</li>
+      <li><strong>Shipping:</strong> pay the full amount online, including shipping.</li>
+    </ul>
     <h2>After you order</h2>
     <p>We&rsquo;ll contact you within 1 business day to confirm your order and arrange pickup, delivery or shipping.</p>
     <h2>Before you buy</h2>

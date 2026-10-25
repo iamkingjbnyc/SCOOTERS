@@ -38,7 +38,7 @@ export default {
       const how = { pickup: "FREE PICKUP", local: "LOCAL DELIVERY", ship: "SHIP" }[m.fulfillment] || "order";
       const text = `New order (${how}): $${amount} from ${m.customer_name || email}` +
         (m.customer_phone ? `, ${m.customer_phone}` : "") + `. Items: ${m.items || productName}.` +
-        (m.notes ? ` Notes: ${m.notes}.` : "") + ` (session ${session.id})`;
+        (m.balance_due && m.balance_due !== "$0.00" ? ` BALANCE DUE ${m.balance_due} at ${m.fulfillment === "pickup" ? "pickup" : "delivery"} (order total ${m.order_total}).` : " Paid in full.") + (m.notes ? ` Notes: ${m.notes}.` : "") + ` (session ${session.id})`;
 
       await fetch(env.SLACK_WEBHOOK_URL, {
         method: "POST",

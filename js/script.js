@@ -62,6 +62,8 @@
     if (z.length < 5) return null;
     return STORE.localDelivery.zipPrefixes.indexOf(z.slice(0, 3)) !== -1;
   }
+  function isDeposit(method) { return !!(STORE.deposit && STORE.deposit.methods.indexOf(method) !== -1); }
+  function dueToday(method, total) { return isDeposit(method) ? Math.min(STORE.deposit.amount, total) : total; }
   function feeFor(method, lines) {
     if (method === 'pickup') return STORE.pickup.fee || 0;
     if (method === 'local') return STORE.localDelivery.fee;
@@ -299,9 +301,9 @@
     var state = { method: S.pickup.enabled ? 'pickup' : methods[0] };
 
     var optHTML = {
-      pickup: { ic: ICON.pin, t: S.pickup.label, d: S.pickup.detail },
-      local: { ic: ICON.truck, t: S.localDelivery.label, d: S.localDelivery.detail + ' Available in ' + S.localDelivery.zoneLabel + '.' },
-      ship: { ic: ICON.box, t: S.shipping.label, d: S.shipping.detail }
+      pickup: { ic: ICON.pin, t: S.pickup.label, d: S.pickup.detail + ' ' + money(S.deposit.amount) + ' deposit now, balance at pickup.' },
+      local: { ic: ICON.truck, t: S.localDelivery.label, d: S.localDelivery.detail + ' Available in ' + S.localDelivery.zoneLabel + '. ' + money(S.deposit.amount) + ' deposit now, balance on delivery.' },
+      ship: { ic: ICON.box, t: S.shipping.label, d: S.shipping.detail + ' Paid in full online.' }
     };
     function methodHTML(m) {
       var o = optHTML[m];
@@ -331,16 +333,16 @@
       '<div id="coError" class="zone-msg bad" role="alert"></div></div></div></aside></div></div>';
 
     var payNote = $('#payNote'), fine = $('#coFine');
-    if (S.checkoutEndpoint) { payNote.textContent = 'You’ll enter your card on our secure payment page after you click Place order.'; fine.textContent = 'Secure payment powered by Stripe.'; }
+    if (S.checkoutEndpoint) { fine.textContent = 'You’ll enter your card on Stripe’s secure payment page. We never see your card number.'; }
     else if (S.orderRequestEndpoint) {
-      payNote.textContent = 'No card is needed online. Send us your order and we\u2019ll contact you within 1 business day to confirm the details (including final shipping cost, if shipping) and take payment.';
       fine.textContent = 'You are not charged until we have confirmed your order with you.';
       $('#placeBtn').textContent = 'Send my order';
     } else { payNote.textContent = 'Preview mode: payments are not connected yet, so no card is requested and nothing is charged.'; fine.textContent = 'Preview only — clicking Place order shows what the confirmation looks like.'; }
 
     function totals() {
       var fee = feeFor(state.method, lines);
-      return { sub: subtotal(), fee: fee, total: subtotal() + fee };
+      var total = subtotal() + fee, due = dueToday(state.method, total);
+      return { sub: subtotal(), fee: fee, total: total, due: due, balance: total - due };
     }
     function render() {
       lines = cartLines();
@@ -352,7 +354,16 @@
       var feeLbl = t.fee === 0 ? '<span class="free">Free</span>' : money(t.fee);
       var label = state.method === 'pickup' ? 'Pickup' : state.method === 'local' ? 'Local delivery' : 'Shipping';
       $('#sumRows').innerHTML = '<div><span>Subtotal</span><span>' + money(t.sub) + '</span></div><div><span>' + label + '</span><span>' + feeLbl + '</span></div>' +
-        '<div><span>Sales tax</span><span style="color:var(--text-muted);font-size:.85rem">' + esc(S.tax.note) + '</span></div><div class="t"><span>Total</span><span>' + money(t.total) + '</span></div>';
+        '<div><span>Sales tax</span><span style="color:var(--text-muted);font-size:.85rem">' + esc(S.tax.note) + '</span></div><div class="t"><span>Order total</span><span>' + money(t.total) + '</span></div>' +
+        '<div class="due"><span>' + (S.checkoutEndpoint ? 'Due today' : 'Due when we confirm') + (t.balance ? ' (deposit)' : '') + '</span><span>' + money(t.due) + '</span></div>' +
+        (t.balance ? '<div class="bal"><span>Balance due at ' + (state.method === 'pickup' ? 'pickup' : 'delivery') + '</span><span>' + money(t.balance) + '</span></div>' : '');
+      var pn = $('#payNote'), pb = $('#placeBtn');
+      if (S.checkoutEndpoint) {
+        pn.textContent = t.balance ? 'Pay a ' + money(t.due) + ' deposit securely online to reserve your order. The remaining ' + money(t.balance) + ' is due at ' + (state.method === 'pickup' ? 'pickup' : 'delivery') + '.' : 'Pay the full ' + money(t.due) + ' securely online with your card.';
+        pb.textContent = t.balance ? 'Pay ' + money(t.due) + ' deposit' : 'Pay ' + money(t.due);
+      } else if (S.orderRequestEndpoint) {
+        pn.textContent = 'No card is needed online. Send us your order and we\u2019ll contact you within 1 business day to confirm the details and take ' + (t.balance ? 'your ' + money(t.due) + ' deposit (the remaining ' + money(t.balance) + ' is due at ' + (state.method === 'pickup' ? 'pickup' : 'delivery') + ')' : 'payment') + (state.method === 'ship' ? ', including the final shipping cost' : '') + '.';
+      }
       methods.forEach(function (m) {
         var el = $('[data-mprice="' + m + '"]'); if (!el) return;
         var f = feeFor(m, lines); el.textContent = f === 0 ? 'Free' : money(f); el.className = 'm-price' + (f === 0 ? ' free' : '');
@@ -402,15 +413,21 @@
         address: state.method === 'pickup' ? null : { line1: val('address1'), line2: val('address2'), city: val('city'), state: val('state').toUpperCase(), zip: val('zip') }
       };
       if (S.checkoutEndpoint) {
+        var snapS = {
+          method: state.method, total: t.total, sub: t.sub, fee: t.fee, due: t.due, balance: t.balance, customer: order.customer, address: order.address,
+          items: lines.map(function (l) { return { name: l.p.name, qty: l.qty, price: l.p.price, image: l.p.image }; }), at: Date.now()
+        };
+        try { sessionStorage.setItem(ORDER_KEY, JSON.stringify(snapS)); } catch (e) { /* ignore */ }
+        var label0 = btn.textContent;
         btn.disabled = true; btn.textContent = 'Redirecting to secure payment…';
         fetch(S.checkoutEndpoint, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(order) })
           .then(function (r) { return r.json().then(function (j) { if (!r.ok) throw new Error(j.error || 'Could not start checkout.'); return j; }); })
           .then(function (j) { window.location.href = j.url; })
-          .catch(function (err) { btn.disabled = false; btn.textContent = 'Place order'; errBox.textContent = err.message + ' Please try again or call ' + S.business.phone + '.'; errBox.classList.add('show'); });
+          .catch(function (err) { btn.disabled = false; btn.textContent = label0; errBox.textContent = err.message + ' Please try again or call ' + S.business.phone + '.'; errBox.classList.add('show'); });
       } else if (S.orderRequestEndpoint) {
         // Interim live mode: email the order to the shop (same service as the contact form); payment is taken by phone.
         var snap0 = {
-          method: state.method, total: t.total, sub: t.sub, fee: t.fee, customer: order.customer, address: order.address,
+          method: state.method, total: t.total, sub: t.sub, fee: t.fee, due: t.due, balance: t.balance, customer: order.customer, address: order.address,
           items: lines.map(function (l) { return { name: l.p.name, qty: l.qty, price: l.p.price, image: l.p.image }; }), at: Date.now()
         };
         try { sessionStorage.setItem(ORDER_KEY, JSON.stringify(snap0)); } catch (e) { /* ignore */ }
@@ -421,6 +438,7 @@
           _next: window.location.origin + window.location.pathname.replace(/checkout\.html$/, '') + 'order-complete.html?request=1',
           'How to get it': methodName,
           'Items': lines.map(function (l) { return l.qty + ' x ' + l.p.name + ' @ ' + money(l.p.price); }).join('  |  '),
+          'Deposit to collect': t.balance ? money(t.due) : 'Full payment: ' + money(t.due), 'Balance due at pickup/delivery': t.balance ? money(t.balance) : '$0',
           'Subtotal': money(t.sub), 'Delivery / shipping (estimate)': t.fee ? money(t.fee) : 'Free', 'Estimated total (before sales tax)': money(t.total),
           'name': order.customer.name, 'email': order.customer.email, 'phone': order.customer.phone,
           'Address': addr, 'Notes': order.customer.notes || ''
@@ -431,7 +449,7 @@
         clearCart(); f.submit();
       } else {
         var snap = {
-          method: state.method, total: t.total, sub: t.sub, fee: t.fee, customer: order.customer, address: order.address,
+          method: state.method, total: t.total, sub: t.sub, fee: t.fee, due: t.due, balance: t.balance, customer: order.customer, address: order.address,
           items: lines.map(function (l) { return { name: l.p.name, qty: l.qty, price: l.p.price, image: l.p.image }; }), at: Date.now()
         };
         try { sessionStorage.setItem(ORDER_KEY, JSON.stringify(snap)); } catch (e) { /* ignore */ }
@@ -456,10 +474,12 @@
     }
     host.innerHTML = '<div class="container" style="max-width:760px"><div class="empty-state"><div class="success-icon">' + ICON.check + '</div>' +
       '<h1>' + (isPreview ? 'Order confirmation (preview)' : isRequest ? 'Thank you \u2014 we got your order!' : 'Thank you — order received!') + '</h1>' +
-      '<p>' + (isPreview ? 'This is a preview of the page customers see after paying. No order was placed and no card was charged.' : isRequest ? 'We\u2019ll contact you within 1 business day to confirm your order and take payment. You have not been charged. Questions? Call ' + S.business.phone + '.' : 'We’ve emailed your receipt. We’ll contact you shortly about ' + (snap ? '' : 'pickup or delivery') + '.') + '</p>' +
+      '<p>' + (isPreview ? 'This is a preview of the page customers see after paying. No order was placed and no card was charged.' : isRequest ? 'We\u2019ll contact you within 1 business day to confirm your order and take payment. You have not been charged. Questions? Call ' + S.business.phone + '.' : 'We’ve emailed your receipt. We’ll contact you within 1 business day to arrange ' + (snap ? (snap.method === 'pickup' ? 'pickup' : snap.method === 'local' ? 'delivery' : 'shipping') : 'pickup, delivery or shipping') + '.') + '</p>' +
       (snap ? '<div class="co-card" style="text-align:left"><h2 style="font-size:1.4rem">Your order</h2>' +
         snap.items.map(function (i) { return '<div class="sum-line"><img src="' + esc(BASE + i.image) + '" alt=""><div><strong>' + esc(i.name) + '</strong><small>Qty ' + i.qty + '</small></div><span>' + money(i.price * i.qty) + '</span></div>'; }).join('') +
-        '<div class="sum-rows"><div><span>Subtotal</span><span>' + money(snap.sub) + '</span></div><div><span>' + (snap.method === 'pickup' ? 'Pickup' : snap.method === 'local' ? 'Local delivery' : 'Shipping') + '</span><span>' + (snap.fee ? money(snap.fee) : '<span class="free">Free</span>') + '</span></div><div class="t"><span>Total</span><span>' + money(snap.total) + '</span></div></div>' +
+        '<div class="sum-rows"><div><span>Subtotal</span><span>' + money(snap.sub) + '</span></div><div><span>' + (snap.method === 'pickup' ? 'Pickup' : snap.method === 'local' ? 'Local delivery' : 'Shipping') + '</span><span>' + (snap.fee ? money(snap.fee) : '<span class="free">Free</span>') + '</span></div><div class="t"><span>Order total</span><span>' + money(snap.total) + '</span></div>' +
+        (snap.due != null ? '<div class="due"><span>' + (isRequest ? 'To be collected' : isPreview ? 'Paid today (preview)' : 'Paid today') + (snap.balance ? ' (deposit)' : '') + '</span><span>' + money(snap.due) + '</span></div>' : '') +
+        (snap.balance ? '<div class="bal"><span>Balance due at ' + (snap.method === 'pickup' ? 'pickup' : 'delivery') + '</span><span>' + money(snap.balance) + '</span></div>' : '') + '</div>' +
         '<p style="margin-top:14px;color:var(--text-muted)"><strong style="color:var(--ink)">How you’ll get it:</strong> ' + esc(how) + '</p></div>' : '') +
       '<a class="btn btn-primary btn-lg" href="' + BASE + 'index.html">Back to the store</a></div></div>';
   }

@@ -99,7 +99,12 @@ export function computeOrder(order, products, store) {
   }
 
   const subtotalCents = lines.reduce((n, l) => n + l.unitCents * l.qty, 0);
-  return { lines, method, feeCents, feeLabel, subtotalCents, totalCents: subtotalCents + feeCents };
+  const totalCents = subtotalCents + feeCents;
+  // Pickup / local delivery: only the deposit is charged online. Shipping: charged in full.
+  const dep = store.deposit;
+  const isDeposit = !!(dep && dep.methods.includes(method));
+  const dueCents = isDeposit ? Math.min(Math.round(dep.amount * 100), totalCents) : totalCents;
+  return { lines, method, feeCents, feeLabel, subtotalCents, totalCents, isDeposit, dueCents, balanceCents: totalCents - dueCents };
 }
 
 export function buildStripeParams(order, calc, store, env) {
@@ -109,18 +114,31 @@ export function buildStripeParams(order, calc, store, env) {
   q.set("success_url", `${site}/order-complete.html?session_id={CHECKOUT_SESSION_ID}`);
   q.set("cancel_url", `${site}/checkout.html`);
   q.set("customer_email", order.customer.email);
-  calc.lines.forEach((l, i) => {
-    q.set(`line_items[${i}][quantity]`, String(l.qty));
-    q.set(`line_items[${i}][price_data][currency]`, "usd");
-    q.set(`line_items[${i}][price_data][unit_amount]`, String(l.unitCents));
-    q.set(`line_items[${i}][price_data][product_data][name]`, l.p.name);
-    q.set(`line_items[${i}][price_data][product_data][metadata][product_id]`, l.p.id);
-    if (env.STRIPE_TAX_RATE_ID) q.set(`line_items[${i}][tax_rates][0]`, env.STRIPE_TAX_RATE_ID);
-  });
-  q.set("shipping_options[0][shipping_rate_data][type]", "fixed_amount");
-  q.set("shipping_options[0][shipping_rate_data][display_name]", calc.feeLabel);
-  q.set("shipping_options[0][shipping_rate_data][fixed_amount][amount]", String(calc.feeCents));
-  q.set("shipping_options[0][shipping_rate_data][fixed_amount][currency]", "usd");
+  const usd = (c) => "$" + (c / 100).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  const itemsText = calc.lines.map((l) => `${l.qty}x ${l.p.name}`).join("; ");
+  if (calc.isDeposit) {
+    // One deposit line. The balance is collected in person at pickup/delivery.
+    const where = calc.method === "pickup" ? "pickup" : "delivery";
+    q.set("line_items[0][quantity]", "1");
+    q.set("line_items[0][price_data][currency]", "usd");
+    q.set("line_items[0][price_data][unit_amount]", String(calc.dueCents));
+    q.set("line_items[0][price_data][product_data][name]", `Deposit: ${itemsText}`.slice(0, 200));
+    q.set("line_items[0][price_data][product_data][description]",
+      `Order total ${usd(calc.totalCents)}. Balance of ${usd(calc.balanceCents)} is due at ${where}.`);
+  } else {
+    calc.lines.forEach((l, i) => {
+      q.set(`line_items[${i}][quantity]`, String(l.qty));
+      q.set(`line_items[${i}][price_data][currency]`, "usd");
+      q.set(`line_items[${i}][price_data][unit_amount]`, String(l.unitCents));
+      q.set(`line_items[${i}][price_data][product_data][name]`, l.p.name);
+      q.set(`line_items[${i}][price_data][product_data][metadata][product_id]`, l.p.id);
+      if (env.STRIPE_TAX_RATE_ID) q.set(`line_items[${i}][tax_rates][0]`, env.STRIPE_TAX_RATE_ID);
+    });
+    q.set("shipping_options[0][shipping_rate_data][type]", "fixed_amount");
+    q.set("shipping_options[0][shipping_rate_data][display_name]", calc.feeLabel);
+    q.set("shipping_options[0][shipping_rate_data][fixed_amount][amount]", String(calc.feeCents));
+    q.set("shipping_options[0][shipping_rate_data][fixed_amount][currency]", "usd");
+  }
 
   if (calc.method !== "pickup") {
     const a = order.address;
@@ -138,7 +156,10 @@ export function buildStripeParams(order, calc, store, env) {
     customer_name: order.customer.name,
     customer_phone: order.customer.phone,
     notes: (order.customer.notes || "").slice(0, 400),
-    items: calc.lines.map((l) => `${l.qty}x ${l.p.name}`).join("; ").slice(0, 480),
+    items: itemsText.slice(0, 480),
+    order_total: usd(calc.totalCents),
+    paid_today: usd(calc.dueCents),
+    balance_due: usd(calc.balanceCents),
   };
   for (const [k, v] of Object.entries(meta)) { q.set(`metadata[${k}]`, v); q.set(`payment_intent_data[metadata][${k}]`, v); }
   return q;
