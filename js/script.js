@@ -326,7 +326,8 @@
       '<div class="zone-msg" id="zoneMsg"></div></div>' +
       '<div class="field"><label for="f_notes">Order notes (optional)</label><textarea id="f_notes" name="notes" rows="3" placeholder="Anything we should know?" style="width:100%;border:1.5px solid var(--line);border-radius:8px;padding:12px 14px;font:inherit"></textarea></div>' +
       '</div>' +
-      '<div class="co-card"><h2><span class="n">3</span>Payment</h2><p style="color:var(--text-muted);font-size:.93rem" id="payNote"></p></div>' +
+      '<div class="co-card"><h2><span class="n">3</span>Payment</h2><p style="color:var(--text-muted);font-size:.93rem" id="payNote"></p>' +
+      '<button class="btn btn-primary btn-block btn-lg" id="placeBtn2" type="button" style="margin-top:14px">Place order</button><div id="coError2" class="zone-msg bad" role="alert"></div></div>' +
       '</form></div>' +
       '<aside class="summary"><div class="co-card"><h2 style="margin-bottom:6px">Order summary</h2><div id="sumLines"></div><div class="sum-rows" id="sumRows"></div>' +
       '<div class="co-actions"><button class="btn btn-primary btn-block btn-lg" id="placeBtn" type="button">Place order</button><p class="co-fine" id="coFine"></p>' +
@@ -358,12 +359,14 @@
         '<div class="due"><span>' + (S.checkoutEndpoint ? 'Due today' : 'Due when we confirm') + (t.balance ? ' (deposit)' : '') + '</span><span>' + money(t.due) + '</span></div>' +
         (t.balance ? '<div class="bal"><span>Balance due at ' + (state.method === 'pickup' ? 'pickup' : 'delivery') + '</span><span>' + money(t.balance) + '</span></div>' : '');
       var pn = $('#payNote'), pb = $('#placeBtn');
+      var label2 = null;
       if (S.checkoutEndpoint) {
         pn.textContent = t.balance ? 'Pay a ' + money(t.due) + ' deposit securely online to reserve your order. The remaining ' + money(t.balance) + ' is due at ' + (state.method === 'pickup' ? 'pickup' : 'delivery') + '.' : 'Pay the full ' + money(t.due) + ' securely online with your card.';
         pb.textContent = t.balance ? 'Pay ' + money(t.due) + ' deposit' : 'Pay ' + money(t.due);
       } else if (S.orderRequestEndpoint) {
         pn.textContent = 'No card is needed online. Send us your order and we\u2019ll contact you within 1 business day to confirm the details and take ' + (t.balance ? 'your ' + money(t.due) + ' deposit (the remaining ' + money(t.balance) + ' is due at ' + (state.method === 'pickup' ? 'pickup' : 'delivery') + ')' : 'payment') + (state.method === 'ship' ? ', including the final shipping cost' : '') + '.';
       }
+      $('#placeBtn2').textContent = pb.textContent;
       methods.forEach(function (m) {
         var el = $('[data-mprice="' + m + '"]'); if (!el) return;
         var f = feeFor(m, lines); el.textContent = f === 0 ? 'Free' : money(f); el.className = 'm-price' + (f === 0 ? ' free' : '');
@@ -385,13 +388,13 @@
     app.addEventListener('input', function (e) { if (e.target.id === 'f_zip') checkZone(); });
 
     function setErr(id, text) { var f = $('[data-f="' + id + '"]'); if (!f) return; f.classList.toggle('invalid', !!text); $('.err', f).textContent = text || ''; }
-    function val(id) { var el = $('#f_' + id); return el ? el.value.trim() : ''; }
+    function val(id) { var el = $('#f_' + id); return el ? el.value.replace(/[\u200B-\u200D\uFEFF]/g, '').trim() : ''; }
     function validate() {
       var ok = true, firstBad = null;
       function need(id, cond, msg) { setErr(id, cond ? '' : msg); if (!cond) { ok = false; firstBad = firstBad || id; } }
       need('name', val('name').length > 1, 'Please enter your name.');
       need('phone', val('phone').replace(/\D/g, '').length >= 10, 'Enter a 10-digit phone number.');
-      need('email', /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(val('email')), 'Enter a valid email address.');
+      need('email', /^\S+@\S+\.\S+$/.test(val('email')), 'Enter a valid email address.');
       if (state.method !== 'pickup') {
         need('address1', val('address1').length > 3, 'Enter your street address.');
         need('city', val('city').length > 1, 'Enter your city.');
@@ -403,10 +406,14 @@
       if (firstBad) { var el = $('#f_' + firstBad); if (el) el.focus(); }
       return ok;
     }
-    $('#placeBtn').addEventListener('click', function () {
-      var errBox = $('#coError'); errBox.classList.remove('show');
-      if (!validate()) return;
-      var btn = this, t = totals();
+    function onPlace() {
+      var boxes = [$('#coError'), $('#coError2')];
+      var errBox = { classList: { add: function (c) { boxes.forEach(function (b) { b.classList.add(c); }); }, remove: function (c) { boxes.forEach(function (b) { b.classList.remove(c); }); } } };
+      Object.defineProperty(errBox, 'textContent', { set: function (v) { boxes.forEach(function (b) { b.textContent = v; }); } });
+      errBox.classList.remove('show');
+      if (!validate()) { errBox.textContent = 'Please fix the highlighted fields above, then try again.'; errBox.classList.add('show'); return; }
+      var btn = { set disabled(v) { $('#placeBtn').disabled = v; $('#placeBtn2').disabled = v; }, get textContent() { return $('#placeBtn').textContent; }, set textContent(v) { $('#placeBtn').textContent = v; $('#placeBtn2').textContent = v; } };
+      var t = totals();
       var order = {
         method: state.method, items: lines.map(function (l) { return { id: l.p.id, qty: l.qty }; }),
         customer: { name: val('name'), email: val('email'), phone: val('phone'), notes: $('#f_notes').value.trim() },
@@ -455,7 +462,9 @@
         try { sessionStorage.setItem(ORDER_KEY, JSON.stringify(snap)); } catch (e) { /* ignore */ }
         clearCart(); window.location.href = BASE + 'order-complete.html?preview=1';
       }
-    });
+    }
+    $('#placeBtn').addEventListener('click', onPlace);
+    $('#placeBtn2').addEventListener('click', onPlace);
     render();
   }
 
