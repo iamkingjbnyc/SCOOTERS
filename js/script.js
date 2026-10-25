@@ -278,7 +278,7 @@
   }
 
   function initPreviewRibbon() {
-    if (STORE.checkoutEndpoint) return;
+    if (!STORE.showPreviewBanner || STORE.checkoutEndpoint) return;
     var r = document.createElement('div'); r.className = 'preview-ribbon';
     r.textContent = 'PREVIEW — online checkout is not live yet. Nothing on this site charges a card.';
     document.body.insertBefore(r, document.body.firstChild);
@@ -332,7 +332,11 @@
 
     var payNote = $('#payNote'), fine = $('#coFine');
     if (S.checkoutEndpoint) { payNote.textContent = 'You’ll enter your card on our secure payment page after you click Place order.'; fine.textContent = 'Secure payment powered by Stripe.'; }
-    else { payNote.textContent = 'Preview mode: payments are not connected yet, so no card is requested and nothing is charged.'; fine.textContent = 'Preview only — clicking Place order shows what the confirmation looks like.'; }
+    else if (S.orderRequestEndpoint) {
+      payNote.textContent = 'No card is needed online. Send us your order and we\u2019ll contact you within 1 business day to confirm the details (including final shipping cost, if shipping) and take payment.';
+      fine.textContent = 'You are not charged until we have confirmed your order with you.';
+      $('#placeBtn').textContent = 'Send my order';
+    } else { payNote.textContent = 'Preview mode: payments are not connected yet, so no card is requested and nothing is charged.'; fine.textContent = 'Preview only — clicking Place order shows what the confirmation looks like.'; }
 
     function totals() {
       var fee = feeFor(state.method, lines);
@@ -345,7 +349,7 @@
         return '<div class="sum-line"><img src="' + esc(img(l.p)) + '" alt=""><div><strong>' + esc(l.p.name) + '</strong><small>Qty ' + l.qty + '</small></div><span>' + money(l.p.price * l.qty) + '</span></div>';
       }).join('');
       var t = totals();
-      var feeLbl = state.method === 'pickup' ? '<span class="free">Free</span>' : money(t.fee);
+      var feeLbl = t.fee === 0 ? '<span class="free">Free</span>' : money(t.fee);
       var label = state.method === 'pickup' ? 'Pickup' : state.method === 'local' ? 'Local delivery' : 'Shipping';
       $('#sumRows').innerHTML = '<div><span>Subtotal</span><span>' + money(t.sub) + '</span></div><div><span>' + label + '</span><span>' + feeLbl + '</span></div>' +
         '<div><span>Sales tax</span><span style="color:var(--text-muted);font-size:.85rem">' + esc(S.tax.note) + '</span></div><div class="t"><span>Total</span><span>' + money(t.total) + '</span></div>';
@@ -403,6 +407,28 @@
           .then(function (r) { return r.json().then(function (j) { if (!r.ok) throw new Error(j.error || 'Could not start checkout.'); return j; }); })
           .then(function (j) { window.location.href = j.url; })
           .catch(function (err) { btn.disabled = false; btn.textContent = 'Place order'; errBox.textContent = err.message + ' Please try again or call ' + S.business.phone + '.'; errBox.classList.add('show'); });
+      } else if (S.orderRequestEndpoint) {
+        // Interim live mode: email the order to the shop (same service as the contact form); payment is taken by phone.
+        var snap0 = {
+          method: state.method, total: t.total, sub: t.sub, fee: t.fee, customer: order.customer, address: order.address,
+          items: lines.map(function (l) { return { name: l.p.name, qty: l.qty, price: l.p.price, image: l.p.image }; }), at: Date.now()
+        };
+        try { sessionStorage.setItem(ORDER_KEY, JSON.stringify(snap0)); } catch (e) { /* ignore */ }
+        var addr = order.address ? [order.address.line1, order.address.line2, order.address.city + ', ' + order.address.state + ' ' + order.address.zip].filter(Boolean).join(', ') : 'N/A (pickup)';
+        var methodName = state.method === 'pickup' ? 'FREE PICKUP' : state.method === 'local' ? 'FREE LOCAL DELIVERY' : 'SHIP TO ADDRESS';
+        var fields = {
+          _subject: 'NEW ORDER (' + methodName + ') - NYC ATV Warehouse', _template: 'table', _captcha: 'false', _honey: '',
+          _next: window.location.origin + window.location.pathname.replace(/checkout\.html$/, '') + 'order-complete.html?request=1',
+          'How to get it': methodName,
+          'Items': lines.map(function (l) { return l.qty + ' x ' + l.p.name + ' @ ' + money(l.p.price); }).join('  |  '),
+          'Subtotal': money(t.sub), 'Delivery / shipping (estimate)': t.fee ? money(t.fee) : 'Free', 'Estimated total (before sales tax)': money(t.total),
+          'name': order.customer.name, 'email': order.customer.email, 'phone': order.customer.phone,
+          'Address': addr, 'Notes': order.customer.notes || ''
+        };
+        var f = document.createElement('form'); f.method = 'POST'; f.action = S.orderRequestEndpoint; f.style.display = 'none';
+        Object.keys(fields).forEach(function (k) { var i = document.createElement('input'); i.type = 'hidden'; i.name = k; i.value = fields[k]; f.appendChild(i); });
+        document.body.appendChild(f); btn.disabled = true; btn.textContent = 'Sending your order…';
+        clearCart(); f.submit();
       } else {
         var snap = {
           method: state.method, total: t.total, sub: t.sub, fee: t.fee, customer: order.customer, address: order.address,
@@ -420,17 +446,17 @@
     var host = $('#completeApp'); if (!host) return;
     var params = new URLSearchParams(window.location.search), S = STORE;
     var snap = null; try { snap = JSON.parse(sessionStorage.getItem(ORDER_KEY) || 'null'); } catch (e) { /* ignore */ }
-    var isPreview = params.get('preview') === '1';
+    var isPreview = params.get('preview') === '1', isRequest = params.get('request') === '1';
     if (!isPreview) clearCart();
     var how = '';
     if (snap) {
       how = snap.method === 'pickup' ? 'Free pickup at ' + S.business.address + ' (' + S.business.hours + '). We’ll contact you when it’s ready.'
         : snap.method === 'local' ? 'Local delivery to ' + snap.address.line1 + ', ' + snap.address.city + ', ' + snap.address.state + ' ' + snap.address.zip + '. We’ll call to schedule a delivery time.'
-          : 'Shipping to ' + snap.address.line1 + ', ' + snap.address.city + ', ' + snap.address.state + ' ' + snap.address.zip + '. We’ll email tracking details.';
+          : 'Shipping to ' + snap.address.line1 + ', ' + snap.address.city + ', ' + snap.address.state + ' ' + snap.address.zip + '. We\u2019ll confirm the final shipping cost with you before charging.';
     }
     host.innerHTML = '<div class="container" style="max-width:760px"><div class="empty-state"><div class="success-icon">' + ICON.check + '</div>' +
-      '<h1>' + (isPreview ? 'Order confirmation (preview)' : 'Thank you — order received!') + '</h1>' +
-      '<p>' + (isPreview ? 'This is a preview of the page customers see after paying. No order was placed and no card was charged.' : 'We’ve emailed your receipt. We’ll contact you shortly about ' + (snap ? '' : 'pickup or delivery') + '.') + '</p>' +
+      '<h1>' + (isPreview ? 'Order confirmation (preview)' : isRequest ? 'Thank you \u2014 we got your order!' : 'Thank you — order received!') + '</h1>' +
+      '<p>' + (isPreview ? 'This is a preview of the page customers see after paying. No order was placed and no card was charged.' : isRequest ? 'We\u2019ll contact you within 1 business day to confirm your order and take payment. You have not been charged. Questions? Call ' + S.business.phone + '.' : 'We’ve emailed your receipt. We’ll contact you shortly about ' + (snap ? '' : 'pickup or delivery') + '.') + '</p>' +
       (snap ? '<div class="co-card" style="text-align:left"><h2 style="font-size:1.4rem">Your order</h2>' +
         snap.items.map(function (i) { return '<div class="sum-line"><img src="' + esc(BASE + i.image) + '" alt=""><div><strong>' + esc(i.name) + '</strong><small>Qty ' + i.qty + '</small></div><span>' + money(i.price * i.qty) + '</span></div>'; }).join('') +
         '<div class="sum-rows"><div><span>Subtotal</span><span>' + money(snap.sub) + '</span></div><div><span>' + (snap.method === 'pickup' ? 'Pickup' : snap.method === 'local' ? 'Local delivery' : 'Shipping') + '</span><span>' + (snap.fee ? money(snap.fee) : '<span class="free">Free</span>') + '</span></div><div class="t"><span>Total</span><span>' + money(snap.total) + '</span></div></div>' +

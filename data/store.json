@@ -17,8 +17,8 @@
  "localDelivery": {
   "enabled": true,
   "_confirm": true,
-  "fee": 75,
-  "label": "Local delivery",
+  "fee": 0,
+  "label": "Free local delivery",
   "detail": "Delivered to your door in the NYC Metro area.",
   "zipPrefixes": [
    "070",
@@ -67,5 +67,7 @@
   "note": "Calculated at payment"
  },
  "maxQtyPerItem": 5,
- "checkoutEndpoint": ""
+ "checkoutEndpoint": "",
+ "orderRequestEndpoint": "https://formsubmit.co/sales@nycatvwarehouse.com",
+ "showPreviewBanner": false
 }

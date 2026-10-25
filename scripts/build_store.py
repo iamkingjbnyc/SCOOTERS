@@ -67,7 +67,7 @@ def topbar():
     return f'''<div class="topbar"><div class="container topbar-inner">
   <div class="topbar-items">
     <span>{ICON["pin"]}Free pickup in Little Ferry, NJ</span>
-    <span>{ICON["truck"]}Local delivery &middot; NYC Metro</span>
+    <span>{ICON["truck"]}Free local delivery &middot; NYC Metro</span>
     <span>{ICON["box"]}Shipped to your door</span>
   </div>
   <a class="topbar-phone" href="{b["phoneHref"]}">Call {b["phone"]}</a>
@@ -111,7 +111,7 @@ def footer(base):
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="{base}index.html" class="logo"><img class="logo-mark" src="{base}images/logo.png" alt="NYC ATV Warehouse Scooter Co."></a>
-        <p>Scooters, ATVs, dirt bikes, go-karts, UTVs and e-bikes &mdash; shipped to your door, delivered locally, or ready for free pickup in Little Ferry, NJ.</p>
+        <p>Scooters, ATVs, dirt bikes, go-karts, UTVs and e-bikes &mdash; shipped to your door, delivered locally for free, or ready for free pickup in Little Ferry, NJ.</p>
         <div class="social-row">
           <a href="https://www.facebook.com/NYCATVWAREHOUSE" target="_blank" rel="noopener" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0022 12z"/></svg></a>
         </div>
@@ -221,7 +221,7 @@ def side_box(base):
     s = STORE
     return f'''<div class="side-box"><h4>Ways to get it</h4><ul>
   <li>{ICON["check"]}<span><strong>Free pickup</strong> at our Little Ferry, NJ warehouse</span></li>
-  <li>{ICON["check"]}<span><strong>Local delivery</strong> across {s["localDelivery"]["zoneLabel"]}</span></li>
+  <li>{ICON["check"]}<span><strong>Free local delivery</strong> across {s["localDelivery"]["zoneLabel"]}</span></li>
   <li>{ICON["check"]}<span><strong>Shipped</strong> to your address</span></li>
 </ul><a class="link" href="{base}shipping-pickup.html">Delivery details &rarr;</a></div>'''
 
@@ -231,7 +231,7 @@ def build_category(cat):
     info = CONTENT["categories"][cat]
     label = CAT_LABEL[cat]
     intro = re.sub(r"\s*Call or stop by[^.]*\.", "", info["intro"]).strip()
-    intro += " Order online and have it shipped, delivered locally, or pick it up free."
+    intro += " Order online and have it shipped, delivered locally for free, or pick it up free."
     prods = [p for p in PRODUCTS if p["category"] == cat]
     # keep the original on-page order from the old category page
     order = {pid: i for i, pid in enumerate(CONTENT["order"][cat])}
@@ -288,7 +288,7 @@ def fulfil_opts(p):
     rate = s["shipping"]["perUnitByCategory"].get(p["category"], 0)
     return f'''<div class="fulfil-opts">
   <div class="fulfil-opt"><span class="ic">{ICON["pin"]}</span><div><strong>Free pickup &mdash; <span class="free">Free</span></strong><span class="d">Ready at our Little Ferry, NJ warehouse. Mon&ndash;Fri 10am&ndash;5pm.</span></div></div>
-  <div class="fulfil-opt"><span class="ic">{ICON["truck"]}</span><div><strong>Local delivery &mdash; <span data-store="localDelivery.fee">{fee_text(s["localDelivery"]["fee"])}</span></strong><span class="d">Delivered to your door across {s["localDelivery"]["zoneLabel"]}.</span></div></div>
+  <div class="fulfil-opt"><span class="ic">{ICON["truck"]}</span><div><strong>Free local delivery{"" if not s["localDelivery"]["fee"] else " &mdash; " + fee_text(s["localDelivery"]["fee"])}</strong><span class="d">Delivered to your door across {s["localDelivery"]["zoneLabel"]}.</span></div></div>
   <div class="fulfil-opt"><span class="ic">{ICON["box"]}</span><div><strong>Shipped to your address &mdash; <span data-ship-rate="{p["category"]}">{money(rate)}</span> per unit</strong><span class="d">Shipping is calculated at checkout.</span></div></div>
 </div>'''
 
@@ -379,14 +379,14 @@ def build_home():
         for i, (c, im) in enumerate(tiles))
     ld = {"@context": "https://schema.org", "@type": "MotorcycleDealer", "@id": f"{SITE}/#business", "name": "NYC ATV Warehouse",
           "url": f"{SITE}/", "image": f"{SITE}/images/logo.png", "logo": f"{SITE}/images/logo.png",
-          "description": "Scooters, ATVs, dirt bikes, go-karts, UTVs and e-bikes. Shipped to your door, delivered locally, or free pickup in Little Ferry, NJ.",
+          "description": "Scooters, ATVs, dirt bikes, go-karts, UTVs and e-bikes. Shipped to your door, delivered locally for free, or free pickup in Little Ferry, NJ.",
           "telephone": "+1-646-943-1858",
           "address": {"@type": "PostalAddress", "streetAddress": "207 Gates Rd", "addressLocality": "Little Ferry", "addressRegion": "NJ", "postalCode": "07643", "addressCountry": "US"},
           "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "17:00"}],
           "areaServed": "New York Metro Area", "sameAs": ["https://www.facebook.com/NYCATVWAREHOUSE"]}
     fulfil = f'''<section class="fulfil-strip"><div class="container"><div class="fulfil-grid">
   <div class="fulfil-card"><span class="ic">{ICON["pin"]}</span><div><h3>Free pickup</h3><p>Order online, then pick it up at our Little Ferry, NJ warehouse. No fee.</p><span class="tag">Free</span></div></div>
-  <div class="fulfil-card"><span class="ic">{ICON["truck"]}</span><div><h3>Local delivery</h3><p>We deliver across {s["localDelivery"]["zoneLabel"]}, right to your door.</p><span class="tag" style="background:var(--accent-soft);color:var(--accent)">From <span data-store="localDelivery.fee">{fee_text(s["localDelivery"]["fee"])}</span></span></div></div>
+  <div class="fulfil-card"><span class="ic">{ICON["truck"]}</span><div><h3>Free local delivery</h3><p>We deliver across {s["localDelivery"]["zoneLabel"]}, right to your door.</p><span class="tag">Free</span></div></div>
   <div class="fulfil-card"><span class="ic">{ICON["box"]}</span><div><h3>Shipped to you</h3><p>Every model can be ordered online and shipped to your address.</p><span class="tag" style="background:var(--accent-soft);color:var(--accent)">Rates at checkout</span></div></div>
 </div></div></section>'''
     body = f'''{header("")}
@@ -398,7 +398,7 @@ def build_home():
     <div class="hero-content">
       <p class="eyebrow">NYC ATV Warehouse</p>
       <h1>Find your ride. <em>Order online.</em></h1>
-      <p>Scooters, ATVs, dirt bikes, go-karts, UTVs and e-bikes &mdash; shipped to your door, delivered locally, or ready for free pickup in Little Ferry, NJ.</p>
+      <p>Scooters, ATVs, dirt bikes, go-karts, UTVs and e-bikes &mdash; shipped to your door, delivered locally for free, or ready for free pickup in Little Ferry, NJ.</p>
       <div class="hero-actions"><a class="btn btn-buy btn-lg" href="#shop">Shop now</a><a class="btn btn-outline btn-lg" href="shipping-pickup.html">Delivery &amp; pickup</a></div>
     </div>
     <a class="hero-card" href="{feat["url"]}" aria-label="Featured: {H.escape(feat["name"])}">
@@ -490,7 +490,7 @@ def build_home():
 
 {footer("")}'''
     write("index.html", page(head("NYC ATV Warehouse | Scooters, ATVs, UTVs, Dirt Bikes & More — Shop Online",
-                                  "Shop scooters, ATVs, dirt bikes, go-karts, UTVs and e-bikes online. Shipped to your door, local delivery, or free pickup in Little Ferry, NJ. Call 646-943-1858.",
+                                  "Shop scooters, ATVs, dirt bikes, go-karts, UTVs and e-bikes online. Shipped to your door, free local delivery, or free pickup in Little Ferry, NJ. Call 646-943-1858.",
                                   "", jsonld=ld), body, ""))
 
 
@@ -505,11 +505,11 @@ def build_shipping():
 <div class="container crumbs"><a href="index.html">Home</a><span>/</span>Shipping, delivery &amp; pickup</div>
 <section style="padding-top:24px"><div class="container">
   <div class="section-head"><p class="eyebrow">How it works</p><h1 class="section-title">Shipping, delivery &amp; pickup</h1>
-  <p>Order online, then choose the way you want to get it at checkout. Every in-stock model can be shipped, delivered locally, or picked up.</p></div>
+  <p>Order online, then choose the way you want to get it at checkout. Every in-stock model can be shipped, delivered locally for free, or picked up.</p></div>
 
   <div class="info-cards">
     <div class="info-card"><span class="ic">{ICON["pin"]}</span><h3>Free pickup</h3><p>Pick up your order at our warehouse: {s["business"]["address"]}. {s["business"]["hours"].replace("-", "&ndash;")}. We&rsquo;ll contact you when it&rsquo;s ready.</p><div class="price free">Free</div></div>
-    <div class="info-card"><span class="ic">{ICON["truck"]}</span><h3>Local delivery</h3><p>We deliver to your address across {s["localDelivery"]["zoneLabel"]}. Enter your ZIP at checkout to confirm you&rsquo;re in the delivery area.</p><div class="price" data-store="localDelivery.fee">{fee_text(s["localDelivery"]["fee"])}</div></div>
+    <div class="info-card"><span class="ic">{ICON["truck"]}</span><h3>Free local delivery</h3><p>We deliver to your address across {s["localDelivery"]["zoneLabel"]}. Enter your ZIP at checkout to confirm you&rsquo;re in the delivery area.</p><div class="price free">{fee_text(s["localDelivery"]["fee"])}</div></div>
     <div class="info-card"><span class="ic">{ICON["box"]}</span><h3>Shipped to you</h3><p>Ordering from out of town? We ship to your address. The rate depends on the type of vehicle and is shown before you pay.</p><div class="price">Rate at checkout</div></div>
   </div>
 
@@ -527,7 +527,7 @@ def build_shipping():
 
 {footer("")}'''
     write("shipping-pickup.html", page(head("Shipping, Local Delivery & Free Pickup | NYC ATV Warehouse",
-                                            "Order online from NYC ATV Warehouse: shipped to your door, local delivery in NJ and NYC, or free pickup in Little Ferry, NJ.",
+                                            "Order online from NYC ATV Warehouse: shipped to your door, free local delivery in NJ and NYC, or free pickup in Little Ferry, NJ.",
                                             "shipping-pickup"), body, ""))
 
 
