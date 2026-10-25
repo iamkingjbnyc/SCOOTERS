@@ -1,0 +1,6298 @@
+{
+ "products": {
+  "atvs-blazer-9-125cc": {
+   "main": "images/blazer9125.jpg",
+   "thumbs": [
+    "images/blazer9125.jpg",
+    "images/blazer9125-2.jpg",
+    "images/blazer9125-3.jpg",
+    "images/blazer9125-4.jpg",
+    "images/blazer9125-5.jpg",
+    "images/blazer9125-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "125cc, single-cylinder, air-cooled, 4-stroke"
+    ],
+    [
+     "Top Speed",
+     "~34 mph (55 km/h)"
+    ],
+    [
+     "Transmission",
+     "Full-automatic with reverse, chain drive, electric start only"
+    ],
+    [
+     "Fuel Capacity",
+     "2.3 liters &middot; Battery: 12V 5Ah"
+    ],
+    [
+     "Brakes",
+     "Front drum &middot; rear disc"
+    ],
+    [
+     "Tires",
+     "19x7-8 front &middot; 18x9.5-8 rear"
+    ],
+    [
+     "Weight",
+     "240 lbs dry"
+    ],
+    [
+     "Seat Height",
+     "730mm &middot; Wheelbase: 950mm &middot; Ground Clearance: 110mm"
+    ],
+    [
+     "Rated Load",
+     "150 lbs"
+    ],
+    [
+     "Rider Age",
+     "12+"
+    ]
+   ],
+   "description": "Blazer 9 125cc ATV for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 125cc, electric start",
+    "<strong>Top Speed:</strong> ~34 mph",
+    "<strong>Seat Height:</strong> ~29 in"
+   ]
+  },
+  "atvs-commander-125cc": {
+   "main": "images/commander125.jpg",
+   "thumbs": [
+    "images/commander125.jpg",
+    "images/commander125-2.jpg",
+    "images/commander125-3.jpg",
+    "images/commander125-4.jpg",
+    "images/commander125-5.jpg",
+    "images/commander125-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "125cc, single-cylinder, air-cooled, 4-stroke"
+    ],
+    [
+     "Top Speed",
+     "~34 mph (55 km/h)"
+    ],
+    [
+     "Transmission",
+     "Full-automatic with reverse, chain drive, electric start only"
+    ],
+    [
+     "Fuel Capacity",
+     "2.3 liters &middot; Battery: 12V 5Ah"
+    ],
+    [
+     "Brakes",
+     "Front drum &middot; rear disc"
+    ],
+    [
+     "Tires",
+     "19x7-8 front &middot; 18x9.5-8 rear"
+    ],
+    [
+     "Weight",
+     "95 kg dry"
+    ],
+    [
+     "Dimensions",
+     "1410mm &times; 1010mm &times; 965mm"
+    ],
+    [
+     "Ground Clearance",
+     "110mm &middot; Rated Load: 75kg"
+    ],
+    [
+     "Rider Age",
+     "12+"
+    ]
+   ],
+   "description": "Commander 125cc ATV for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 125cc air-cooled",
+    "<strong>Top Speed:</strong> ~34 mph",
+    "<strong>Rider Age:</strong> 12+"
+   ]
+  },
+  "atvs-commander-200cc": {
+   "main": "images/commander200.jpg",
+   "thumbs": [
+    "images/commander200.jpg",
+    "images/commander200-2.jpg",
+    "images/commander200-3.jpg",
+    "images/commander200-4.jpg",
+    "images/commander200-5.jpg",
+    "images/commander200-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "174.4cc"
+    ],
+    [
+     "Power",
+     "7.3kW"
+    ],
+    [
+     "Top Speed",
+     "~37 mph (60 km/h)"
+    ],
+    [
+     "Transmission",
+     "Full-automatic with reverse, chain drive"
+    ],
+    [
+     "Fuel Capacity",
+     "6 liters (steel tank)"
+    ],
+    [
+     "Brakes",
+     "Double hydraulic disc front (hand) &middot; single hydraulic disc rear (foot)"
+    ],
+    [
+     "Tires",
+     "23x7-10 front &middot; 22x10-10 rear, steel rims"
+    ],
+    [
+     "Weight",
+     "353 lbs net &middot; 415 lbs gross"
+    ],
+    [
+     "Max Load",
+     "330 lbs &middot; Tow Capacity: 300 lbs"
+    ],
+    [
+     "Seat Height",
+     "31.8 in &middot; Ground Clearance: 7.2 in"
+    ],
+    [
+     "Rider Age",
+     "16+"
+    ],
+    [
+     "Extras",
+     "Available in 7 colors"
+    ]
+   ],
+   "description": "Commander 200cc ATV for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 174cc",
+    "<strong>Top Speed:</strong> ~37 mph",
+    "<strong>Tow Capacity:</strong> 300 lbs"
+   ]
+  },
+  "atvs-commander-200cc-efi": {
+   "main": "images/commander200efi.jpg",
+   "thumbs": [
+    "images/commander200efi.jpg",
+    "images/commander200efi-2.jpg",
+    "images/commander200efi-3.jpg",
+    "images/commander200efi-4.jpg",
+    "images/commander200efi-5.jpg",
+    "images/commander200efi-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "174.4cc, 4-stroke, single-cylinder, air-cooled, EFI"
+    ],
+    [
+     "Power",
+     "7.3kW @ 7500 rpm &middot; 10 N&middot;m torque @ 6000 rpm"
+    ],
+    [
+     "Top Speed",
+     "~37 mph (60 km/h)"
+    ],
+    [
+     "Transmission",
+     "CVT, F-N-R, chain drive"
+    ],
+    [
+     "Fuel Capacity",
+     "6 liters (RQ-93)"
+    ],
+    [
+     "Brakes",
+     "Hydraulic, hand front / foot rear"
+    ],
+    [
+     "Tires",
+     "23x7-10 front (10psi) &middot; 22x10-10 rear (10psi)"
+    ],
+    [
+     "Weight",
+     "165 kg curb &middot; 188 kg gross"
+    ],
+    [
+     "Dimensions",
+     "1670mm &times; 1020mm &times; 1100mm"
+    ],
+    [
+     "Seat Height",
+     "760mm &middot; Ground Clearance: 135mm"
+    ],
+    [
+     "Extras",
+     "Electric start, CDI ignition, 12V 9Ah battery"
+    ],
+    [
+     "Rider Age",
+     "16+"
+    ]
+   ],
+   "description": "Commander 200cc EFI ATV for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 174cc EFI",
+    "<strong>Top Speed:</strong> ~37 mph",
+    "<strong>Seat Height:</strong> ~30 in"
+   ]
+  },
+  "atvs-cougar-sport-200cc": {
+   "main": "images/cougarsport200.png",
+   "thumbs": [
+    "images/cougarsport200.png",
+    "images/cougarsport200-2.jpg",
+    "images/cougarsport200-3.jpg",
+    "images/cougarsport200-4.jpg",
+    "images/cougarsport200-5.jpg",
+    "images/cougarsport200-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "169cc, air-cooled, 4-stroke, automatic"
+    ],
+    [
+     "Ignition",
+     "CDI"
+    ],
+    [
+     "Torque",
+     "7.5 N&middot;m @ 5000&ndash;5500 rpm"
+    ],
+    [
+     "Transmission",
+     "Fully automatic with reverse, chain drive, hand shift"
+    ],
+    [
+     "Fuel Capacity",
+     "4.2 liters"
+    ],
+    [
+     "Brakes",
+     "Front drum (hand) &middot; rear hydraulic disc (foot)"
+    ],
+    [
+     "Tires",
+     "21x7-10 front &middot; 20x10-10 rear"
+    ],
+    [
+     "Suspension",
+     "13.4in travel front &middot; 14.2in travel rear"
+    ],
+    [
+     "Weight",
+     "330 lbs net &middot; 374 lbs gross"
+    ],
+    [
+     "Max Load",
+     "165 lbs"
+    ],
+    [
+     "Dimensions",
+     "62 &times; 44.5 &times; 43.3 in &middot; 43.52in wheelbase"
+    ],
+    [
+     "Ground Clearance",
+     "12 in"
+    ],
+    [
+     "Extras",
+     "Electric start, 12V/9Ah battery"
+    ]
+   ],
+   "description": "Cougar Sport 200cc ATV for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 169cc air-cooled",
+    "<strong>Drive:</strong> Chain, full auto w/ reverse",
+    "<strong>Weight:</strong> 330 lbs"
+   ]
+  },
+  "atvs-cougar-ut-200cc": {
+   "main": "images/cougarut200.jpg",
+   "thumbs": [
+    "images/cougarut200.jpg",
+    "images/cougarut200-2.jpg",
+    "images/cougarut200-3.jpg",
+    "images/cougarut200-4.jpg",
+    "images/cougarut200-5.jpg",
+    "images/cougarut200-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "200cc, 4-stroke, single-cylinder, air-cooled"
+    ],
+    [
+     "Power",
+     "9.1kW @ 7500 rpm &middot; 10 N&middot;m torque @ 6500 rpm"
+    ],
+    [
+     "Top Speed",
+     "~40 mph (65 km/h)"
+    ],
+    [
+     "Transmission",
+     "F-N-R, chain drive"
+    ],
+    [
+     "Fuel",
+     "PD24J carburetor, CDI ignition &middot; 4.2L tank &middot; 3.3 L/100km"
+    ],
+    [
+     "Brakes",
+     "Ventilated hydraulic disc, front &amp; rear"
+    ],
+    [
+     "Tires",
+     "23x7-10 front &middot; 22x10-10 rear, radial"
+    ],
+    [
+     "Suspension",
+     "Independent double swing arm front &middot; single swing arm rear"
+    ],
+    [
+     "Weight",
+     "164 kg dry"
+    ],
+    [
+     "Max Load",
+     "150 kg"
+    ],
+    [
+     "Dimensions",
+     "1700mm &times; 1040mm &times; 1100mm"
+    ],
+    [
+     "Seat Height",
+     "810mm &middot; Ground Clearance: 135mm"
+    ]
+   ],
+   "description": "Cougar UT 200cc ATV for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 200cc air-cooled",
+    "<strong>Top Speed:</strong> ~40 mph",
+    "<strong>Brakes:</strong> Ventilated disc F&amp;R"
+   ]
+  },
+  "atvs-cyber-roamer-250-efi": {
+   "main": "images/cyberroamer250.jpg",
+   "thumbs": [
+    "images/cyberroamer250.jpg",
+    "images/cyberroamer250-2.jpg",
+    "images/cyberroamer250-3.jpg",
+    "images/cyberroamer250-4.jpg",
+    "images/cyberroamer250-5.jpg",
+    "images/cyberroamer250-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "224.2cc, single-cylinder, SOHC, 4-stroke, EFI"
+    ],
+    [
+     "Power",
+     "10.8kW @ 7500 rpm &middot; 15.5 N&middot;m torque @ 6100 rpm"
+    ],
+    [
+     "Top Speed",
+     "~43 mph (70 km/h)"
+    ],
+    [
+     "Transmission",
+     "CVT, F+N+R"
+    ],
+    [
+     "Drive",
+     "Chain, rear-wheel drive"
+    ],
+    [
+     "Fuel Capacity",
+     "14 liters (steel tank w/ oil sensor)"
+    ],
+    [
+     "Brakes",
+     "Hydraulic disc, front (hand) &amp; rear (foot)"
+    ],
+    [
+     "Tires",
+     "23x7-10 front &middot; 22x10-10 rear, alloy wheels"
+    ],
+    [
+     "Suspension",
+     "Double wishbone independent front &middot; flat fork rear"
+    ],
+    [
+     "Weight",
+     "205 kg curb"
+    ],
+    [
+     "Max Load",
+     "150 kg (2-seat capacity)"
+    ],
+    [
+     "Dimensions",
+     "2050mm &times; 1100mm &times; 1225mm &middot; 1200mm wheelbase"
+    ],
+    [
+     "Ground Clearance",
+     "170mm &middot; Seat Height: 840mm"
+    ],
+    [
+     "Extras",
+     "LED lighting, USB port, front/rear racks, backrest"
+    ]
+   ],
+   "description": "Cyber Roamer 250 EFI ATV for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 250cc EFI",
+    "<strong>Specs:</strong> Call for full details"
+   ]
+  },
+  "atvs-cyber-roamer-300-efi": {
+   "main": "images/cyberroamer300.jpg",
+   "thumbs": [
+    "images/cyberroamer300.jpg",
+    "images/cyberroamer300-2.jpg",
+    "images/cyberroamer300-3.jpg",
+    "images/cyberroamer300-4.jpg",
+    "images/cyberroamer300-5.jpg",
+    "images/cyberroamer300-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "287.2cc, EFI, CVT (L/H/N/R)"
+    ],
+    [
+     "Power",
+     "17kW @ 6800 rpm &middot; 28 N&middot;m torque @ 5000 rpm"
+    ],
+    [
+     "Top Speed",
+     "~50 mph (80 km/h)"
+    ],
+    [
+     "Drive",
+     "Shaft drive 4x4"
+    ],
+    [
+     "Cooling",
+     "Water cooled"
+    ],
+    [
+     "Fuel Capacity",
+     "14 liters (steel tank w/ oil sensor)"
+    ],
+    [
+     "Brakes",
+     "Hydraulic disc, front &amp; rear"
+    ],
+    [
+     "Tires",
+     "25x8-12 front &middot; 25x10-12 rear, alloy wheels"
+    ],
+    [
+     "Weight",
+     "315 kg net &middot; 364 kg gross"
+    ],
+    [
+     "Max Load",
+     "200 kg"
+    ],
+    [
+     "Dimensions",
+     "2145mm &times; 1100mm &times; 1265mm"
+    ],
+    [
+     "Ground Clearance",
+     "270mm &middot; Seat Height: 880mm"
+    ],
+    [
+     "Extras",
+     "Electric power steering (EPS), LED lighting, USB/Type-C, front &amp; rear racks, backrest, armrest"
+    ]
+   ],
+   "description": "Cyber Roamer 300 EFI ATV for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 287cc EFI",
+    "<strong>Top Speed:</strong> ~50 mph",
+    "<strong>Drive:</strong> Shaft-driven 4x4"
+   ]
+  },
+  "atvs-falcon-x-125cc": {
+   "main": "images/falconx125.jpg",
+   "thumbs": [
+    "images/falconx125.jpg",
+    "images/falconx125-2.jpg",
+    "images/falconx125-3.jpg",
+    "images/falconx125-4.jpg",
+    "images/falconx125-5.jpg",
+    "images/falconx125-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "119.7cc (AGA-12A), 4-stroke, single-cylinder, air-cooled"
+    ],
+    [
+     "Power",
+     "5.5kW @ 7500 rpm &middot; 8.5 N&middot;m torque @ 5000 rpm"
+    ],
+    [
+     "Top Speed",
+     "~34 mph (55 km/h)"
+    ],
+    [
+     "Transmission",
+     "Semi-automatic 1+R, chain drive"
+    ],
+    [
+     "Ignition",
+     "CDI, electric start, RQ-93 fuel"
+    ],
+    [
+     "Brakes",
+     "Front hydraulic (hand) &middot; rear hydraulic (foot)"
+    ],
+    [
+     "Tires",
+     "19x7-8 front (10psi) &middot; 18x9.5-8 rear (10psi), steel rims"
+    ],
+    [
+     "Weight",
+     "123 kg curb"
+    ],
+    [
+     "Max Load",
+     "100 kg"
+    ],
+    [
+     "Dimensions",
+     "1495mm &times; 970mm &times; 1000mm"
+    ],
+    [
+     "Seat Height",
+     "760mm &middot; Ground Clearance: 125mm"
+    ],
+    [
+     "Rider Age",
+     "12+"
+    ]
+   ],
+   "description": "Falcon X 125cc ATV for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 120cc air-cooled",
+    "<strong>Top Speed:</strong> ~34 mph",
+    "<strong>Transmission:</strong> Semi-auto 1+R"
+   ]
+  },
+  "atvs-maximus-450l": {
+   "main": "images/maximus450l.jpg",
+   "thumbs": [
+    "images/maximus450l.jpg",
+    "images/maximus450l-2.jpg",
+    "images/maximus450l-3.jpg",
+    "images/maximus450l-4.jpg",
+    "images/maximus450l-5.jpg",
+    "images/maximus450l-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "391cc, single-cylinder, water-cooled, balance shaft, EFI"
+    ],
+    [
+     "Power",
+     "20kW @ 6500 rpm &middot; 30 N&middot;m torque @ 5000 rpm"
+    ],
+    [
+     "Compression Ratio",
+     "10:1"
+    ],
+    [
+     "Top Speed",
+     "50+ mph (80+ km/h)"
+    ],
+    [
+     "Transmission",
+     "CVT belt-driven"
+    ],
+    [
+     "Drive",
+     "4x4"
+    ],
+    [
+     "Fuel Capacity",
+     "17 liters"
+    ],
+    [
+     "Brakes",
+     "Front &amp; rear disc"
+    ],
+    [
+     "Tires",
+     "25x8-12 front &middot; 25x10-12 rear"
+    ],
+    [
+     "Suspension",
+     "Double A-arm independent, front &amp; rear, coil spring + oil damping"
+    ],
+    [
+     "Weight",
+     "353 kg curb"
+    ],
+    [
+     "Max Load",
+     "240 kg"
+    ],
+    [
+     "Dimensions",
+     "2315mm &times; 1144mm &times; 1340mm &middot; 1460mm wheelbase"
+    ],
+    [
+     "Ground Clearance",
+     "250mm"
+    ],
+    [
+     "Towing",
+     "250 kg (no brakes) &middot; 585 kg (with brakes)"
+    ]
+   ],
+   "description": "Maximus 450L ATV for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 391cc water-cooled",
+    "<strong>Top Speed:</strong> 50+ mph",
+    "<strong>Drive:</strong> 4WD, independent suspension"
+   ]
+  },
+  "atvs-mini-commander-110cc": {
+   "main": "images/minicommander110.jpg",
+   "thumbs": [
+    "images/minicommander110.jpg",
+    "images/minicommander110-2.jpg",
+    "images/minicommander110-3.jpg",
+    "images/minicommander110-4.jpg",
+    "images/minicommander110-5.jpg",
+    "images/minicommander110-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "106.7cc (AGA-10), 4-stroke, single-cylinder, air-cooled"
+    ],
+    [
+     "Power",
+     "5.0kW @ 7500 rpm &middot; 7.0 N&middot;m torque @ 5500 rpm"
+    ],
+    [
+     "Top Speed",
+     "~15 mph (24 km/h)"
+    ],
+    [
+     "Transmission",
+     "Semi-automatic 1+R, chain drive, RQ-93 fuel"
+    ],
+    [
+     "Max Climb",
+     "10&deg; &middot; Min Turning Radius: 2500mm"
+    ],
+    [
+     "Brakes",
+     "Hydraulic front (hand) &middot; hydraulic rear with parking brake (foot)"
+    ],
+    [
+     "Tires",
+     "145/70-6 front &amp; rear (10psi)"
+    ],
+    [
+     "Weight",
+     "86 kg curb"
+    ],
+    [
+     "Rated Load",
+     "70 kg"
+    ],
+    [
+     "Dimensions",
+     "1200mm &times; 745mm &times; 785mm"
+    ],
+    [
+     "Seat Height",
+     "~22.8 in (kids) &middot; Ground Clearance: 90mm"
+    ],
+    [
+     "Rider Age",
+     "6+ (youth recreational)"
+    ]
+   ],
+   "description": "Mini Commander 110cc ATV for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 107cc air-cooled",
+    "<strong>Top Speed:</strong> ~15 mph",
+    "<strong>Seat Height:</strong> ~22.8 in (kids)"
+   ]
+  },
+  "atvs-pentora-125cc": {
+   "main": "images/pentora125.png",
+   "thumbs": [
+    "images/pentora125.png",
+    "images/pentora125-2.jpg",
+    "images/pentora125-3.jpg",
+    "images/pentora125-4.jpg",
+    "images/pentora125-5.jpg",
+    "images/pentora125-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "123.67cc (ZS154FMI), air-cooled, 4-stroke, automatic with reverse"
+    ],
+    [
+     "Power",
+     "6.3kW @ 7500 rpm &middot; 8.8 N&middot;m torque @ 5500 rpm"
+    ],
+    [
+     "Fuel Capacity",
+     "6.5 liters"
+    ],
+    [
+     "Brakes",
+     "Front &amp; rear disc, hand-operated"
+    ],
+    [
+     "Tires",
+     "18x7-8 front &middot; 18x9-8 rear, 8in rims"
+    ],
+    [
+     "Suspension",
+     "Oil damper, 2in front / 2.3in rear travel"
+    ],
+    [
+     "Weight",
+     "260 lbs net &middot; 285 lbs gross"
+    ],
+    [
+     "Max Load",
+     "150 lbs"
+    ],
+    [
+     "Dimensions",
+     "61 &times; 39 &times; 42 in &middot; Seat Height: 29 in"
+    ],
+    [
+     "Rider Age",
+     "16+"
+    ]
+   ],
+   "description": "Pentora 125cc ATV for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 125cc air-cooled",
+    "<strong>Weight:</strong> 260 lbs",
+    "<strong>Brakes:</strong> Disc front &amp; rear"
+   ]
+  },
+  "atvs-pentora-200-efi": {
+   "main": "images/pentora200efi.jpg",
+   "thumbs": [
+    "images/pentora200efi.jpg",
+    "images/pentora200efi-2.jpg",
+    "images/pentora200efi-3.jpg",
+    "images/pentora200efi-4.jpg",
+    "images/pentora200efi-5.jpg",
+    "images/pentora200efi-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "223cc (LC166FMM), single-cylinder, air-cooled, 2-valve, 4-stroke, EFI"
+    ],
+    [
+     "Power",
+     "12kW @ 7500 rpm &middot; 17 N&middot;m torque @ 6000 rpm"
+    ],
+    [
+     "Top Speed",
+     "~43 mph (70 km/h)"
+    ],
+    [
+     "Transmission",
+     "Chain, manual clutch, electric start"
+    ],
+    [
+     "Fuel",
+     "&ge;RQ90 &middot; 9L tank"
+    ],
+    [
+     "Brakes",
+     "Front &amp; rear hydraulic disc (hand front, foot rear)"
+    ],
+    [
+     "Tires",
+     "AT20x7.0-10 front &middot; AT19x10-9 rear"
+    ],
+    [
+     "Suspension",
+     "Oil damper, 350mm front / 390mm rear"
+    ],
+    [
+     "Weight",
+     "149 kg net &middot; 177 kg gross"
+    ],
+    [
+     "Rated Load",
+     "100 kg"
+    ],
+    [
+     "Extras",
+     "Climb capability 21&deg;, 0-top speed &le;8 sec"
+    ]
+   ],
+   "description": "Pentora 200 EFI ATV for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 200cc EFI",
+    "<strong>Specs:</strong> Call for full details"
+   ]
+  },
+  "atvs-pentora-hunter-200-efi": {
+   "main": "images/pentorahunter200.jpg",
+   "thumbs": [
+    "images/pentorahunter200.jpg",
+    "images/pentorahunter200-2.jpg",
+    "images/pentorahunter200-3.jpg",
+    "images/pentorahunter200-4.jpg",
+    "images/pentorahunter200-5.jpg",
+    "images/pentorahunter200-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "177.3cc, 4-stroke, oil + forced air-cooled, balance shaft"
+    ],
+    [
+     "Power",
+     "7kW rated / 7.3kW max @ 7500 rpm &middot; 10 N&middot;m torque @ 6000 rpm"
+    ],
+    [
+     "Top Speed",
+     "~37 mph (60 km/h)"
+    ],
+    [
+     "Transmission",
+     "Chain drive, automatic centrifugal dry clutch"
+    ],
+    [
+     "Fuel Capacity",
+     "9.7 liters (93 octane)"
+    ],
+    [
+     "Brakes",
+     "Front &amp; rear hydraulic (hand front, foot rear)"
+    ],
+    [
+     "Tires",
+     "21x7-10 front &middot; 22x10-10 rear, 10in rims"
+    ],
+    [
+     "Suspension",
+     "Hydraulic dampers, 345mm front / 350mm rear travel"
+    ],
+    [
+     "Weight",
+     "197 kg net &middot; 225 kg gross"
+    ],
+    [
+     "Dimensions",
+     "1860mm &times; 1050mm &times; 1340mm &middot; 1210mm wheelbase"
+    ],
+    [
+     "Rider Age",
+     "16+"
+    ],
+    [
+     "Extras",
+     "EFI, electric start"
+    ]
+   ],
+   "description": "Pentora Hunter 200 EFI ATV for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 177cc EFI",
+    "<strong>Top Speed:</strong> ~37 mph",
+    "<strong>Rider Age:</strong> 16+"
+   ]
+  },
+  "atvs-pentora-iride-125cc": {
+   "main": "images/pentorairide125.jpg",
+   "thumbs": [
+    "images/pentorairide125.jpg",
+    "images/pentorairide125-2.jpg",
+    "images/pentorairide125-3.jpg",
+    "images/pentorairide125-4.jpg",
+    "images/pentorairide125-5.jpg",
+    "images/pentorairide125-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "123.67cc, single-cylinder, 4-stroke, air-cooled, balance shaft"
+    ],
+    [
+     "Power",
+     "6.3kW @ 7500 rpm &middot; 8.8 N&middot;m torque @ 5500 rpm"
+    ],
+    [
+     "Compression Ratio",
+     "9.0:1"
+    ],
+    [
+     "Transmission",
+     "Automatic F-N-R, two-stage, wet multi-plate clutch, chain drive"
+    ],
+    [
+     "Fuel Capacity",
+     "7 liters"
+    ],
+    [
+     "Brakes",
+     "Front &amp; rear disc, hand-operated"
+    ],
+    [
+     "Tires",
+     "18x7-8 front &middot; 18x9-8 rear, 8in rims"
+    ],
+    [
+     "Suspension",
+     "Oil damper, 270mm front / 285mm rear"
+    ],
+    [
+     "Weight",
+     "109 kg net &middot; 131 kg gross"
+    ],
+    [
+     "Max Load",
+     "82 kg"
+    ],
+    [
+     "Wheelbase",
+     "970mm &middot; Ground Clearance: 180mm"
+    ]
+   ],
+   "description": "Pentora Iride 125cc ATV for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 125cc air-cooled",
+    "<strong>Transmission:</strong> Auto F-N-R",
+    "<strong>Brakes:</strong> Disc front &amp; rear"
+   ]
+  },
+  "atvs-pentora-sport-150cc": {
+   "main": "images/pentorasport150.jpg",
+   "thumbs": [
+    "images/pentorasport150.jpg",
+    "images/pentorasport150-2.jpg",
+    "images/pentorasport150-3.jpg",
+    "images/pentorasport150-4.jpg",
+    "images/pentorasport150-5.jpg",
+    "images/pentorasport150-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "149.6cc, single-cylinder, air-cooled, 4-stroke"
+    ],
+    [
+     "Power",
+     "7.3kW @ 7000 rpm max &middot; 8kW @ 8000 rpm rated &middot; 10.1 N&middot;m torque @ 6000 rpm"
+    ],
+    [
+     "Top Speed",
+     "~43 mph (70 km/h)"
+    ],
+    [
+     "Transmission",
+     "Chain drive"
+    ],
+    [
+     "Fuel Capacity",
+     "9 liters"
+    ],
+    [
+     "Brakes",
+     "Front &amp; rear disc, hand-operated"
+    ],
+    [
+     "Tires",
+     "AT20x7.0-10 front &middot; AT19x10-9 rear"
+    ],
+    [
+     "Suspension",
+     "Oil damper, 2.7in front / 3.1in rear travel"
+    ],
+    [
+     "Weight",
+     "315 lbs net"
+    ],
+    [
+     "Seat Height",
+     "31.1 in &middot; Max Load: 220 lbs"
+    ],
+    [
+     "Rider Age",
+     "16+"
+    ]
+   ],
+   "description": "Pentora Sport 150cc ATV for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 150cc air-cooled",
+    "<strong>Top Speed:</strong> ~43 mph",
+    "<strong>Rider Age:</strong> 16+"
+   ]
+  },
+  "atvs-pentora-sport-250cc": {
+   "main": "images/pentorasport250.jpg",
+   "thumbs": [
+    "images/pentorasport250.jpg",
+    "images/pentorasport250-2.jpg",
+    "images/pentorasport250-3.jpg",
+    "images/pentorasport250-4.jpg",
+    "images/pentorasport250-5.jpg",
+    "images/pentorasport250-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "250cc"
+    ],
+    [
+     "Dimensions",
+     "1625mm &times; 1060mm &times; 1065mm"
+    ],
+    [
+     "Wheelbase",
+     "1090 &plusmn; 20mm"
+    ],
+    [
+     "Seat Height",
+     "790 &plusmn; 15mm"
+    ],
+    [
+     "Ground Clearance",
+     "135 &plusmn; 15mm"
+    ],
+    [
+     "Weight",
+     "149 kg net &middot; 177 kg gross"
+    ],
+    [
+     "Note",
+     "Full performance spec sheet not published online &mdash; ask in-store for complete details"
+    ]
+   ],
+   "description": "Pentora Sport 250cc ATV for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 250cc",
+    "<strong>Seat Height:</strong> ~31 in",
+    "<strong>Specs:</strong> Call for full details"
+   ]
+  },
+  "atvs-racer-125cc": {
+   "main": "images/racer125.jpg",
+   "thumbs": [
+    "images/racer125.jpg",
+    "images/racer125-2.jpg",
+    "images/racer125-3.jpg",
+    "images/racer125-4.jpg",
+    "images/racer125-5.jpg",
+    "images/racer125-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "125cc, single-cylinder, 4-stroke, air-cooled"
+    ],
+    [
+     "Top Speed",
+     "34 mph"
+    ],
+    [
+     "Starting",
+     "Electric, CDI ignition"
+    ],
+    [
+     "Transmission",
+     "Automatic with reverse, foot shift, chain drive"
+    ],
+    [
+     "Fuel Capacity",
+     "0.61 gallons &middot; Battery: 12V 5Ah"
+    ],
+    [
+     "Brakes",
+     "Drum front &middot; hydraulic disc rear"
+    ],
+    [
+     "Tires",
+     "19x7-8 front &middot; 18x9.5-8 rear"
+    ],
+    [
+     "Weight",
+     "285 lbs net"
+    ],
+    [
+     "Max Load",
+     "166 lbs &middot; Ground Clearance: 4.3 in"
+    ],
+    [
+     "Rider Age",
+     "12+"
+    ],
+    [
+     "Extras",
+     "Includes rear rack"
+    ]
+   ],
+   "description": "Racer 125cc ATV for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 125cc air-cooled",
+    "<strong>Top Speed:</strong> 34 mph",
+    "<strong>Transmission:</strong> Auto w/ reverse"
+   ]
+  },
+  "atvs-rider-10-125cc": {
+   "main": "images/rider10125.jpg",
+   "thumbs": [
+    "images/rider10125.jpg",
+    "images/rider10125-2.jpg",
+    "images/rider10125-3.jpg",
+    "images/rider10125-4.jpg",
+    "images/rider10125-5.jpg",
+    "images/rider10125-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "125cc, single-cylinder, 4-stroke, air-cooled"
+    ],
+    [
+     "Torque",
+     "5.7 N&middot;m @ 7500 &plusmn; 500 rpm"
+    ],
+    [
+     "Top Speed",
+     "43.5 mph"
+    ],
+    [
+     "Climbing Ability",
+     "18&deg;"
+    ],
+    [
+     "Transmission",
+     "Automatic with reverse, hand shift, chain drive"
+    ],
+    [
+     "Starting",
+     "Electric, CDI ignition &middot; Fuel: 0.63 gal &middot; Battery: 12V 5Ah"
+    ],
+    [
+     "Brakes",
+     "Drum front &middot; hydraulic disc rear"
+    ],
+    [
+     "Tires",
+     "19x7-8 front &middot; 18x9.5-8 rear"
+    ],
+    [
+     "Seat Height",
+     "26.8 in &middot; Ground Clearance: 5.5 in"
+    ],
+    [
+     "Weight",
+     "234 lbs net"
+    ],
+    [
+     "Max Load",
+     "228 lbs &middot; Wheelbase: 37.8 in"
+    ],
+    [
+     "Rider Age",
+     "12+"
+    ],
+    [
+     "Extras",
+     "Remote on/off capability"
+    ]
+   ],
+   "description": "Rider 10 - 125cc ATV for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 125cc air-cooled",
+    "<strong>Top Speed:</strong> 43.5 mph",
+    "<strong>Seat Height:</strong> 26.8 in"
+   ]
+  },
+  "atvs-rider-9-125cc": {
+   "main": "images/rider9125.jpg",
+   "thumbs": [
+    "images/rider9125.jpg",
+    "images/rider9125-2.jpg",
+    "images/rider9125-3.jpg",
+    "images/rider9125-4.jpg",
+    "images/rider9125-5.jpg",
+    "images/rider9125-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "119.6cc (marketed as 125cc), single-cylinder, 4-stroke, air-cooled"
+    ],
+    [
+     "Power",
+     "5.5kW @ 8500 rpm &middot; 6.9 N&middot;m torque @ 6500 rpm"
+    ],
+    [
+     "Carburetor",
+     "PZ20 &middot; Ignition: AC-CDI"
+    ],
+    [
+     "Transmission",
+     "Chain, one forward/one reverse, hand gear shift"
+    ],
+    [
+     "Fuel Capacity",
+     "2.2 liters"
+    ],
+    [
+     "Brakes",
+     "Front drum &middot; rear disc"
+    ],
+    [
+     "Tires",
+     "19x7-8 front &middot; 18x9.5-8 rear"
+    ],
+    [
+     "Suspension",
+     "Transverse double-arm front &middot; non-independent rear"
+    ],
+    [
+     "Weight",
+     "236 lbs net &middot; 289 lbs gross"
+    ],
+    [
+     "Dimensions",
+     "62 &times; 38 &times; 37 in &middot; Seat Height: 27.5 in"
+    ],
+    [
+     "Max Load",
+     "143 lbs"
+    ],
+    [
+     "Rider Age",
+     "10+"
+    ],
+    [
+     "Extras",
+     "Electric start"
+    ]
+   ],
+   "description": "Rider 9 - 125cc ATV for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 125cc, 5.5kW",
+    "<strong>Seat Height:</strong> 27.5 in",
+    "<strong>Drive:</strong> Chain, hand gear shift"
+   ]
+  },
+  "atvs-rxr-110cc": {
+   "main": "images/rxr110.jpg",
+   "thumbs": [
+    "images/rxr110.jpg",
+    "images/rxr110-2.jpg",
+    "images/rxr110-3.jpg",
+    "images/rxr110-4.jpg",
+    "images/rxr110-5.jpg",
+    "images/rxr110-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "107cc, 4-stroke, single-cylinder, air-cooled"
+    ],
+    [
+     "Power",
+     "4.8kW @ 8000 &plusmn; 500 rpm &middot; 6.9 N&middot;m torque @ 6500 &plusmn; 500 rpm"
+    ],
+    [
+     "Ignition",
+     "CDI, electric start"
+    ],
+    [
+     "Fuel Capacity",
+     "2.2 liters (plastic tank) &middot; Battery: 12V 5Ah"
+    ],
+    [
+     "Transmission",
+     "Chain, rear-wheel drive, automatic with reverse"
+    ],
+    [
+     "Brakes",
+     "Drum front &middot; hydraulic disc rear"
+    ],
+    [
+     "Tires",
+     "16x8-7 front &amp; rear"
+    ],
+    [
+     "Weight",
+     "216 kg gross &middot; 158 kg net"
+    ],
+    [
+     "Wheelbase",
+     "960mm &middot; Dimensions: 1340mm &times; 930mm &times; 900mm"
+    ],
+    [
+     "Seat Height",
+     "~23.6 in"
+    ]
+   ],
+   "description": "RXR 110cc ATV for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 107cc, 4.8kW",
+    "<strong>Drive:</strong> Rear-wheel, auto clutch",
+    "<strong>Seat Height:</strong> ~23.6 in"
+   ]
+  },
+  "atvs-terminator-300cc": {
+   "main": "images/terminator300.jpg",
+   "thumbs": [
+    "images/terminator300.jpg",
+    "images/terminator300-2.jpg",
+    "images/terminator300-3.jpg",
+    "images/terminator300-4.jpg",
+    "images/terminator300-5.jpg",
+    "images/terminator300-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "257cc (marketed as 300cc), carbureted, 4-stroke, single-cylinder, SOHC, water-cooled"
+    ],
+    [
+     "Power",
+     "22 HP @ 6500 rpm &middot; 14.8 lb-ft torque @ 5500 rpm"
+    ],
+    [
+     "Compression Ratio",
+     "10.3:1"
+    ],
+    [
+     "Drive",
+     "2WD or 4WD switchable"
+    ],
+    [
+     "Starting",
+     "Electric, T.C.I. ignition"
+    ],
+    [
+     "Fuel Capacity",
+     "3.8 gallons"
+    ],
+    [
+     "Brakes",
+     "Hydraulic disc, both sides &middot; front/rear hand &amp; foot parking brake"
+    ],
+    [
+     "Tires",
+     "AT24x8-12 front &middot; AT24x11-10 rear"
+    ],
+    [
+     "Suspension",
+     "McPherson independent front &middot; socket centering rear"
+    ],
+    [
+     "Weight",
+     "618 lbs"
+    ],
+    [
+     "Dimensions",
+     "83 &times; 46 &times; 50 in &middot; 51 in wheelbase"
+    ],
+    [
+     "Ground Clearance",
+     "7.2 in"
+    ],
+    [
+     "Rider Age",
+     "16+"
+    ]
+   ],
+   "description": "Terminator 300cc ATV for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 257cc water-cooled",
+    "<strong>Power:</strong> 22 HP",
+    "<strong>Drive:</strong> 2WD/4WD switchable"
+   ]
+  },
+  "atvs-xwolf-550-long-version": {
+   "main": "images/xwolf550long.png",
+   "thumbs": [
+    "images/xwolf550long.png",
+    "images/xwolf550long-2.jpg",
+    "images/xwolf550long-3.jpg",
+    "images/xwolf550long-4.jpg",
+    "images/xwolf550long-5.jpg",
+    "images/xwolf550long-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "550cc Loncin"
+    ],
+    [
+     "Frame",
+     "Long-wheelbase"
+    ],
+    [
+     "Note",
+     "Full performance spec sheet not published online &mdash; ask in-store for complete details"
+    ]
+   ],
+   "description": "XWOLF 550 - Long Version ATV for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 550cc Loncin",
+    "<strong>Frame:</strong> Long-wheelbase",
+    "<strong>Specs:</strong> Call for full details"
+   ]
+  },
+  "atvs-xwolf-700cc-long-version": {
+   "main": "images/xwolf700long.jpg",
+   "thumbs": [
+    "images/xwolf700long.jpg",
+    "images/xwolf700long-2.jpg",
+    "images/xwolf700long-3.jpg",
+    "images/xwolf700long-4.jpg",
+    "images/xwolf700long-5.jpg",
+    "images/xwolf700long-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "686cc, single-cylinder, SOHC, liquid-cooled"
+    ],
+    [
+     "Power",
+     "35kW (47 HP) @ 5500 rpm &middot; 66 N&middot;m torque @ 4500 rpm"
+    ],
+    [
+     "Top Speed",
+     "~62 mph (100 km/h)"
+    ],
+    [
+     "Fuel System",
+     "EFI"
+    ],
+    [
+     "Fuel Capacity",
+     "25 liters"
+    ],
+    [
+     "Transmission",
+     "CVT with P/R/N/H/L"
+    ],
+    [
+     "Drive",
+     "Front differential &middot; 4x4 capable"
+    ],
+    [
+     "Brakes",
+     "Disc (210mm) front &amp; rear"
+    ],
+    [
+     "Tires",
+     "25x8-12 front &middot; 25x10-12 rear"
+    ],
+    [
+     "Suspension",
+     "Dual A-arms, 190mm travel front &middot; 230mm travel rear, oil/gas shocks"
+    ],
+    [
+     "Weight",
+     "375 kg net"
+    ],
+    [
+     "Dimensions",
+     "2040mm &times; 1180mm &times; 1250mm &middot; 1300mm wheelbase"
+    ],
+    [
+     "Ground Clearance",
+     "280mm"
+    ],
+    [
+     "Extras",
+     "3,000 lb winch, trailer ball, front/rear racks, LCD color display, 32Ah gel battery, USB/DC"
+    ]
+   ],
+   "description": "XWOLF 700cc - Long Version ATV for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 686cc single-cylinder SOHC, liquid-cooled",
+    "<strong>Power:</strong> 35kW (47 HP) @ 5500 rpm",
+    "<strong>Drive:</strong> Front differential &middot; 4x4 capable"
+   ]
+  },
+  "atvs-xwolf-700cc-short-version": {
+   "main": "images/xwolf700short.jpg",
+   "thumbs": [
+    "images/xwolf700short.jpg",
+    "images/xwolf700short-2.jpg",
+    "images/xwolf700short-3.jpg",
+    "images/xwolf700short-4.jpg",
+    "images/xwolf700short-5.jpg",
+    "images/xwolf700short-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "686cc, single-cylinder, SOHC, liquid-cooled, EFI"
+    ],
+    [
+     "Power",
+     "35kW @ 5500 rpm &middot; 66 N&middot;m torque @ 4500 rpm"
+    ],
+    [
+     "Top Speed",
+     "~62 mph (100 km/h)"
+    ],
+    [
+     "Transmission",
+     "CVT with P/R/N/H/L, front differential"
+    ],
+    [
+     "Fuel Capacity",
+     "25 liters"
+    ],
+    [
+     "Brakes",
+     "Disc (210mm) front &amp; rear"
+    ],
+    [
+     "Tires",
+     "25x8-12 front &middot; 25x10-12 rear, alloy wheels"
+    ],
+    [
+     "Suspension",
+     "Dual A-arms, 190mm front / 230mm rear travel, oil/gas shocks"
+    ],
+    [
+     "Weight",
+     "375 kg net"
+    ],
+    [
+     "Dimensions",
+     "2040mm &times; 1180mm &times; 1250mm &middot; 1300mm wheelbase"
+    ],
+    [
+     "Ground Clearance",
+     "280mm"
+    ],
+    [
+     "Extras",
+     "3,000 lb winch, trailer ball, front/rear racks, LCD color display, 32Ah gel battery, USB/DC"
+    ]
+   ],
+   "description": "XWOLF 700cc - Short Version ATV for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 686cc liquid-cooled",
+    "<strong>Power:</strong> 35kW (47 HP)",
+    "<strong>Top Speed:</strong> ~62 mph"
+   ]
+  },
+  "dirtbikes-db-21-70cc": {
+   "main": "images/db21-70.jpg",
+   "thumbs": [
+    "images/db21-70.jpg",
+    "images/db21-70-2.jpg",
+    "images/db21-70-3.jpg",
+    "images/db21-70-4.jpg",
+    "images/db21-70-5.jpg",
+    "images/db21-70-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "70cc, 4-stroke, air-cooled"
+    ],
+    [
+     "Power",
+     "4.8kW (6.5 HP)"
+    ],
+    [
+     "Starting",
+     "Kick start"
+    ],
+    [
+     "Transmission",
+     "Semi-automatic, 4-speed"
+    ],
+    [
+     "Brakes",
+     "Front &amp; rear drum"
+    ],
+    [
+     "Suspension",
+     "Hydraulic front forks &middot; spring-over-coil rear shock"
+    ],
+    [
+     "Tires",
+     "2.5-10 front &amp; rear"
+    ],
+    [
+     "Seat Height",
+     "25 in &middot; Wheelbase: 930mm"
+    ],
+    [
+     "Weight",
+     "65 kg gross &middot; 52 kg net"
+    ],
+    [
+     "Fuel Capacity",
+     "3.7 liters"
+    ],
+    [
+     "Frame",
+     "Single-tube high-strength steel"
+    ]
+   ],
+   "description": "DB-21 70cc dirt bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 70cc, 4.8kW (6.5 HP)",
+    "<strong>Transmission:</strong> Semi-auto, 4-speed",
+    "<strong>Seat Height:</strong> 25 in"
+   ]
+  },
+  "dirtbikes-db-25-70cc": {
+   "main": "images/db25-70.jpg",
+   "thumbs": [
+    "images/db25-70.jpg",
+    "images/db25-70-2.jpg",
+    "images/db25-70-3.jpg",
+    "images/db25-70-4.jpg",
+    "images/db25-70-5.jpg",
+    "images/db25-70-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "70cc (1P47FMD), 4-stroke, single-cylinder, air-cooled"
+    ],
+    [
+     "Power",
+     "4.5kW (6 HP) &middot; 9.0 N&middot;m torque @ 5500 rpm"
+    ],
+    [
+     "Starting",
+     "Electric start, CDI ignition"
+    ],
+    [
+     "Transmission",
+     "Automatic"
+    ],
+    [
+     "Brakes",
+     "Drum front (hand) &middot; drum rear (foot)"
+    ],
+    [
+     "Tires",
+     "2.50-10 front &amp; rear"
+    ],
+    [
+     "Seat Height",
+     "25 in &middot; Wheelbase: 36.61 in (930mm)"
+    ],
+    [
+     "Ground Clearance",
+     "5.79 in (147mm)"
+    ],
+    [
+     "Weight",
+     "180.4 lbs gross &middot; 149.6 lbs net"
+    ],
+    [
+     "Max Load",
+     "132 lbs (60 kg)"
+    ],
+    [
+     "Fuel Capacity",
+     "3 liters"
+    ]
+   ],
+   "description": "DB-25 70cc dirt bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 70cc, 4.5kW (6 HP)",
+    "<strong>Transmission:</strong> Automatic",
+    "<strong>Seat Height:</strong> 25 in"
+   ]
+  },
+  "dirtbikes-db-27-110cc": {
+   "main": "images/db27-110.jpg",
+   "thumbs": [
+    "images/db27-110.jpg",
+    "images/db27-110-2.jpg",
+    "images/db27-110-3.jpg",
+    "images/db27-110-4.jpg",
+    "images/db27-110-5.jpg",
+    "images/db27-110-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "110cc, 4-stroke, air-cooled"
+    ],
+    [
+     "Power",
+     "6.5kW (8.7 HP)"
+    ],
+    [
+     "Starting",
+     "Kick start"
+    ],
+    [
+     "Transmission",
+     "Semi-automatic, 4-speed"
+    ],
+    [
+     "Brakes",
+     "Front &amp; rear disc"
+    ],
+    [
+     "Suspension",
+     "Hydraulic front forks &middot; spring-over-coil rear shock"
+    ],
+    [
+     "Wheels",
+     "12in front &middot; 10in rear"
+    ],
+    [
+     "Seat Height",
+     "25 in &middot; Wheelbase: 930mm"
+    ],
+    [
+     "Weight",
+     "65 kg gross &middot; 52 kg net"
+    ],
+    [
+     "Fuel Capacity",
+     "3.7 liters"
+    ],
+    [
+     "Frame",
+     "Single-tube high-strength steel"
+    ]
+   ],
+   "description": "DB-27 110cc dirt bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 110cc, 6.5kW (8.7 HP)",
+    "<strong>Transmission:</strong> Semi-auto, 4-speed",
+    "<strong>Brakes:</strong> Front &amp; rear disc"
+   ]
+  },
+  "dirtbikes-db-28-110cc": {
+   "main": "images/db28-110.jpg",
+   "thumbs": [
+    "images/db28-110.jpg",
+    "images/db28-110-2.jpg",
+    "images/db28-110-3.jpg",
+    "images/db28-110-4.jpg",
+    "images/db28-110-5.jpg",
+    "images/db28-110-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "110cc, air-cooled, CDI ignition"
+    ],
+    [
+     "Power",
+     "6.5kW (8.7 HP)"
+    ],
+    [
+     "Starting",
+     "Electric start"
+    ],
+    [
+     "Transmission",
+     "Automatic, chain drive"
+    ],
+    [
+     "Brakes",
+     "Front disc (hand) &middot; rear disc (foot)"
+    ],
+    [
+     "Wheels",
+     "12in front &middot; 10in rear"
+    ],
+    [
+     "Seat Height",
+     "25 in"
+    ],
+    [
+     "Dimensions",
+     "57.48 &times; 20.47 &times; 32.68 in (1460 &times; 520 &times; 830mm)"
+    ],
+    [
+     "Ground Clearance",
+     "5.79 in (147mm)"
+    ],
+    [
+     "Weight",
+     "180.4 lbs gross &middot; 149.6 lbs net (82/68 kg)"
+    ],
+    [
+     "Max Load",
+     "132 lbs (60 kg)"
+    ],
+    [
+     "Fuel Capacity",
+     "3 liters"
+    ]
+   ],
+   "description": "DB-28 110cc dirt bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 110cc, 6.5kW (8.7 HP)",
+    "<strong>Transmission:</strong> Fully automatic",
+    "<strong>Brakes:</strong> Front &amp; rear disc"
+   ]
+  },
+  "dirtbikes-db-32-110cc": {
+   "main": "images/db32-110.jpg",
+   "thumbs": [
+    "images/db32-110.jpg",
+    "images/db32-110-2.jpg",
+    "images/db32-110-3.jpg",
+    "images/db32-110-4.jpg",
+    "images/db32-110-5.jpg",
+    "images/db32-110-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "110cc, 4-stroke, air-cooled"
+    ],
+    [
+     "Power",
+     "6.5kW (8.7 HP)"
+    ],
+    [
+     "Starting",
+     "Kick start"
+    ],
+    [
+     "Transmission",
+     "4-speed semi-automatic"
+    ],
+    [
+     "Brakes",
+     "Front &amp; rear hydraulic disc"
+    ],
+    [
+     "Suspension",
+     "Hydraulic front forks &middot; non-adjustable 320mm rear"
+    ],
+    [
+     "Tires",
+     "2.5-14 front &middot; 3-12 rear"
+    ],
+    [
+     "Seat Height",
+     "30 in &middot; Wheelbase: 1200mm"
+    ],
+    [
+     "Weight",
+     "79 kg gross &middot; 64 kg net"
+    ],
+    [
+     "Fuel Capacity",
+     "3.7 liters"
+    ],
+    [
+     "Frame",
+     "Single-tube high-strength steel"
+    ]
+   ],
+   "description": "DB-32 110cc dirt bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 110cc, 6.5kW (8.7 HP)",
+    "<strong>Brakes:</strong> Hydraulic disc F&amp;R",
+    "<strong>Seat Height:</strong> 30 in"
+   ]
+  },
+  "dirtbikes-db-36-250cc": {
+   "main": "images/db36-250.jpg",
+   "thumbs": [
+    "images/db36-250.jpg",
+    "images/db36-250-2.jpg",
+    "images/db36-250-3.jpg",
+    "images/db36-250-4.jpg",
+    "images/db36-250-5.jpg",
+    "images/db36-250-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "250cc, air-cooled, 4-stroke"
+    ],
+    [
+     "Power",
+     "13kW @ 7000 rpm"
+    ],
+    [
+     "Starting",
+     "Electric &amp; kick start"
+    ],
+    [
+     "Transmission",
+     "Manual, 5-speed"
+    ],
+    [
+     "Brakes",
+     "Front &amp; rear hydraulic disc"
+    ],
+    [
+     "Tires",
+     "80/100-21 front &middot; 110/90-18 rear"
+    ],
+    [
+     "Suspension",
+     "54mm inverted front fork, 265mm travel &middot; adjustable rear"
+    ],
+    [
+     "Seat Height",
+     "930mm &middot; Wheelbase: 1420mm"
+    ],
+    [
+     "Weight",
+     "128 kg gross &middot; 108 kg net"
+    ],
+    [
+     "Fuel Capacity",
+     "7 liters"
+    ],
+    [
+     "Frame",
+     "Twin-spar heavy-duty steel"
+    ]
+   ],
+   "description": "DB-36 250cc dirt bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 250cc, 13kW",
+    "<strong>Transmission:</strong> 5-speed manual",
+    "<strong>Starting:</strong> Electric &amp; kick start"
+   ]
+  },
+  "dirtbikes-db-38-110cc": {
+   "main": "images/db38-110.jpg",
+   "thumbs": [
+    "images/db38-110.jpg",
+    "images/db38-110-2.jpg",
+    "images/db38-110-3.jpg",
+    "images/db38-110-4.jpg",
+    "images/db38-110-5.jpg",
+    "images/db38-110-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "110cc, air-cooled, fully automatic (FH brand)"
+    ],
+    [
+     "Power",
+     "6.7 HP @ 7500 rpm &middot; 7.2 N&middot;m torque @ 7500 rpm"
+    ],
+    [
+     "Starting",
+     "Electric start, CDI ignition"
+    ],
+    [
+     "Transmission",
+     "Fully automatic, chain drive"
+    ],
+    [
+     "Brakes",
+     "Front &amp; rear hydraulic disc"
+    ],
+    [
+     "Tires",
+     "60/100-14 front &middot; 80/100-12 rear"
+    ],
+    [
+     "Suspension",
+     "320mm front &middot; 260mm rear, non-adjustable"
+    ],
+    [
+     "Seat Height",
+     "30 in &middot; Ground Clearance: 8 in"
+    ],
+    [
+     "Weight",
+     "142 lbs net &middot; 160 lbs gross"
+    ],
+    [
+     "Fuel Capacity",
+     "0.85 gallons"
+    ],
+    [
+     "Frame",
+     "Single-beam heavy-duty steel"
+    ]
+   ],
+   "description": "DB-38 110cc dirt bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 110cc, 6.7 HP @ 7500 rpm",
+    "<strong>Brakes:</strong> Hydraulic disc F&amp;R",
+    "<strong>Seat Height:</strong> 30 in"
+   ]
+  },
+  "dirtbikes-db-x14-125cc-new-frame": {
+   "main": "images/dbx14-125.jpg",
+   "thumbs": [
+    "images/dbx14-125.jpg",
+    "images/dbx14-125-2.jpg",
+    "images/dbx14-125-3.jpg",
+    "images/dbx14-125-4.jpg",
+    "images/dbx14-125-5.jpg",
+    "images/dbx14-125-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "125cc, 4-stroke, single-cylinder"
+    ],
+    [
+     "Power",
+     "6.0kW @ 7500 rpm"
+    ],
+    [
+     "Starting",
+     "Kick start"
+    ],
+    [
+     "Transmission",
+     "4-speed semi-automatic"
+    ],
+    [
+     "Brakes",
+     "Front &amp; rear hydraulic disc"
+    ],
+    [
+     "Suspension",
+     "Non-adjustable 760mm front &middot; 320mm rear"
+    ],
+    [
+     "Tires",
+     "2.5-14 front &middot; 3.0-12 rear"
+    ],
+    [
+     "Seat Height",
+     "33 in"
+    ],
+    [
+     "Weight",
+     "82 kg gross &middot; 67 kg net"
+    ],
+    [
+     "Fuel Capacity",
+     "4.7 liters"
+    ],
+    [
+     "Frame",
+     "Twin-spar heavy-duty steel"
+    ]
+   ],
+   "description": "DB-X14 125cc - New Frame dirt bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 125cc, 6kW @ 7500rpm",
+    "<strong>Transmission:</strong> 4-speed semi-auto",
+    "<strong>Seat Height:</strong> 33 in"
+   ]
+  },
+  "dirtbikes-db-x15-125cc-new-frame": {
+   "main": "images/dbx15-125.jpg",
+   "thumbs": [
+    "images/dbx15-125.jpg",
+    "images/dbx15-125-2.jpg",
+    "images/dbx15-125-3.jpg",
+    "images/dbx15-125-4.jpg",
+    "images/dbx15-125-5.jpg",
+    "images/dbx15-125-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "125cc, 4-stroke, single-cylinder"
+    ],
+    [
+     "Power",
+     "6.0kW @ 7500 rpm"
+    ],
+    [
+     "Starting",
+     "Kick start"
+    ],
+    [
+     "Transmission",
+     "4-speed manual clutch"
+    ],
+    [
+     "Brakes",
+     "Front &amp; rear hydraulic disc"
+    ],
+    [
+     "Suspension",
+     "Non-adjustable 760mm front &middot; 320mm rear"
+    ],
+    [
+     "Tires",
+     "2.5-14 front &middot; 3.0-12 rear"
+    ],
+    [
+     "Seat Height",
+     "33 in"
+    ],
+    [
+     "Weight",
+     "82 kg gross &middot; 67 kg net"
+    ],
+    [
+     "Fuel Capacity",
+     "4.7 liters"
+    ],
+    [
+     "Frame",
+     "Twin-spar heavy-duty steel"
+    ]
+   ],
+   "description": "DB-X15 125cc - New Frame dirt bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 125cc, 6kW @ 7500rpm",
+    "<strong>Transmission:</strong> 4-speed manual clutch",
+    "<strong>Seat Height:</strong> 33 in"
+   ]
+  },
+  "dirtbikes-db-x16-125cc-new-frame": {
+   "main": "images/dbx16-125.jpg",
+   "thumbs": [
+    "images/dbx16-125.jpg",
+    "images/dbx16-125-2.jpg",
+    "images/dbx16-125-3.jpg",
+    "images/dbx16-125-4.jpg",
+    "images/dbx16-125-5.jpg",
+    "images/dbx16-125-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "125cc, 4-stroke, single-cylinder"
+    ],
+    [
+     "Power",
+     "6.0kW @ 7500 rpm"
+    ],
+    [
+     "Starting",
+     "Kick start"
+    ],
+    [
+     "Transmission",
+     "1-speed fully automatic"
+    ],
+    [
+     "Brakes",
+     "Front &amp; rear hydraulic disc"
+    ],
+    [
+     "Suspension",
+     "Non-adjustable 760mm front &middot; 320mm rear"
+    ],
+    [
+     "Tires",
+     "2.5-14 front &middot; 3.0-12 rear"
+    ],
+    [
+     "Seat Height",
+     "33 in"
+    ],
+    [
+     "Weight",
+     "82 kg gross &middot; 67 kg net"
+    ],
+    [
+     "Fuel Capacity",
+     "4.7 liters"
+    ],
+    [
+     "Frame",
+     "Twin-spar heavy-duty steel"
+    ]
+   ],
+   "description": "DB-X16 125cc - New Frame dirt bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 125cc, 6kW @ 7500rpm",
+    "<strong>Transmission:</strong> 1-speed fully automatic",
+    "<strong>Seat Height:</strong> 33 in"
+   ]
+  },
+  "dirtbikes-db-x18-125cc-new-frame": {
+   "main": "images/dbx18-125.jpg",
+   "thumbs": [
+    "images/dbx18-125.jpg",
+    "images/dbx18-125-2.jpg",
+    "images/dbx18-125-3.jpg",
+    "images/dbx18-125-4.jpg",
+    "images/dbx18-125-5.jpg",
+    "images/dbx18-125-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "125cc, 4-stroke, single-cylinder"
+    ],
+    [
+     "Power",
+     "6.0kW @ 7500 rpm"
+    ],
+    [
+     "Starting",
+     "Kick start"
+    ],
+    [
+     "Transmission",
+     "4-speed manual clutch"
+    ],
+    [
+     "Brakes",
+     "Front &amp; rear hydraulic disc"
+    ],
+    [
+     "Suspension",
+     "Non-adjustable 750mm front &middot; 320mm rear"
+    ],
+    [
+     "Tires",
+     "17in front &middot; 14in rear"
+    ],
+    [
+     "Seat Height",
+     "34 in"
+    ],
+    [
+     "Weight",
+     "82 kg gross &middot; 67 kg net"
+    ],
+    [
+     "Fuel Capacity",
+     "4.7 liters"
+    ],
+    [
+     "Frame",
+     "Twin-spar heavy-duty steel"
+    ]
+   ],
+   "description": "DB-X18 125cc - New Frame dirt bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 125cc, 6kW @ 7500rpm",
+    "<strong>Transmission:</strong> 4-speed manual clutch",
+    "<strong>Frame:</strong> Twin-spar heavy-duty steel"
+   ]
+  },
+  "dirtbikes-db-x19-125cc-new-frame": {
+   "main": "images/dbx19-125.jpg",
+   "thumbs": [
+    "images/dbx19-125.jpg",
+    "images/dbx19-125-2.jpg",
+    "images/dbx19-125-3.jpg",
+    "images/dbx19-125-4.jpg",
+    "images/dbx19-125-5.jpg",
+    "images/dbx19-125-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "125cc, 4-stroke, single-cylinder"
+    ],
+    [
+     "Power",
+     "6.0kW @ 7500 rpm"
+    ],
+    [
+     "Starting",
+     "Electric &amp; kick start"
+    ],
+    [
+     "Transmission",
+     "4-speed manual clutch"
+    ],
+    [
+     "Brakes",
+     "Front &amp; rear hydraulic disc"
+    ],
+    [
+     "Suspension",
+     "Non-adjustable 750mm front &middot; 320mm rear"
+    ],
+    [
+     "Tires",
+     "17in front &middot; 14in rear"
+    ],
+    [
+     "Seat Height",
+     "34 in &middot; Wheelbase: 1220mm"
+    ],
+    [
+     "Weight",
+     "82 kg gross &middot; 67 kg net"
+    ],
+    [
+     "Fuel Capacity",
+     "4.7 liters"
+    ],
+    [
+     "Frame",
+     "Twin-spar heavy-duty steel"
+    ],
+    [
+     "Extras",
+     "Headlight included"
+    ]
+   ],
+   "description": "DB-X19 125cc - New Frame dirt bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 125cc, 6kW @ 7500rpm",
+    "<strong>Transmission:</strong> 4-speed manual clutch",
+    "<strong>Frame:</strong> Twin-spar heavy-duty steel"
+   ]
+  },
+  "dirtbikes-db-x4-110cc": {
+   "main": "images/dbx4-110.jpg",
+   "thumbs": [
+    "images/dbx4-110.jpg",
+    "images/dbx4-110-2.jpg",
+    "images/dbx4-110-3.jpg",
+    "images/dbx4-110-4.jpg",
+    "images/dbx4-110-5.jpg",
+    "images/dbx4-110-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "110cc, 4-stroke, air-cooled"
+    ],
+    [
+     "Power",
+     "6.5kW (8.7 HP)"
+    ],
+    [
+     "Starting",
+     "Kick start"
+    ],
+    [
+     "Transmission",
+     "4-speed semi-automatic"
+    ],
+    [
+     "Brakes",
+     "Front &amp; rear hydraulic disc"
+    ],
+    [
+     "Suspension",
+     "Hydraulic front forks &middot; non-adjustable 320mm rear"
+    ],
+    [
+     "Tires",
+     "2.5-14 front &middot; 3-12 rear"
+    ],
+    [
+     "Seat Height",
+     "30 in"
+    ],
+    [
+     "Weight",
+     "79 kg gross &middot; 64 kg net"
+    ],
+    [
+     "Fuel Capacity",
+     "3.7 liters"
+    ],
+    [
+     "Frame",
+     "Single-tube high-strength steel"
+    ]
+   ],
+   "description": "DB-X4 110cc dirt bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 110cc, 6.5kW (8.7 HP)",
+    "<strong>Transmission:</strong> Semi-auto, 4-speed",
+    "<strong>Seat Height:</strong> 30 in"
+   ]
+  },
+  "dirtbikes-db-x5-125cc": {
+   "main": "images/dbx5-125.jpg",
+   "thumbs": [
+    "images/dbx5-125.jpg",
+    "images/dbx5-125-2.jpg",
+    "images/dbx5-125-3.jpg",
+    "images/dbx5-125-4.jpg",
+    "images/dbx5-125-5.jpg",
+    "images/dbx5-125-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "125cc, 4-stroke, air-cooled"
+    ],
+    [
+     "Power",
+     "10.0kW @ 9500 rpm"
+    ],
+    [
+     "Starting",
+     "Kick start"
+    ],
+    [
+     "Transmission",
+     "4-speed manual clutch"
+    ],
+    [
+     "Brakes",
+     "Front &amp; rear hydraulic disc"
+    ],
+    [
+     "Suspension",
+     "Non-adjustable 760mm front &middot; 320mm rear"
+    ],
+    [
+     "Tires",
+     "2.5-14 front &middot; 3-12 rear"
+    ],
+    [
+     "Seat Height",
+     "30 in"
+    ],
+    [
+     "Fuel Capacity",
+     "3.7 liters"
+    ],
+    [
+     "Frame",
+     "Single-tube high-strength steel"
+    ]
+   ],
+   "description": "DB-X5 125cc dirt bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 125cc, 10kW",
+    "<strong>Transmission:</strong> 4-speed manual clutch",
+    "<strong>Seat Height:</strong> 30 in"
+   ]
+  },
+  "dirtbikes-db-x6-125cc": {
+   "main": "images/dbx6-125.jpg",
+   "thumbs": [
+    "images/dbx6-125.jpg",
+    "images/dbx6-125-2.jpg",
+    "images/dbx6-125-3.jpg",
+    "images/dbx6-125-4.jpg",
+    "images/dbx6-125-5.jpg",
+    "images/dbx6-125-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "125cc, 4-stroke, air-cooled"
+    ],
+    [
+     "Power",
+     "10.0kW @ 9500 rpm"
+    ],
+    [
+     "Starting",
+     "Kick start"
+    ],
+    [
+     "Transmission",
+     "1-speed fully automatic"
+    ],
+    [
+     "Brakes",
+     "Front &amp; rear hydraulic disc"
+    ],
+    [
+     "Suspension",
+     "Hydraulic front forks &middot; non-adjustable 320mm rear"
+    ],
+    [
+     "Tires",
+     "2.5-14 front &middot; 3-12 rear"
+    ],
+    [
+     "Seat Height",
+     "740mm &middot; Wheelbase: 1200mm"
+    ],
+    [
+     "Weight",
+     "79 kg gross &middot; 64 kg net"
+    ],
+    [
+     "Fuel Capacity",
+     "3.7 liters"
+    ],
+    [
+     "Frame",
+     "Single-tube high-strength steel"
+    ]
+   ],
+   "description": "DB-X6 125cc dirt bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 125cc, 10kW",
+    "<strong>Transmission:</strong> 1-speed fully automatic",
+    "<strong>Starter:</strong> Kick start"
+   ]
+  },
+  "dirtbikes-rxf150-freeride": {
+   "main": "images/rxf150.jpg",
+   "thumbs": [
+    "images/rxf150.jpg",
+    "images/rxf150-2.jpg",
+    "images/rxf150-3.jpg",
+    "images/rxf150-4.jpg",
+    "images/rxf150-5.jpg",
+    "images/rxf150-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "140cc, 4-stroke, single-cylinder, air-cooled"
+    ],
+    [
+     "Power",
+     "11 HP @ 8000 rpm &middot; 10.2 N&middot;m torque @ 7500 rpm"
+    ],
+    [
+     "Starting",
+     "Kick start"
+    ],
+    [
+     "Transmission",
+     "4-speed manual (N-1-2-3-4), chain drive"
+    ],
+    [
+     "Brakes",
+     "Hydraulic disc, front &amp; rear (foot)"
+    ],
+    [
+     "Tires",
+     "70/100-17 front &middot; 90/100-14 rear"
+    ],
+    [
+     "Suspension",
+     "32.7in front, non-adjustable &middot; 13.8in rear, adjustable"
+    ],
+    [
+     "Seat Height",
+     "35 in &middot; Wheelbase: 51.2 in"
+    ],
+    [
+     "Ground Clearance",
+     "13.8 in"
+    ],
+    [
+     "Weight",
+     "187 lbs net &middot; 209 lbs gross"
+    ],
+    [
+     "Fuel Capacity",
+     "1.4 gallons"
+    ],
+    [
+     "Frame",
+     "Double-beam heavy-duty steel"
+    ]
+   ],
+   "description": "RXF150 Freeride dirt bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 140cc, 11 HP @ 8000rpm",
+    "<strong>Transmission:</strong> 4-speed manual",
+    "<strong>Seat Height:</strong> 35 in"
+   ]
+  },
+  "dirtbikes-thunder-140": {
+   "main": "images/thunder140.jpg",
+   "thumbs": [
+    "images/thunder140.jpg",
+    "images/thunder140-2.jpg",
+    "images/thunder140-3.jpg",
+    "images/thunder140-4.jpg",
+    "images/thunder140-5.jpg",
+    "images/thunder140-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "140cc, 4-stroke, single-cylinder (YX brand)"
+    ],
+    [
+     "Power",
+     "11 HP @ 8000 rpm &middot; 10.2 N&middot;m torque @ 7500 rpm"
+    ],
+    [
+     "Compression Ratio",
+     "9.8:1"
+    ],
+    [
+     "Starting",
+     "Kick start"
+    ],
+    [
+     "Transmission",
+     "4-speed manual (N-1-2-3-4), chain drive"
+    ],
+    [
+     "Brakes",
+     "Hydraulic disc, front &amp; rear"
+    ],
+    [
+     "Tires",
+     "70/100-17 front &middot; 90/100-14 rear"
+    ],
+    [
+     "Suspension",
+     "30.3in front &middot; 13.8in rear, non-adjustable (SYD)"
+    ],
+    [
+     "Seat Height",
+     "33 in &middot; Wheelbase: 48 in"
+    ],
+    [
+     "Ground Clearance",
+     "13 in"
+    ],
+    [
+     "Weight",
+     "176 lbs net &middot; 198 lbs gross"
+    ],
+    [
+     "Fuel Capacity",
+     "1.03 gallons"
+    ],
+    [
+     "Frame",
+     "Heavy-duty double-beam steel"
+    ]
+   ],
+   "description": "Thunder 140 dirt bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 140cc, 11 HP @ 8000rpm",
+    "<strong>Transmission:</strong> 4-speed manual",
+    "<strong>Seat Height:</strong> 33 in"
+   ]
+  },
+  "dirtbikes-thunder-150cc": {
+   "main": "images/thunder150.jpg",
+   "thumbs": [
+    "images/thunder150.jpg",
+    "images/thunder150-2.jpg",
+    "images/thunder150-3.jpg",
+    "images/thunder150-4.jpg",
+    "images/thunder150-5.jpg",
+    "images/thunder150-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "140cc, air-cooled, 4-stroke, single-cylinder (YX brand)"
+    ],
+    [
+     "Power",
+     "11 HP @ 8000 rpm &middot; 10.2 N&middot;m torque @ 7500 rpm"
+    ],
+    [
+     "Compression Ratio",
+     "9.8:1"
+    ],
+    [
+     "Starting",
+     "Kick start"
+    ],
+    [
+     "Transmission",
+     "4-speed manual (N-1-2-3-4), chain drive"
+    ],
+    [
+     "Brakes",
+     "Hydraulic disc, front &amp; rear"
+    ],
+    [
+     "Tires",
+     "70/100-19 front &middot; 90/100-16 rear"
+    ],
+    [
+     "Suspension",
+     "31.9in front (non-adj.) &middot; 13.8in rear (adj.), SYD"
+    ],
+    [
+     "Seat Height",
+     "34.5 in &middot; Wheelbase: 49.2 in"
+    ],
+    [
+     "Ground Clearance",
+     "14.5 in"
+    ],
+    [
+     "Weight",
+     "192 lbs net &middot; 221 lbs gross"
+    ],
+    [
+     "Fuel Capacity",
+     "1.03 gallons"
+    ],
+    [
+     "Frame",
+     "Double-beam heavy-duty steel"
+    ]
+   ],
+   "description": "Thunder 150cc dirt bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 140cc, 11 HP @ 8000rpm",
+    "<strong>Transmission:</strong> 4-speed manual",
+    "<strong>Seat Height:</strong> 34.5 in"
+   ]
+  },
+  "dirtbikes-thunder-150cc-dlx": {
+   "main": "images/thunder150dlx.jpg",
+   "thumbs": [
+    "images/thunder150dlx.jpg",
+    "images/thunder150dlx-2.jpg",
+    "images/thunder150dlx-3.jpg",
+    "images/thunder150dlx-4.jpg",
+    "images/thunder150dlx-5.jpg",
+    "images/thunder150dlx-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "140cc, air-cooled, 4-stroke, single-cylinder"
+    ],
+    [
+     "Power",
+     "11 HP @ 8000 rpm &middot; 10.2 N&middot;m torque @ 7500 rpm"
+    ],
+    [
+     "Starting",
+     "Kick start"
+    ],
+    [
+     "Transmission",
+     "4-speed manual (N-1-2-3-4), chain drive"
+    ],
+    [
+     "Brakes",
+     "Hydraulic disc, front &amp; rear"
+    ],
+    [
+     "Tires",
+     "70/100-19 front &middot; 90/100-16 rear"
+    ],
+    [
+     "Suspension",
+     "31.9in front (non-adj.) &middot; 13.8in rear (adj.)"
+    ],
+    [
+     "Seat Height",
+     "34.5 in &middot; Wheelbase: 49.2 in"
+    ],
+    [
+     "Ground Clearance",
+     "14.5 in"
+    ],
+    [
+     "Weight",
+     "192 lbs net &middot; 221 lbs gross"
+    ],
+    [
+     "Extras",
+     "Front light and hour meter"
+    ]
+   ],
+   "description": "Thunder 150cc DLX dirt bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 140cc, 11 HP @ 8000rpm",
+    "<strong>Transmission:</strong> 4-speed manual",
+    "<strong>Weight:</strong> 192 lbs net"
+   ]
+  },
+  "dirtbikes-thunder-250cc": {
+   "main": "images/thunder250.jpg",
+   "thumbs": [
+    "images/thunder250.jpg",
+    "images/thunder250-2.jpg",
+    "images/thunder250-3.jpg",
+    "images/thunder250-4.jpg",
+    "images/thunder250-5.jpg",
+    "images/thunder250-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "250cc, air-cooled, 4-stroke, single-cylinder (Zongshen)"
+    ],
+    [
+     "Power",
+     "16.1 HP @ 7000 rpm &middot; 17.5 N&middot;m torque @ 5500 rpm"
+    ],
+    [
+     "Starting",
+     "Electric &amp; kick start"
+    ],
+    [
+     "Transmission",
+     "Manual clutch, 5-speed, chain drive"
+    ],
+    [
+     "Fuel Capacity",
+     "1.7 gallons"
+    ],
+    [
+     "Brakes",
+     "Hydraulic disc, front &amp; rear"
+    ],
+    [
+     "Tires",
+     "80/100-21 front &middot; 100/90-18 rear"
+    ],
+    [
+     "Suspension",
+     "54mm inverted front fork, 200mm travel (adj.) &middot; 450mm rear (adj.)"
+    ],
+    [
+     "Seat Height",
+     "35.8 in &middot; Wheelbase: 52.8 in"
+    ],
+    [
+     "Ground Clearance",
+     "13.5 in"
+    ],
+    [
+     "Weight",
+     "233 lbs net"
+    ],
+    [
+     "Frame",
+     "Double-beam heavy-duty steel"
+    ]
+   ],
+   "description": "Thunder 250cc dirt bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 250cc, 16.1 HP @ 7000rpm",
+    "<strong>Transmission:</strong> 5-speed manual clutch",
+    "<strong>Seat Height:</strong> 35.8 in"
+   ]
+  },
+  "dirtbikes-thunder-250cc-dlx": {
+   "main": "images/thunder250dlx.jpg",
+   "thumbs": [
+    "images/thunder250dlx.jpg",
+    "images/thunder250dlx-2.jpg",
+    "images/thunder250dlx-3.jpg",
+    "images/thunder250dlx-4.jpg",
+    "images/thunder250dlx-5.jpg",
+    "images/thunder250dlx-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "250cc, air-cooled, 4-stroke, single-cylinder (Zongshen)"
+    ],
+    [
+     "Power",
+     "16.1 HP @ 7000 rpm &middot; 17.5 N&middot;m torque @ 5500 rpm"
+    ],
+    [
+     "Compression Ratio",
+     "9.9:1"
+    ],
+    [
+     "Starting",
+     "Electric &amp; kick start"
+    ],
+    [
+     "Transmission",
+     "Manual clutch, 5-speed, chain drive"
+    ],
+    [
+     "Fuel Capacity",
+     "1.7 gallons"
+    ],
+    [
+     "Brakes",
+     "Hydraulic disc, front &amp; rear"
+    ],
+    [
+     "Tires",
+     "80/100-21 front &middot; 100/90-18 rear"
+    ],
+    [
+     "Suspension",
+     "54mm inverted front fork, 200mm travel (adj.)"
+    ],
+    [
+     "Seat Height",
+     "35.8 in &middot; Wheelbase: 52.8 in"
+    ],
+    [
+     "Ground Clearance",
+     "13.5 in"
+    ],
+    [
+     "Weight",
+     "233 lbs net"
+    ],
+    [
+     "Frame",
+     "Double-beam heavy-duty steel"
+    ]
+   ],
+   "description": "Thunder 250cc DLX dirt bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 250cc, 16.1 HP @ 7000rpm",
+    "<strong>Transmission:</strong> 5-speed manual clutch",
+    "<strong>Starting:</strong> Electric &amp; kick start"
+   ]
+  },
+  "dirtbikes-thunder-300cc": {
+   "main": "images/thunder300.jpg",
+   "thumbs": [
+    "images/thunder300.jpg",
+    "images/thunder300-2.jpg",
+    "images/thunder300-3.jpg",
+    "images/thunder300-4.jpg",
+    "images/thunder300-5.jpg",
+    "images/thunder300-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "271.3cc, single-cylinder, air-cooled, oblique OHC"
+    ],
+    [
+     "Power",
+     "16kW @ 8500 rpm"
+    ],
+    [
+     "Top Speed",
+     "100+ km/h"
+    ],
+    [
+     "Starting",
+     "Electric &amp; kick start"
+    ],
+    [
+     "Drive",
+     "520H-110 chain"
+    ],
+    [
+     "Brakes",
+     "Hydraulic disc, 270mm front &middot; 240mm rear"
+    ],
+    [
+     "Tires",
+     "80/100-21 front &middot; 100/90-18 rear"
+    ],
+    [
+     "Suspension",
+     "880mm double-adjustable front fork, 265mm travel &middot; 450mm single-adjustable rear shock, 72mm travel"
+    ],
+    [
+     "Seat Height",
+     "945mm"
+    ],
+    [
+     "Wheelbase",
+     "1367mm &middot; Ground Clearance: 340mm"
+    ],
+    [
+     "Weight",
+     "111 kg dry &middot; 129 kg gross"
+    ],
+    [
+     "Max Load",
+     "90 kg"
+    ],
+    [
+     "Extras",
+     "Waterproof wiring harness, stainless steel muffler, integrated headlight"
+    ]
+   ],
+   "description": "Thunder 300cc dirt bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 271cc, 16kW @ 8500rpm",
+    "<strong>Top Speed:</strong> 62+ mph",
+    "<strong>Seat Height:</strong> ~37 in"
+   ]
+  },
+  "dirtbikes-thunder-300cc-dlx": {
+   "main": "images/thunder300dlx.jpg",
+   "thumbs": [
+    "images/thunder300dlx.jpg",
+    "images/thunder300dlx-2.jpg",
+    "images/thunder300dlx-3.jpg",
+    "images/thunder300dlx-4.jpg",
+    "images/thunder300dlx-5.jpg",
+    "images/thunder300dlx-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "271.3cc, single-cylinder, air-cooled, oblique OHC"
+    ],
+    [
+     "Power",
+     "16kW @ 8500 rpm"
+    ],
+    [
+     "Top Speed",
+     "100+ km/h"
+    ],
+    [
+     "Starting",
+     "Electric &amp; kick start"
+    ],
+    [
+     "Drive",
+     "520H-110 chain"
+    ],
+    [
+     "Brakes",
+     "Hydraulic disc, 270mm front &middot; 240mm rear"
+    ],
+    [
+     "Tires",
+     "80/100-21 front &middot; 100/90-18 rear"
+    ],
+    [
+     "Suspension",
+     "880mm double-adjustable front fork, 265mm travel &middot; 450mm single-adjustable rear shock, 72mm travel"
+    ],
+    [
+     "Seat Height",
+     "945mm"
+    ],
+    [
+     "Wheelbase",
+     "1367mm &middot; Ground Clearance: 340mm"
+    ],
+    [
+     "Weight",
+     "111 kg net &middot; 129 kg gross"
+    ],
+    [
+     "Max Load",
+     "90 kg"
+    ],
+    [
+     "Extras",
+     "Stainless steel muffler, waterproof wiring harness, aluminum handlebar"
+    ]
+   ],
+   "description": "Thunder 300cc DLX dirt bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 271.3cc single-cylinder, air-cooled",
+    "<strong>Power:</strong> 16kW @ 8500 rpm (~21 HP)",
+    "<strong>Top Speed:</strong> 62+ mph (100+ km/h)"
+   ]
+  },
+  "dirtbikes-thunder-t20": {
+   "main": "images/thundert20.jpg",
+   "thumbs": [
+    "images/thundert20.jpg",
+    "images/thundert20-2.jpg",
+    "images/thundert20-3.jpg",
+    "images/thundert20-4.jpg",
+    "images/thundert20-5.jpg",
+    "images/thundert20-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "125cc, 4-stroke, single-cylinder"
+    ],
+    [
+     "Power",
+     "6.0kW @ 7500 rpm"
+    ],
+    [
+     "Starting",
+     "Kick start"
+    ],
+    [
+     "Transmission",
+     "4-speed manual clutch"
+    ],
+    [
+     "Brakes",
+     "Front &amp; rear hydraulic disc"
+    ],
+    [
+     "Suspension",
+     "Non-adjustable 750mm front &middot; 320mm rear"
+    ],
+    [
+     "Wheels",
+     "17in front &middot; 14in rear"
+    ],
+    [
+     "Seat Height",
+     "34 in &middot; Wheelbase: 1220mm"
+    ],
+    [
+     "Weight",
+     "82 kg gross &middot; 67 kg net"
+    ],
+    [
+     "Fuel Capacity",
+     "4.7 liters"
+    ],
+    [
+     "Frame",
+     "Twin-spar heavy-duty steel"
+    ]
+   ],
+   "description": "Thunder T20 dirt bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 125cc, 6kW @ 7500rpm",
+    "<strong>Transmission:</strong> 4-speed manual clutch",
+    "<strong>Seat Height:</strong> 34 in"
+   ]
+  },
+  "dirtbikes-vitacci-raven-250cc-xl": {
+   "main": "images/vitacciraven250xl.jpg",
+   "thumbs": [
+    "images/vitacciraven250xl.jpg",
+    "images/vitacciraven250xl-2.jpg",
+    "images/vitacciraven250xl-3.jpg",
+    "images/vitacciraven250xl-4.jpg",
+    "images/vitacciraven250xl-5.jpg",
+    "images/vitacciraven250xl-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "229cc, 4-stroke, air-cooled, CDI ignition"
+    ],
+    [
+     "Power",
+     "11.5 HP @ 7500 rpm &middot; 17.0 N&middot;m torque @ 5500 rpm"
+    ],
+    [
+     "Top Speed",
+     "68 mph"
+    ],
+    [
+     "Starting",
+     "Electric &amp; kick start"
+    ],
+    [
+     "Transmission",
+     "Chain drive"
+    ],
+    [
+     "Brakes",
+     "Hydraulic disc, front &amp; rear"
+    ],
+    [
+     "Tires",
+     "3.00-21 front &middot; 4.60-18 rear"
+    ],
+    [
+     "Suspension",
+     "Double shocks front &middot; single shock rear"
+    ],
+    [
+     "Seat Height",
+     "35 in &middot; Wheelbase: 53.9 in"
+    ],
+    [
+     "Dimensions",
+     "82.2 &times; 36.2 &times; 56.6 in"
+    ],
+    [
+     "Weight",
+     "311 lbs gross &middot; 276 lbs net"
+    ],
+    [
+     "Fuel Capacity",
+     "14 liters"
+    ]
+   ],
+   "description": "Vitacci Raven 250cc XL dirt bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 229cc, 11.5 HP @ 7500rpm",
+    "<strong>Top Speed:</strong> 68 mph",
+    "<strong>Seat Height:</strong> 35 in"
+   ]
+  },
+  "ebikes-evo-20": {
+   "main": "images/evo20.jpg",
+   "thumbs": [
+    "images/evo20.jpg",
+    "images/evo20-2.jpg",
+    "images/evo20-3.jpg",
+    "images/evo20-4.jpg",
+    "images/evo20-5.jpg",
+    "images/evo20-6.jpg"
+   ],
+   "specs": [
+    [
+     "Motor",
+     "750W, electronic variator clutch"
+    ],
+    [
+     "Battery",
+     "36V 7.5Ah lithium"
+    ],
+    [
+     "Range",
+     "20 km"
+    ],
+    [
+     "Tires",
+     "20x2.5in alloy rims, front &amp; rear"
+    ],
+    [
+     "Brakes",
+     "180mm"
+    ],
+    [
+     "Suspension",
+     "648mm front &middot; 150mm rear, aluminum swingarm"
+    ],
+    [
+     "Weight",
+     "22.3 kg"
+    ],
+    [
+     "Max Load",
+     "70 kg &middot; Wheelbase: 1150mm"
+    ],
+    [
+     "Colors",
+     "Blue / Green / Orange"
+    ]
+   ],
+   "description": "EVO 20 electric bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Motor:</strong> 750W, electronic variator",
+    "<strong>Range:</strong> 20 km",
+    "<strong>Max Load:</strong> 70 kg"
+   ]
+  },
+  "ebikes-gt-s-2000": {
+   "main": "images/gts2000.jpg",
+   "thumbs": [
+    "images/gts2000.jpg",
+    "images/gts2000-2.jpg",
+    "images/gts2000-3.jpg",
+    "images/gts2000-4.jpg",
+    "images/gts2000-5.jpg",
+    "images/gts2000-6.jpg"
+   ],
+   "specs": [
+    [
+     "Motor",
+     "2000W nominal / 3000W peak"
+    ],
+    [
+     "Battery",
+     "48V 32Ah (~1440Wh)"
+    ],
+    [
+     "Top Speed",
+     "60 km/h (37 mph) &middot; 5 selectable modes (12.5/20/25/30/37 mph)"
+    ],
+    [
+     "Range",
+     "40&ndash;100 km (25&ndash;62 mi)"
+    ],
+    [
+     "Tires",
+     "24in off-road fat tires"
+    ],
+    [
+     "Brakes",
+     "Dual hydraulic disc"
+    ],
+    [
+     "Suspension",
+     "Front fork + mid-mount rear"
+    ],
+    [
+     "Frame",
+     "High-strength alloy"
+    ],
+    [
+     "Max Load",
+     "150 kg &middot; Charging: 5&ndash;6 hr"
+    ],
+    [
+     "Extras",
+     "NFC keyless lock/start, LED lighting, IP45 waterproof, instant sport mode"
+    ]
+   ],
+   "description": "GT-S 2000 electric bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Motor:</strong> 2000W nominal / 3000W peak",
+    "<strong>Top Speed:</strong> 60 km/h (37 mph)",
+    "<strong>Range:</strong> 40&ndash;100 km (25&ndash;62 mi)"
+   ]
+  },
+  "ebikes-gt06-e-scooter": {
+   "main": "images/GT06.jfif",
+   "thumbs": [
+    "images/GT06.jfif"
+   ],
+   "specs": [
+    [
+     "Motor",
+     "1200W brushless rear"
+    ],
+    [
+     "Top Speed",
+     "25&ndash;32 mph"
+    ],
+    [
+     "Frame",
+     "Foldable aluminum alloy"
+    ]
+   ],
+   "description": "GT06 E-Scooter electric bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Motor:</strong> 1200W brushless rear",
+    "<strong>Top Speed:</strong> 25–32 mph",
+    "<strong>Frame:</strong> Foldable aluminum alloy"
+   ]
+  },
+  "ebikes-ouxi-gt-2000": {
+   "main": "images/gt2000.jfif",
+   "thumbs": [
+    "images/gt2000.jfif",
+    "images/gt2000-2.jpg",
+    "images/gt2000-3.jpg",
+    "images/gt2000-4.jpg",
+    "images/gt2000-5.jpg",
+    "images/gt2000-6.jpg"
+   ],
+   "specs": [
+    [
+     "Motor",
+     "2000W rated / 3000W peak brushless rear hub motor"
+    ],
+    [
+     "Battery",
+     "Removable 48V 30Ah (~1440Wh) lithium"
+    ],
+    [
+     "Top Speed",
+     "37 mph claimed (~32 mph tested)"
+    ],
+    [
+     "Range",
+     "35&ndash;75 mi electric, up to 87 mi pedal-assist"
+    ],
+    [
+     "Charging Time",
+     "6&ndash;7 hours"
+    ],
+    [
+     "Tires",
+     "24&quot; x 3.0&quot; off-road fat tires"
+    ],
+    [
+     "Brakes",
+     "Dual-piston hydraulic disc"
+    ],
+    [
+     "Drivetrain",
+     "Shimano 7-speed"
+    ],
+    [
+     "Frame &amp; Suspension",
+     "High-carbon steel, front &amp; rear shocks"
+    ],
+    [
+     "Max Load",
+     "350 lbs &middot; Weight: ~103.5 lbs"
+    ],
+    [
+     "Extras",
+     "NFC key card start, turn signals, LED lighting, colorful LCD display"
+    ]
+   ],
+   "description": "OUXI GT-2000 electric bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Motor:</strong> 2000W rated / 3000W peak brushless rear hub motor",
+    "<strong>Top Speed:</strong> 37 mph claimed (~32 mph tested)",
+    "<strong>Range:</strong> 35–75 mi electric, up to 87 mi pedal-assist"
+   ]
+  },
+  "ebikes-ouxi-v8": {
+   "main": "images/OUXIV8.jfif",
+   "thumbs": [
+    "images/OUXIV8.jfif",
+    "images/OUXIV8-2.jpg",
+    "images/OUXIV8-3.jpg",
+    "images/OUXIV8-4.jpg",
+    "images/OUXIV8-5.jpg",
+    "images/OUXIV8-6.jpg"
+   ],
+   "specs": [
+    [
+     "Motor",
+     "750W hub (up to 1500W peak)"
+    ],
+    [
+     "Battery",
+     "48V 15Ah"
+    ],
+    [
+     "Top Speed",
+     "Up to 32 mph (50 km/h)"
+    ],
+    [
+     "Range",
+     "Up to 45&ndash;60 miles (pedal-assist)"
+    ],
+    [
+     "Brakes",
+     "Dual disc brake"
+    ],
+    [
+     "Weight",
+     "~85 lbs (38.5 kg)"
+    ],
+    [
+     "Max Load",
+     "150 kg (330 lbs)"
+    ],
+    [
+     "Extras",
+     "LCD display, front suspension, integrated lighting, rear seat"
+    ]
+   ],
+   "description": "OUXI V8 electric bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Motor:</strong> 750W hub (up to 1500W peak)",
+    "<strong>Top Speed:</strong> Up to 32 mph",
+    "<strong>Range:</strong> Up to 45–60 miles (PAS)"
+   ]
+  },
+  "ebikes-rfn-ares-rally-endurance-pro": {
+   "main": "images/rfnaresrallypro.jpg",
+   "thumbs": [
+    "images/rfnaresrallypro.jpg",
+    "images/rfnaresrallypro-2.jpg",
+    "images/rfnaresrallypro-3.jpg",
+    "images/rfnaresrallypro-4.jpg",
+    "images/rfnaresrallypro-5.jpg",
+    "images/rfnaresrallypro-6.jpg"
+   ],
+   "specs": [
+    [
+     "Motor",
+     "12.5kW peak, air-cooled permanent magnet synchronous, energy regen"
+    ],
+    [
+     "Torque",
+     "305 N&middot;m"
+    ],
+    [
+     "Top Speed",
+     "75 km/h (~47 mph)"
+    ],
+    [
+     "Battery",
+     "74V 3132Wh, LG Premium 21700 cells, removable &middot; 3&ndash;4hr quick charge"
+    ],
+    [
+     "Drivetrain",
+     "420 chain, 11T-58T sprockets"
+    ],
+    [
+     "Suspension",
+     "Upside-down fork, 200mm travel, fully adjustable front &middot; mono-shock, 74mm travel, adjustable rear"
+    ],
+    [
+     "Tires",
+     "CST CM721 70/100-19 front &middot; CST CM722 90/100-18 rear"
+    ],
+    [
+     "Wheels",
+     "19in front / 18in rear, forged CNC aluminum, 20mm axle"
+    ],
+    [
+     "Extras",
+     "CE certified, street legal, removable battery"
+    ]
+   ],
+   "description": "RFN Ares Rally Endurance PRO (Street Legal) electric bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Motor:</strong> 12.5kW peak, energy regen",
+    "<strong>Top Speed:</strong> 75 km/h (~47 mph)",
+    "<strong>Extras:</strong> CE certified, street legal"
+   ]
+  },
+  "ebikes-rfn-e2-plus": {
+   "main": "images/rfne2plus.jpg",
+   "thumbs": [
+    "images/rfne2plus.jpg",
+    "images/rfne2plus-2.jpg",
+    "images/rfne2plus-3.jpg",
+    "images/rfne2plus-4.jpg",
+    "images/rfne2plus-5.jpg",
+    "images/rfne2plus-6.jpg"
+   ],
+   "specs": [
+    [
+     "Power",
+     "48V 1000W rated / 2000W peak"
+    ],
+    [
+     "Battery",
+     "48V 25Ah Samsung 21700 lithium &middot; ~6hr charge"
+    ],
+    [
+     "Top Speed",
+     "15 / 25 / 40 km/h (3 modes)"
+    ],
+    [
+     "Range",
+     "18 km @ 35 km/h"
+    ],
+    [
+     "Torque",
+     "88 N&middot;m rear wheel"
+    ],
+    [
+     "Tires",
+     "60/100-14 front &middot; 70/100-12 rear"
+    ],
+    [
+     "Brakes",
+     "F&amp;R hydraulic disc"
+    ],
+    [
+     "Suspension",
+     "Non-adjustable front &amp; rear"
+    ],
+    [
+     "Weight",
+     "48 kg net &middot; 54 kg gross"
+    ],
+    [
+     "Dimensions",
+     "1470 &times; 680 &times; 900mm &middot; seat height 655&ndash;695mm (adj.) &middot; wheelbase 1075mm"
+    ]
+   ],
+   "description": "RFN E2-Plus electric bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Power:</strong> 48V 1000W rated / 2000W peak",
+    "<strong>Top Speed:</strong> 15/25/40 km/h (3 modes)",
+    "<strong>Range:</strong> 18 km @ 35 km/h"
+   ]
+  },
+  "ebikes-evo16": {
+   "main": "images/evo16rfn.jpg",
+   "thumbs": [
+    "images/evo16rfn.jpg",
+    "images/evo16rfn-2.jpg",
+    "images/evo16rfn-3.jpg",
+    "images/evo16rfn-4.jpg",
+    "images/evo16rfn-5.jpg",
+    "images/evo16rfn-6.jpg"
+   ],
+   "specs": [
+    [
+     "Motor",
+     "36V 500W brushless, sine wave controller"
+    ],
+    [
+     "Battery",
+     "36V 5Ah removable lithium, swappable"
+    ],
+    [
+     "Top Speed",
+     "15 km/h (Eco) / 22 km/h (Low) / 30 km/h (Sport)"
+    ],
+    [
+     "Range",
+     "Up to 1 hr 15 min runtime at lowest speed"
+    ],
+    [
+     "Tires",
+     "16x2.5in all-terrain"
+    ],
+    [
+     "Brakes",
+     "Hydraulic disc"
+    ],
+    [
+     "Suspension",
+     "Dual suspension system"
+    ],
+    [
+     "Frame",
+     "Aluminum"
+    ],
+    [
+     "Built For",
+     "Kids &amp; young riders"
+    ]
+   ],
+   "description": "RFN EVO 16 electric bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Motor:</strong> 36V 500W brushless",
+    "<strong>Top Speed:</strong> Up to 30 km/h (Sport)",
+    "<strong>Built For:</strong> Kids &amp; young riders"
+   ]
+  },
+  "ebikes-rfn-evo-18": {
+   "main": "images/evo18.jfif",
+   "thumbs": [
+    "images/evo18.jfif",
+    "images/evo18-2.jpg",
+    "images/evo18-3.jpg",
+    "images/evo18-4.jpg",
+    "images/evo18-5.jpg",
+    "images/evo18-6.jpg"
+   ],
+   "specs": [
+    [
+     "Motor",
+     "500W rated / 750W peak"
+    ],
+    [
+     "Battery",
+     "Lithium 36V 5Ah &middot; Range: ~15 km"
+    ],
+    [
+     "Top Speed",
+     "18.6 mph (Sport mode)"
+    ],
+    [
+     "Brakes",
+     "160mm"
+    ],
+    [
+     "Drivetrain",
+     "Electronic variator clutch, aluminum alloy swingarm"
+    ],
+    [
+     "Tires",
+     "18in alloy rims, 18x2.5 front &amp; rear"
+    ],
+    [
+     "Suspension",
+     "614mm front &middot; 150mm rear"
+    ],
+    [
+     "Weight",
+     "19 kg &middot; Wheelbase: 940mm"
+    ],
+    [
+     "Max Load",
+     "70 kg"
+    ],
+    [
+     "Built For",
+     "Kids &amp; youth ages 8&ndash;12 &middot; Colors: Blue / Red"
+    ]
+   ],
+   "description": "RFN EVO 18 electric bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Motor:</strong> 500W rated / 750W peak",
+    "<strong>Top Speed:</strong> 18.6 mph (Sport mode)",
+    "<strong>Built For:</strong> Kids &amp; youth ages 8–12"
+   ]
+  },
+  "ebikes-rfn-warrior-kids-sx-e350": {
+   "main": "images/rfnwarriorkidssxe350.jpg",
+   "thumbs": [
+    "images/rfnwarriorkidssxe350.jpg",
+    "images/rfnwarriorkidssxe350-2.jpg",
+    "images/rfnwarriorkidssxe350-3.jpg",
+    "images/rfnwarriorkidssxe350-4.jpg",
+    "images/rfnwarriorkidssxe350-5.jpg",
+    "images/rfnwarriorkidssxe350-6.jpg"
+   ],
+   "specs": [
+    [
+     "Motor",
+     "36V 500W"
+    ],
+    [
+     "Battery",
+     "36V 7.5Ah lithium"
+    ],
+    [
+     "Top Speed",
+     "15 / 25 / 35 km/h (3 modes)"
+    ],
+    [
+     "Range",
+     "25 km"
+    ],
+    [
+     "Tires",
+     "14in aluminum-magnesium alloy wheels"
+    ],
+    [
+     "Brakes",
+     "140mm F&amp;R oil-pump disc"
+    ],
+    [
+     "Suspension",
+     "Front spring fork &middot; adjustable rear shock"
+    ],
+    [
+     "Weight",
+     "20 kg net &middot; 24 kg gross"
+    ],
+    [
+     "Dimensions",
+     "1044 &times; 578 &times; 676mm &middot; Seat Height: 490mm"
+    ],
+    [
+     "Built For",
+     "Kids ages 4&ndash;8 &middot; adjustable chest protector"
+    ]
+   ],
+   "description": "RFN Warrior Kids SX-E350 electric bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Motor:</strong> 36V 500W",
+    "<strong>Top Speed:</strong> 15/25/35 km/h (3 modes)",
+    "<strong>Built For:</strong> Kids ages 4&ndash;8"
+   ]
+  },
+  "ebikes-rfn-warrior-kids-sx-e500": {
+   "main": "images/rfnwarriorkidssxe500.jpg",
+   "thumbs": [
+    "images/rfnwarriorkidssxe500.jpg"
+   ],
+   "specs": [
+    [
+     "Motor",
+     "36V 500W"
+    ],
+    [
+     "Battery",
+     "36V 7.5Ah lithium"
+    ],
+    [
+     "Top Speed",
+     "15 / 25 / 35 km/h (3 modes)"
+    ],
+    [
+     "Range",
+     "25 km"
+    ],
+    [
+     "Tires",
+     "14in aluminum-magnesium alloy wheels"
+    ],
+    [
+     "Brakes",
+     "140mm F&amp;R oil-pump disc"
+    ],
+    [
+     "Suspension",
+     "Front spring fork &middot; adjustable rear shock"
+    ],
+    [
+     "Weight",
+     "20 kg net &middot; 24 kg gross"
+    ],
+    [
+     "Seat Height",
+     "490mm"
+    ],
+    [
+     "Built For",
+     "Kids ages 4&ndash;8 &middot; chest protector included"
+    ]
+   ],
+   "description": "RFN Warrior Kids SX-E500 electric bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Motor:</strong> 36V 500W",
+    "<strong>Top Speed:</strong> 15/25/35 km/h (3 modes)",
+    "<strong>Built For:</strong> Kids ages 4&ndash;8"
+   ]
+  },
+  "ebikes-rfn-warrior-pro-e15": {
+   "main": "images/rfnwarriorproe15.jpg",
+   "thumbs": [
+    "images/rfnwarriorproe15.jpg",
+    "images/rfnwarriorproe15-2.jpg",
+    "images/rfnwarriorproe15-3.jpg",
+    "images/rfnwarriorproe15-4.jpg",
+    "images/rfnwarriorproe15-5.jpg",
+    "images/rfnwarriorproe15-6.jpg"
+   ],
+   "specs": [
+    [
+     "Motor",
+     "15kW peak power"
+    ],
+    [
+     "Battery",
+     "74V 40Ah lithium &middot; 2960Wh"
+    ],
+    [
+     "Range",
+     "60 miles"
+    ],
+    [
+     "Brakes",
+     "F&amp;R hydraulic disc"
+    ],
+    [
+     "Suspension",
+     "Double adjustable front &middot; adjustable rear shock"
+    ],
+    [
+     "Tires",
+     "70/100-19 front &middot; 90/100-16 rear"
+    ],
+    [
+     "Weight",
+     "190 lbs"
+    ],
+    [
+     "Seat Height",
+     "35 in &middot; Wheelbase: 53 in"
+    ]
+   ],
+   "description": "RFN Warrior Pro E15 electric bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Motor:</strong> 15kW peak power",
+    "<strong>Battery:</strong> 74V 40Ah lithium, 2960Wh",
+    "<strong>Range:</strong> 60 miles"
+   ]
+  },
+  "ebikes-rfn-warrior-youth-sx-e5": {
+   "main": "images/rfnwarrioryouthsxe5.jpg",
+   "thumbs": [
+    "images/rfnwarrioryouthsxe5.jpg",
+    "images/rfnwarrioryouthsxe5-2.jpg",
+    "images/rfnwarrioryouthsxe5-3.jpg",
+    "images/rfnwarrioryouthsxe5-4.jpg",
+    "images/rfnwarrioryouthsxe5-5.jpg",
+    "images/rfnwarrioryouthsxe5-6.jpg"
+   ],
+   "specs": [
+    [
+     "Motor",
+     "5kW peak power"
+    ],
+    [
+     "Battery",
+     "48V 25Ah lithium &middot; 1200Wh"
+    ],
+    [
+     "Range",
+     "25 miles"
+    ],
+    [
+     "Tires",
+     "60/100-12 front &middot; 70/100-10 rear"
+    ],
+    [
+     "Brakes",
+     "F&amp;R hydraulic disc"
+    ],
+    [
+     "Suspension",
+     "Double adjustable front &middot; adjustable rear"
+    ],
+    [
+     "Weight",
+     "104 lbs"
+    ],
+    [
+     "Seat Height",
+     "24&ndash;26 in &middot; Wheelbase: 40.5 in"
+    ],
+    [
+     "Built For",
+     "Youth riders"
+    ]
+   ],
+   "description": "RFN Warrior Youth SX-E5 electric bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Motor:</strong> 5kW peak power",
+    "<strong>Range:</strong> 25 miles",
+    "<strong>Built For:</strong> Youth riders"
+   ]
+  },
+  "ebikes-rfn-e2-pro-max": {
+   "main": "images/rfne2promax.jpg",
+   "thumbs": [
+    "images/rfne2promax.jpg",
+    "images/rfne2promax-2.jpg",
+    "images/rfne2promax-3.jpg",
+    "images/rfne2promax-4.jpg",
+    "images/rfne2promax-5.jpg",
+    "images/rfne2promax-6.jpg"
+   ],
+   "specs": [
+    [
+     "Power",
+     "48V 2000W rated / 5000W peak"
+    ],
+    [
+     "Battery",
+     "48V 25Ah Samsung 21700 lithium &middot; ~6hr charge"
+    ],
+    [
+     "Top Speed",
+     "30 / 50 / 70 km/h (3 modes)"
+    ],
+    [
+     "Range",
+     "30 km @ 35 km/h"
+    ],
+    [
+     "Torque",
+     "145 N&middot;m rear wheel"
+    ],
+    [
+     "Wheels",
+     "17in front / 14in rear"
+    ],
+    [
+     "Brakes",
+     "F&amp;R hydraulic disc"
+    ],
+    [
+     "Suspension",
+     "Non-adjustable front &amp; rear"
+    ],
+    [
+     "Weight",
+     "65 kg net &middot; 70 kg gross"
+    ],
+    [
+     "Dimensions",
+     "1670 &times; 720 &times; 1000mm &middot; seat height 725&ndash;775mm (adj.) &middot; wheelbase 1135mm"
+    ]
+   ],
+   "description": "RFN-E2 Pro Max electric bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Power:</strong> 48V 2000W rated / 5000W peak",
+    "<strong>Top Speed:</strong> 30/50/70 km/h (3 modes)",
+    "<strong>Range:</strong> 30 km @ 35 km/h"
+   ]
+  },
+  "ebikes-spark-48v": {
+   "main": "images/SPARK48V.jfif",
+   "thumbs": [
+    "images/SPARK48V.jfif"
+   ],
+   "specs": [
+    [
+     "Motor",
+     "750W rated / 1800W peak hub"
+    ],
+    [
+     "Top Speed",
+     "35+ mph"
+    ],
+    [
+     "Range",
+     "Up to 75 miles"
+    ]
+   ],
+   "description": "SPARK 48V electric bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Motor:</strong> 750W rated / 1800W peak hub",
+    "<strong>Top Speed:</strong> 35+ mph",
+    "<strong>Range:</strong> Up to 75 miles"
+   ]
+  },
+  "ebikes-v8-max-dual-battery": {
+   "main": "images/v8max.jpg",
+   "thumbs": [
+    "images/v8max.jpg",
+    "images/v8max-2.jpg",
+    "images/v8max-3.jpg",
+    "images/v8max-4.jpg",
+    "images/v8max-5.jpg",
+    "images/v8max-6.jpg"
+   ],
+   "specs": [
+    [
+     "Motor",
+     "750W"
+    ],
+    [
+     "Battery",
+     "48V 15Ah &times; 2 (dual battery)"
+    ],
+    [
+     "Top Speed",
+     "50 km/h (~31 mph)"
+    ],
+    [
+     "Range",
+     "90&ndash;100 km"
+    ],
+    [
+     "Tires",
+     "20in wheels"
+    ],
+    [
+     "Brakes",
+     "Dual disc brake"
+    ],
+    [
+     "Weight",
+     "43.5 kg"
+    ],
+    [
+     "Max Load",
+     "150 kg"
+    ],
+    [
+     "Extras",
+     "LCD display, headlight/brake/indicator lights, rear seat"
+    ]
+   ],
+   "description": "V8 Max (Dual Battery) electric bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Motor:</strong> 750W",
+    "<strong>Battery:</strong> 48V 15Ah &times; 2 (dual)",
+    "<strong>Range:</strong> 90&ndash;100 km"
+   ]
+  },
+  "gokarts-jaguar-200-efi": {
+   "main": "images/jaguar200efi.jpg",
+   "thumbs": [
+    "images/jaguar200efi.jpg",
+    "images/jaguar200efi-2.jpg",
+    "images/jaguar200efi-3.jpg",
+    "images/jaguar200efi-4.jpg",
+    "images/jaguar200efi-5.jpg",
+    "images/jaguar200efi-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "200cc EFI"
+    ],
+    [
+     "Seating",
+     "2-seat off-road buggy"
+    ],
+    [
+     "Frame",
+     "Full roll cage, LED light bar"
+    ],
+    [
+     "Note",
+     "Full performance spec sheet not published online &mdash; ask in-store for complete details"
+    ]
+   ],
+   "description": "Jaguar 200 EFI go-kart for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 200cc EFI",
+    "<strong>Seating:</strong> 2-seat off-road buggy",
+    "<strong>Frame:</strong> Full roll cage, LED light bar"
+   ]
+  },
+  "gokarts-t-rex-125cc": {
+   "main": "images/trex125.jpg",
+   "thumbs": [
+    "images/trex125.jpg",
+    "images/trex125-2.jpg",
+    "images/trex125-3.jpg",
+    "images/trex125-4.jpg",
+    "images/trex125-5.jpg",
+    "images/trex125-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "125cc"
+    ],
+    [
+     "Seating",
+     "2-seat off-road buggy"
+    ],
+    [
+     "Frame",
+     "Full roll cage with roof"
+    ],
+    [
+     "Note",
+     "Full performance spec sheet not published online &mdash; ask in-store for complete details"
+    ]
+   ],
+   "description": "T-Rex 125cc go-kart for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 125cc",
+    "<strong>Seating:</strong> 2-seat off-road buggy",
+    "<strong>Frame:</strong> Full roll cage with roof"
+   ]
+  },
+  "scooters-bullet-49cc": {
+   "main": "images/bullet49.jpg",
+   "thumbs": [
+    "images/bullet49.jpg",
+    "images/bullet49-2.jpg",
+    "images/bullet49-3.jpg",
+    "images/bullet49-4.jpg",
+    "images/bullet49-5.jpg",
+    "images/bullet49-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "49.9cc, 4-stroke, single-cylinder, air-forced cool"
+    ],
+    [
+     "Power",
+     "2.20kW @ 8000 rpm"
+    ],
+    [
+     "Top Speed",
+     "Up to 25 mph"
+    ],
+    [
+     "Dimensions",
+     "67 &times; 23 &times; 32 in &middot; Wheelbase: 1302mm"
+    ],
+    [
+     "Weight",
+     "235 lbs dry &middot; 250 lbs gross"
+    ],
+    [
+     "Weight Capacity",
+     "200 lbs"
+    ],
+    [
+     "Brakes",
+     "Front disc &middot; rear drum"
+    ],
+    [
+     "Tires",
+     "120/70-12 front &amp; rear"
+    ],
+    [
+     "Battery",
+     "12V 7Ah"
+    ],
+    [
+     "Starting",
+     "Electric / Kick"
+    ]
+   ],
+   "description": "Bullet 49.9cc scooter for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 49.9cc, 2.20kW @ 8000 rpm",
+    "<strong>Top Speed:</strong> Up to 25 mph",
+    "<strong>Starting:</strong> Electric / Kick"
+   ]
+  },
+  "scooters-champion-200-efi": {
+   "main": "images/champion200efi.jpg",
+   "thumbs": [
+    "images/champion200efi.jpg",
+    "images/champion200efi-2.jpg",
+    "images/champion200efi-3.jpg",
+    "images/champion200efi-4.jpg",
+    "images/champion200efi-5.jpg",
+    "images/champion200efi-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "168cc EFI (161QMK)"
+    ],
+    [
+     "Power",
+     "6.8kW @ 8000 rpm &middot; 9.6 N&middot;m torque @ 5500 rpm"
+    ],
+    [
+     "Compression Ratio",
+     "11.5:1"
+    ],
+    [
+     "Top Speed",
+     "~59 mph (95 km/h)"
+    ],
+    [
+     "Fuel Capacity",
+     "6.8 liters"
+    ],
+    [
+     "Fuel Type",
+     "Gasoline (EFI)"
+    ],
+    [
+     "Brakes",
+     "Front &amp; rear brake"
+    ],
+    [
+     "Tires",
+     "100/80-14 front &middot; 120/70-14 rear"
+    ],
+    [
+     "Dimensions",
+     "2100 &times; 710 &times; 1110mm &middot; 1370mm wheelbase"
+    ],
+    [
+     "Weight",
+     "118 kg gross"
+    ],
+    [
+     "Battery",
+     "12V 7Ah"
+    ],
+    [
+     "Extras",
+     "Digital speedometer, fuel-injected"
+    ]
+   ],
+   "description": "Champion 200 EFI scooter for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 168cc EFI, 6.8kW @ 8000 rpm",
+    "<strong>Top Speed:</strong> ~59 mph",
+    "<strong>Extras:</strong> Digital speedometer, fuel-injected"
+   ]
+  },
+  "scooters-denali-49cc": {
+   "main": "images/denali49.jpg",
+   "thumbs": [
+    "images/denali49.jpg",
+    "images/denali49-2.jpg",
+    "images/denali49-3.jpg",
+    "images/denali49-4.jpg",
+    "images/denali49-5.jpg",
+    "images/denali49-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "49cc, 4-stroke, single-cylinder, air-forced cool"
+    ],
+    [
+     "Power",
+     "2.20kW @ 8000 rpm"
+    ],
+    [
+     "Top Speed",
+     "Up to 25 mph"
+    ],
+    [
+     "Fuel Capacity",
+     "4.2 liters"
+    ],
+    [
+     "Battery",
+     "12V 7Ah"
+    ],
+    [
+     "Starting",
+     "Electric / Kick"
+    ],
+    [
+     "Brakes",
+     "Front disc &middot; rear drum"
+    ],
+    [
+     "Tires",
+     "3.00-10 front &amp; rear"
+    ],
+    [
+     "Dimensions",
+     "1810 &times; 725 &times; 1050mm &middot; 1302mm wheelbase"
+    ],
+    [
+     "Weight",
+     "180 lbs dry / 200 lbs gross"
+    ],
+    [
+     "Weight Capacity",
+     "200 lbs"
+    ],
+    [
+     "Extras",
+     "LED lighting"
+    ]
+   ],
+   "description": "Denali 49cc scooter for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 49cc, 2.2kW @ 8000 rpm",
+    "<strong>Top Speed:</strong> Up to 25 mph",
+    "<strong>Starting:</strong> Electric + kick start"
+   ]
+  },
+  "scooters-eco-50cc": {
+   "main": "images/eco50.jpg",
+   "thumbs": [
+    "images/eco50.jpg",
+    "images/eco50-2.jpg",
+    "images/eco50-3.jpg",
+    "images/eco50-4.jpg",
+    "images/eco50-5.jpg",
+    "images/eco50-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "49cc, single-cylinder, 4-stroke, air-cooled"
+    ],
+    [
+     "Power",
+     "2.4kW @ 8000 rpm &middot; 3.1 N&middot;m torque @ 6500 rpm"
+    ],
+    [
+     "Compression Ratio",
+     "10.5:1"
+    ],
+    [
+     "Transmission",
+     "CVT"
+    ],
+    [
+     "Starting",
+     "Electric + kick start"
+    ],
+    [
+     "Fuel Capacity",
+     "4.5 liters"
+    ],
+    [
+     "Brakes",
+     "Front disc &middot; rear drum"
+    ],
+    [
+     "Tires",
+     "90/90-12, 12in aluminum rims"
+    ],
+    [
+     "Suspension",
+     "Telescopic front &middot; spring hydraulic rear"
+    ],
+    [
+     "Dimensions",
+     "1740 &times; 670 &times; 1110mm &middot; 1260mm wheelbase"
+    ],
+    [
+     "Weight",
+     "82 kg"
+    ],
+    [
+     "Battery",
+     "12V 7Ah"
+    ]
+   ],
+   "description": "Eco 50cc scooter for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 49cc, 2.4kW @ 8000 rpm",
+    "<strong>Starting:</strong> Electric + kick start",
+    "<strong>Brakes:</strong> Front disc, rear drum"
+   ]
+  },
+  "scooters-falcon-200cc": {
+   "main": "images/falcon200.jpg",
+   "thumbs": [
+    "images/falcon200.jpg",
+    "images/falcon200-2.jpg",
+    "images/falcon200-3.jpg",
+    "images/falcon200-4.jpg",
+    "images/falcon200-5.jpg",
+    "images/falcon200-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "168cc, 4-stroke, air-cooled (GY6), EFI"
+    ],
+    [
+     "Power",
+     "6.8kW @ 8000 rpm &middot; 9.6 N&middot;m torque @ 5500 rpm"
+    ],
+    [
+     "Top Speed",
+     "~62 mph (100 km/h)"
+    ],
+    [
+     "Fuel Consumption",
+     "2.3 L/100km"
+    ],
+    [
+     "Transmission",
+     "CVT automatic"
+    ],
+    [
+     "Fuel Capacity",
+     "17 liters"
+    ],
+    [
+     "Brakes",
+     "Front &amp; rear disc"
+    ],
+    [
+     "Tires",
+     "110/70-17 front &middot; 120/70-14 rear"
+    ],
+    [
+     "Suspension",
+     "Telescopic front &middot; spring hydraulic rear"
+    ],
+    [
+     "Seat Height",
+     "760mm &middot; Ground Clearance: 150mm &middot; Wheelbase: 1535mm"
+    ],
+    [
+     "Dimensions",
+     "2100 &times; 730 &times; 1130mm"
+    ],
+    [
+     "Weight",
+     "126 kg wet &middot; Max Load: 150 kg"
+    ]
+   ],
+   "description": "Falcon 200cc scooter for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 168cc GY6, EFI, 6.8kW @ 8000 rpm",
+    "<strong>Top Speed:</strong> ~62 mph (100 km/h)",
+    "<strong>Fuel Capacity:</strong> 17 liters"
+   ]
+  },
+  "scooters-falcon-250cc": {
+   "main": "images/falcon250.jpg",
+   "thumbs": [
+    "images/falcon250.jpg",
+    "images/falcon250-2.jpg",
+    "images/falcon250-3.jpg",
+    "images/falcon250-4.jpg",
+    "images/falcon250-5.jpg",
+    "images/falcon250-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "250cc, single-cylinder, water-cooled"
+    ],
+    [
+     "Power",
+     "11.0kW"
+    ],
+    [
+     "Top Speed",
+     "~70 mph"
+    ],
+    [
+     "Fuel Capacity",
+     "4.2 gallons"
+    ],
+    [
+     "Brakes",
+     "Front &amp; rear disc"
+    ],
+    [
+     "Tires",
+     "110/70-17 front &middot; 140/70-14 rear"
+    ],
+    [
+     "Weight",
+     "342 lbs dry &middot; Max Payload: 485 lbs"
+    ],
+    [
+     "Wheelbase",
+     "57 in &middot; Dimensions: 79 &times; 27 &times; 35 in"
+    ],
+    [
+     "Battery",
+     "12V 9Ah"
+    ],
+    [
+     "Starting",
+     "Electric"
+    ]
+   ],
+   "description": "Falcon 250cc scooter for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 250cc, water-cooled, 11.0kW",
+    "<strong>Top Speed:</strong> ~70 mph",
+    "<strong>Starting:</strong> Electric"
+   ]
+  },
+  "scooters-focus-st-150cc": {
+   "main": "images/focusst150.jpg",
+   "thumbs": [
+    "images/focusst150.jpg",
+    "images/focusst150-2.jpg",
+    "images/focusst150-3.jpg",
+    "images/focusst150-4.jpg",
+    "images/focusst150-5.jpg",
+    "images/focusst150-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "150cc (1P57QMJ), 1-cylinder / 4-stroke / 2-valve"
+    ],
+    [
+     "Power",
+     "6.6kW @ 7500 rpm &middot; 9.2 N&middot;m torque @ 6000 rpm"
+    ],
+    [
+     "Top Speed",
+     "~58 mph (93 km/h)"
+    ],
+    [
+     "Transmission",
+     "Automatic CVT, V-belt final drive"
+    ],
+    [
+     "Fuel Capacity",
+     "5.6 liters"
+    ],
+    [
+     "Brakes",
+     "Front disc 180mm &middot; rear drum 110mm"
+    ],
+    [
+     "Tires",
+     "3.50-10 front &amp; rear"
+    ],
+    [
+     "Suspension",
+     "Telescopic front forks (60mm travel) &middot; mono-shock rear (55mm travel)"
+    ],
+    [
+     "Weight / Seat Height",
+     "105 kg dry &middot; 770mm seat"
+    ],
+    [
+     "Dimensions",
+     "1790mm length &times; 680mm width &middot; 125mm ground clearance"
+    ],
+    [
+     "Max Load",
+     "150 kg"
+    ],
+    [
+     "Battery",
+     "12V 6Ah"
+    ],
+    [
+     "Extras",
+     "USB, alarm, rear box"
+    ]
+   ],
+   "description": "Focus ST-150cc scooter for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 150cc, 6.6kW @ 7500 rpm",
+    "<strong>Top Speed:</strong> ~58 mph",
+    "<strong>Extras:</strong> USB, alarm, rear box"
+   ]
+  },
+  "scooters-focus-st-50cc": {
+   "main": "images/focusst50.jpg",
+   "thumbs": [
+    "images/focusst50.jpg",
+    "images/focusst50-2.jpg",
+    "images/focusst50-3.jpg",
+    "images/focusst50-4.jpg",
+    "images/focusst50-5.jpg",
+    "images/focusst50-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "49.6cc (1P39QMA), 1-cylinder / 4-stroke / 2-valve"
+    ],
+    [
+     "Power",
+     "2.6kW @ 8500 rpm &middot; 3.1 N&middot;m torque @ 7000 rpm"
+    ],
+    [
+     "Top Speed",
+     "~40 mph (65 km/h)"
+    ],
+    [
+     "Transmission",
+     "Automatic CVT, V-belt final drive"
+    ],
+    [
+     "Fuel Capacity",
+     "5.6 liters"
+    ],
+    [
+     "Brakes",
+     "Front disc 180mm &middot; rear drum 110mm"
+    ],
+    [
+     "Tires",
+     "3.50-10 front &amp; rear"
+    ],
+    [
+     "Suspension",
+     "Telescopic front forks (60mm travel) &middot; mono-shock rear (55mm travel)"
+    ],
+    [
+     "Weight / Seat Height",
+     "105 kg dry &middot; 770mm seat"
+    ],
+    [
+     "Max Load",
+     "150 kg"
+    ],
+    [
+     "Battery",
+     "12V 6Ah"
+    ],
+    [
+     "Extras",
+     "USB, alarm, rear box"
+    ]
+   ],
+   "description": "Focus ST-50cc scooter for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 49.6cc, 2.6kW @ 8500 rpm",
+    "<strong>Top Speed:</strong> ~40 mph",
+    "<strong>Extras:</strong> USB, alarm, rear box"
+   ]
+  },
+  "scooters-intrepid-200": {
+   "main": "images/intrepid200.jpg",
+   "thumbs": [
+    "images/intrepid200.jpg",
+    "images/intrepid200-2.jpg",
+    "images/intrepid200-3.jpg",
+    "images/intrepid200-4.jpg",
+    "images/intrepid200-5.jpg",
+    "images/intrepid200-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "161cc, 1-cylinder / 4-stroke / 2-valve"
+    ],
+    [
+     "Power",
+     "7.3kW @ 7500 rpm &middot; 11 N&middot;m torque @ 6000 rpm"
+    ],
+    [
+     "Top Speed",
+     "~63 mph (102 km/h)"
+    ],
+    [
+     "Transmission",
+     "Automatic CVT, V-belt final drive"
+    ],
+    [
+     "Fuel Capacity",
+     "13 liters"
+    ],
+    [
+     "Battery",
+     "12V 8.6Ah"
+    ],
+    [
+     "Brakes",
+     "Front disc 230mm &middot; rear disc 220mm"
+    ],
+    [
+     "Tires",
+     "110/70-13 front &middot; 130/60-13 rear"
+    ],
+    [
+     "Suspension",
+     "Telescopic front fork (90mm travel) &middot; mono-shock rear (88mm travel)"
+    ],
+    [
+     "Weight / Seat Height",
+     "280 lbs dry &middot; 30 in seat"
+    ],
+    [
+     "Dimensions",
+     "74 in length &middot; 4.13 in ground clearance"
+    ],
+    [
+     "Extras",
+     "Rear box, smart key, Bluetooth MP3"
+    ]
+   ],
+   "description": "Intrepid 200 scooter for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 161cc, 7.3kW @ 7500 rpm",
+    "<strong>Top Speed:</strong> ~63 mph",
+    "<strong>Extras:</strong> Rear box, smart key, Bluetooth MP3"
+   ]
+  },
+  "scooters-jag-200": {
+   "main": "images/jag200.jpg",
+   "thumbs": [
+    "images/jag200.jpg",
+    "images/jag200-2.jpg",
+    "images/jag200-3.jpg",
+    "images/jag200-4.jpg",
+    "images/jag200-5.jpg",
+    "images/jag200-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "168.9cc, 1-cylinder / 4-stroke / 2-valve"
+    ],
+    [
+     "Power",
+     "7.4kW @ 7000 rpm &middot; 11 N&middot;m torque @ 6000 rpm"
+    ],
+    [
+     "Top Speed",
+     "~58 mph (93 km/h)"
+    ],
+    [
+     "Transmission",
+     "Automatic CVT, V-belt final drive"
+    ],
+    [
+     "Fuel Capacity",
+     "4.5 liters (carbureted)"
+    ],
+    [
+     "Brakes",
+     "Front disc 180mm &middot; rear drum 110mm"
+    ],
+    [
+     "Tires",
+     "3.50-10 front &amp; rear"
+    ],
+    [
+     "Suspension",
+     "Telescopic front forks (60mm travel) &middot; mono-shock rear (65mm travel)"
+    ],
+    [
+     "Weight / Seat Height",
+     "90 kg dry &middot; 800mm seat"
+    ],
+    [
+     "Dimensions",
+     "1775mm length &middot; 125mm ground clearance"
+    ],
+    [
+     "Max Load",
+     "150 kg"
+    ],
+    [
+     "Extras",
+     "USB, alarm, rear box"
+    ]
+   ],
+   "description": "Jag 200 scooter for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 168.9cc, 7.4kW @ 7000 rpm",
+    "<strong>Top Speed:</strong> ~58 mph",
+    "<strong>Extras:</strong> USB, alarm, rear box"
+   ]
+  },
+  "scooters-magnum-50cc": {
+   "main": "images/magnum50.jpg",
+   "thumbs": [
+    "images/magnum50.jpg",
+    "images/magnum50-2.jpg",
+    "images/magnum50-3.jpg",
+    "images/magnum50-4.jpg",
+    "images/magnum50-5.jpg",
+    "images/magnum50-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "49.3cc GY6, 4-stroke, air-cooled"
+    ],
+    [
+     "Power",
+     "2.4kW &middot; 2.8 N&middot;m torque"
+    ],
+    [
+     "Top Speed",
+     "~37 mph (60 km/h)"
+    ],
+    [
+     "Transmission",
+     "CVT automatic"
+    ],
+    [
+     "Fuel Capacity",
+     "4.2 liters"
+    ],
+    [
+     "Brakes",
+     "Front disc &middot; rear drum"
+    ],
+    [
+     "Tires",
+     "3.5-10 front &amp; rear"
+    ],
+    [
+     "Suspension",
+     "Telescopic front &middot; spring hydraulic rear"
+    ],
+    [
+     "Weight",
+     "50 kg wet"
+    ],
+    [
+     "Max Load",
+     "100 kg"
+    ],
+    [
+     "Dimensions",
+     "1700 &times; 650 &times; 1160mm &middot; 1250mm wheelbase"
+    ],
+    [
+     "Compression Ratio",
+     "10.5:1"
+    ],
+    [
+     "Extras",
+     "Rear box, alarm, USB"
+    ]
+   ],
+   "description": "Magnum 50cc scooter for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 49.3cc GY6, 2.4kW",
+    "<strong>Top Speed:</strong> ~37 mph",
+    "<strong>Extras:</strong> Rear box, alarm, USB"
+   ]
+  },
+  "scooters-marchal-x200-delivery-edition": {
+   "main": "images/marchalx200.jpg",
+   "thumbs": [
+    "images/marchalx200.jpg",
+    "images/marchalx200-2.jpg",
+    "images/marchalx200-3.jpg",
+    "images/marchalx200-4.jpg",
+    "images/marchalx200-5.jpg",
+    "images/marchalx200-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "168cc GY6, 4-stroke, air-cooled"
+    ],
+    [
+     "Power",
+     "6.8kW &middot; 9.6 N&middot;m torque"
+    ],
+    [
+     "Top Speed",
+     "~62 mph (100 km/h)"
+    ],
+    [
+     "Transmission",
+     "Automatic CVT"
+    ],
+    [
+     "Fuel Capacity",
+     "5 liters"
+    ],
+    [
+     "Brakes",
+     "Front disc &middot; rear drum"
+    ],
+    [
+     "Tires",
+     "130/60-13 front &amp; rear"
+    ],
+    [
+     "Suspension",
+     "Telescopic front &middot; spring hydraulic rear"
+    ],
+    [
+     "Weight",
+     "115 kg wet"
+    ],
+    [
+     "Max Load",
+     "150 kg"
+    ],
+    [
+     "Dimensions",
+     "1970mm L &times; 710mm W &times; 1160mm H &middot; 1440mm wheelbase"
+    ],
+    [
+     "Built For",
+     "Delivery"
+    ],
+    [
+     "Extras",
+     "LED lights, digital speedometer, rear box, MP3, alarm, USB"
+    ]
+   ],
+   "description": "Marchal X200 Delivery Edition scooter for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 168cc GY6, air-cooled",
+    "<strong>Top Speed:</strong> ~62 mph",
+    "<strong>Built For:</strong> Delivery &middot; 150kg max load"
+   ]
+  },
+  "scooters-milano-150": {
+   "main": "images/milano150.jpg",
+   "thumbs": [
+    "images/milano150.jpg",
+    "images/milano150-2.jpg",
+    "images/milano150-3.jpg",
+    "images/milano150-4.jpg",
+    "images/milano150-5.jpg",
+    "images/milano150-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "150cc (YB150T-9), 1-cylinder, 4-stroke, air-cooled"
+    ],
+    [
+     "Power",
+     "5.8kW @ 7500 rpm &middot; 9.3 N&middot;m torque @ 7000 rpm"
+    ],
+    [
+     "Top Speed",
+     "~53 mph (85 km/h)"
+    ],
+    [
+     "Fuel System",
+     "Carburetor &middot; CDI ignition"
+    ],
+    [
+     "Brakes",
+     "Front disc &middot; rear drum"
+    ],
+    [
+     "Tires",
+     "120/70-12 front &amp; rear, aluminum wheels"
+    ],
+    [
+     "Suspension",
+     "Double absorber rear"
+    ],
+    [
+     "Weight",
+     "106 kg net"
+    ],
+    [
+     "Max Load",
+     "150 kg"
+    ],
+    [
+     "Dimensions",
+     "2020 &times; 680 &times; 1375mm"
+    ],
+    [
+     "Extras",
+     "Digital speedometer, LED lighting, USB charger, mechanical lock, windshield, rear storage box, alarm, MP3 speakers"
+    ]
+   ],
+   "description": "Milano 150 scooter for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 150cc, 5.8kW @ 7500 rpm",
+    "<strong>Top Speed:</strong> ~53 mph",
+    "<strong>Extras:</strong> USB charger, windshield, rear box, alarm"
+   ]
+  },
+  "scooters-milano-50": {
+   "main": "images/milano50.jpg",
+   "thumbs": [
+    "images/milano50.jpg",
+    "images/milano50-2.jpg",
+    "images/milano50-3.jpg",
+    "images/milano50-4.jpg",
+    "images/milano50-5.jpg",
+    "images/milano50-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "50cc (YB50QT-9), 1-cylinder, 4-stroke, air-cooled"
+    ],
+    [
+     "Power",
+     "2.1kW @ 7000 rpm &middot; 7 N&middot;m torque"
+    ],
+    [
+     "Top Speed",
+     "~28 mph (45 km/h)"
+    ],
+    [
+     "Fuel System",
+     "Carburetor &middot; CDI ignition"
+    ],
+    [
+     "Brakes",
+     "Front disc &middot; rear drum"
+    ],
+    [
+     "Tires",
+     "90/90-12 front &amp; rear, aluminum wheels"
+    ],
+    [
+     "Suspension",
+     "Double absorber rear"
+    ],
+    [
+     "Dimensions",
+     "2000 &times; 676 &times; 1340mm &middot; 1275mm wheelbase"
+    ],
+    [
+     "Weight",
+     "94 kg"
+    ],
+    [
+     "Max Load",
+     "150 kg"
+    ],
+    [
+     "Extras",
+     "Digital speedometer, USB charging, mechanical lock, windshield, rear box, alarm, MP3 &amp; speaker"
+    ]
+   ],
+   "description": "Milano 50 scooter for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 50cc, 2.1kW @ 7000 rpm",
+    "<strong>Top Speed:</strong> ~28 mph",
+    "<strong>Extras:</strong> USB charger, windshield, rear box"
+   ]
+  },
+  "scooters-nevo-200": {
+   "main": "images/nevo200.jpg",
+   "thumbs": [
+    "images/nevo200.jpg",
+    "images/nevo200-2.jpg",
+    "images/nevo200-3.jpg",
+    "images/nevo200-4.jpg",
+    "images/nevo200-5.jpg",
+    "images/nevo200-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "200cc class"
+    ],
+    [
+     "Note",
+     "Full performance spec sheet not published online &mdash; ask in-store for complete details"
+    ]
+   ],
+   "description": "Nevo 200 scooter for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 200cc class",
+    "<strong>Spec sheet:</strong> Ask in-store for full details"
+   ]
+  },
+  "scooters-razr-150cc": {
+   "main": "images/razr150.jpg",
+   "thumbs": [
+    "images/razr150.jpg",
+    "images/razr150-2.jpg",
+    "images/razr150-3.jpg",
+    "images/razr150-4.jpg",
+    "images/razr150-5.jpg",
+    "images/razr150-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "150cc"
+    ],
+    [
+     "Note",
+     "Full spec sheet not published online &mdash; ask in-store for complete details"
+    ]
+   ],
+   "description": "Razr 150cc scooter for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 150cc",
+    "<strong>Spec sheet:</strong> Ask in-store for full details"
+   ]
+  },
+  "scooters-razr-200cc": {
+   "main": "images/razr200.jpg",
+   "thumbs": [
+    "images/razr200.jpg",
+    "images/razr200-2.jpg",
+    "images/razr200-3.jpg",
+    "images/razr200-4.jpg",
+    "images/razr200-5.jpg",
+    "images/razr200-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "200cc"
+    ],
+    [
+     "Note",
+     "Full spec sheet not published online &mdash; ask in-store for complete details"
+    ]
+   ],
+   "description": "Razr 200cc scooter for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 200cc",
+    "<strong>Spec sheet:</strong> Ask in-store for full details"
+   ]
+  },
+  "scooters-rocket-150cc": {
+   "main": "images/rocket150.jpg",
+   "thumbs": [
+    "images/rocket150.jpg",
+    "images/rocket150-2.jpg",
+    "images/rocket150-3.jpg",
+    "images/rocket150-4.jpg",
+    "images/rocket150-5.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "149.6cc (LK157QMJ), 4-stroke, single-cylinder, air-forced cool"
+    ],
+    [
+     "Top Speed",
+     "80 km/h (50 mph)"
+    ],
+    [
+     "Starting",
+     "Electric &amp; kick start, CDI ignition"
+    ],
+    [
+     "Transmission",
+     "Automatic, belt drive"
+    ],
+    [
+     "Oil",
+     "10W40"
+    ],
+    [
+     "Brakes",
+     "Front &amp; rear disc"
+    ],
+    [
+     "Tires",
+     "130/70-12 front &amp; rear"
+    ],
+    [
+     "Weight",
+     "115 kg &middot; Max Load: 150 kg"
+    ],
+    [
+     "Wheelbase",
+     "1360mm &middot; Dimensions: 1930 &times; 690 &times; 1025mm"
+    ]
+   ],
+   "description": "Rocket 150cc scooter for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 149.6cc, air-forced cool",
+    "<strong>Top Speed:</strong> 80 km/h (50 mph)",
+    "<strong>Transmission:</strong> Automatic, belt drive"
+   ]
+  },
+  "scooters-roma-150cc": {
+   "main": "images/roma150.jpg",
+   "thumbs": [
+    "images/roma150.jpg",
+    "images/roma150-2.jpg",
+    "images/roma150-3.jpg",
+    "images/roma150-4.jpg",
+    "images/roma150-5.jpg",
+    "images/roma150-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "149.6cc (LK157QMJ), 4-stroke, single-cylinder, air-forced cool"
+    ],
+    [
+     "Top Speed",
+     "80 km/h (50 mph)"
+    ],
+    [
+     "Starting",
+     "Electric &amp; kick start, CDI ignition"
+    ],
+    [
+     "Transmission",
+     "Automatic, belt drive"
+    ],
+    [
+     "Oil",
+     "10W40 &middot; Battery: 12V 7Ah"
+    ],
+    [
+     "Brakes",
+     "Front &amp; rear disc"
+    ],
+    [
+     "Tires",
+     "130/60-13 front &amp; rear"
+    ],
+    [
+     "Weight",
+     "115 kg &middot; Max Load: 150 kg"
+    ]
+   ],
+   "description": "Roma 150cc scooter for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 149.6cc, air-forced cool",
+    "<strong>Top Speed:</strong> 80 km/h (50 mph)",
+    "<strong>Transmission:</strong> Automatic, belt drive"
+   ]
+  },
+  "scooters-tank-combat-200": {
+   "main": "images/tankcombat200.jpg",
+   "thumbs": [
+    "images/tankcombat200.jpg",
+    "images/tankcombat200-2.jpg",
+    "images/tankcombat200-3.jpg",
+    "images/tankcombat200-4.jpg",
+    "images/tankcombat200-5.jpg",
+    "images/tankcombat200-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "169cc, single-cylinder, 4-stroke, forced air-cooled"
+    ],
+    [
+     "Power",
+     "7.0kW @ 6500 rpm"
+    ],
+    [
+     "Top Speed",
+     "~53 mph (85 km/h)"
+    ],
+    [
+     "Fuel Capacity",
+     "8.5 liters"
+    ],
+    [
+     "Range",
+     "~200+ km"
+    ],
+    [
+     "Brakes",
+     "Front &amp; rear disc"
+    ],
+    [
+     "Tires",
+     "130/60-13 front &amp; rear"
+    ],
+    [
+     "Suspension",
+     "Upright front fork w/ dust cover &middot; reinforced dual rear shocks"
+    ],
+    [
+     "Weight / Seat Height",
+     "127 kg curb &middot; 785mm seat"
+    ],
+    [
+     "Overall Length",
+     "1920mm"
+    ],
+    [
+     "Extras",
+     "Dual leather seat, built-in speakers, 3/4-helmet storage box, full crash bars, LCD panel, anti-theft alarm, electric/kick start"
+    ]
+   ],
+   "description": "Tank Combat 200 scooter for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 169cc, 7.0kW @ 6500 rpm",
+    "<strong>Top Speed:</strong> ~53 mph",
+    "<strong>Extras:</strong> LCD panel, anti-theft alarm, full crash bars"
+   ]
+  },
+  "scooters-tank-defender-150": {
+   "main": "images/tankdefender150.jpg",
+   "thumbs": [
+    "images/tankdefender150.jpg",
+    "images/tankdefender150-2.jpg",
+    "images/tankdefender150-3.jpg",
+    "images/tankdefender150-4.jpg",
+    "images/tankdefender150-5.jpg",
+    "images/tankdefender150-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "150cc, single-cylinder, 4-stroke, air-cooled"
+    ],
+    [
+     "Power",
+     "6.8kW @ 7500 rpm &middot; 9.8 N&middot;m torque @ 6000 rpm"
+    ],
+    [
+     "Top Speed",
+     "~53&ndash;56 mph (85&ndash;90 km/h)"
+    ],
+    [
+     "Starting",
+     "Electric + kick start"
+    ],
+    [
+     "Fuel Capacity",
+     "8.0 liters"
+    ],
+    [
+     "Brakes",
+     "Front disc &middot; rear drum"
+    ],
+    [
+     "Tires",
+     "120/70-12 front &amp; rear"
+    ],
+    [
+     "Weight",
+     "118 kg net"
+    ],
+    [
+     "Dimensions",
+     "1880mm L &times; 740mm W &times; 1140mm H &middot; 1320mm wheelbase"
+    ],
+    [
+     "Ground Clearance",
+     "130mm"
+    ],
+    [
+     "Payload Capacity",
+     "150 kg"
+    ],
+    [
+     "Battery",
+     "12V 7Ah"
+    ]
+   ],
+   "description": "Tank Defender 150 scooter for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 150cc, 6.8kW @ 7500 rpm",
+    "<strong>Top Speed:</strong> ~53–56 mph",
+    "<strong>Starting:</strong> Electric + kick start"
+   ]
+  },
+  "scooters-tank-pro-x200-elite": {
+   "main": "images/tankpro200.jpg",
+   "thumbs": [
+    "images/tankpro200.jpg",
+    "images/tankpro200-2.jpg",
+    "images/tankpro200-3.jpg",
+    "images/tankpro200-4.jpg",
+    "images/tankpro200-5.jpg",
+    "images/tankpro200-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "168.9cc, 1-cylinder / 4-stroke / 2-valve (1P61QMK-A)"
+    ],
+    [
+     "Power",
+     "7.4kW @ 7000 rpm &middot; 11 N&middot;m torque @ 6000 rpm"
+    ],
+    [
+     "Top Speed",
+     "59 mph"
+    ],
+    [
+     "Transmission",
+     "Automatic CVT, V-belt final drive"
+    ],
+    [
+     "Fuel Capacity",
+     "5.6 liters"
+    ],
+    [
+     "Battery",
+     "12V 8.6Ah"
+    ],
+    [
+     "Brakes",
+     "Front disc 230mm (2-piston) &middot; rear disc 220mm (2-piston)"
+    ],
+    [
+     "Tires",
+     "130/70-13 front &amp; rear"
+    ],
+    [
+     "Suspension",
+     "Telescopic front fork (95mm travel) &middot; dual shock rear, preload adjustable (60mm travel)"
+    ],
+    [
+     "Weight / Seat Height",
+     "122 kg dry &middot; 780mm seat"
+    ],
+    [
+     "Dimensions",
+     "1935mm L &times; 725mm W &times; 1240mm H &middot; 1345mm wheelbase"
+    ],
+    [
+     "Max Load",
+     "160 kg"
+    ],
+    [
+     "Extras",
+     "Keyless start, USB charger, alarm, backrest"
+    ]
+   ],
+   "description": "Tank Pro X200 Elite scooter for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 168.9cc, 7.4kW @ 7000 rpm",
+    "<strong>Top Speed:</strong> 59 mph",
+    "<strong>Extras:</strong> Keyless start, dual disc brakes, backrest"
+   ]
+  },
+  "scooters-tank-sport-x200": {
+   "main": "images/tanksportx200.jpg",
+   "thumbs": [
+    "images/tanksportx200.jpg",
+    "images/tanksportx200-2.jpg",
+    "images/tanksportx200-3.jpg",
+    "images/tanksportx200-4.jpg",
+    "images/tanksportx200-5.jpg",
+    "images/tanksportx200-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "200cc"
+    ],
+    [
+     "Note",
+     "Full spec sheet not published online &mdash; ask in-store for complete details"
+    ]
+   ],
+   "description": "Tank Sport X200 scooter for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 200cc",
+    "<strong>Spec sheet:</strong> Ask in-store for full details"
+   ]
+  },
+  "scooters-tank-x200-pro": {
+   "main": "images/tankx200pro.jpg",
+   "thumbs": [
+    "images/tankx200pro.jpg",
+    "images/tankx200pro-2.jpg",
+    "images/tankx200pro-3.jpg",
+    "images/tankx200pro-4.jpg",
+    "images/tankx200pro-5.jpg",
+    "images/tankx200pro-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "168cc GY6, 4-stroke, air-cooled"
+    ],
+    [
+     "Power",
+     "6.8kW &middot; 9.3 N&middot;m torque"
+    ],
+    [
+     "Top Speed",
+     "~62 mph (100 km/h)"
+    ],
+    [
+     "Transmission",
+     "CVT automatic"
+    ],
+    [
+     "Fuel Capacity",
+     "5 liters"
+    ],
+    [
+     "Fuel Consumption",
+     "~2.4 L/100km"
+    ],
+    [
+     "Brakes",
+     "Front &amp; rear disc"
+    ],
+    [
+     "Tires",
+     "130/60-13 front &amp; rear"
+    ],
+    [
+     "Suspension",
+     "Telescopic front &middot; spring hydraulic rear"
+    ],
+    [
+     "Weight",
+     "110 kg wet"
+    ],
+    [
+     "Seat Height",
+     "80cm"
+    ],
+    [
+     "Ground Clearance",
+     "11cm"
+    ],
+    [
+     "Max Load",
+     "150 kg"
+    ],
+    [
+     "Extras",
+     "USB, Bluetooth, rear basket"
+    ]
+   ],
+   "description": "Tank X200 Pro scooter for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 168cc GY6, 6.8kW",
+    "<strong>Top Speed:</strong> ~62 mph",
+    "<strong>Extras:</strong> USB, Bluetooth, rear basket"
+   ]
+  },
+  "scooters-viper-150cc": {
+   "main": "images/viper150b.jpg",
+   "thumbs": [
+    "images/viper150b.jpg",
+    "images/viper150b-2.jpg",
+    "images/viper150b-3.jpg",
+    "images/viper150b-4.jpg",
+    "images/viper150b-5.jpg",
+    "images/viper150b-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "149cc, single-cylinder, 4-stroke, air-cooled"
+    ],
+    [
+     "Power",
+     "6.3kW @ 7500 rpm &middot; 8.8 N&middot;m torque @ 6000 rpm"
+    ],
+    [
+     "Compression Ratio",
+     "9.2:1"
+    ],
+    [
+     "Transmission",
+     "CVT (carbureted)"
+    ],
+    [
+     "Fuel Capacity",
+     "4.2 liters"
+    ],
+    [
+     "Brakes",
+     "Front disc &middot; rear drum"
+    ],
+    [
+     "Tires",
+     "3.50-10, 10in aluminum rims"
+    ],
+    [
+     "Suspension",
+     "Telescopic front &middot; spring hydraulic rear"
+    ],
+    [
+     "Dimensions",
+     "1780 &times; 640 &times; 1080mm &middot; 1220mm wheelbase"
+    ],
+    [
+     "Battery",
+     "LIYANG GEL 7A"
+    ],
+    [
+     "Extras",
+     "USB charger, rear box"
+    ]
+   ],
+   "description": "Viper 150cc scooter for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 149cc, 6.3kW @ 7500 rpm",
+    "<strong>Wheels:</strong> 10in aluminum rims",
+    "<strong>Extras:</strong> USB charger, rear box"
+   ]
+  },
+  "scooters-viper-49cc": {
+   "main": "images/viper49.jpg",
+   "thumbs": [
+    "images/viper49.jpg",
+    "images/viper49-2.jpg",
+    "images/viper49-3.jpg",
+    "images/viper49-4.jpg",
+    "images/viper49-5.jpg",
+    "images/viper49-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "49cc, 4-stroke, single-cylinder, air-cooled"
+    ],
+    [
+     "Power",
+     "2.20kW @ 8000 rpm"
+    ],
+    [
+     "Top Speed",
+     "25 mph"
+    ],
+    [
+     "Fuel Capacity",
+     "4.2 liters"
+    ],
+    [
+     "Battery",
+     "12V 7Ah"
+    ],
+    [
+     "Starting",
+     "Electric / Kick"
+    ],
+    [
+     "Brakes",
+     "Front disc &middot; rear drum"
+    ],
+    [
+     "Tires",
+     "3.00-10 front &amp; rear"
+    ],
+    [
+     "Dimensions",
+     "1810 &times; 725 &times; 1050mm &middot; 1302mm wheelbase"
+    ],
+    [
+     "Weight",
+     "180 lbs dry / 200 lbs gross"
+    ]
+   ],
+   "description": "Viper 49cc scooter for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 49cc, 2.2kW @ 8000 rpm",
+    "<strong>Top Speed:</strong> 25 mph",
+    "<strong>Starting:</strong> Electric + kick start"
+   ]
+  },
+  "scooters-viper-st-50cc": {
+   "main": "images/viperst50.jpg",
+   "thumbs": [
+    "images/viperst50.jpg",
+    "images/viperst50-2.jpg",
+    "images/viperst50-3.jpg",
+    "images/viperst50-4.jpg",
+    "images/viperst50-5.jpg",
+    "images/viperst50-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "49.6cc (1P39QMA), 1-cylinder / 4-stroke / 2-valve"
+    ],
+    [
+     "Power",
+     "2.6kW @ 8500 rpm &middot; 3.1 N&middot;m torque @ 7000 rpm"
+    ],
+    [
+     "Top Speed",
+     "~40 mph (65 km/h)"
+    ],
+    [
+     "Transmission",
+     "Automatic CVT, V-belt final drive"
+    ],
+    [
+     "Fuel Capacity",
+     "6.6 liters (carbureted, CDI)"
+    ],
+    [
+     "Brakes",
+     "Front disc 180mm &middot; rear drum 110mm"
+    ],
+    [
+     "Tires",
+     "3.50-10 front &amp; rear"
+    ],
+    [
+     "Suspension",
+     "Telescopic front forks (82mm travel) &middot; mono-shock rear (70mm travel)"
+    ],
+    [
+     "Weight / Seat Height",
+     "105 kg dry &middot; 750mm seat"
+    ],
+    [
+     "Dimensions",
+     "1790 &times; 680 &times; 1070mm &middot; 1220mm wheelbase"
+    ],
+    [
+     "Extras",
+     "USB, alarm, rear box"
+    ]
+   ],
+   "description": "Viper ST-50cc scooter for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 49.6cc, 2.6kW @ 8500 rpm",
+    "<strong>Top Speed:</strong> ~40 mph",
+    "<strong>Extras:</strong> USB, alarm, rear box"
+   ]
+  },
+  "scooters-viper-vtr-150cc": {
+   "main": "images/viper150.jpg",
+   "thumbs": [
+    "images/viper150.jpg",
+    "images/viper150-2.jpg",
+    "images/viper150-3.jpg",
+    "images/viper150-4.jpg",
+    "images/viper150-5.jpg",
+    "images/viper150-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "150cc, 1-cylinder / 4-stroke / 2-valve"
+    ],
+    [
+     "Power",
+     "6.6kW @ 7500 rpm &middot; 9.2 N&middot;m torque"
+    ],
+    [
+     "Top Speed",
+     "56 mph"
+    ],
+    [
+     "Transmission",
+     "Automatic CVT, V-belt final drive"
+    ],
+    [
+     "Fuel Capacity",
+     "5.6 liters"
+    ],
+    [
+     "Battery",
+     "12V 6Ah"
+    ],
+    [
+     "Brakes",
+     "Front disc (180mm) &middot; rear drum (110mm)"
+    ],
+    [
+     "Tires",
+     "3.50-10 front &amp; rear"
+    ],
+    [
+     "Suspension",
+     "Telescopic front fork &middot; mono-shock rear"
+    ],
+    [
+     "Weight / Seat Height",
+     "105 kg dry &middot; 750mm seat"
+    ],
+    [
+     "Extras",
+     "USB port, alarm system, rear storage box"
+    ]
+   ],
+   "description": "VIPER VTR 150cc scooter for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 150cc, 1-cylinder / 4-stroke / 2-valve",
+    "<strong>Top Speed:</strong> 56 mph",
+    "<strong>Extras:</strong> USB port, alarm system, rear storage box"
+   ]
+  },
+  "scooters-vogue-50": {
+   "main": "images/vogue50.jpg",
+   "thumbs": [
+    "images/vogue50.jpg",
+    "images/vogue50-2.jpg",
+    "images/vogue50-3.jpg",
+    "images/vogue50-4.jpg",
+    "images/vogue50-5.jpg",
+    "images/vogue50-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "49cc, single-cylinder, 4-stroke, air-cooled"
+    ],
+    [
+     "Power",
+     "2.4kW @ 8000 rpm &middot; 2.8 N&middot;m torque @ 6500 rpm"
+    ],
+    [
+     "Transmission",
+     "CVT"
+    ],
+    [
+     "Fuel Capacity",
+     "4 liters"
+    ],
+    [
+     "Brakes",
+     "Front disc &middot; rear drum"
+    ],
+    [
+     "Tires",
+     "90/90-10, 10in aluminum rims"
+    ],
+    [
+     "Suspension",
+     "Telescopic front &middot; spring hydraulic rear"
+    ],
+    [
+     "Dimensions",
+     "1790 &times; 670 &times; 1075mm &middot; 1250mm wheelbase"
+    ],
+    [
+     "Battery",
+     "LIYANG GEL 7A"
+    ],
+    [
+     "Extras",
+     "USB charger, rear box"
+    ]
+   ],
+   "description": "Vogue 50 scooter for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 49cc, 2.4kW @ 8000 rpm",
+    "<strong>Wheels:</strong> 90/90-10, 10in alloy rims",
+    "<strong>Extras:</strong> USB charger, rear box"
+   ]
+  },
+  "scooters-vtr-200": {
+   "main": "images/vtr200.jpg",
+   "thumbs": [
+    "images/vtr200.jpg",
+    "images/vtr200-2.jpg",
+    "images/vtr200-3.jpg",
+    "images/vtr200-4.jpg",
+    "images/vtr200-5.jpg",
+    "images/vtr200-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "168.9cc, 1-cylinder / 4-stroke / 2-valve"
+    ],
+    [
+     "Power",
+     "7.4kW @ 7000 rpm &middot; 11 N&middot;m torque @ 6000 rpm"
+    ],
+    [
+     "Top Speed",
+     "59 mph"
+    ],
+    [
+     "Transmission",
+     "Automatic CVT, V-belt final drive"
+    ],
+    [
+     "Fuel Capacity",
+     "5.6 liters (carbureted)"
+    ],
+    [
+     "Brakes",
+     "Front disc 230mm (2-piston) &middot; rear disc 220mm (2-piston)"
+    ],
+    [
+     "Tires",
+     "120/70-12 front &middot; 130/70-12 rear"
+    ],
+    [
+     "Suspension",
+     "Telescopic front fork, non-adjustable (84mm travel) &middot; dual shock rear, preload adjustable (70mm travel)"
+    ],
+    [
+     "Weight / Seat Height",
+     "107 kg dry &middot; 800mm seat"
+    ],
+    [
+     "Dimensions",
+     "1940mm length"
+    ],
+    [
+     "Max Payload",
+     "160 kg"
+    ],
+    [
+     "Extras",
+     "USB port, alarm, rear storage box"
+    ]
+   ],
+   "description": "VTR 200 scooter for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 168.9cc, 7.4kW @ 7000 rpm",
+    "<strong>Top Speed:</strong> 59 mph",
+    "<strong>Extras:</strong> Dual disc brakes, USB, alarm, rear box"
+   ]
+  },
+  "scooters-vtr-sport-x200": {
+   "main": "images/vtrx200.jpg",
+   "thumbs": [
+    "images/vtrx200.jpg",
+    "images/vtrx200-2.jpg",
+    "images/vtrx200-3.jpg",
+    "images/vtrx200-4.jpg",
+    "images/vtrx200-5.jpg",
+    "images/vtrx200-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "168.9cc, 4-stroke, air-cooled (GY6)"
+    ],
+    [
+     "Power",
+     "7.5kW @ 7000 rpm &middot; 11 N&middot;m torque @ 6000 rpm"
+    ],
+    [
+     "Compression Ratio",
+     "9.5:1"
+    ],
+    [
+     "Transmission",
+     "Belt (CVT)"
+    ],
+    [
+     "Fuel Capacity",
+     "8.3 liters"
+    ],
+    [
+     "Brakes",
+     "Front &amp; rear disc"
+    ],
+    [
+     "Tires",
+     "2.5MT&times;14 front &middot; 3.50MT&times;14 rear"
+    ],
+    [
+     "Suspension",
+     "Inverted front shocks &middot; spring rear shock"
+    ],
+    [
+     "Seat Height",
+     "820mm &middot; Wheelbase: 1300mm"
+    ],
+    [
+     "Weight",
+     "110 kg wet &middot; Max Load: 250 kg"
+    ],
+    [
+     "Ground Clearance",
+     "220mm"
+    ],
+    [
+     "Dimensions",
+     "1720 &times; 740 &times; 1060mm"
+    ]
+   ],
+   "description": "VTR Sport X200 scooter for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 168.9cc, 7.5kW @ 7000 rpm",
+    "<strong>Transmission:</strong> Belt (CVT)",
+    "<strong>Seat Height:</strong> 820mm"
+   ]
+  },
+  "utvs-cross-fire-200-efi": {
+   "main": "images/crossfire200.jpg",
+   "thumbs": [
+    "images/crossfire200.jpg",
+    "images/crossfire200-2.jpg",
+    "images/crossfire200-3.jpg",
+    "images/crossfire200-4.jpg",
+    "images/crossfire200-5.jpg",
+    "images/crossfire200-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "177.3cc, single-cylinder, 4-stroke, EFI"
+    ],
+    [
+     "Power",
+     "12 HP @ 7000&ndash;7500 rpm &middot; 13 N&middot;m torque @ 6000&ndash;6500 rpm"
+    ],
+    [
+     "Top Speed",
+     "~30 mph"
+    ],
+    [
+     "Transmission",
+     "CVT, F/N/R, chain drive"
+    ],
+    [
+     "Drive",
+     "2WD"
+    ],
+    [
+     "Brakes",
+     "Four-wheel disc, hand-actuated parking brake"
+    ],
+    [
+     "Suspension",
+     "Dual A-arm front &middot; swingarm dual shocks rear"
+    ],
+    [
+     "Tires",
+     "AT22x7-10 front &middot; AT22x10-10 rear"
+    ],
+    [
+     "Weight",
+     "837.7 lbs"
+    ],
+    [
+     "Cargo Bed",
+     "21.8 &times; 49.6 &times; 6.5 in &middot; 441 lb capacity"
+    ],
+    [
+     "Fuel Capacity",
+     "3.1 gallons &middot; Ground Clearance: 5.5 in"
+    ],
+    [
+     "Rider Age",
+     "18+"
+    ]
+   ],
+   "description": "Cross Fire 200 EFI UTV for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 177.3cc single-cylinder, 4-stroke EFI",
+    "<strong>Power:</strong> 12 HP @ 7000&ndash;7500 rpm",
+    "<strong>Top Speed:</strong> ~30 mph"
+   ]
+  },
+  "utvs-rover-200-efi": {
+   "main": "images/rover200.jpg",
+   "thumbs": [
+    "images/rover200.jpg",
+    "images/rover200-2.jpg",
+    "images/rover200-3.jpg",
+    "images/rover200-4.jpg",
+    "images/rover200-5.jpg",
+    "images/rover200-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "169cc, single-cylinder, 4-stroke, oil-cooled"
+    ],
+    [
+     "Power",
+     "9.65 HP @ 7500 rpm &middot; 11.4 N&middot;m torque @ 4500 rpm"
+    ],
+    [
+     "Top Speed",
+     "~25 mph &middot; Max Climb: 15&deg;"
+    ],
+    [
+     "Drive",
+     "Chain final drive, CDI ignition"
+    ],
+    [
+     "Brakes",
+     "Hydraulic disc"
+    ],
+    [
+     "Suspension",
+     "Double A-arm independent front (110mm travel) &middot; single shock swingarm rear (100mm travel)"
+    ],
+    [
+     "Tires",
+     "24x8-12 front &amp; rear &middot; Steering radius: 141.7 in"
+    ],
+    [
+     "Weight",
+     "785.4 lbs dry"
+    ],
+    [
+     "Fuel Capacity",
+     "5.06 gallons &middot; Battery: 12V 9Ah"
+    ],
+    [
+     "Bed",
+     "Rear dump bed &middot; Rear axle load: 488.4 lbs"
+    ],
+    [
+     "Ground Clearance",
+     "6.1 in &middot; Rider Age: 18+"
+    ]
+   ],
+   "description": "Rover 200 EFI UTV for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 169cc single-cylinder, oil-cooled",
+    "<strong>Power:</strong> 7.2kW / 9.65 HP @ 7500 rpm",
+    "<strong>Top Speed:</strong> ~25 mph"
+   ]
+  }
+ },
+ "categories": {
+  "scooters": {
+   "title": "Gas Scooters",
+   "intro": "From commuter-friendly 150cc scooters to delivery-ready 200cc models, here's what we've got in stock right now. Call or stop by for current availability and pricing.",
+   "title_tag": "Scooters | NYC ATV Warehouse",
+   "meta": "Shop gas scooters at NYC ATV Warehouse — VIPER 150cc, Tank Pro X200 Elite, Tank Defender 150, Marchal X200 Delivery Edition, and Intrepid 200. Located in Little Ferry, NJ."
+  },
+  "atvs": {
+   "title": "ATVs",
+   "intro": "25 models in stock — from 110cc youth quads to full-size 700cc 4x4 units. Call or stop by for current availability and pricing.",
+   "title_tag": "ATVs | NYC ATV Warehouse",
+   "meta": "Shop ATVs at NYC ATV Warehouse — youth quads, mid-size trail ATVs, and full-size 4x4 units from 110cc to 700cc. Located in Little Ferry, NJ."
+  },
+  "dirtbikes": {
+   "title": "Dirt Bikes",
+   "intro": "25 Apollo dirt bike models in stock — from 70cc youth mini bikes to full-size 300cc enduro machines. Call or stop by for current availability and pricing.",
+   "title_tag": "Dirt Bikes | NYC ATV Warehouse",
+   "meta": "Shop Apollo dirt bikes at NYC ATV Warehouse — youth mini bikes, 125cc trail bikes, and full-size 300cc enduro models. Located in Little Ferry, NJ."
+  },
+  "gokarts": {
+   "title": "Go-Karts",
+   "intro": "2-seat off-road buggies built for the trail. Call or stop by for current availability and pricing.",
+   "title_tag": "Go-Karts | NYC ATV Warehouse",
+   "meta": "Shop off-road go-karts at NYC ATV Warehouse — T-Rex 125cc and Jaguar 200 EFI 2-seat buggies. Located in Little Ferry, NJ."
+  },
+  "utvs": {
+   "title": "UTVs",
+   "intro": "Utility side-by-sides built for work and the trail, with dump-bed cargo capacity. Call or stop by for current availability and pricing.",
+   "title_tag": "UTVs | NYC ATV Warehouse",
+   "meta": "Shop utility side-by-sides at NYC ATV Warehouse — Cross Fire 200 EFI and Rover 200 EFI dump-bed UTVs. Located in Little Ferry, NJ."
+  },
+  "ebikes": {
+   "title": "Electric Bikes &amp; Scooters",
+   "intro": "From street-legal cruisers to full-power electric dirt bikes, here's what we've got in stock right now. Call or stop by for current availability.",
+   "title_tag": "E-Bikes | NYC ATV Warehouse",
+   "meta": "Shop electric bikes and e-scooters at NYC ATV Warehouse — OUXI GT-2000, SPARK 48V, OUXI V8, GT06 E-Scooter, and RFN EVO 18. Located in Little Ferry, NJ."
+  }
+ },
+ "order": {
+  "scooters": [
+   "scooters-viper-vtr-150cc",
+   "scooters-tank-pro-x200-elite",
+   "scooters-tank-defender-150",
+   "scooters-marchal-x200-delivery-edition",
+   "scooters-intrepid-200",
+   "scooters-tank-combat-200",
+   "scooters-eco-50cc",
+   "scooters-magnum-50cc",
+   "scooters-milano-150",
+   "scooters-milano-50",
+   "scooters-denali-49cc",
+   "scooters-razr-150cc",
+   "scooters-razr-200cc",
+   "scooters-tank-sport-x200",
+   "scooters-jag-200",
+   "scooters-vtr-200",
+   "scooters-viper-150cc",
+   "scooters-viper-49cc",
+   "scooters-viper-st-50cc",
+   "scooters-focus-st-50cc",
+   "scooters-focus-st-150cc",
+   "scooters-tank-x200-pro",
+   "scooters-vogue-50",
+   "scooters-champion-200-efi",
+   "scooters-nevo-200",
+   "scooters-vtr-sport-x200",
+   "scooters-bullet-49cc",
+   "scooters-falcon-200cc",
+   "scooters-falcon-250cc",
+   "scooters-roma-150cc",
+   "scooters-rocket-150cc"
+  ],
+  "atvs": [
+   "atvs-xwolf-700cc-long-version",
+   "atvs-cyber-roamer-300-efi",
+   "atvs-maximus-450l",
+   "atvs-xwolf-700cc-short-version",
+   "atvs-xwolf-550-long-version",
+   "atvs-terminator-300cc",
+   "atvs-pentora-hunter-200-efi",
+   "atvs-cyber-roamer-250-efi",
+   "atvs-pentora-sport-250cc",
+   "atvs-commander-200cc-efi",
+   "atvs-commander-200cc",
+   "atvs-cougar-ut-200cc",
+   "atvs-cougar-sport-200cc",
+   "atvs-pentora-200-efi",
+   "atvs-pentora-sport-150cc",
+   "atvs-pentora-iride-125cc",
+   "atvs-pentora-125cc",
+   "atvs-falcon-x-125cc",
+   "atvs-commander-125cc",
+   "atvs-blazer-9-125cc",
+   "atvs-racer-125cc",
+   "atvs-rider-10-125cc",
+   "atvs-rider-9-125cc",
+   "atvs-mini-commander-110cc",
+   "atvs-rxr-110cc"
+  ],
+  "dirtbikes": [
+   "dirtbikes-db-21-70cc",
+   "dirtbikes-db-25-70cc",
+   "dirtbikes-db-27-110cc",
+   "dirtbikes-db-28-110cc",
+   "dirtbikes-db-32-110cc",
+   "dirtbikes-db-38-110cc",
+   "dirtbikes-db-x4-110cc",
+   "dirtbikes-db-x5-125cc",
+   "dirtbikes-db-x6-125cc",
+   "dirtbikes-db-x14-125cc-new-frame",
+   "dirtbikes-db-x15-125cc-new-frame",
+   "dirtbikes-db-x16-125cc-new-frame",
+   "dirtbikes-db-x18-125cc-new-frame",
+   "dirtbikes-db-x19-125cc-new-frame",
+   "dirtbikes-thunder-t20",
+   "dirtbikes-thunder-300cc-dlx",
+   "dirtbikes-vitacci-raven-250cc-xl",
+   "dirtbikes-thunder-140",
+   "dirtbikes-thunder-150cc",
+   "dirtbikes-thunder-150cc-dlx",
+   "dirtbikes-db-36-250cc",
+   "dirtbikes-thunder-250cc",
+   "dirtbikes-thunder-250cc-dlx",
+   "dirtbikes-thunder-300cc",
+   "dirtbikes-rxf150-freeride"
+  ],
+  "gokarts": [
+   "gokarts-t-rex-125cc",
+   "gokarts-jaguar-200-efi"
+  ],
+  "utvs": [
+   "utvs-cross-fire-200-efi",
+   "utvs-rover-200-efi"
+  ],
+  "ebikes": [
+   "ebikes-ouxi-gt-2000",
+   "ebikes-spark-48v",
+   "ebikes-ouxi-v8",
+   "ebikes-gt06-e-scooter",
+   "ebikes-rfn-evo-18",
+   "ebikes-rfn-e2-plus",
+   "ebikes-rfn-e2-pro-max",
+   "ebikes-rfn-warrior-pro-e15",
+   "ebikes-rfn-ares-rally-endurance-pro",
+   "ebikes-rfn-warrior-youth-sx-e5",
+   "ebikes-rfn-warrior-kids-sx-e350",
+   "ebikes-rfn-warrior-kids-sx-e500",
+   "ebikes-v8-max-dual-battery",
+   "ebikes-evo-20",
+   "ebikes-evo16",
+   "ebikes-gt-s-2000"
+  ]
+ }
+}

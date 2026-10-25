@@ -1,2 +1,7 @@
 .git
 index.zip
+scripts
+worker
+README.md
+price-sheet.csv
+*.ps1

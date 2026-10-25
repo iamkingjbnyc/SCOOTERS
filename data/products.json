@@ -1,0 +1,914 @@
+{
+ "_note": "Single source of truth for prices. Edit 'price' here (null = Call for pricing, not purchasable), then run: python3 scripts/build_store.py",
+ "products": [
+  {
+   "id": "atvs-blazer-9-125cc",
+   "name": "Blazer 9 125cc",
+   "category": "atvs",
+   "url": "atvs/blazer-9-125cc.html",
+   "image": "images/blazer9125.jpg",
+   "price": 1499.0,
+   "inStock": true
+  },
+  {
+   "id": "atvs-commander-125cc",
+   "name": "Commander 125cc",
+   "category": "atvs",
+   "url": "atvs/commander-125cc.html",
+   "image": "images/commander125.jpg",
+   "price": 1499.0,
+   "inStock": true
+  },
+  {
+   "id": "atvs-commander-200cc",
+   "name": "Commander 200cc",
+   "category": "atvs",
+   "url": "atvs/commander-200cc.html",
+   "image": "images/commander200.jpg",
+   "price": 2499.0,
+   "inStock": true
+  },
+  {
+   "id": "atvs-commander-200cc-efi",
+   "name": "Commander 200cc EFI",
+   "category": "atvs",
+   "url": "atvs/commander-200cc-efi.html",
+   "image": "images/commander200efi.jpg",
+   "price": 2427.95,
+   "inStock": true
+  },
+  {
+   "id": "atvs-cougar-sport-200cc",
+   "name": "Cougar Sport 200cc",
+   "category": "atvs",
+   "url": "atvs/cougar-sport-200cc.html",
+   "image": "images/cougarsport200.png",
+   "price": 2499.0,
+   "inStock": true
+  },
+  {
+   "id": "atvs-cougar-ut-200cc",
+   "name": "Cougar UT 200cc",
+   "category": "atvs",
+   "url": "atvs/cougar-ut-200cc.html",
+   "image": "images/cougarut200.jpg",
+   "price": 2299.0,
+   "inStock": true
+  },
+  {
+   "id": "atvs-cyber-roamer-250-efi",
+   "name": "Cyber Roamer 250 EFI",
+   "category": "atvs",
+   "url": "atvs/cyber-roamer-250-efi.html",
+   "image": "images/cyberroamer250.jpg",
+   "price": 3149.0,
+   "inStock": true
+  },
+  {
+   "id": "atvs-cyber-roamer-300-efi",
+   "name": "Cyber Roamer 300 EFI",
+   "category": "atvs",
+   "url": "atvs/cyber-roamer-300-efi.html",
+   "image": "images/cyberroamer300.jpg",
+   "price": 5499.0,
+   "inStock": true
+  },
+  {
+   "id": "atvs-falcon-x-125cc",
+   "name": "Falcon X 125cc",
+   "category": "atvs",
+   "url": "atvs/falcon-x-125cc.html",
+   "image": "images/falconx125.jpg",
+   "price": 1499.0,
+   "inStock": true
+  },
+  {
+   "id": "atvs-maximus-450l",
+   "name": "Maximus 450L",
+   "category": "atvs",
+   "url": "atvs/maximus-450l.html",
+   "image": "images/maximus450l.jpg",
+   "price": 5434.47,
+   "inStock": true
+  },
+  {
+   "id": "atvs-mini-commander-110cc",
+   "name": "Mini Commander 110cc",
+   "category": "atvs",
+   "url": "atvs/mini-commander-110cc.html",
+   "image": "images/minicommander110.jpg",
+   "price": 1399.0,
+   "inStock": true
+  },
+  {
+   "id": "atvs-pentora-125cc",
+   "name": "Pentora 125cc",
+   "category": "atvs",
+   "url": "atvs/pentora-125cc.html",
+   "image": "images/pentora125.png",
+   "price": 1599.0,
+   "inStock": true
+  },
+  {
+   "id": "atvs-pentora-200-efi",
+   "name": "Pentora 200 EFI",
+   "category": "atvs",
+   "url": "atvs/pentora-200-efi.html",
+   "image": "images/pentora200efi.jpg",
+   "price": 2499.0,
+   "inStock": true
+  },
+  {
+   "id": "atvs-pentora-hunter-200-efi",
+   "name": "Pentora Hunter 200 EFI",
+   "category": "atvs",
+   "url": "atvs/pentora-hunter-200-efi.html",
+   "image": "images/pentorahunter200.jpg",
+   "price": 2499.0,
+   "inStock": true
+  },
+  {
+   "id": "atvs-pentora-iride-125cc",
+   "name": "Pentora Iride 125cc",
+   "category": "atvs",
+   "url": "atvs/pentora-iride-125cc.html",
+   "image": "images/pentorairide125.jpg",
+   "price": 1499.0,
+   "inStock": true
+  },
+  {
+   "id": "atvs-pentora-sport-150cc",
+   "name": "Pentora Sport 150cc",
+   "category": "atvs",
+   "url": "atvs/pentora-sport-150cc.html",
+   "image": "images/pentorasport150.jpg",
+   "price": 1861.94,
+   "inStock": true
+  },
+  {
+   "id": "atvs-pentora-sport-250cc",
+   "name": "Pentora Sport 250cc",
+   "category": "atvs",
+   "url": "atvs/pentora-sport-250cc.html",
+   "image": "images/pentorasport250.jpg",
+   "price": 2599.0,
+   "inStock": true
+  },
+  {
+   "id": "atvs-racer-125cc",
+   "name": "Racer 125cc",
+   "category": "atvs",
+   "url": "atvs/racer-125cc.html",
+   "image": "images/racer125.jpg",
+   "price": 1499.0,
+   "inStock": true
+  },
+  {
+   "id": "atvs-rider-10-125cc",
+   "name": "Rider 10 \u2013 125cc",
+   "category": "atvs",
+   "url": "atvs/rider-10-125cc.html",
+   "image": "images/rider10125.jpg",
+   "price": 1499.0,
+   "inStock": true
+  },
+  {
+   "id": "atvs-rider-9-125cc",
+   "name": "Rider 9 \u2013 125cc",
+   "category": "atvs",
+   "url": "atvs/rider-9-125cc.html",
+   "image": "images/rider9125.jpg",
+   "price": 1149.99,
+   "inStock": true
+  },
+  {
+   "id": "atvs-rxr-110cc",
+   "name": "RXR 110cc",
+   "category": "atvs",
+   "url": "atvs/rxr-110cc.html",
+   "image": "images/rxr110.jpg",
+   "price": 1399.0,
+   "inStock": true
+  },
+  {
+   "id": "atvs-terminator-300cc",
+   "name": "Terminator 300cc",
+   "category": "atvs",
+   "url": "atvs/terminator-300cc.html",
+   "image": "images/terminator300.jpg",
+   "price": 4649.99,
+   "inStock": true
+  },
+  {
+   "id": "atvs-xwolf-550-long-version",
+   "name": "XWOLF 550 \u2013 Long Version",
+   "category": "atvs",
+   "url": "atvs/xwolf-550-long-version.html",
+   "image": "images/xwolf550long.png",
+   "price": 6449.99,
+   "inStock": true
+  },
+  {
+   "id": "atvs-xwolf-700cc-long-version",
+   "name": "XWOLF 700cc \u2013 Long Version",
+   "category": "atvs",
+   "url": "atvs/xwolf-700cc-long-version.html",
+   "image": "images/xwolf700long.jpg",
+   "price": 7049.95,
+   "inStock": true
+  },
+  {
+   "id": "atvs-xwolf-700cc-short-version",
+   "name": "XWOLF 700cc \u2013 Short Version",
+   "category": "atvs",
+   "url": "atvs/xwolf-700cc-short-version.html",
+   "image": "images/xwolf700short.jpg",
+   "price": 6335.95,
+   "inStock": true
+  },
+  {
+   "id": "dirtbikes-db-21-70cc",
+   "name": "DB-21 70cc",
+   "category": "dirtbikes",
+   "url": "dirtbikes/db-21-70cc.html",
+   "image": "images/db21-70.jpg",
+   "price": 975.0,
+   "inStock": true
+  },
+  {
+   "id": "dirtbikes-db-25-70cc",
+   "name": "DB-25 70cc",
+   "category": "dirtbikes",
+   "url": "dirtbikes/db-25-70cc.html",
+   "image": "images/db25-70.jpg",
+   "price": 995.0,
+   "inStock": true
+  },
+  {
+   "id": "dirtbikes-db-27-110cc",
+   "name": "DB-27 110cc",
+   "category": "dirtbikes",
+   "url": "dirtbikes/db-27-110cc.html",
+   "image": "images/db27-110.jpg",
+   "price": 1000.0,
+   "inStock": true
+  },
+  {
+   "id": "dirtbikes-db-28-110cc",
+   "name": "DB-28 110cc",
+   "category": "dirtbikes",
+   "url": "dirtbikes/db-28-110cc.html",
+   "image": "images/db28-110.jpg",
+   "price": 1015.0,
+   "inStock": true
+  },
+  {
+   "id": "dirtbikes-db-32-110cc",
+   "name": "DB-32 110cc",
+   "category": "dirtbikes",
+   "url": "dirtbikes/db-32-110cc.html",
+   "image": "images/db32-110.jpg",
+   "price": 1025.0,
+   "inStock": true
+  },
+  {
+   "id": "dirtbikes-db-36-250cc",
+   "name": "DB-36 250cc",
+   "category": "dirtbikes",
+   "url": "dirtbikes/db-36-250cc.html",
+   "image": "images/db36-250.jpg",
+   "price": 2399.0,
+   "inStock": true
+  },
+  {
+   "id": "dirtbikes-db-38-110cc",
+   "name": "DB-38 110cc",
+   "category": "dirtbikes",
+   "url": "dirtbikes/db-38-110cc.html",
+   "image": "images/db38-110.jpg",
+   "price": 1014.99,
+   "inStock": true
+  },
+  {
+   "id": "dirtbikes-db-x14-125cc-new-frame",
+   "name": "DB-X14 125cc \u2013 New Frame",
+   "category": "dirtbikes",
+   "url": "dirtbikes/db-x14-125cc-new-frame.html",
+   "image": "images/dbx14-125.jpg",
+   "price": 1399.0,
+   "inStock": true
+  },
+  {
+   "id": "dirtbikes-db-x15-125cc-new-frame",
+   "name": "DB-X15 125cc \u2013 New Frame",
+   "category": "dirtbikes",
+   "url": "dirtbikes/db-x15-125cc-new-frame.html",
+   "image": "images/dbx15-125.jpg",
+   "price": 1399.0,
+   "inStock": true
+  },
+  {
+   "id": "dirtbikes-db-x16-125cc-new-frame",
+   "name": "DB-X16 125cc \u2013 New Frame",
+   "category": "dirtbikes",
+   "url": "dirtbikes/db-x16-125cc-new-frame.html",
+   "image": "images/dbx16-125.jpg",
+   "price": 1399.0,
+   "inStock": true
+  },
+  {
+   "id": "dirtbikes-db-x18-125cc-new-frame",
+   "name": "DB-X18 125cc \u2013 New Frame",
+   "category": "dirtbikes",
+   "url": "dirtbikes/db-x18-125cc-new-frame.html",
+   "image": "images/dbx18-125.jpg",
+   "price": 1499.0,
+   "inStock": true
+  },
+  {
+   "id": "dirtbikes-db-x19-125cc-new-frame",
+   "name": "DB-X19 125cc \u2013 New Frame",
+   "category": "dirtbikes",
+   "url": "dirtbikes/db-x19-125cc-new-frame.html",
+   "image": "images/dbx19-125.jpg",
+   "price": 1499.0,
+   "inStock": true
+  },
+  {
+   "id": "dirtbikes-db-x4-110cc",
+   "name": "DB-X4 110cc",
+   "category": "dirtbikes",
+   "url": "dirtbikes/db-x4-110cc.html",
+   "image": "images/dbx4-110.jpg",
+   "price": 1100.0,
+   "inStock": true
+  },
+  {
+   "id": "dirtbikes-db-x5-125cc",
+   "name": "DB-X5 125cc",
+   "category": "dirtbikes",
+   "url": "dirtbikes/db-x5-125cc.html",
+   "image": "images/dbx5-125.jpg",
+   "price": 1299.0,
+   "inStock": true
+  },
+  {
+   "id": "dirtbikes-db-x6-125cc",
+   "name": "DB-X6 125cc",
+   "category": "dirtbikes",
+   "url": "dirtbikes/db-x6-125cc.html",
+   "image": "images/dbx6-125.jpg",
+   "price": 1299.0,
+   "inStock": true
+  },
+  {
+   "id": "dirtbikes-rxf150-freeride",
+   "name": "RXF150 Freeride",
+   "category": "dirtbikes",
+   "url": "dirtbikes/rxf150-freeride.html",
+   "image": "images/rxf150.jpg",
+   "price": 1599.0,
+   "inStock": true
+  },
+  {
+   "id": "dirtbikes-thunder-140",
+   "name": "Thunder 140",
+   "category": "dirtbikes",
+   "url": "dirtbikes/thunder-140.html",
+   "image": "images/thunder140.jpg",
+   "price": 1499.0,
+   "inStock": true
+  },
+  {
+   "id": "dirtbikes-thunder-150cc",
+   "name": "Thunder 150cc",
+   "category": "dirtbikes",
+   "url": "dirtbikes/thunder-150cc.html",
+   "image": "images/thunder150.jpg",
+   "price": 1599.0,
+   "inStock": true
+  },
+  {
+   "id": "dirtbikes-thunder-150cc-dlx",
+   "name": "Thunder 150cc DLX",
+   "category": "dirtbikes",
+   "url": "dirtbikes/thunder-150cc-dlx.html",
+   "image": "images/thunder150dlx.jpg",
+   "price": 1699.0,
+   "inStock": true
+  },
+  {
+   "id": "dirtbikes-thunder-250cc",
+   "name": "Thunder 250cc",
+   "category": "dirtbikes",
+   "url": "dirtbikes/thunder-250cc.html",
+   "image": "images/thunder250.jpg",
+   "price": 2499.0,
+   "inStock": true
+  },
+  {
+   "id": "dirtbikes-thunder-250cc-dlx",
+   "name": "Thunder 250cc DLX",
+   "category": "dirtbikes",
+   "url": "dirtbikes/thunder-250cc-dlx.html",
+   "image": "images/thunder250dlx.jpg",
+   "price": 2599.0,
+   "inStock": true
+  },
+  {
+   "id": "dirtbikes-thunder-300cc",
+   "name": "Thunder 300cc",
+   "category": "dirtbikes",
+   "url": "dirtbikes/thunder-300cc.html",
+   "image": "images/thunder300.jpg",
+   "price": 2499.0,
+   "inStock": true
+  },
+  {
+   "id": "dirtbikes-thunder-300cc-dlx",
+   "name": "Thunder 300cc DLX",
+   "category": "dirtbikes",
+   "url": "dirtbikes/thunder-300cc-dlx.html",
+   "image": "images/thunder300dlx.jpg",
+   "price": 2599.0,
+   "inStock": true
+  },
+  {
+   "id": "dirtbikes-thunder-t20",
+   "name": "Thunder T20",
+   "category": "dirtbikes",
+   "url": "dirtbikes/thunder-t20.html",
+   "image": "images/thundert20.jpg",
+   "price": 1499.0,
+   "inStock": true
+  },
+  {
+   "id": "dirtbikes-vitacci-raven-250cc-xl",
+   "name": "Vitacci Raven 250cc XL",
+   "category": "dirtbikes",
+   "url": "dirtbikes/vitacci-raven-250cc-xl.html",
+   "image": "images/vitacciraven250xl.jpg",
+   "price": 2399.0,
+   "inStock": true
+  },
+  {
+   "id": "ebikes-evo-20",
+   "name": "EVO 20",
+   "category": "ebikes",
+   "url": "ebikes/evo-20.html",
+   "image": "images/evo20.jpg",
+   "price": 1749.0,
+   "inStock": true
+  },
+  {
+   "id": "ebikes-gt-s-2000",
+   "name": "GT-S 2000",
+   "category": "ebikes",
+   "url": "ebikes/gt-s-2000.html",
+   "image": "images/gts2000.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "ebikes-gt06-e-scooter",
+   "name": "GT06 E-Scooter",
+   "category": "ebikes",
+   "url": "ebikes/gt06-e-scooter.html",
+   "image": "images/GT06.jfif",
+   "price": 599.0,
+   "inStock": true
+  },
+  {
+   "id": "ebikes-ouxi-gt-2000",
+   "name": "OUXI GT-2000",
+   "category": "ebikes",
+   "url": "ebikes/ouxi-gt-2000.html",
+   "image": "images/gt2000.jfif",
+   "price": 1299.0,
+   "inStock": true
+  },
+  {
+   "id": "ebikes-ouxi-v8",
+   "name": "OUXI V8",
+   "category": "ebikes",
+   "url": "ebikes/ouxi-v8.html",
+   "image": "images/OUXIV8.jfif",
+   "price": 749.0,
+   "inStock": true
+  },
+  {
+   "id": "ebikes-rfn-ares-rally-endurance-pro",
+   "name": "RFN Ares Rally Endurance PRO (Street Legal)",
+   "category": "ebikes",
+   "url": "ebikes/rfn-ares-rally-endurance-pro.html",
+   "image": "images/rfnaresrallypro.jpg",
+   "price": 4949.0,
+   "inStock": true
+  },
+  {
+   "id": "ebikes-rfn-e2-plus",
+   "name": "RFN E2-Plus",
+   "category": "ebikes",
+   "url": "ebikes/rfn-e2-plus.html",
+   "image": "images/rfne2plus.jpg",
+   "price": 1399.0,
+   "inStock": true
+  },
+  {
+   "id": "ebikes-evo16",
+   "name": "RFN EVO 16",
+   "category": "ebikes",
+   "url": "ebikes/evo16.html",
+   "image": "images/evo16rfn.jpg",
+   "price": 1149.0,
+   "inStock": true
+  },
+  {
+   "id": "ebikes-rfn-evo-18",
+   "name": "RFN EVO 18",
+   "category": "ebikes",
+   "url": "ebikes/rfn-evo-18.html",
+   "image": "images/evo18-4.jpg",
+   "price": 1099.0,
+   "inStock": true
+  },
+  {
+   "id": "ebikes-rfn-warrior-kids-sx-e350",
+   "name": "RFN Warrior Kids SX-E350",
+   "category": "ebikes",
+   "url": "ebikes/rfn-warrior-kids-sx-e350.html",
+   "image": "images/rfnwarriorkidssxe350.jpg",
+   "price": 549.0,
+   "inStock": true
+  },
+  {
+   "id": "ebikes-rfn-warrior-kids-sx-e500",
+   "name": "RFN Warrior Kids SX-E500",
+   "category": "ebikes",
+   "url": "ebikes/rfn-warrior-kids-sx-e500.html",
+   "image": "images/rfnwarriorkidssxe500.jpg",
+   "price": 749.0,
+   "inStock": true
+  },
+  {
+   "id": "ebikes-rfn-warrior-pro-e15",
+   "name": "RFN Warrior Pro E15",
+   "category": "ebikes",
+   "url": "ebikes/rfn-warrior-pro-e15.html",
+   "image": "images/rfnwarriorproe15.jpg",
+   "price": 5499.0,
+   "inStock": true
+  },
+  {
+   "id": "ebikes-rfn-warrior-youth-sx-e5",
+   "name": "RFN Warrior Youth SX-E5",
+   "category": "ebikes",
+   "url": "ebikes/rfn-warrior-youth-sx-e5.html",
+   "image": "images/rfnwarrioryouthsxe5.jpg",
+   "price": 2549.0,
+   "inStock": true
+  },
+  {
+   "id": "ebikes-rfn-e2-pro-max",
+   "name": "RFN-E2 Pro Max",
+   "category": "ebikes",
+   "url": "ebikes/rfn-e2-pro-max.html",
+   "image": "images/rfne2promax.jpg",
+   "price": 1899.99,
+   "inStock": true
+  },
+  {
+   "id": "ebikes-spark-48v",
+   "name": "SPARK 48V",
+   "category": "ebikes",
+   "url": "ebikes/spark-48v.html",
+   "image": "images/SPARK48V.jfif",
+   "price": 599.0,
+   "inStock": true
+  },
+  {
+   "id": "ebikes-v8-max-dual-battery",
+   "name": "V8 Max (Dual Battery)",
+   "category": "ebikes",
+   "url": "ebikes/v8-max-dual-battery.html",
+   "image": "images/v8max.jpg",
+   "price": 909.0,
+   "inStock": true
+  },
+  {
+   "id": "gokarts-jaguar-200-efi",
+   "name": "Jaguar 200 EFI",
+   "category": "gokarts",
+   "url": "gokarts/jaguar-200-efi.html",
+   "image": "images/jaguar200efi.jpg",
+   "price": 3249.0,
+   "inStock": true
+  },
+  {
+   "id": "gokarts-t-rex-125cc",
+   "name": "T-Rex 125cc",
+   "category": "gokarts",
+   "url": "gokarts/t-rex-125cc.html",
+   "image": "images/trex125.jpg",
+   "price": 2050.0,
+   "inStock": true
+  },
+  {
+   "id": "scooters-bullet-49cc",
+   "name": "Bullet 49.9cc",
+   "category": "scooters",
+   "url": "scooters/bullet-49cc.html",
+   "image": "images/bullet49.jpg",
+   "price": 1274.99,
+   "inStock": true
+  },
+  {
+   "id": "scooters-champion-200-efi",
+   "name": "Champion 200 EFI",
+   "category": "scooters",
+   "url": "scooters/champion-200-efi.html",
+   "image": "images/champion200efi.jpg",
+   "price": 1999.0,
+   "inStock": true
+  },
+  {
+   "id": "scooters-denali-49cc",
+   "name": "Denali 49cc",
+   "category": "scooters",
+   "url": "scooters/denali-49cc.html",
+   "image": "images/denali49.jpg",
+   "price": 799.0,
+   "inStock": true
+  },
+  {
+   "id": "scooters-eco-50cc",
+   "name": "Eco 50cc",
+   "category": "scooters",
+   "url": "scooters/eco-50cc.html",
+   "image": "images/eco50.jpg",
+   "price": 799.0,
+   "inStock": true
+  },
+  {
+   "id": "scooters-falcon-200cc",
+   "name": "Falcon 200cc",
+   "category": "scooters",
+   "url": "scooters/falcon-200cc.html",
+   "image": "images/falcon200.jpg",
+   "price": 2729.0,
+   "inStock": true
+  },
+  {
+   "id": "scooters-falcon-250cc",
+   "name": "Falcon 250cc",
+   "category": "scooters",
+   "url": "scooters/falcon-250cc.html",
+   "image": "images/falcon250.jpg",
+   "price": 2797.99,
+   "inStock": true
+  },
+  {
+   "id": "scooters-focus-st-150cc",
+   "name": "Focus ST-150cc",
+   "category": "scooters",
+   "url": "scooters/focus-st-150cc.html",
+   "image": "images/focusst150.jpg",
+   "price": 1049.0,
+   "inStock": true
+  },
+  {
+   "id": "scooters-focus-st-50cc",
+   "name": "Focus ST-50cc",
+   "category": "scooters",
+   "url": "scooters/focus-st-50cc.html",
+   "image": "images/focusst50.jpg",
+   "price": 799.0,
+   "inStock": true
+  },
+  {
+   "id": "scooters-intrepid-200",
+   "name": "Intrepid 200",
+   "category": "scooters",
+   "url": "scooters/intrepid-200.html",
+   "image": "images/intrepid200.jpg",
+   "price": 1399.0,
+   "inStock": true
+  },
+  {
+   "id": "scooters-jag-200",
+   "name": "Jag 200",
+   "category": "scooters",
+   "url": "scooters/jag-200.html",
+   "image": "images/jag200.jpg",
+   "price": 1049.0,
+   "inStock": true
+  },
+  {
+   "id": "scooters-magnum-50cc",
+   "name": "Magnum 50cc",
+   "category": "scooters",
+   "url": "scooters/magnum-50cc.html",
+   "image": "images/magnum50.jpg",
+   "price": 799.0,
+   "inStock": true
+  },
+  {
+   "id": "scooters-marchal-x200-delivery-edition",
+   "name": "Marchal X200 Delivery Edition",
+   "category": "scooters",
+   "url": "scooters/marchal-x200-delivery-edition.html",
+   "image": "images/marchalx200.jpg",
+   "price": 1299.0,
+   "inStock": true
+  },
+  {
+   "id": "scooters-milano-150",
+   "name": "Milano 150",
+   "category": "scooters",
+   "url": "scooters/milano-150.html",
+   "image": "images/milano150.jpg",
+   "price": 999.0,
+   "inStock": true
+  },
+  {
+   "id": "scooters-milano-50",
+   "name": "Milano 50",
+   "category": "scooters",
+   "url": "scooters/milano-50.html",
+   "image": "images/milano50.jpg",
+   "price": 799.0,
+   "inStock": true
+  },
+  {
+   "id": "scooters-nevo-200",
+   "name": "Nevo 200",
+   "category": "scooters",
+   "url": "scooters/nevo-200.html",
+   "image": "images/nevo200.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "scooters-razr-150cc",
+   "name": "Razr 150cc",
+   "category": "scooters",
+   "url": "scooters/razr-150cc.html",
+   "image": "images/razr150.jpg",
+   "price": 999.0,
+   "inStock": true
+  },
+  {
+   "id": "scooters-razr-200cc",
+   "name": "Razr 200cc",
+   "category": "scooters",
+   "url": "scooters/razr-200cc.html",
+   "image": "images/razr200.jpg",
+   "price": 1099.0,
+   "inStock": true
+  },
+  {
+   "id": "scooters-rocket-150cc",
+   "name": "Rocket 150cc",
+   "category": "scooters",
+   "url": "scooters/rocket-150cc.html",
+   "image": "images/rocket150.jpg",
+   "price": 1349.95,
+   "inStock": true
+  },
+  {
+   "id": "scooters-roma-150cc",
+   "name": "Roma 150cc",
+   "category": "scooters",
+   "url": "scooters/roma-150cc.html",
+   "image": "images/roma150.jpg",
+   "price": 1949.95,
+   "inStock": true
+  },
+  {
+   "id": "scooters-tank-combat-200",
+   "name": "Tank Combat 200",
+   "category": "scooters",
+   "url": "scooters/tank-combat-200.html",
+   "image": "images/tankcombat200.jpg",
+   "price": 1599.0,
+   "inStock": true
+  },
+  {
+   "id": "scooters-tank-defender-150",
+   "name": "Tank Defender 150",
+   "category": "scooters",
+   "url": "scooters/tank-defender-150.html",
+   "image": "images/tankdefender150.jpg",
+   "price": 1099.0,
+   "inStock": true
+  },
+  {
+   "id": "scooters-tank-pro-x200-elite",
+   "name": "Tank Pro X200 Elite",
+   "category": "scooters",
+   "url": "scooters/tank-pro-x200-elite.html",
+   "image": "images/tankpro200.jpg",
+   "price": 1299.0,
+   "inStock": true
+  },
+  {
+   "id": "scooters-tank-sport-x200",
+   "name": "Tank Sport X200",
+   "category": "scooters",
+   "url": "scooters/tank-sport-x200.html",
+   "image": "images/tanksportx200.jpg",
+   "price": 1399.0,
+   "inStock": true
+  },
+  {
+   "id": "scooters-tank-x200-pro",
+   "name": "Tank X200 Pro",
+   "category": "scooters",
+   "url": "scooters/tank-x200-pro.html",
+   "image": "images/tankx200pro.jpg",
+   "price": 1499.0,
+   "inStock": true
+  },
+  {
+   "id": "scooters-viper-150cc",
+   "name": "Viper 150cc",
+   "category": "scooters",
+   "url": "scooters/viper-150cc.html",
+   "image": "images/viper150b.jpg",
+   "price": 1049.0,
+   "inStock": true
+  },
+  {
+   "id": "scooters-viper-49cc",
+   "name": "Viper 49cc",
+   "category": "scooters",
+   "url": "scooters/viper-49cc.html",
+   "image": "images/viper49.jpg",
+   "price": 799.0,
+   "inStock": true
+  },
+  {
+   "id": "scooters-viper-st-50cc",
+   "name": "Viper ST-50cc",
+   "category": "scooters",
+   "url": "scooters/viper-st-50cc.html",
+   "image": "images/viperst50.jpg",
+   "price": 849.0,
+   "inStock": true
+  },
+  {
+   "id": "scooters-viper-vtr-150cc",
+   "name": "VIPER VTR 150cc",
+   "category": "scooters",
+   "url": "scooters/viper-vtr-150cc.html",
+   "image": "images/viper150.jpg",
+   "price": 1049.0,
+   "inStock": true
+  },
+  {
+   "id": "scooters-vogue-50",
+   "name": "Vogue 50",
+   "category": "scooters",
+   "url": "scooters/vogue-50.html",
+   "image": "images/vogue50.jpg",
+   "price": 799.0,
+   "inStock": true
+  },
+  {
+   "id": "scooters-vtr-200",
+   "name": "VTR 200",
+   "category": "scooters",
+   "url": "scooters/vtr-200.html",
+   "image": "images/vtr200.jpg",
+   "price": 1499.0,
+   "inStock": true
+  },
+  {
+   "id": "scooters-vtr-sport-x200",
+   "name": "VTR Sport X200",
+   "category": "scooters",
+   "url": "scooters/vtr-sport-x200.html",
+   "image": "images/vtrx200.jpg",
+   "price": 1379.0,
+   "inStock": true
+  },
+  {
+   "id": "utvs-cross-fire-200-efi",
+   "name": "Cross Fire 200 EFI",
+   "category": "utvs",
+   "url": "utvs/cross-fire-200-efi.html",
+   "image": "images/crossfire200.jpg",
+   "price": 5450.0,
+   "inStock": true
+  },
+  {
+   "id": "utvs-rover-200-efi",
+   "name": "Rover 200 EFI",
+   "category": "utvs",
+   "url": "utvs/rover-200-efi.html",
+   "image": "images/rover200.jpg",
+   "price": 6427.58,
+   "inStock": true
+  }
+ ]
+}

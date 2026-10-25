@@ -1,0 +1,71 @@
+{
+ "_note": "Fulfillment settings used by the cart, checkout page and checkout worker. Items marked _confirm are PLACEHOLDERS for preview - replace with your real numbers before going live.",
+ "business": {
+  "name": "NYC ATV Warehouse",
+  "phone": "646-943-1858",
+  "phoneHref": "tel:16469431858",
+  "email": "sales@nycatvwarehouse.com",
+  "address": "207 Gates Rd, Little Ferry, NJ 07643",
+  "hours": "Mon-Fri 10am-5pm, Sat-Sun closed"
+ },
+ "pickup": {
+  "enabled": true,
+  "fee": 0,
+  "label": "Free pickup",
+  "detail": "Pick up at our Little Ferry, NJ warehouse. We'll contact you when your order is ready."
+ },
+ "localDelivery": {
+  "enabled": true,
+  "_confirm": true,
+  "fee": 75,
+  "label": "Local delivery",
+  "detail": "Delivered to your door in the NYC Metro area.",
+  "zipPrefixes": [
+   "070",
+   "071",
+   "072",
+   "073",
+   "074",
+   "075",
+   "076",
+   "077",
+   "078",
+   "079",
+   "100",
+   "101",
+   "102",
+   "103",
+   "104",
+   "110",
+   "111",
+   "112",
+   "113",
+   "114",
+   "116"
+  ],
+  "zoneLabel": "Northern NJ and NYC"
+ },
+ "shipping": {
+  "enabled": true,
+  "_confirm": true,
+  "label": "Ship to my address",
+  "detail": "Shipped to your address. Large units ship by freight.",
+  "countries": [
+   "US"
+  ],
+  "perUnitByCategory": {
+   "ebikes": 79,
+   "scooters": 199,
+   "dirtbikes": 249,
+   "atvs": 299,
+   "gokarts": 299,
+   "utvs": 499
+  }
+ },
+ "tax": {
+  "_confirm": true,
+  "note": "Calculated at payment"
+ },
+ "maxQtyPerItem": 5,
+ "checkoutEndpoint": ""
+}

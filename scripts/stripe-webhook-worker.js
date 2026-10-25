@@ -34,7 +34,11 @@ export default {
       const email = session.customer_details?.email || "no email";
       const productName = session.metadata?.product_name || session.line_items?.data?.[0]?.description || "item";
 
-      const text = `New payment received: $${amount} from ${email} (session ${session.id}). Check Stripe Dashboard for details.`;
+      const m = session.metadata || {};
+      const how = { pickup: "FREE PICKUP", local: "LOCAL DELIVERY", ship: "SHIP" }[m.fulfillment] || "order";
+      const text = `New order (${how}): $${amount} from ${m.customer_name || email}` +
+        (m.customer_phone ? `, ${m.customer_phone}` : "") + `. Items: ${m.items || productName}.` +
+        (m.notes ? ` Notes: ${m.notes}.` : "") + ` (session ${session.id})`;
 
       await fetch(env.SLACK_WEBHOOK_URL, {
         method: "POST",
