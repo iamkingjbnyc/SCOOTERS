@@ -5,6 +5,7 @@ compatibility_date = "2026-10-01"
 
 [vars]
 SITE_ORIGIN = "https://nycatvwarehouse.com"
-ALLOWED_ORIGINS = "https://nycatvwarehouse.com"
+ALLOWED_ORIGINS = "https://nycatvwarehouse.com,https://www.nycatvwarehouse.com"
 # STRIPE_TAX_RATE_ID = "txr_..."   # optional: charge sales tax on items (create the rate in Stripe first)
 # Secret (never commit): npx wrangler secret put STRIPE_SECRET_KEY
+workers_dev = true
