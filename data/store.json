@@ -67,7 +67,7 @@
   "note": "Calculated at payment"
  },
  "maxQtyPerItem": 5,
- "checkoutEndpoint": "https://nycatv-checkout.iamkingjbnyc.workers.dev",
+ "checkoutEndpoint": "",
  "orderRequestEndpoint": "https://formsubmit.co/sales@nycatvwarehouse.com",
  "showPreviewBanner": false,
  "deposit": {
