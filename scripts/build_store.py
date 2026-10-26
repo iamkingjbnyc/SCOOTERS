@@ -66,7 +66,7 @@ def topbar():
     b = STORE["business"]
     return f'''<div class="topbar"><div class="container topbar-inner">
   <div class="topbar-items">
-    <span>{ICON["pin"]}Free pickup in Little Ferry, NJ or the Bronx, NY</span>
+    <span>{ICON["pin"]}Free pickup in Little Ferry, NJ / Bronx, NY</span>
     <span>{ICON["truck"]}Free local delivery &middot; NYC Metro</span>
     <span>{ICON["box"]}Shipped to your door</span>
   </div>
