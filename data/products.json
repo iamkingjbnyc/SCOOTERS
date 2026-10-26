@@ -165,7 +165,7 @@
   },
   {
    "id": "atvs-rider-10-125cc",
-   "name": "Rider 10 \u2013 125cc",
+   "name": "Rider 10 – 125cc",
    "category": "atvs",
    "url": "atvs/rider-10-125cc.html",
    "image": "images/rider10125.jpg",
@@ -174,7 +174,7 @@
   },
   {
    "id": "atvs-rider-9-125cc",
-   "name": "Rider 9 \u2013 125cc",
+   "name": "Rider 9 – 125cc",
    "category": "atvs",
    "url": "atvs/rider-9-125cc.html",
    "image": "images/rider9125.jpg",
@@ -201,7 +201,7 @@
   },
   {
    "id": "atvs-xwolf-550-long-version",
-   "name": "XWOLF 550 \u2013 Long Version",
+   "name": "XWOLF 550 – Long Version",
    "category": "atvs",
    "url": "atvs/xwolf-550-long-version.html",
    "image": "images/xwolf550long.png",
@@ -210,7 +210,7 @@
   },
   {
    "id": "atvs-xwolf-700cc-long-version",
-   "name": "XWOLF 700cc \u2013 Long Version",
+   "name": "XWOLF 700cc – Long Version",
    "category": "atvs",
    "url": "atvs/xwolf-700cc-long-version.html",
    "image": "images/xwolf700long.jpg",
@@ -219,7 +219,7 @@
   },
   {
    "id": "atvs-xwolf-700cc-short-version",
-   "name": "XWOLF 700cc \u2013 Short Version",
+   "name": "XWOLF 700cc – Short Version",
    "category": "atvs",
    "url": "atvs/xwolf-700cc-short-version.html",
    "image": "images/xwolf700short.jpg",
@@ -291,7 +291,7 @@
   },
   {
    "id": "dirtbikes-db-x14-125cc-new-frame",
-   "name": "DB-X14 125cc \u2013 New Frame",
+   "name": "DB-X14 125cc – New Frame",
    "category": "dirtbikes",
    "url": "dirtbikes/db-x14-125cc-new-frame.html",
    "image": "images/dbx14-125.jpg",
@@ -300,7 +300,7 @@
   },
   {
    "id": "dirtbikes-db-x15-125cc-new-frame",
-   "name": "DB-X15 125cc \u2013 New Frame",
+   "name": "DB-X15 125cc – New Frame",
    "category": "dirtbikes",
    "url": "dirtbikes/db-x15-125cc-new-frame.html",
    "image": "images/dbx15-125.jpg",
@@ -309,7 +309,7 @@
   },
   {
    "id": "dirtbikes-db-x16-125cc-new-frame",
-   "name": "DB-X16 125cc \u2013 New Frame",
+   "name": "DB-X16 125cc – New Frame",
    "category": "dirtbikes",
    "url": "dirtbikes/db-x16-125cc-new-frame.html",
    "image": "images/dbx16-125.jpg",
@@ -318,7 +318,7 @@
   },
   {
    "id": "dirtbikes-db-x18-125cc-new-frame",
-   "name": "DB-X18 125cc \u2013 New Frame",
+   "name": "DB-X18 125cc – New Frame",
    "category": "dirtbikes",
    "url": "dirtbikes/db-x18-125cc-new-frame.html",
    "image": "images/dbx18-125.jpg",
@@ -327,7 +327,7 @@
   },
   {
    "id": "dirtbikes-db-x19-125cc-new-frame",
-   "name": "DB-X19 125cc \u2013 New Frame",
+   "name": "DB-X19 125cc – New Frame",
    "category": "dirtbikes",
    "url": "dirtbikes/db-x19-125cc-new-frame.html",
    "image": "images/dbx19-125.jpg",
@@ -808,7 +808,7 @@
    "category": "scooters",
    "url": "scooters/tank-pro-x200-elite.html",
    "image": "images/tankpro200.jpg",
-   "price": 1299.0,
+   "price": 1499.0,
    "inStock": true
   },
   {
