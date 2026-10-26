@@ -567,7 +567,7 @@ def build_returns():
 <div class="container crumbs"><a href="index.html">Home</a><span>/</span>Return policy</div>
 <section style="padding-top:24px"><div class="container">
   <div class="section-head"><p class="eyebrow">Policies</p><h1 class="section-title">Return policy</h1>
-  <p>Last updated {r["updated"]}. By placing an order you agree to this policy.</p></div>
+  <p>Last updated {r["updated"]}. By placing an order you agree to this policy. In short: {r["windowDays"]}-day returns on new, unused units, a {r["restockingPercent"]}% restocking fee, and the customer pays for return freight.</p></div>
   <div class="prose">
     <h2>1. Return window</h2>
     <p>You may request a return within <strong>{r["windowDays"]} days</strong> of delivery (shipped and delivered orders) or of the day you pick up your unit.</p>
@@ -581,7 +581,7 @@ def build_returns():
     <h2>4. Restocking fee and return shipping</h2>
     <ul>
       <li>A restocking fee of <strong>{r["restockingPercent"]}%</strong> of the unit price applies to returns.</li>
-      <li>You pay the freight to return the unit.</li>
+      <li><strong>The customer pays for return freight.</strong> You are responsible for the cost of shipping the unit back to us, and for arranging it once we approve the return.</li>
       <li>Original shipping and delivery charges are not refunded.</li>
     </ul>
 
