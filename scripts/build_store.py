@@ -609,7 +609,8 @@ def build_returns():
     <p>Approved refunds go back to your original payment method within about {r["refundBusinessDays"]} business days after we receive and inspect the unit, less the fees above. Your bank may take additional time to post it.</p>
 
     <h2>Questions</h2>
-    <p>Call <a href="{s["business"]["phoneHref"]}">{ph}</a> (Mon&ndash;Fri) or <a href="contact.html">contact us</a>.</p>
+    <p>Call <a href="{s["business"]["phoneHref"]}">{ph}</a> or <a href="contact.html">contact us</a>.</p>
+    <p><strong>Hours:</strong> Monday&ndash;Friday, 10am&ndash;5pm.</p>
   </div>
 </div></section>
 </main>
