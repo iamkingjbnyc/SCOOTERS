@@ -230,7 +230,7 @@
   }
 
   function cardHTML(p) {
-    var sold = !p.inStock && typeof p.price === 'number' && p.price > 0;
+    var sold = !p.inStock;
     var price = buyable(p) ? '<p class="bike-price">' + money(p.price) + '</p>' : sold ? '<p class="bike-price call">Sold out</p>' : '<p class="bike-price call">Call for pricing</p>';
     var actions = buyable(p)
       ? '<button class="btn btn-primary" type="button" data-add="' + esc(p.id) + '">Add to cart</button>'

@@ -58,7 +58,7 @@ def fee_text(n):
 
 
 def soldout(p):
-    return (not p["inStock"]) and isinstance(p.get("price"), (int, float)) and p["price"] > 0
+    return not p["inStock"]
 
 
 def buyable(p):
@@ -280,7 +280,7 @@ def product_jsonld(p, c):
     d = {"@context": "https://schema.org", "@type": "Product", "name": p["name"], "description": c["description"],
          "category": CAT_LABEL[p["category"]], "url": f"{SITE}/{p['url'][:-5]}", "image": imgs,
          "brand": {"@type": "Brand", "name": "NYC ATV Warehouse"}}
-    if buyable(p) or soldout(p):
+    if buyable(p) or (soldout(p) and isinstance(p.get("price"), (int, float)) and p["price"] > 0):
         d["offers"] = {"@type": "Offer", "url": f"{SITE}/{p['url'][:-5]}", "priceCurrency": "USD",
                        "price": f"{p['price']:.2f}".rstrip("0").rstrip("."),
                        "availability": "https://schema.org/InStock" if buyable(p) else "https://schema.org/OutOfStock", "itemCondition": "https://schema.org/NewCondition",
