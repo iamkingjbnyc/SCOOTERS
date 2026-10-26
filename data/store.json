@@ -1978,7 +1978,7 @@
    "atvs": 299,
    "gokarts": 299,
    "utvs": 499,
-   "helmets": 25
+   "helmets": 0
   },
   "states": [
    "AL",
@@ -2065,5 +2065,13 @@
   "refundBusinessDays": "7-10",
   "updated": "October 25, 2026",
   "_confirm": true
+ },
+ "rules": {
+  "helmetsOnly": {
+   "noDeposit": true,
+   "localDeliveryMinSubtotal": 500,
+   "_note": "Applies when every item in the order is a helmet. Local delivery is available if the order has a vehicle or the subtotal is at least this amount.",
+   "_confirm": true
+  }
  }
 }

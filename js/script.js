@@ -67,8 +67,15 @@
   }
   function zipInLocalZone(zip) { var t = zipTier(zip); return t === null ? null : t !== 'out'; }
   var currentZip = '';
-  function isDeposit(method) { return !!(STORE.deposit && STORE.deposit.methods.indexOf(method) !== -1); }
-  function dueToday(method, total) { return isDeposit(method) ? Math.min(STORE.deposit.amount, total) : total; }
+  function helmetsOnly(lines) { return !!lines && lines.length > 0 && lines.every(function (l) { return l.p.category === 'helmets'; }); }
+  function helmetRules() { return (STORE.rules && STORE.rules.helmetsOnly) || null; }
+  function isDeposit(method, lines) {
+    var R = helmetRules();
+    if (R && R.noDeposit && helmetsOnly(lines)) return false;
+    return !!(STORE.deposit && STORE.deposit.methods.indexOf(method) !== -1);
+  }
+  function dueToday(method, total, lines) { return isDeposit(method, lines) ? Math.min(STORE.deposit.amount, total) : total; }
+  function localAllowed(lines, sub) { var R = helmetRules(); return !(R && helmetsOnly(lines) && sub < R.localDeliveryMinSubtotal); }
   function feeFor(method, lines) {
     if (method === 'pickup') return STORE.pickup.fee || 0;
     if (method === 'local') return zipTier(currentZip) === 'ext' ? STORE.localDelivery.extended.fee : STORE.localDelivery.fee;
@@ -282,7 +289,7 @@
     });
     $$('[data-ship-rate]').forEach(function (el) {
       var v = STORE.shipping.perUnitByCategory[el.getAttribute('data-ship-rate')];
-      if (v != null) el.textContent = money(v);
+      if (v != null) el.textContent = v === 0 ? 'Free' : money(v);
     });
   }
 
@@ -309,13 +316,22 @@
     var state = { method: S.pickup.enabled ? 'pickup' : methods[0] };
 
     var optHTML = {
-      pickup: { ic: ICON.pin, t: S.pickup.label, d: S.pickup.detail + ' ' + money(S.deposit.amount) + ' non-refundable deposit now, balance at pickup.' },
-      local: { ic: ICON.truck, t: S.localDelivery.label, d: S.localDelivery.detail + ' ' + money(S.deposit.amount) + ' non-refundable deposit now, balance on delivery.' },
-      ship: { ic: ICON.box, t: S.shipping.label, d: S.shipping.detail + ' Paid in full online.' }
+      pickup: { ic: ICON.pin, t: S.pickup.label },
+      local: { ic: ICON.truck, t: S.localDelivery.label },
+      ship: { ic: ICON.box, t: S.shipping.label }
     };
+    function descFor(m) {
+      var dep = isDeposit(m, lines), amt = money(S.deposit.amount);
+      if (m === 'pickup') return S.pickup.detail + (dep ? ' ' + amt + ' non-refundable deposit now, balance at pickup.' : ' Pay in full online.');
+      if (m === 'local') {
+        if (!localAllowed(lines, subtotal())) return 'Not available for helmet-only orders under ' + money(helmetRules().localDeliveryMinSubtotal) + '. Add a vehicle or choose pickup or shipping.';
+        return S.localDelivery.detail + (dep ? ' ' + amt + ' non-refundable deposit now, balance on delivery.' : ' Pay in full online.');
+      }
+      return S.shipping.detail + ' Paid in full online.';
+    }
     function methodHTML(m) {
       var o = optHTML[m];
-      return '<label class="method"><input type="radio" name="method" value="' + m + '"' + (state.method === m ? ' checked' : '') + '><span class="m-body"><span class="m-ic">' + o.ic + '</span><span><strong>' + esc(o.t) + '</strong><span class="m-d">' + esc(o.d) + '</span></span><span class="m-price" data-mprice="' + m + '"></span></span></label>';
+      return '<label class="method"><input type="radio" name="method" value="' + m + '"' + (state.method === m ? ' checked' : '') + '><span class="m-body"><span class="m-ic">' + o.ic + '</span><span><strong>' + esc(o.t) + '</strong><span class="m-d" data-md="' + m + '"></span></span><span class="m-price" data-mprice="' + m + '"></span></span></label>';
     }
     function fieldHTML(id, label, type, extra) {
       return '<div class="field" data-f="' + id + '"><label for="f_' + id + '">' + label + '</label><input id="f_' + id + '" name="' + id + '" type="' + (type || 'text') + '" ' + (extra || '') + '><div class="err"></div></div>';
@@ -354,7 +370,7 @@
 
     function totals() {
       var fee = feeFor(state.method, lines);
-      var total = subtotal() + fee, due = dueToday(state.method, total);
+      var total = subtotal() + fee, due = dueToday(state.method, total, lines);
       return { sub: subtotal(), fee: fee, total: total, due: due, balance: total - due };
     }
     function render() {
@@ -363,6 +379,11 @@
       $('#sumLines').innerHTML = lines.map(function (l) {
         return '<div class="sum-line"><img src="' + esc(img(l.p)) + '" alt=""><div><strong>' + esc(l.p.name) + '</strong><small>Qty ' + l.qty + '</small></div><span>' + money(l.p.price * l.qty) + '</span></div>';
       }).join('');
+      if (state.method === 'local' && !localAllowed(lines, subtotal())) { state.method = S.pickup.enabled ? 'pickup' : 'ship'; var rb = document.querySelector('input[name=method][value=' + state.method + ']'); if (rb) rb.checked = true; }
+      methods.forEach(function (m) {
+        var d = $('[data-md="' + m + '"]'); if (d) d.textContent = descFor(m);
+        if (m === 'local') { var ok = localAllowed(lines, subtotal()), inp = document.querySelector('input[name=method][value=local]'); if (inp) { inp.disabled = !ok; inp.closest('label').style.opacity = ok ? '' : '.55'; } }
+      });
       var t = totals();
       var feeLbl = t.fee === 0 ? '<span class="free">Free</span>' : money(t.fee);
       var label = state.method === 'pickup' ? 'Pickup' : state.method === 'local' ? 'Local delivery' : 'Shipping';
@@ -413,7 +434,7 @@
       need('name', val('name').length > 1, 'Please enter your name.');
       need('phone', val('phone').replace(/\D/g, '').length >= 10, 'Enter a 10-digit phone number.');
       need('email', /^\S+@\S+\.\S+$/.test(val('email')), 'Enter a valid email address.');
-      if (isDeposit(state.method)) need('depositOk', $('#f_depositOk').checked, 'Please confirm you understand the deposit is non-refundable.');
+      if (isDeposit(state.method, lines)) need('depositOk', $('#f_depositOk').checked, 'Please confirm you understand the deposit is non-refundable.');
       if (state.method !== 'pickup') {
         need('address1', val('address1').length > 3, 'Enter your street address.');
         need('city', val('city').length > 1, 'Enter your city.');

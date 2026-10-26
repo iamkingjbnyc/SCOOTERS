@@ -303,6 +303,13 @@ def fulfil_opts(p):
     s = STORE
     dep = money(s["deposit"]["amount"])
     rate = s["shipping"]["perUnitByCategory"].get(p["category"], 0)
+    if p["category"] == "helmets":
+        mn = money(s["rules"]["helmetsOnly"]["localDeliveryMinSubtotal"])
+        return f'''<div class="fulfil-opts">
+  <div class="fulfil-opt"><span class="ic">{ICON["pin"]}</span><div><strong>Free pickup &mdash; <span class="free">Free</span></strong><span class="d">Little Ferry, NJ (Mon&ndash;Fri 10am&ndash;5pm) or the Bronx, NY (Mon&ndash;Fri 10am&ndash;6pm). Pay in full online, no deposit needed.</span></div></div>
+  <div class="fulfil-opt"><span class="ic">{ICON["box"]}</span><div><strong>Free shipping</strong><span class="d">Free shipping on all helmets to anywhere in the continental U.S. Pay in full online.</span></div></div>
+  <div class="fulfil-opt"><span class="ic">{ICON["truck"]}</span><div><strong>Local delivery</strong><span class="d">Available when your order includes a scooter, e-bike or other vehicle, or when your helmet order is {mn} or more. Otherwise choose free pickup or free shipping.</span></div></div>
+</div>'''
     return f'''<div class="fulfil-opts">
   <div class="fulfil-opt"><span class="ic">{ICON["pin"]}</span><div><strong>Free pickup &mdash; <span class="free">Free</span></strong><span class="d">Ready in Little Ferry, NJ (Mon&ndash;Fri 10am&ndash;5pm) or the Bronx, NY (Mon&ndash;Fri 10am&ndash;6pm). {dep} non-refundable deposit online, balance at pickup.</span></div></div>
   <div class="fulfil-opt"><span class="ic">{ICON["truck"]}</span><div><strong>Free local delivery{"" if not s["localDelivery"]["fee"] else " &mdash; " + fee_text(s["localDelivery"]["fee"])}</strong><span class="d">Free across {s["localDelivery"]["zoneLabel"]}. {money(s["localDelivery"]["extended"]["fee"])} for Long Island and up to {s["localDelivery"]["extended"]["radiusMiles"]} miles. {dep} non-refundable deposit online, balance on delivery.</span></div></div>
@@ -520,7 +527,7 @@ def build_home():
 def build_shipping():
     s = STORE
     rows = "".join(
-        f'<li><strong>{CAT_LABEL[c]}</strong>: <span data-ship-rate="{c}">{money(r)}</span> per unit</li>'
+        f'<li><strong>{CAT_LABEL[c]}</strong>: <span data-ship-rate="{c}">{money(r) if r else "Free"}</span>{"" if not r else " per unit"}</li>'
         for c, r in s["shipping"]["perUnitByCategory"].items())
     body = f'''{header("", "shipping")}
 
@@ -531,9 +538,9 @@ def build_shipping():
   <p>Order online, then choose the way you want to get it at checkout. Every in-stock model can be shipped, delivered locally for free, or picked up.</p></div>
 
   <div class="info-cards">
-    <div class="info-card"><span class="ic">{ICON["pin"]}</span><h3>Free pickup</h3><p>Pick up your order at either location: {s["pickup"]["locations"][0]["address"]} ({s["pickup"]["locations"][0]["hours"].replace("-", "&ndash;")}) or {s["pickup"]["locations"][1]["address"]} ({s["pickup"]["locations"][1]["hours"].replace("-", "&ndash;")}). Choose your location at checkout. We&rsquo;ll contact you when it&rsquo;s ready. Pay a {money(s["deposit"]["amount"])} non-refundable deposit online; the balance is due at pickup.</p><div class="price free">Free</div></div>
-    <div class="info-card"><span class="ic">{ICON["truck"]}</span><h3>Free local delivery</h3><p>Delivery is free across {s["localDelivery"]["zoneLabel"]}. Anywhere on Long Island (Nassau and Suffolk) and up to {s["localDelivery"]["extended"]["radiusMiles"]} miles from us is {money(s["localDelivery"]["extended"]["fee"])}. Enter your ZIP at checkout to see your price. Pay a {money(s["deposit"]["amount"])} non-refundable deposit online; the balance is due on delivery.</p><div class="price free">{fee_text(s["localDelivery"]["fee"])}</div></div>
-    <div class="info-card"><span class="ic">{ICON["box"]}</span><h3>Shipped to you</h3><p>Ordering from out of town? We ship to your address anywhere in the continental U.S. (the 48 contiguous states and Washington, DC; not Alaska, Hawaii or U.S. territories). The rate depends on the type of vehicle and is shown before you pay. Shipped orders are paid in full online.</p><div class="price">Rate at checkout</div></div>
+    <div class="info-card"><span class="ic">{ICON["pin"]}</span><h3>Free pickup</h3><p>Pick up your order at either location: {s["pickup"]["locations"][0]["address"]} ({s["pickup"]["locations"][0]["hours"].replace("-", "&ndash;")}) or {s["pickup"]["locations"][1]["address"]} ({s["pickup"]["locations"][1]["hours"].replace("-", "&ndash;")}). Choose your location at checkout. We&rsquo;ll contact you when it&rsquo;s ready. Pay a {money(s["deposit"]["amount"])} non-refundable deposit online; the balance is due at pickup. Helmet-only orders are paid in full online, no deposit.</p><div class="price free">Free</div></div>
+    <div class="info-card"><span class="ic">{ICON["truck"]}</span><h3>Free local delivery</h3><p>Delivery is free across {s["localDelivery"]["zoneLabel"]}. Anywhere on Long Island (Nassau and Suffolk) and up to {s["localDelivery"]["extended"]["radiusMiles"]} miles from us is {money(s["localDelivery"]["extended"]["fee"])}. Enter your ZIP at checkout to see your price. Pay a {money(s["deposit"]["amount"])} non-refundable deposit online; the balance is due on delivery. Helmet-only orders get local delivery only when the order is {money(s["rules"]["helmetsOnly"]["localDeliveryMinSubtotal"])} or more.</p><div class="price free">{fee_text(s["localDelivery"]["fee"])}</div></div>
+    <div class="info-card"><span class="ic">{ICON["box"]}</span><h3>Shipped to you</h3><p>Ordering from out of town? We ship to your address anywhere in the continental U.S. (the 48 contiguous states and Washington, DC; not Alaska, Hawaii or U.S. territories). The rate depends on the type of vehicle and is shown before you pay. Shipped orders are paid in full online. Helmets ship free.</p><div class="price">Rate at checkout</div></div>
   </div>
 
   <div class="prose">
@@ -545,6 +552,7 @@ def build_shipping():
     <ul>
       <li><strong>Free pickup and free local delivery:</strong> pay a {money(s["deposit"]["amount"])} deposit online. {s["deposit"]["policyText"]} You pay the remaining balance when you pick up or when we deliver.</li>
       <li><strong>Shipping:</strong> pay the full amount online, including shipping.</li>
+      <li><strong>Helmet-only orders:</strong> no deposit. Pay in full online for pickup, delivery or shipping.</li>
     </ul>
     <h2>After you order</h2>
     <p>We&rsquo;ll contact you within 1 business day to confirm your order and arrange pickup, delivery or shipping.</p>

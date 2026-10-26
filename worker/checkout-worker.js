@@ -88,6 +88,9 @@ export function computeOrder(order, products, store) {
       throw new OrderError("Please enter a complete delivery address.");
     if (method === "local") {
       if (!store.localDelivery.enabled) throw new OrderError("Local delivery is not available.");
+      const R = store.rules && store.rules.helmetsOnly;
+      if (R && lines.every((l) => l.p.category === "helmets") && lines.reduce((n, l) => n + l.unitCents * l.qty, 0) < R.localDeliveryMinSubtotal * 100)
+        throw new OrderError("Local delivery is not available for helmet-only orders under $" + R.localDeliveryMinSubtotal + ". Please choose pickup or shipping.");
       const L = store.localDelivery, z5 = a.zip.slice(0, 5);
       const free = L.zips ? L.zips.includes(z5) : L.zipPrefixes.includes(a.zip.slice(0, 3));
       const ext = !free && L.extended && L.extended.enabled && L.extended.zips.includes(z5);
@@ -109,7 +112,9 @@ export function computeOrder(order, products, store) {
   const totalCents = subtotalCents + feeCents;
   // Pickup / local delivery: only the deposit is charged online. Shipping: charged in full.
   const dep = store.deposit;
-  const isDeposit = !!(dep && dep.methods.includes(method));
+  const HR = store.rules && store.rules.helmetsOnly;
+  const helmetsOnly = lines.every((l) => l.p.category === "helmets");
+  const isDeposit = !!(dep && dep.methods.includes(method)) && !(HR && HR.noDeposit && helmetsOnly);
   const dueCents = isDeposit ? Math.min(Math.round(dep.amount * 100), totalCents) : totalCents;
   return { pickupLoc, lines, method, feeCents, feeLabel, subtotalCents, totalCents, isDeposit, dueCents, balanceCents: totalCents - dueCents };
 }
