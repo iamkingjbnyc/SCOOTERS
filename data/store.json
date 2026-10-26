@@ -1959,8 +1959,8 @@
   ],
   "perUnitByCategory": {
    "ebikes": 125,
-   "scooters": 199,
-   "dirtbikes": 249,
+   "scooters": 249,
+   "dirtbikes": 199,
    "atvs": 299,
    "gokarts": 299,
    "utvs": 499
