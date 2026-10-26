@@ -230,9 +230,11 @@
   }
 
   function cardHTML(p) {
-    var price = buyable(p) ? '<p class="bike-price">' + money(p.price) + '</p>' : '<p class="bike-price call">Call for pricing</p>';
+    var sold = !p.inStock && typeof p.price === 'number' && p.price > 0;
+    var price = buyable(p) ? '<p class="bike-price">' + money(p.price) + '</p>' : sold ? '<p class="bike-price call">Sold out</p>' : '<p class="bike-price call">Call for pricing</p>';
     var actions = buyable(p)
       ? '<button class="btn btn-primary" type="button" data-add="' + esc(p.id) + '">Add to cart</button>'
+      : sold ? '<button class="btn btn-dark" type="button" disabled>Sold out</button>'
       : '<a class="btn btn-dark" href="' + esc(STORE.business.phoneHref) + '">Call to order</a>';
     return '<div class="bike-card" data-id="' + esc(p.id) + '"><a href="' + BASE + esc(p.url) + '"><img loading="lazy" src="' + esc(img(p)) + '" alt="' + esc(p.name) + '"></a>' +
       '<div class="bike-card-body"><div class="bike-card-cat">' + esc(CAT_LABEL[p.category]) + '</div><h3><a href="' + BASE + esc(p.url) + '">' + esc(p.name) + '</a></h3>' + price +

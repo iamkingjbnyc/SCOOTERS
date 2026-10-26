@@ -323,7 +323,7 @@
    "url": "dirtbikes/db-x18-125cc-new-frame.html",
    "image": "images/dbx18-125.jpg",
    "price": 1499.0,
-   "inStock": true
+   "inStock": false
   },
   {
    "id": "dirtbikes-db-x19-125cc-new-frame",
@@ -332,7 +332,7 @@
    "url": "dirtbikes/db-x19-125cc-new-frame.html",
    "image": "images/dbx19-125.jpg",
    "price": 1499.0,
-   "inStock": true
+   "inStock": false
   },
   {
    "id": "dirtbikes-db-x4-110cc",
@@ -368,7 +368,7 @@
    "url": "dirtbikes/rxf150-freeride.html",
    "image": "images/rxf150.jpg",
    "price": 1599.0,
-   "inStock": true
+   "inStock": false
   },
   {
    "id": "dirtbikes-thunder-140",
@@ -377,7 +377,7 @@
    "url": "dirtbikes/thunder-140.html",
    "image": "images/thunder140.jpg",
    "price": 1499.0,
-   "inStock": true
+   "inStock": false
   },
   {
    "id": "dirtbikes-thunder-150cc",
@@ -386,7 +386,7 @@
    "url": "dirtbikes/thunder-150cc.html",
    "image": "images/thunder150.jpg",
    "price": 1599.0,
-   "inStock": true
+   "inStock": false
   },
   {
    "id": "dirtbikes-thunder-150cc-dlx",
@@ -395,7 +395,7 @@
    "url": "dirtbikes/thunder-150cc-dlx.html",
    "image": "images/thunder150dlx.jpg",
    "price": 1699.0,
-   "inStock": true
+   "inStock": false
   },
   {
    "id": "dirtbikes-thunder-250cc",
@@ -440,7 +440,7 @@
    "url": "dirtbikes/thunder-t20.html",
    "image": "images/thundert20.jpg",
    "price": 1499.0,
-   "inStock": true
+   "inStock": false
   },
   {
    "id": "dirtbikes-vitacci-raven-250cc-xl",

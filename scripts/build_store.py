@@ -57,6 +57,10 @@ def fee_text(n):
     return "Free" if not n else money(n)
 
 
+def soldout(p):
+    return (not p["inStock"]) and isinstance(p.get("price"), (int, float)) and p["price"] > 0
+
+
 def buyable(p):
     return p["inStock"] and isinstance(p.get("price"), (int, float)) and p["price"] > 0
 
@@ -195,8 +199,9 @@ def write(path, text):
 def card(p, base=""):
     c = CONTENT["products"][p["id"]]
     price = (f'<p class="bike-price">{money(p["price"])}</p>' if buyable(p)
-             else '<p class="bike-price call">Call for pricing</p>')
+             else '<p class="bike-price call">Sold out</p>' if soldout(p) else '<p class="bike-price call">Call for pricing</p>')
     actions = (f'<button class="btn btn-primary" type="button" data-add="{p["id"]}">Add to cart</button>' if buyable(p)
+               else '<button class="btn btn-dark" type="button" disabled>Sold out</button>' if soldout(p)
                else f'<a class="btn btn-dark" href="{STORE["business"]["phoneHref"]}">Call to order</a>')
     bullets = "".join(f"<li>{b}</li>" for b in c["bullets"][:3])
     return f'''      <div class="bike-card" data-id="{p["id"]}">
@@ -275,10 +280,10 @@ def product_jsonld(p, c):
     d = {"@context": "https://schema.org", "@type": "Product", "name": p["name"], "description": c["description"],
          "category": CAT_LABEL[p["category"]], "url": f"{SITE}/{p['url'][:-5]}", "image": imgs,
          "brand": {"@type": "Brand", "name": "NYC ATV Warehouse"}}
-    if buyable(p):
+    if buyable(p) or soldout(p):
         d["offers"] = {"@type": "Offer", "url": f"{SITE}/{p['url'][:-5]}", "priceCurrency": "USD",
                        "price": f"{p['price']:.2f}".rstrip("0").rstrip("."),
-                       "availability": "https://schema.org/InStock", "itemCondition": "https://schema.org/NewCondition",
+                       "availability": "https://schema.org/InStock" if buyable(p) else "https://schema.org/OutOfStock", "itemCondition": "https://schema.org/NewCondition",
                        "seller": {"@type": "Organization", "name": "NYC ATV Warehouse"}}
     return d
 
@@ -324,9 +329,15 @@ def build_product(p):
 </div>'''
         mobile = f'''<div class="mobile-buybar"><div><div class="mb-price">{money(p["price"])}</div><div class="mb-name">{H.escape(p["name"])}</div></div><button class="btn btn-primary" type="button" data-add="{p["id"]}">Add to cart</button></div>'''
     else:
-        price = '<div class="pdp-price call">Call for pricing</div>'
-        stock = ""
-        buy = f'''<div class="buy-box"><a class="btn btn-primary btn-lg btn-block" href="{STORE["business"]["phoneHref"]}">Call {STORE["business"]["phone"]} to order</a>
+        if soldout(p):
+            price = '<div class="pdp-price call">Sold out</div>'
+            stock = '<div class="pdp-stock" style="color:#b42318">Currently sold out</div>'
+            buy = f'''<div class="buy-box"><button class="btn btn-dark btn-lg btn-block" type="button" disabled>Sold out</button>
+  <p class="buy-note">This model is currently sold out. Call <a href="{STORE["business"]["phoneHref"]}">{STORE["business"]["phone"]}</a> to ask about restock.</p></div>'''
+        else:
+            price = '<div class="pdp-price call">Call for pricing</div>'
+            stock = ""
+            buy = f'''<div class="buy-box"><a class="btn btn-primary btn-lg btn-block" href="{STORE["business"]["phoneHref"]}">Call {STORE["business"]["phone"]} to order</a>
   <p class="buy-note">Online pricing for this model is coming soon.</p></div>'''
         mobile = ""
     body = f'''{header(base, cat)}
