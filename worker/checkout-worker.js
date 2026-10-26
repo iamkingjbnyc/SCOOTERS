@@ -86,8 +86,11 @@ export function computeOrder(order, products, store) {
       throw new OrderError("Please enter a complete delivery address.");
     if (method === "local") {
       if (!store.localDelivery.enabled) throw new OrderError("Local delivery is not available.");
-      if (!(store.localDelivery.zips ? store.localDelivery.zips.includes(a.zip.slice(0, 5)) : store.localDelivery.zipPrefixes.includes(a.zip.slice(0, 3)))) throw new OrderError("That ZIP is outside our local delivery area.");
-      feeCents = Math.round(store.localDelivery.fee * 100); feeLabel = store.localDelivery.label;
+      const L = store.localDelivery, z5 = a.zip.slice(0, 5);
+      const free = L.zips ? L.zips.includes(z5) : L.zipPrefixes.includes(a.zip.slice(0, 3));
+      const ext = !free && L.extended && L.extended.enabled && L.extended.zips.includes(z5);
+      if (!free && !ext) throw new OrderError("That ZIP is outside our local delivery area.");
+      feeCents = Math.round((ext ? L.extended.fee : L.fee) * 100); feeLabel = ext ? L.extended.label : L.label;
     } else {
       if (!store.shipping.enabled) throw new OrderError("Shipping is not available.");
       const per = store.shipping.perUnitByCategory;

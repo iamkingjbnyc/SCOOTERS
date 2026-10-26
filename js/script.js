@@ -57,17 +57,21 @@
     var per = STORE.shipping.perUnitByCategory || {};
     return lines.reduce(function (n, l) { return n + (per[l.p.category] || 0) * l.qty; }, 0);
   }
-  function zipInLocalZone(zip) {
+  function zipTier(zip) {
     var z = String(zip || '').replace(/\D/g, '');
     if (z.length < 5) return null;
-    var L = STORE.localDelivery;
-    return L.zips ? L.zips.indexOf(z.slice(0, 5)) !== -1 : L.zipPrefixes.indexOf(z.slice(0, 3)) !== -1;
+    var L = STORE.localDelivery, z5 = z.slice(0, 5);
+    if (L.zips ? L.zips.indexOf(z5) !== -1 : L.zipPrefixes.indexOf(z.slice(0, 3)) !== -1) return 'free';
+    if (L.extended && L.extended.enabled && L.extended.zips.indexOf(z5) !== -1) return 'ext';
+    return 'out';
   }
+  function zipInLocalZone(zip) { var t = zipTier(zip); return t === null ? null : t !== 'out'; }
+  var currentZip = '';
   function isDeposit(method) { return !!(STORE.deposit && STORE.deposit.methods.indexOf(method) !== -1); }
   function dueToday(method, total) { return isDeposit(method) ? Math.min(STORE.deposit.amount, total) : total; }
   function feeFor(method, lines) {
     if (method === 'pickup') return STORE.pickup.fee || 0;
-    if (method === 'local') return STORE.localDelivery.fee;
+    if (method === 'local') return zipTier(currentZip) === 'ext' ? STORE.localDelivery.extended.fee : STORE.localDelivery.fee;
     return shippingCost(lines);
   }
 
@@ -303,7 +307,7 @@
 
     var optHTML = {
       pickup: { ic: ICON.pin, t: S.pickup.label, d: S.pickup.detail + ' ' + money(S.deposit.amount) + ' deposit now, balance at pickup.' },
-      local: { ic: ICON.truck, t: S.localDelivery.label, d: S.localDelivery.detail + ' Available in ' + S.localDelivery.zoneLabel + '. ' + money(S.deposit.amount) + ' deposit now, balance on delivery.' },
+      local: { ic: ICON.truck, t: S.localDelivery.label, d: S.localDelivery.detail + ' ' + money(S.deposit.amount) + ' deposit now, balance on delivery.' },
       ship: { ic: ICON.box, t: S.shipping.label, d: S.shipping.detail + ' Paid in full online.' }
     };
     function methodHTML(m) {
@@ -370,7 +374,7 @@
       $('#placeBtn2').textContent = pb.textContent;
       methods.forEach(function (m) {
         var el = $('[data-mprice="' + m + '"]'); if (!el) return;
-        var f = feeFor(m, lines); el.textContent = f === 0 ? 'Free' : money(f); el.className = 'm-price' + (f === 0 ? ' free' : '');
+        var f = feeFor(m, lines); el.textContent = f === 0 ? (m === 'local' && S.localDelivery.extended ? 'Free / $' + S.localDelivery.extended.fee : 'Free') : money(f); el.className = 'm-price' + (f === 0 ? ' free' : '');
       });
       $('#addrBlock').classList.toggle('show', state.method !== 'pickup');
       $('#pickupBox').classList.toggle('show', state.method === 'pickup');
@@ -380,13 +384,15 @@
     function checkZone() {
       var msg = $('#zoneMsg'); msg.className = 'zone-msg';
       if (state.method !== 'local') return;
-      var z = $('#f_zip').value, ok = zipInLocalZone(z);
-      if (ok === null) return;
-      msg.classList.add('show', ok ? 'ok' : 'bad');
-      msg.textContent = ok ? 'Great — that ZIP is inside our local delivery area.' : 'That ZIP is outside our local delivery area. Choose "Ship to my address" or free pickup instead.';
+      var tier = zipTier($('#f_zip').value);
+      if (tier === null) return;
+      msg.classList.add('show', tier === 'out' ? 'bad' : 'ok');
+      msg.textContent = tier === 'free' ? 'Great — that ZIP is inside our free local delivery area.' :
+        tier === 'ext' ? 'We deliver there for ' + money(STORE.localDelivery.extended.fee) + ' (outside our free area). It\u2019s included in your total.' :
+        'That ZIP is outside our local delivery area (up to ' + STORE.localDelivery.extended.radiusMiles + ' miles). Choose "Ship to my address" or free pickup instead.';
     }
     app.addEventListener('change', function (e) { if (e.target.name === 'method') { state.method = e.target.value; render(); } });
-    app.addEventListener('input', function (e) { if (e.target.id === 'f_zip') checkZone(); });
+    app.addEventListener('input', function (e) { if (e.target.id === 'f_zip') { var before = currentZip; currentZip = e.target.value; if (zipTier(before) !== zipTier(currentZip)) render(); else checkZone(); } });
 
     function setErr(id, text) { var f = $('[data-f="' + id + '"]'); if (!f) return; f.classList.toggle('invalid', !!text); $('.err', f).textContent = text || ''; }
     function val(id) { var el = $('#f_' + id); return el ? el.value.replace(/[\u200B-\u200D\uFEFF]/g, '').trim() : ''; }
@@ -402,7 +408,7 @@
         need('state', /^[A-Za-z]{2}$/.test(val('state')), 'Use the 2-letter state.');
         var zipOk = /^\d{5}(-\d{4})?$/.test(val('zip'));
         need('zip', zipOk, 'Enter a 5-digit ZIP.');
-        if (zipOk && state.method === 'local') need('zip', zipInLocalZone(val('zip')), 'Outside the local delivery area.');
+        if (zipOk && state.method === 'local') need('zip', zipInLocalZone(val('zip')), 'Outside our delivery area.');
       }
       if (firstBad) { var el = $('#f_' + firstBad); if (el) el.focus(); }
       return ok;
@@ -440,7 +446,7 @@
         };
         try { sessionStorage.setItem(ORDER_KEY, JSON.stringify(snap0)); } catch (e) { /* ignore */ }
         var addr = order.address ? [order.address.line1, order.address.line2, order.address.city + ', ' + order.address.state + ' ' + order.address.zip].filter(Boolean).join(', ') : 'N/A (pickup)';
-        var methodName = state.method === 'pickup' ? 'FREE PICKUP' : state.method === 'local' ? 'FREE LOCAL DELIVERY' : 'SHIP TO ADDRESS';
+        var methodName = state.method === 'pickup' ? 'FREE PICKUP' : state.method === 'local' ? 'LOCAL DELIVERY' : 'SHIP TO ADDRESS';
         var fields = {
           _subject: 'NEW ORDER (' + methodName + ') - NYC ATV Warehouse', _template: 'table', _captcha: 'false', _honey: '',
           _next: window.location.origin + window.location.pathname.replace(/checkout\.html$/, '') + 'order-complete.html?request=1',
