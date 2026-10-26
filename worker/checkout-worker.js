@@ -127,7 +127,7 @@ export function buildStripeParams(order, calc, store, env) {
     q.set("line_items[0][price_data][unit_amount]", String(calc.dueCents));
     q.set("line_items[0][price_data][product_data][name]", `Deposit: ${itemsText}`.slice(0, 200));
     q.set("line_items[0][price_data][product_data][description]",
-      `Order total ${usd(calc.totalCents)}. Balance of ${usd(calc.balanceCents)} is due at ${where}.`);
+      `Non-refundable deposit (covers assembly and/or delivery). Order total ${usd(calc.totalCents)}. Balance of ${usd(calc.balanceCents)} is due at ${where}.`);
   } else {
     calc.lines.forEach((l, i) => {
       q.set(`line_items[${i}][quantity]`, String(l.qty));

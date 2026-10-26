@@ -1981,7 +1981,10 @@
    "local"
   ],
   "_confirm": true,
-  "note": "Pickup and local delivery: this deposit is paid online; the balance is collected at pickup/delivery. Shipping is paid in full online."
+  "note": "Pickup and local delivery: this deposit is paid online; the balance is collected at pickup/delivery. Shipping is paid in full online.",
+  "policy": "non-refundable",
+  "policyText": "The deposit is non-refundable. It covers assembly and/or delivery charges and is credited toward your order total.",
+  "short": "Non-refundable."
  },
  "assembly": {
   "title": "Ships 90% assembled in a crate",

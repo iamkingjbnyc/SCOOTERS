@@ -306,8 +306,8 @@
     var state = { method: S.pickup.enabled ? 'pickup' : methods[0] };
 
     var optHTML = {
-      pickup: { ic: ICON.pin, t: S.pickup.label, d: S.pickup.detail + ' ' + money(S.deposit.amount) + ' deposit now, balance at pickup.' },
-      local: { ic: ICON.truck, t: S.localDelivery.label, d: S.localDelivery.detail + ' ' + money(S.deposit.amount) + ' deposit now, balance on delivery.' },
+      pickup: { ic: ICON.pin, t: S.pickup.label, d: S.pickup.detail + ' ' + money(S.deposit.amount) + ' non-refundable deposit now, balance at pickup.' },
+      local: { ic: ICON.truck, t: S.localDelivery.label, d: S.localDelivery.detail + ' ' + money(S.deposit.amount) + ' non-refundable deposit now, balance on delivery.' },
       ship: { ic: ICON.box, t: S.shipping.label, d: S.shipping.detail + ' Paid in full online.' }
     };
     function methodHTML(m) {
@@ -333,6 +333,7 @@
       '</div>' +
       '<div class="co-card"><h2><span class="n">3</span>Payment</h2><p style="color:var(--text-muted);font-size:.93rem" id="payNote"></p>' +
       '<div class="assembly-note" id="assemblyNote" style="display:none"><span class="ic">' + ICON.box + '</span><div><strong>' + esc(S.assembly.title) + '</strong><span>' + esc(S.assembly.text) + '</span></div></div>' +
+      '<div class="field" data-f="depositOk" id="depositOkWrap" style="display:none;margin-top:12px"><label style="display:flex;gap:10px;align-items:flex-start;font-weight:600;font-size:.9rem;cursor:pointer"><input type="checkbox" id="f_depositOk" style="margin-top:3px;width:18px;height:18px"><span>I understand the ' + money(S.deposit.amount) + ' deposit is non-refundable and covers assembly and/or delivery charges.</span></label><div class="err"></div></div>' +
       '<button class="btn btn-primary btn-block btn-lg" id="placeBtn2" type="button" style="margin-top:14px">Place order</button><div id="coError2" class="zone-msg bad" role="alert"></div></div>' +
       '</form></div>' +
       '<aside class="summary"><div class="co-card"><h2 style="margin-bottom:6px">Order summary</h2><div id="sumLines"></div><div class="sum-rows" id="sumRows"></div>' +
@@ -367,7 +368,7 @@
       var pn = $('#payNote'), pb = $('#placeBtn');
       var label2 = null;
       if (S.checkoutEndpoint) {
-        pn.textContent = t.balance ? 'Pay a ' + money(t.due) + ' deposit securely online to reserve your order. The remaining ' + money(t.balance) + ' is due at ' + (state.method === 'pickup' ? 'pickup' : 'delivery') + '.' : 'Pay the full ' + money(t.due) + ' securely online with your card.';
+        pn.textContent = t.balance ? 'Pay a ' + money(t.due) + ' deposit securely online to reserve your order. ' + S.deposit.policyText + ' The remaining ' + money(t.balance) + ' is due at ' + (state.method === 'pickup' ? 'pickup' : 'delivery') + '.' : 'Pay the full ' + money(t.due) + ' securely online with your card.';
         pb.textContent = t.balance ? 'Pay ' + money(t.due) + ' deposit' : 'Pay ' + money(t.due);
       } else if (S.orderRequestEndpoint) {
         pn.textContent = 'No card is needed online. Send us your order and we\u2019ll contact you within 1 business day to confirm the details and take ' + (t.balance ? 'your ' + money(t.due) + ' deposit (the remaining ' + money(t.balance) + ' is due at ' + (state.method === 'pickup' ? 'pickup' : 'delivery') + ')' : 'payment') + (state.method === 'ship' ? ', including the final shipping cost' : '') + '.';
@@ -378,6 +379,7 @@
         var f = feeFor(m, lines); el.textContent = f === 0 ? (m === 'local' && S.localDelivery.extended ? 'Free / $' + S.localDelivery.extended.fee : 'Free') : money(f); el.className = 'm-price' + (f === 0 ? ' free' : '');
       });
       $('#addrBlock').classList.toggle('show', state.method !== 'pickup');
+      $('#depositOkWrap').style.display = (t.balance ? 'block' : 'none');
       $('#assemblyNote').style.display = state.method === 'ship' ? 'flex' : 'none';
       $('#pickupBox').classList.toggle('show', state.method === 'pickup');
       checkZone();
@@ -404,6 +406,7 @@
       need('name', val('name').length > 1, 'Please enter your name.');
       need('phone', val('phone').replace(/\D/g, '').length >= 10, 'Enter a 10-digit phone number.');
       need('email', /^\S+@\S+\.\S+$/.test(val('email')), 'Enter a valid email address.');
+      if (isDeposit(state.method)) need('depositOk', $('#f_depositOk').checked, 'Please confirm you understand the deposit is non-refundable.');
       if (state.method !== 'pickup') {
         need('address1', val('address1').length > 3, 'Enter your street address.');
         need('city', val('city').length > 1, 'Enter your city.');
