@@ -1977,7 +1977,8 @@
    "dirtbikes": 199,
    "atvs": 299,
    "gokarts": 299,
-   "utvs": 499
+   "utvs": 499,
+   "helmets": 25
   },
   "states": [
    "AL",

@@ -5,7 +5,7 @@
   var BASE = document.body.getAttribute('data-base') || '';
   var CART_KEY = 'nycatv_cart_v1';
   var ORDER_KEY = 'nycatv_preview_order_v1';
-  var CAT_LABEL = { scooters: 'Scooters', atvs: 'ATVs', dirtbikes: 'Dirt Bikes', gokarts: 'Go-Karts', utvs: 'UTVs', ebikes: 'E-Bikes' };
+  var CAT_LABEL = { scooters: 'Scooters', atvs: 'ATVs', dirtbikes: 'Dirt Bikes', gokarts: 'Go-Karts', utvs: 'UTVs', ebikes: 'E-Bikes', helmets: 'Helmets' };
 
   var CATALOG = [], STORE = null, BY_ID = {};
 
@@ -17,7 +17,7 @@
     var hasCents = Math.round(n * 100) % 100 !== 0;
     return '$' + Number(n).toLocaleString('en-US', { minimumFractionDigits: hasCents ? 2 : 0, maximumFractionDigits: 2 });
   }
-  function img(p) { return BASE + p.image; }
+  function img(p) { return /^https?:/.test(p.image) ? p.image : BASE + p.image; }
   function buyable(p) { return p && p.inStock && typeof p.price === 'number' && p.price > 0; }
 
   /* ---------- cart state ---------- */
@@ -385,8 +385,9 @@
       });
       $('#addrBlock').classList.toggle('show', state.method !== 'pickup');
       $('#depositOkWrap').style.display = (t.balance ? 'block' : 'none');
-      $('#assemblyNote').style.display = state.method === 'ship' ? 'flex' : 'none';
-      $('#assemblyNote2').style.display = state.method === 'ship' ? 'flex' : 'none';
+      var needsAsm = state.method === 'ship' && lines.some(function (l) { return l.p.category !== 'helmets'; });
+      $('#assemblyNote').style.display = needsAsm ? 'flex' : 'none';
+      $('#assemblyNote2').style.display = needsAsm ? 'flex' : 'none';
       $('#pickupBox').classList.toggle('show', state.method === 'pickup');
       checkZone();
     }
@@ -505,9 +506,9 @@
     host.innerHTML = '<div class="container" style="max-width:760px"><div class="empty-state"><div class="success-icon">' + ICON.check + '</div>' +
       '<h1>' + (isPreview ? 'Order confirmation (preview)' : isRequest ? 'Thank you \u2014 we got your order!' : 'Thank you — order received!') + '</h1>' +
       '<p>' + (isPreview ? 'This is a preview of the page customers see after paying. No order was placed and no card was charged.' : isRequest ? 'We\u2019ll contact you within 1 business day to confirm your order and take payment. You have not been charged. Questions? Call ' + S.business.phone + '.' : 'We’ve emailed your receipt. We’ll contact you within 1 business day to arrange ' + (snap ? (snap.method === 'pickup' ? 'pickup' : snap.method === 'local' ? 'delivery' : 'shipping') : 'pickup, delivery or shipping') + '.') + '</p>' +
-      (snap && snap.method === 'ship' ? '<div class="assembly-note" style="text-align:left;max-width:560px;margin:16px auto 0"><span class="ic">' + ICON.box + '</span><div><strong>' + esc(S.assembly.title) + '</strong><span>' + esc(S.assembly.text) + '</span></div></div>' : '') +
+      (snap && snap.method === 'ship' && snap.items.some(function (i) { return !/helmet/i.test(i.name); }) ? '<div class="assembly-note" style="text-align:left;max-width:560px;margin:16px auto 0"><span class="ic">' + ICON.box + '</span><div><strong>' + esc(S.assembly.title) + '</strong><span>' + esc(S.assembly.text) + '</span></div></div>' : '') +
       (snap ? '<div class="co-card" style="text-align:left"><h2 style="font-size:1.4rem">Your order</h2>' +
-        snap.items.map(function (i) { return '<div class="sum-line"><img src="' + esc(BASE + i.image) + '" alt=""><div><strong>' + esc(i.name) + '</strong><small>Qty ' + i.qty + '</small></div><span>' + money(i.price * i.qty) + '</span></div>'; }).join('') +
+        snap.items.map(function (i) { return '<div class="sum-line"><img src="' + esc(/^https?:/.test(i.image) ? i.image : BASE + i.image) + '" alt=""><div><strong>' + esc(i.name) + '</strong><small>Qty ' + i.qty + '</small></div><span>' + money(i.price * i.qty) + '</span></div>'; }).join('') +
         '<div class="sum-rows"><div><span>Subtotal</span><span>' + money(snap.sub) + '</span></div><div><span>' + (snap.method === 'pickup' ? 'Pickup' : snap.method === 'local' ? 'Local delivery' : 'Shipping') + '</span><span>' + (snap.fee ? money(snap.fee) : '<span class="free">Free</span>') + '</span></div><div class="t"><span>Order total</span><span>' + money(snap.total) + '</span></div>' +
         (snap.due != null ? '<div class="due"><span>' + (isRequest ? 'To be collected' : isPreview ? 'Paid today (preview)' : 'Paid today') + (snap.balance ? ' (deposit)' : '') + '</span><span>' + money(snap.due) + '</span></div>' : '') +
         (snap.balance ? '<div class="bal"><span>Balance due at ' + (snap.method === 'pickup' ? 'pickup' : 'delivery') + '</span><span>' + money(snap.balance) + '</span></div>' : '') + '</div>' +

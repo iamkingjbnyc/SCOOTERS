@@ -32,7 +32,7 @@ TESTIMONIALS = open("scripts/snippets/testimonials.html", encoding="utf-8").read
 BY_ID = {p["id"]: p for p in PRODUCTS}
 
 CATS = [("scooters", "Scooters"), ("atvs", "ATVs"), ("dirtbikes", "Dirt Bikes"),
-        ("gokarts", "Go-Karts"), ("utvs", "UTVs"), ("ebikes", "E-Bikes")]
+        ("gokarts", "Go-Karts"), ("utvs", "UTVs"), ("ebikes", "E-Bikes"), ("helmets", "Helmets")]
 CAT_LABEL = dict(CATS)
 CAT_COUNT = {c: sum(1 for p in PRODUCTS if p["category"] == c) for c, _ in CATS}
 
@@ -146,7 +146,7 @@ def footer(base):
 
 def head(title, desc, path, og_image=None, jsonld=None, noindex=False, base="", og_type="website"):
     url = f"{SITE}/{path}" if path else f"{SITE}/"
-    img = f"{SITE}/{og_image}" if og_image else f"{SITE}/images/logo.png"
+    img = (A(SITE + "/", og_image)) if og_image else f"{SITE}/images/logo.png"
     t, d = H.escape(title, quote=True), H.escape(desc, quote=True)
     robots = '<meta name="robots" content="noindex, nofollow">\n' if noindex else ""
     ld = f'<script type="application/ld+json">{json.dumps(jsonld, separators=(",", ":"), ensure_ascii=False)}</script>\n' if jsonld else ""
@@ -190,6 +190,11 @@ def page(head_html, body_inner, base, body_class=""):
 '''
 
 
+def A(base, path):
+    """Asset URL: absolute URLs pass through, local paths get the page base."""
+    return path if str(path).startswith("http") else f"{base}{path}"
+
+
 def write(path, text):
     os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
     with open(path, "w", encoding="utf-8", newline="\n") as f:
@@ -206,7 +211,7 @@ def card(p, base=""):
                else f'<a class="btn btn-dark" href="{STORE["business"]["phoneHref"]}">Call to order</a>')
     bullets = "".join(f"<li>{b}</li>" for b in c["bullets"][:3])
     return f'''      <div class="bike-card" data-id="{p["id"]}">
-        <a href="{base}{p["url"]}"><img loading="lazy" decoding="async" src="{base}{p["image"]}" alt="{H.escape(p["name"], quote=True)} {CAT_LABEL[p["category"]].rstrip("s").lower()}"></a>
+        <a href="{base}{p["url"]}"><img loading="lazy" decoding="async" src="{A(base, p["image"])}" alt="{H.escape(p["name"], quote=True)} {CAT_LABEL[p["category"]].rstrip("s").lower()}"></a>
         <div class="bike-card-body">
           <div class="bike-card-cat">{CAT_LABEL[p["category"]]}</div>
           <h3><a href="{base}{p["url"]}">{p["name"]}</a></h3>
@@ -277,7 +282,7 @@ def build_category(cat):
 
 
 def product_jsonld(p, c):
-    imgs = [f"{SITE}/{t}" for t in c["thumbs"]]
+    imgs = [A(SITE + "/", t) for t in c["thumbs"]]
     d = {"@context": "https://schema.org", "@type": "Product", "name": p["name"], "description": c["description"],
          "category": CAT_LABEL[p["category"]], "url": f"{SITE}/{p['url'][:-5]}", "image": imgs,
          "brand": {"@type": "Brand", "name": "NYC ATV Warehouse"}}
@@ -301,7 +306,7 @@ def fulfil_opts(p):
     return f'''<div class="fulfil-opts">
   <div class="fulfil-opt"><span class="ic">{ICON["pin"]}</span><div><strong>Free pickup &mdash; <span class="free">Free</span></strong><span class="d">Ready in Little Ferry, NJ (Mon&ndash;Fri 10am&ndash;5pm) or the Bronx, NY (Mon&ndash;Fri 10am&ndash;6pm). {dep} non-refundable deposit online, balance at pickup.</span></div></div>
   <div class="fulfil-opt"><span class="ic">{ICON["truck"]}</span><div><strong>Free local delivery{"" if not s["localDelivery"]["fee"] else " &mdash; " + fee_text(s["localDelivery"]["fee"])}</strong><span class="d">Free across {s["localDelivery"]["zoneLabel"]}. {money(s["localDelivery"]["extended"]["fee"])} for Long Island and up to {s["localDelivery"]["extended"]["radiusMiles"]} miles. {dep} non-refundable deposit online, balance on delivery.</span></div></div>
-  <div class="fulfil-opt"><span class="ic">{ICON["box"]}</span><div><strong>Shipped to your address &mdash; <span data-ship-rate="{p["category"]}">{money(rate)}</span> per unit</strong><span class="d">Pay in full online. Continental U.S. only. Ships about 90% assembled in a crate &mdash; handlebars, wheels and a few other parts may need to be attached before it is ready to ride. Assembly instructions are included.</span></div></div>
+  <div class="fulfil-opt"><span class="ic">{ICON["box"]}</span><div><strong>Shipped to your address &mdash; <span data-ship-rate="{p["category"]}">{money(rate)}</span> per unit</strong><span class="d">Pay in full online. Continental U.S. only.{"" if p["category"] == "helmets" else " Ships about 90% assembled in a crate &mdash; handlebars, wheels and a few other parts may need to be attached before it is ready to ride. Assembly instructions are included."}</span></div></div>
 </div>'''
 
 
@@ -312,7 +317,7 @@ def build_product(p):
     desc = c["description"].replace("Full specs, pricing, and availability.",
                                     "Buy online — shipping, local delivery or free pickup.")
     thumbs = "".join(
-        f'<img{"" if i == 0 else " loading=\"lazy\" decoding=\"async\""} src="{base}{t}" class="thumb{" active" if i == 0 else ""}" alt="{H.escape(p["name"], quote=True)} photo {i + 1}">'
+        f'<img{"" if i == 0 else " loading=\"lazy\" decoding=\"async\""} src="{A(base, t)}" class="thumb{" active" if i == 0 else ""}" alt="{H.escape(p["name"], quote=True)} photo {i + 1}">'
         for i, t in enumerate(c["thumbs"]))
     thumbs_html = f'<div class="gallery-thumbs">{thumbs}</div>' if len(c["thumbs"]) > 1 else ""
     specs = "".join(f"<li><strong>{k}</strong><span>{v}</span></li>" for k, v in c["specs"])
@@ -349,7 +354,7 @@ def build_product(p):
 <section class="pdp" id="pdp" data-id="{p["id"]}">
   <div class="container pdp-grid">
     <div class="pdp-gallery">
-      <div class="pdp-main"><img id="mainPhoto" src="{base}{c["main"]}" alt="{H.escape(p["name"], quote=True)}"></div>
+      <div class="pdp-main"><img id="mainPhoto" src="{A(base, c["main"])}" alt="{H.escape(p["name"], quote=True)}"></div>
       {thumbs_html}
     </div>
     <div class="pdp-info">
@@ -391,7 +396,7 @@ def build_home():
     picks = [i for i in picks if i in BY_ID]
     pick_cards = "\n".join(card(BY_ID[i]) for i in picks)
     tiles = [("scooters", "images/scooter.png"), ("atvs", "images/atv.jpg"), ("dirtbikes", "images/dirtbike.jpg"),
-             ("gokarts", "images/go-kart.jpg"), ("utvs", "images/utv.jfif"), ("ebikes", "images/gt2000.jfif")]
+             ("gokarts", "images/go-kart.jpg"), ("utvs", "images/utv.jfif"), ("ebikes", "images/gt2000.jfif"), ("helmets", "https://static.wixstatic.com/media/44abe9_c0193e991d684df3bef91337fc2631b3~mv2.jpeg/v1/crop/x_0,y_360,w_739,h_800/fill/w_640,h_693,al_c,q_85/file.jpg")]
     tile_html = "".join(
         f'''<a class="category-card" href="{c}.html"><img{"" if i == 0 else " loading=\"lazy\" decoding=\"async\""} src="{im}" alt="{CAT_LABEL[c]} for sale at NYC ATV Warehouse"><div class="category-card-label"><h3>{CAT_LABEL[c]}</h3><span>{CAT_COUNT[c]} models</span></div></a>'''
         for i, (c, im) in enumerate(tiles))
