@@ -659,6 +659,13 @@ def build_sitemap():
     for extra in ("shipping-pickup", "returns"):
         if f"/{extra}<" not in s:
             s = s.replace("</urlset>", f"  <url><loc>{SITE}/{extra}</loc><lastmod>2026-10-25</lastmod></url>\n</urlset>")
+    for p in PRODUCTS:
+        if p["category"] == "helmets":
+            loc = f"{SITE}/{p['url'][:-5]}"
+            if f"<loc>{loc}</loc>" not in s:
+                s = s.replace("</urlset>", f"  <url><loc>{loc}</loc><lastmod>2026-10-25</lastmod></url>\n</urlset>")
+    if f"<loc>{SITE}/helmets</loc>" not in s:
+        s = s.replace("</urlset>", f"  <url><loc>{SITE}/helmets</loc><lastmod>2026-10-25</lastmod></url>\n</urlset>")
     write("sitemap.xml", s)
 
 
