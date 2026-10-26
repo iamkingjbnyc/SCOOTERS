@@ -476,7 +476,7 @@
    "url": "ebikes/gt06-e-scooter.html",
    "image": "images/GT06.jfif",
    "price": 599.0,
-   "inStock": true
+   "inStock": false
   },
   {
    "id": "ebikes-ouxi-gt-2000",
@@ -557,7 +557,7 @@
    "url": "ebikes/rfn-warrior-pro-e15.html",
    "image": "images/rfnwarriorproe15.jpg",
    "price": 5499.0,
-   "inStock": true
+   "inStock": false
   },
   {
    "id": "ebikes-rfn-warrior-youth-sx-e5",
