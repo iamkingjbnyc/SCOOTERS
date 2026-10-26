@@ -114,7 +114,7 @@ export function computeOrder(order, products, store) {
   const dep = store.deposit;
   const HR = store.rules && store.rules.helmetsOnly;
   const helmetsOnly = lines.every((l) => l.p.category === "helmets");
-  const isDeposit = !!(dep && dep.methods.includes(method)) && !(HR && HR.noDeposit && helmetsOnly);
+  const isDeposit = !!(dep && dep.methods.includes(method)) && !(HR && HR.noDeposit && helmetsOnly) && order.payFull !== true; // payFull: customer chose to pay the whole amount today (e.g. to finance with Affirm)
   const dueCents = isDeposit ? Math.min(Math.round(dep.amount * 100), totalCents) : totalCents;
   return { pickupLoc, lines, method, feeCents, feeLabel, subtotalCents, totalCents, isDeposit, dueCents, balanceCents: totalCents - dueCents };
 }
@@ -153,7 +153,10 @@ export function buildStripeParams(order, calc, store, env) {
     q.set("shipping_options[0][shipping_rate_data][fixed_amount][currency]", "usd");
   }
 
-  if (calc.method !== "pickup") {
+  if (calc.method === "pickup") {
+    // Affirm needs a customer address on the payment page; ask for it so financing can be offered on pickup orders too.
+    q.set("shipping_address_collection[allowed_countries][0]", "US");
+  } else {
     const a = order.address;
     q.set("payment_intent_data[shipping][name]", order.customer.name);
     q.set("payment_intent_data[shipping][phone]", order.customer.phone);
@@ -173,6 +176,7 @@ export function buildStripeParams(order, calc, store, env) {
     items: itemsText.slice(0, 480),
     order_total: usd(calc.totalCents),
     paid_today: usd(calc.dueCents),
+    paid_in_full: calc.isDeposit ? "no" : "yes",
     balance_due: usd(calc.balanceCents),
   };
   for (const [k, v] of Object.entries(meta)) { q.set(`metadata[${k}]`, v); q.set(`payment_intent_data[metadata][${k}]`, v); }

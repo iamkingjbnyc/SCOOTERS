@@ -546,7 +546,9 @@ h2.section-title, h1.section-title { font-size: clamp(2rem, 4vw, 3rem); margin-b
 @media (max-width: 760px) {
   :root { --header-h: 64px; }
   section { padding: 48px 0; }
-  .topbar-items span:nth-child(n+2) { display: none; }
+  .topbar-items span:nth-child(n+2):not(.topbar-fin) { display: none; }
+  .topbar-items { gap: 4px 16px; justify-content: center; }
+  .topbar { font-size: .78rem; }
   .topbar-inner { justify-content: center; }
   .topbar a.topbar-phone { display: none; }
   .nav-toggle { display: flex; }
@@ -593,3 +595,9 @@ h2.section-title, h1.section-title { font-size: clamp(2rem, 4vw, 3rem); margin-b
 .assembly-note .ic svg { width: 22px; height: 22px; }
 .assembly-note strong { display: block; color: var(--ink); font-size: .93rem; margin-bottom: 2px; }
 .assembly-note.wide { margin-top: 18px; }
+
+/* financing */
+.fin-banner { display: flex; align-items: center; gap: 12px; margin-top: 14px; padding: 14px 18px; border: 1px solid var(--gold); background: #fffaf0; border-radius: 12px; font-size: .95rem; }
+.fin-banner .ic svg { width: 22px; height: 22px; color: var(--gold); }
+.fin-banner a { font-weight: 700; text-decoration: underline; white-space: nowrap; }
+.fin-note { color: var(--text); }

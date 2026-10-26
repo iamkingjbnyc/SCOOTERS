@@ -73,6 +73,7 @@ def topbar():
     <span>{ICON["pin"]}Free pickup in Little Ferry, NJ / Bronx, NY</span>
     <span>{ICON["truck"]}Free local delivery &middot; NYC Metro</span>
     <span>{ICON["box"]}Shipped to the continental U.S.</span>
+    <span class="topbar-fin">{ICON["check"]}{STORE["financing"]["short"]}</span>
   </div>
   <a class="topbar-phone" href="{b["phoneHref"]}">Call {b["phone"]}</a>
 </div></div>'''
@@ -234,6 +235,7 @@ def side_box(base):
   <li>{ICON["check"]}<span><strong>Free pickup</strong> in Little Ferry, NJ or the Bronx, NY</span></li>
   <li>{ICON["check"]}<span><strong>Free local delivery</strong> across {s["localDelivery"]["zoneLabel"]}</span></li>
   <li>{ICON["check"]}<span><strong>Shipped</strong> to your address</span></li>
+  <li>{ICON["check"]}<span><strong>{s["financing"]["headline"]}</strong> &mdash; choose Affirm at checkout</span></li>
 </ul><a class="link" href="{base}shipping-pickup.html">Delivery details &rarr;</a></div>'''
 
 
@@ -338,6 +340,7 @@ def build_product(p):
   </div>
   <div class="buy-row" style="margin-top:12px"><button class="btn btn-buy btn-lg btn-block" type="button" data-buy="{p["id"]}" data-use-qty>Buy it now</button></div>
   <p class="buy-note">Choose shipping, local delivery or free pickup at checkout.</p>
+  <p class="buy-note fin-note"><strong>{STORE["financing"]["headline"]}.</strong> {STORE["financing"]["instruction"]}</p>
   {fulfil_opts(p)}
 </div>'''
         mobile = f'''<div class="mobile-buybar"><div><div class="mb-price">{money(p["price"])}</div><div class="mb-name">{H.escape(p["name"])}</div></div><button class="btn btn-primary" type="button" data-add="{p["id"]}">Add to cart</button></div>'''
@@ -418,7 +421,9 @@ def build_home():
   <div class="fulfil-card"><span class="ic">{ICON["pin"]}</span><div><h3>Free pickup</h3><p>Order online, then pick it up in Little Ferry, NJ or the Bronx, NY. No fee.</p><span class="tag">Free</span></div></div>
   <div class="fulfil-card"><span class="ic">{ICON["truck"]}</span><div><h3>Free local delivery</h3><p>Free across {s["localDelivery"]["zoneLabel"]}. Long Island and up to {s["localDelivery"]["extended"]["radiusMiles"]} miles: {money(s["localDelivery"]["extended"]["fee"])}.</p><span class="tag">Free / {money(s["localDelivery"]["extended"]["fee"])}</span></div></div>
   <div class="fulfil-card"><span class="ic">{ICON["box"]}</span><div><h3>Shipped to you</h3><p>Every model can be ordered online and shipped to your address in the continental U.S. Ships about 90% assembled in a crate; handlebars, wheels and a few other parts may need to be attached.</p><span class="tag" style="background:var(--accent-soft);color:var(--accent)">Rates at checkout</span></div></div>
-</div></div></section>'''
+</div>
+  <div class="fin-banner"><span class="ic">{ICON["check"]}</span><div><strong>{s["financing"]["headline"]} with {s["financing"]["provider"]}.</strong> {s["financing"]["instruction"]} <a href="shipping-pickup.html#financing">How financing works</a></div></div>
+</div></section>'''
     body = f'''{header("")}
 
 <main>
@@ -478,14 +483,15 @@ def build_home():
   <div class="container split">
     <div class="split-media"><img loading="lazy" decoding="async" src="images/financing.jpg" alt="Discounted units at NYC ATV Warehouse"></div>
     <div class="split-text">
-      <p class="eyebrow">Lowest price</p>
-      <h2 class="section-title">Get riding, your way</h2>
-      <p>Financing is currently unavailable, but we&rsquo;ve discounted select units by up to 30% to give you the lowest price possible.</p>
+      <p class="eyebrow">Financing</p>
+      <h2 class="section-title">Financing available</h2>
+      <p>Pay over time with Affirm. Add your ride to the cart and <strong>choose Affirm as your payment method at checkout</strong>.</p>
       <ul>
+        <li>{ICON["check20"]} Choose Affirm at checkout to finance your order</li>
         <li>{ICON["check20"]} Select units discounted by up to 30%</li>
         <li>{ICON["check20"]} Questions? Call or stop by the warehouse</li>
       </ul>
-      <a href="scooters.html" class="btn btn-primary">Shop deals</a><a href="financing.html" class="btn btn-outline">Financing info</a>
+      <a href="scooters.html" class="btn btn-primary">Shop now</a><a href="financing.html" class="btn btn-outline">Financing info</a>
     </div>
   </div>
 </section>
@@ -554,6 +560,8 @@ def build_shipping():
       <li><strong>Shipping:</strong> pay the full amount online, including shipping.</li>
       <li><strong>Helmet-only orders:</strong> no deposit. Pay in full online for pickup, delivery or shipping.</li>
     </ul>
+    <h2 id="financing">Financing available</h2>
+    <p>{s["financing"]["instruction"]} Affirm lets you split your purchase into monthly payments. To finance your whole order, pay the full amount today (check &ldquo;Pay the full amount today&rdquo; at checkout) and choose Affirm on the payment page. {s["financing"]["fine"]}</p>
     <h2>After you order</h2>
     <p>We&rsquo;ll contact you within 1 business day to confirm your order and arrange pickup, delivery or shipping.</p>
     <h2>Before you buy</h2>

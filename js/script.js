@@ -69,11 +69,13 @@
   var currentZip = '';
   function helmetsOnly(lines) { return !!lines && lines.length > 0 && lines.every(function (l) { return l.p.category === 'helmets'; }); }
   function helmetRules() { return (STORE.rules && STORE.rules.helmetsOnly) || null; }
-  function isDeposit(method, lines) {
+  var payFullFlag = false; // customer chose to pay the whole amount today (needed to finance it with Affirm)
+  function depositEligible(method, lines) {
     var R = helmetRules();
     if (R && R.noDeposit && helmetsOnly(lines)) return false;
     return !!(STORE.deposit && STORE.deposit.methods.indexOf(method) !== -1);
   }
+  function isDeposit(method, lines) { return depositEligible(method, lines) && !payFullFlag; }
   function dueToday(method, total, lines) { return isDeposit(method, lines) ? Math.min(STORE.deposit.amount, total) : total; }
   function localAllowed(lines, sub) { var R = helmetRules(); return !(R && helmetsOnly(lines) && sub < R.localDeliveryMinSubtotal); }
   function feeFor(method, lines) {
@@ -354,6 +356,7 @@
       '</div>' +
       '<div class="co-card"><h2><span class="n">3</span>Payment</h2><p style="color:var(--text-muted);font-size:.93rem" id="payNote"></p>' +
       '<div class="assembly-note" id="assemblyNote" style="display:none"><span class="ic">' + ICON.box + '</span><div><strong>' + esc(S.assembly.title) + '</strong><span>' + esc(S.assembly.text) + '</span></div></div>' +
+      '<div id="payFullWrap" style="display:none;margin-top:12px"><label style="display:flex;gap:10px;align-items:flex-start;font-weight:600;font-size:.9rem;cursor:pointer"><input type="checkbox" id="f_payFull" style="margin-top:3px;width:18px;height:18px"><span>Pay the full amount today instead of a deposit. <span style="font-weight:400;color:var(--text-muted)">Choose this to finance your whole order with Affirm.</span></span></label></div>' +
       '<div class="field" data-f="depositOk" id="depositOkWrap" style="display:none;margin-top:12px"><label style="display:flex;gap:10px;align-items:flex-start;font-weight:600;font-size:.9rem;cursor:pointer"><input type="checkbox" id="f_depositOk" style="margin-top:3px;width:18px;height:18px"><span>I understand the ' + money(S.deposit.amount) + ' deposit is non-refundable and covers assembly and/or delivery charges.</span></label><div class="err"></div></div>' +
       '<button class="btn btn-primary btn-block btn-lg" id="placeBtn2" type="button" style="margin-top:14px">Place order</button><p class="co-fine" style="margin-top:10px">By placing your order you agree to our <a href="returns.html" target="_blank" rel="noopener">return policy</a>.</p><div id="coError2" class="zone-msg bad" role="alert"></div></div>' +
       '</form></div>' +
@@ -362,7 +365,7 @@
       '<div id="coError" class="zone-msg bad" role="alert"></div></div></div></aside></div></div>';
 
     var payNote = $('#payNote'), fine = $('#coFine');
-    if (S.checkoutEndpoint) { fine.textContent = 'You’ll enter your card on Stripe’s secure payment page. We never see your card number.'; }
+    if (S.checkoutEndpoint) { fine.textContent = 'You’ll enter your payment on Stripe’s secure payment page (choose Affirm there to finance). We never see your card number.'; }
     else if (S.orderRequestEndpoint) {
       fine.textContent = 'You are not charged until we have confirmed your order with you.';
       $('#placeBtn').textContent = 'Send my order';
@@ -394,7 +397,7 @@
       var pn = $('#payNote'), pb = $('#placeBtn');
       var label2 = null;
       if (S.checkoutEndpoint) {
-        pn.textContent = t.balance ? 'Pay a ' + money(t.due) + ' deposit securely online to reserve your order. ' + S.deposit.policyText + ' The remaining ' + money(t.balance) + ' is due at ' + (state.method === 'pickup' ? 'pickup' : 'delivery') + '.' : 'Pay the full ' + money(t.due) + ' securely online with your card.';
+        pn.textContent = t.balance ? 'Pay a ' + money(t.due) + ' deposit securely online to reserve your order. ' + S.deposit.policyText + ' The remaining ' + money(t.balance) + ' is due at ' + (state.method === 'pickup' ? 'pickup' : 'delivery') + '. Financing available: to finance your whole order, check \u201cPay the full amount today\u201d below, then choose Affirm on the payment page.' : 'Pay the full ' + money(t.due) + ' securely online. Financing available: choose Affirm on the payment page to pay over time.';
         pb.textContent = t.balance ? 'Pay ' + money(t.due) + ' deposit' : 'Pay ' + money(t.due);
       } else if (S.orderRequestEndpoint) {
         pn.textContent = 'No card is needed online. Send us your order and we\u2019ll contact you within 1 business day to confirm the details and take ' + (t.balance ? 'your ' + money(t.due) + ' deposit (the remaining ' + money(t.balance) + ' is due at ' + (state.method === 'pickup' ? 'pickup' : 'delivery') + ')' : 'payment') + (state.method === 'ship' ? ', including the final shipping cost' : '') + '.';
@@ -406,6 +409,7 @@
       });
       $('#addrBlock').classList.toggle('show', state.method !== 'pickup');
       $('#depositOkWrap').style.display = (t.balance ? 'block' : 'none');
+      $('#payFullWrap').style.display = (S.checkoutEndpoint && depositEligible(state.method, lines)) ? 'block' : 'none';
       var needsAsm = state.method === 'ship' && lines.some(function (l) { return l.p.category !== 'helmets'; });
       $('#assemblyNote').style.display = needsAsm ? 'flex' : 'none';
       $('#assemblyNote2').style.display = needsAsm ? 'flex' : 'none';
@@ -457,7 +461,7 @@
       var btn = { set disabled(v) { $('#placeBtn').disabled = v; $('#placeBtn2').disabled = v; }, get textContent() { return $('#placeBtn').textContent; }, set textContent(v) { $('#placeBtn').textContent = v; $('#placeBtn2').textContent = v; } };
       var t = totals();
       var order = {
-        method: state.method, items: lines.map(function (l) { return { id: l.p.id, qty: l.qty }; }),
+        method: state.method, payFull: payFullFlag && depositEligible(state.method, lines), items: lines.map(function (l) { return { id: l.p.id, qty: l.qty }; }),
         customer: { name: val('name'), email: val('email'), phone: val('phone'), notes: $('#f_notes').value.trim() },
         pickupLocation: state.method === 'pickup' ? pickupLoc().id : null,
         address: state.method === 'pickup' ? null : { line1: val('address1'), line2: val('address2'), city: val('city'), state: val('state').toUpperCase(), zip: val('zip') }
@@ -506,6 +510,7 @@
         clearCart(); window.location.href = BASE + 'order-complete.html?preview=1';
       }
     }
+    $('#f_payFull').addEventListener('change', function () { payFullFlag = this.checked; render(); });
     $('#placeBtn').addEventListener('click', onPlace);
     $('#placeBtn2').addEventListener('click', onPlace);
     render();

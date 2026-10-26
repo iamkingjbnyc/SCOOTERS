@@ -2073,5 +2073,13 @@
    "_note": "Applies when every item in the order is a helmet. Local delivery is available if the order has a vehicle or the subtotal is at least this amount.",
    "_confirm": true
   }
+ },
+ "financing": {
+  "enabled": true,
+  "provider": "Affirm",
+  "headline": "Financing available",
+  "short": "Financing available with Affirm",
+  "instruction": "Choose Affirm as your payment method at checkout.",
+  "fine": "Subject to approval. Affirm rates and terms vary; some purchases may qualify for 0% APR. Pay in full today (not a deposit) to finance the whole order."
  }
 }
