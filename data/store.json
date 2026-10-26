@@ -1982,5 +1982,10 @@
   ],
   "_confirm": true,
   "note": "Pickup and local delivery: this deposit is paid online; the balance is collected at pickup/delivery. Shipping is paid in full online."
+ },
+ "assembly": {
+  "title": "Ships 90% assembled in a crate",
+  "text": "Your unit arrives about 90% assembled, securely packed in a crate. Handlebars, wheels and a few other parts may need to be attached before it is ready to ride. Basic tools and instructions are all you need, or ask us about assembly help.",
+  "short": "Ships about 90% assembled in a crate. Handlebars, wheels and a few other parts may need to be attached before it is ready to ride."
  }
 }

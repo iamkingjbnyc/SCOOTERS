@@ -332,6 +332,7 @@
       '<div class="field"><label for="f_notes">Order notes (optional)</label><textarea id="f_notes" name="notes" rows="3" placeholder="Anything we should know?" style="width:100%;border:1.5px solid var(--line);border-radius:8px;padding:12px 14px;font:inherit"></textarea></div>' +
       '</div>' +
       '<div class="co-card"><h2><span class="n">3</span>Payment</h2><p style="color:var(--text-muted);font-size:.93rem" id="payNote"></p>' +
+      '<div class="assembly-note" id="assemblyNote" style="display:none"><span class="ic">' + ICON.box + '</span><div><strong>' + esc(S.assembly.title) + '</strong><span>' + esc(S.assembly.text) + '</span></div></div>' +
       '<button class="btn btn-primary btn-block btn-lg" id="placeBtn2" type="button" style="margin-top:14px">Place order</button><div id="coError2" class="zone-msg bad" role="alert"></div></div>' +
       '</form></div>' +
       '<aside class="summary"><div class="co-card"><h2 style="margin-bottom:6px">Order summary</h2><div id="sumLines"></div><div class="sum-rows" id="sumRows"></div>' +
@@ -377,6 +378,7 @@
         var f = feeFor(m, lines); el.textContent = f === 0 ? (m === 'local' && S.localDelivery.extended ? 'Free / $' + S.localDelivery.extended.fee : 'Free') : money(f); el.className = 'm-price' + (f === 0 ? ' free' : '');
       });
       $('#addrBlock').classList.toggle('show', state.method !== 'pickup');
+      $('#assemblyNote').style.display = state.method === 'ship' ? 'flex' : 'none';
       $('#pickupBox').classList.toggle('show', state.method === 'pickup');
       checkZone();
     }
@@ -491,6 +493,7 @@
     host.innerHTML = '<div class="container" style="max-width:760px"><div class="empty-state"><div class="success-icon">' + ICON.check + '</div>' +
       '<h1>' + (isPreview ? 'Order confirmation (preview)' : isRequest ? 'Thank you \u2014 we got your order!' : 'Thank you — order received!') + '</h1>' +
       '<p>' + (isPreview ? 'This is a preview of the page customers see after paying. No order was placed and no card was charged.' : isRequest ? 'We\u2019ll contact you within 1 business day to confirm your order and take payment. You have not been charged. Questions? Call ' + S.business.phone + '.' : 'We’ve emailed your receipt. We’ll contact you within 1 business day to arrange ' + (snap ? (snap.method === 'pickup' ? 'pickup' : snap.method === 'local' ? 'delivery' : 'shipping') : 'pickup, delivery or shipping') + '.') + '</p>' +
+      (snap && snap.method === 'ship' ? '<div class="assembly-note" style="text-align:left;max-width:560px;margin:16px auto 0"><span class="ic">' + ICON.box + '</span><div><strong>' + esc(S.assembly.title) + '</strong><span>' + esc(S.assembly.text) + '</span></div></div>' : '') +
       (snap ? '<div class="co-card" style="text-align:left"><h2 style="font-size:1.4rem">Your order</h2>' +
         snap.items.map(function (i) { return '<div class="sum-line"><img src="' + esc(BASE + i.image) + '" alt=""><div><strong>' + esc(i.name) + '</strong><small>Qty ' + i.qty + '</small></div><span>' + money(i.price * i.qty) + '</span></div>'; }).join('') +
         '<div class="sum-rows"><div><span>Subtotal</span><span>' + money(snap.sub) + '</span></div><div><span>' + (snap.method === 'pickup' ? 'Pickup' : snap.method === 'local' ? 'Local delivery' : 'Shipping') + '</span><span>' + (snap.fee ? money(snap.fee) : '<span class="free">Free</span>') + '</span></div><div class="t"><span>Order total</span><span>' + money(snap.total) + '</span></div>' +

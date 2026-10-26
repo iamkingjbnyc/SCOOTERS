@@ -283,6 +283,11 @@ def product_jsonld(p, c):
     return d
 
 
+def assembly_note(extra=""):
+    a = STORE["assembly"]
+    return f'<div class="assembly-note {extra}"><span class="ic">{ICON["box"]}</span><div><strong>{a["title"]}</strong><span>{a["text"]}</span></div></div>'
+
+
 def fulfil_opts(p):
     s = STORE
     dep = money(s["deposit"]["amount"])
@@ -290,7 +295,7 @@ def fulfil_opts(p):
     return f'''<div class="fulfil-opts">
   <div class="fulfil-opt"><span class="ic">{ICON["pin"]}</span><div><strong>Free pickup &mdash; <span class="free">Free</span></strong><span class="d">Ready at our Little Ferry, NJ warehouse. Mon&ndash;Fri 10am&ndash;5pm. {dep} deposit online, balance at pickup.</span></div></div>
   <div class="fulfil-opt"><span class="ic">{ICON["truck"]}</span><div><strong>Free local delivery{"" if not s["localDelivery"]["fee"] else " &mdash; " + fee_text(s["localDelivery"]["fee"])}</strong><span class="d">Free across {s["localDelivery"]["zoneLabel"]}. {money(s["localDelivery"]["extended"]["fee"])} for Long Island and up to {s["localDelivery"]["extended"]["radiusMiles"]} miles. {dep} deposit online, balance on delivery.</span></div></div>
-  <div class="fulfil-opt"><span class="ic">{ICON["box"]}</span><div><strong>Shipped to your address &mdash; <span data-ship-rate="{p["category"]}">{money(rate)}</span> per unit</strong><span class="d">Pay in full online. Shipping is calculated at checkout.</span></div></div>
+  <div class="fulfil-opt"><span class="ic">{ICON["box"]}</span><div><strong>Shipped to your address &mdash; <span data-ship-rate="{p["category"]}">{money(rate)}</span> per unit</strong><span class="d">Pay in full online. Shipping is calculated at checkout. Ships about 90% assembled in a crate &mdash; handlebars, wheels and a few other parts may need to be attached before it is ready to ride.</span></div></div>
 </div>'''
 
 
@@ -388,7 +393,7 @@ def build_home():
     fulfil = f'''<section class="fulfil-strip"><div class="container"><div class="fulfil-grid">
   <div class="fulfil-card"><span class="ic">{ICON["pin"]}</span><div><h3>Free pickup</h3><p>Order online, then pick it up at our Little Ferry, NJ warehouse. No fee.</p><span class="tag">Free</span></div></div>
   <div class="fulfil-card"><span class="ic">{ICON["truck"]}</span><div><h3>Free local delivery</h3><p>Free across {s["localDelivery"]["zoneLabel"]}. Long Island and up to {s["localDelivery"]["extended"]["radiusMiles"]} miles: {money(s["localDelivery"]["extended"]["fee"])}.</p><span class="tag">Free / {money(s["localDelivery"]["extended"]["fee"])}</span></div></div>
-  <div class="fulfil-card"><span class="ic">{ICON["box"]}</span><div><h3>Shipped to you</h3><p>Every model can be ordered online and shipped to your address.</p><span class="tag" style="background:var(--accent-soft);color:var(--accent)">Rates at checkout</span></div></div>
+  <div class="fulfil-card"><span class="ic">{ICON["box"]}</span><div><h3>Shipped to you</h3><p>Every model can be ordered online and shipped to your address. Ships about 90% assembled in a crate; handlebars, wheels and a few other parts may need to be attached.</p><span class="tag" style="background:var(--accent-soft);color:var(--accent)">Rates at checkout</span></div></div>
 </div></div></section>'''
     body = f'''{header("")}
 
@@ -517,6 +522,8 @@ def build_shipping():
   <div class="prose">
     <h2>Shipping rates</h2>
     <ul>{rows}</ul>
+    <h2>What to expect when your shipped unit arrives</h2>
+    <p>{STORE["assembly"]["text"]}</p>
     <h2>How payment works</h2>
     <ul>
       <li><strong>Free pickup and free local delivery:</strong> pay a {money(s["deposit"]["amount"])} deposit online. You pay the remaining balance when you pick up or when we deliver.</li>
