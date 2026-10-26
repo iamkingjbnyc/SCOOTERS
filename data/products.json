@@ -791,7 +791,7 @@
    "url": "scooters/tank-combat-200.html",
    "image": "images/tankcombat200.jpg",
    "price": 1599.0,
-   "inStock": true
+   "inStock": false
   },
   {
    "id": "scooters-tank-defender-150",
