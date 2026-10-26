@@ -12,7 +12,21 @@
   "enabled": true,
   "fee": 0,
   "label": "Free pickup",
-  "detail": "Pick up at our Little Ferry, NJ warehouse. We'll contact you when your order is ready."
+  "detail": "Pick up at our Little Ferry, NJ or Bronx, NY location. We'll contact you when your order is ready.",
+  "locations": [
+   {
+    "id": "littleferry",
+    "name": "Little Ferry, NJ",
+    "address": "207 Gates Rd, Little Ferry, NJ 07643",
+    "hours": "Mon-Fri 10am-5pm, Sat-Sun closed"
+   },
+   {
+    "id": "bronx",
+    "name": "Bronx, NY",
+    "address": "4301 Bronx Blvd, Bronx, NY",
+    "hours": ""
+   }
+  ]
  },
  "localDelivery": {
   "enabled": true,

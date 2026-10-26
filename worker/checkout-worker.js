@@ -72,7 +72,7 @@ export function computeOrder(order, products, store) {
   });
 
   const method = order.method;
-  let feeCents = 0, feeLabel = "";
+  let feeCents = 0, feeLabel = "", pickupLoc = null;
   const c = order.customer || {};
   if (!c.name || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(c.email || "") || String(c.phone || "").replace(/\D/g, "").length < 10)
     throw new OrderError("Please enter your name, email and phone.");
@@ -80,6 +80,8 @@ export function computeOrder(order, products, store) {
   if (method === "pickup") {
     if (!store.pickup.enabled) throw new OrderError("Pickup is not available.");
     feeCents = Math.round((store.pickup.fee || 0) * 100); feeLabel = store.pickup.label;
+    const locs = store.pickup.locations || [];
+    pickupLoc = locs.find((l) => l.id === order.pickupLocation) || locs[0] || null;
   } else if (method === "local" || method === "ship") {
     const a = order.address || {};
     if (!a.line1 || !a.city || !/^[A-Za-z]{2}$/.test(a.state || "") || !/^\d{5}(-\d{4})?$/.test(a.zip || ""))
@@ -107,7 +109,7 @@ export function computeOrder(order, products, store) {
   const dep = store.deposit;
   const isDeposit = !!(dep && dep.methods.includes(method));
   const dueCents = isDeposit ? Math.min(Math.round(dep.amount * 100), totalCents) : totalCents;
-  return { lines, method, feeCents, feeLabel, subtotalCents, totalCents, isDeposit, dueCents, balanceCents: totalCents - dueCents };
+  return { pickupLoc, lines, method, feeCents, feeLabel, subtotalCents, totalCents, isDeposit, dueCents, balanceCents: totalCents - dueCents };
 }
 
 export function buildStripeParams(order, calc, store, env) {
@@ -122,12 +124,13 @@ export function buildStripeParams(order, calc, store, env) {
   if (calc.isDeposit) {
     // One deposit line. The balance is collected in person at pickup/delivery.
     const where = calc.method === "pickup" ? "pickup" : "delivery";
+    const at = calc.pickupLoc ? ` (${calc.pickupLoc.name})` : "";
     q.set("line_items[0][quantity]", "1");
     q.set("line_items[0][price_data][currency]", "usd");
     q.set("line_items[0][price_data][unit_amount]", String(calc.dueCents));
     q.set("line_items[0][price_data][product_data][name]", `Deposit: ${itemsText}`.slice(0, 200));
     q.set("line_items[0][price_data][product_data][description]",
-      `Non-refundable deposit (covers assembly and/or delivery). Order total ${usd(calc.totalCents)}. Balance of ${usd(calc.balanceCents)} is due at ${where}.`);
+      `Non-refundable deposit (covers assembly and/or delivery). Order total ${usd(calc.totalCents)}. Balance of ${usd(calc.balanceCents)} is due at ${where}${at}.`);
   } else {
     calc.lines.forEach((l, i) => {
       q.set(`line_items[${i}][quantity]`, String(l.qty));
@@ -156,6 +159,7 @@ export function buildStripeParams(order, calc, store, env) {
   }
   const meta = {
     fulfillment: calc.method,
+    pickup_location: calc.pickupLoc ? `${calc.pickupLoc.name} - ${calc.pickupLoc.address}` : "",
     customer_name: order.customer.name,
     customer_phone: order.customer.phone,
     notes: (order.customer.notes || "").slice(0, 400),

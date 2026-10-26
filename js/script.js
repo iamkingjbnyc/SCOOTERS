@@ -303,6 +303,7 @@
     if (S.pickup.enabled) methods.push('pickup');
     if (S.localDelivery.enabled) methods.push('local');
     if (S.shipping.enabled) methods.push('ship');
+    function pickupLoc() { var el = document.querySelector('input[name=ploc]:checked'); var id = el ? el.value : S.pickup.locations[0].id; return S.pickup.locations.filter(function (L) { return L.id === id; })[0] || S.pickup.locations[0]; }
     var state = { method: S.pickup.enabled ? 'pickup' : methods[0] };
 
     var optHTML = {
@@ -320,7 +321,9 @@
     app.innerHTML = '<div class="container"><h1 class="section-title" style="margin-bottom:22px">Checkout</h1><div class="checkout-grid"><div>' +
       '<form id="coForm" novalidate>' +
       '<div class="co-card"><h2><span class="n">1</span>How do you want to get it?</h2>' + methods.map(methodHTML).join('') +
-      '<div class="pickup-box" id="pickupBox"><strong>Pickup location:</strong> ' + esc(S.business.address) + '<br>' + esc(S.business.hours) + '. We&rsquo;ll call or email you when your order is ready.</div>' +
+      '<div class="pickup-box" id="pickupBox"><strong>Choose a pickup location:</strong>' + S.pickup.locations.map(function (L, i) {
+        return '<label style="display:flex;gap:10px;align-items:flex-start;margin-top:10px;cursor:pointer;color:var(--ink)"><input type="radio" name="ploc" value="' + L.id + '"' + (i === 0 ? ' checked' : '') + ' style="margin-top:4px"><span><strong>' + esc(L.name) + '</strong><br>' + esc(L.address) + '<br><span style="color:var(--text-muted)">' + (L.hours ? esc(L.hours) : 'Call ' + esc(S.business.phone) + ' to schedule pickup') + '</span></span></label>';
+      }).join('') + '<div style="margin-top:10px">We&rsquo;ll call or email you when your order is ready.</div></div>' +
       '</div>' +
       '<div class="co-card"><h2><span class="n">2</span>Your details</h2>' +
       '<div class="grid-2">' + fieldHTML('name', 'Full name', 'text', 'autocomplete="name" required') + fieldHTML('phone', 'Phone', 'tel', 'autocomplete="tel" required') + '</div>' +
@@ -429,11 +432,12 @@
       var order = {
         method: state.method, items: lines.map(function (l) { return { id: l.p.id, qty: l.qty }; }),
         customer: { name: val('name'), email: val('email'), phone: val('phone'), notes: $('#f_notes').value.trim() },
+        pickupLocation: state.method === 'pickup' ? pickupLoc().id : null,
         address: state.method === 'pickup' ? null : { line1: val('address1'), line2: val('address2'), city: val('city'), state: val('state').toUpperCase(), zip: val('zip') }
       };
       if (S.checkoutEndpoint) {
         var snapS = {
-          method: state.method, total: t.total, sub: t.sub, fee: t.fee, due: t.due, balance: t.balance, customer: order.customer, address: order.address,
+          method: state.method, total: t.total, sub: t.sub, fee: t.fee, due: t.due, balance: t.balance, customer: order.customer, address: order.address, pickupName: state.method === 'pickup' ? pickupLoc().name + ' (' + pickupLoc().address + ')' : '',
           items: lines.map(function (l) { return { name: l.p.name, qty: l.qty, price: l.p.price, image: l.p.image }; }), at: Date.now()
         };
         try { sessionStorage.setItem(ORDER_KEY, JSON.stringify(snapS)); } catch (e) { /* ignore */ }
@@ -446,7 +450,7 @@
       } else if (S.orderRequestEndpoint) {
         // Interim live mode: email the order to the shop (same service as the contact form); payment is taken by phone.
         var snap0 = {
-          method: state.method, total: t.total, sub: t.sub, fee: t.fee, due: t.due, balance: t.balance, customer: order.customer, address: order.address,
+          method: state.method, total: t.total, sub: t.sub, fee: t.fee, due: t.due, balance: t.balance, customer: order.customer, address: order.address, pickupName: state.method === 'pickup' ? pickupLoc().name + ' (' + pickupLoc().address + ')' : '',
           items: lines.map(function (l) { return { name: l.p.name, qty: l.qty, price: l.p.price, image: l.p.image }; }), at: Date.now()
         };
         try { sessionStorage.setItem(ORDER_KEY, JSON.stringify(snap0)); } catch (e) { /* ignore */ }
@@ -455,7 +459,7 @@
         var fields = {
           _subject: 'NEW ORDER (' + methodName + ') - NYC ATV Warehouse', _template: 'table', _captcha: 'false', _honey: '',
           _next: window.location.origin + window.location.pathname.replace(/checkout\.html$/, '') + 'order-complete.html?request=1',
-          'How to get it': methodName,
+          'How to get it': methodName + (state.method === 'pickup' ? ' - ' + pickupLoc().name + ' (' + pickupLoc().address + ')' : ''),
           'Items': lines.map(function (l) { return l.qty + ' x ' + l.p.name + ' @ ' + money(l.p.price); }).join('  |  '),
           'Deposit to collect': t.balance ? money(t.due) : 'Full payment: ' + money(t.due), 'Balance due at pickup/delivery': t.balance ? money(t.balance) : '$0',
           'Subtotal': money(t.sub), 'Delivery / shipping (estimate)': t.fee ? money(t.fee) : 'Free', 'Estimated total (before sales tax)': money(t.total),
@@ -468,7 +472,7 @@
         clearCart(); f.submit();
       } else {
         var snap = {
-          method: state.method, total: t.total, sub: t.sub, fee: t.fee, due: t.due, balance: t.balance, customer: order.customer, address: order.address,
+          method: state.method, total: t.total, sub: t.sub, fee: t.fee, due: t.due, balance: t.balance, customer: order.customer, address: order.address, pickupName: state.method === 'pickup' ? pickupLoc().name + ' (' + pickupLoc().address + ')' : '',
           items: lines.map(function (l) { return { name: l.p.name, qty: l.qty, price: l.p.price, image: l.p.image }; }), at: Date.now()
         };
         try { sessionStorage.setItem(ORDER_KEY, JSON.stringify(snap)); } catch (e) { /* ignore */ }
@@ -489,7 +493,7 @@
     if (!isPreview) clearCart();
     var how = '';
     if (snap) {
-      how = snap.method === 'pickup' ? 'Free pickup at ' + S.business.address + ' (' + S.business.hours + '). We’ll contact you when it’s ready.'
+      how = snap.method === 'pickup' ? 'Free pickup at ' + (snap.pickupName || S.business.address) + '. We’ll contact you when it’s ready.'
         : snap.method === 'local' ? 'Local delivery to ' + snap.address.line1 + ', ' + snap.address.city + ', ' + snap.address.state + ' ' + snap.address.zip + '. We’ll call to schedule a delivery time.'
           : 'Shipping to ' + snap.address.line1 + ', ' + snap.address.city + ', ' + snap.address.state + ' ' + snap.address.zip + '. We\u2019ll confirm the final shipping cost with you before charging.';
     }

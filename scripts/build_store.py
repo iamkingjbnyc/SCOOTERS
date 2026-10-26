@@ -66,7 +66,7 @@ def topbar():
     b = STORE["business"]
     return f'''<div class="topbar"><div class="container topbar-inner">
   <div class="topbar-items">
-    <span>{ICON["pin"]}Free pickup in Little Ferry, NJ</span>
+    <span>{ICON["pin"]}Free pickup in Little Ferry, NJ or the Bronx, NY</span>
     <span>{ICON["truck"]}Free local delivery &middot; NYC Metro</span>
     <span>{ICON["box"]}Shipped to your door</span>
   </div>
@@ -111,7 +111,7 @@ def footer(base):
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="{base}index.html" class="logo"><img class="logo-mark" src="{base}images/logo.png" alt="NYC ATV Warehouse Scooter Co."></a>
-        <p>Scooters, ATVs, dirt bikes, go-karts, UTVs and e-bikes &mdash; shipped to your door, delivered locally for free, or ready for free pickup in Little Ferry, NJ.</p>
+        <p>Scooters, ATVs, dirt bikes, go-karts, UTVs and e-bikes &mdash; shipped to your door, delivered locally for free, or ready for free pickup in Little Ferry, NJ or the Bronx, NY.</p>
         <div class="social-row">
           <a href="https://www.facebook.com/NYCATVWAREHOUSE" target="_blank" rel="noopener" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0022 12z"/></svg></a>
         </div>
@@ -220,7 +220,7 @@ def side_cats(base, active=None):
 def side_box(base):
     s = STORE
     return f'''<div class="side-box"><h4>Ways to get it</h4><ul>
-  <li>{ICON["check"]}<span><strong>Free pickup</strong> at our Little Ferry, NJ warehouse</span></li>
+  <li>{ICON["check"]}<span><strong>Free pickup</strong> in Little Ferry, NJ or the Bronx, NY</span></li>
   <li>{ICON["check"]}<span><strong>Free local delivery</strong> across {s["localDelivery"]["zoneLabel"]}</span></li>
   <li>{ICON["check"]}<span><strong>Shipped</strong> to your address</span></li>
 </ul><a class="link" href="{base}shipping-pickup.html">Delivery details &rarr;</a></div>'''
@@ -293,7 +293,7 @@ def fulfil_opts(p):
     dep = money(s["deposit"]["amount"])
     rate = s["shipping"]["perUnitByCategory"].get(p["category"], 0)
     return f'''<div class="fulfil-opts">
-  <div class="fulfil-opt"><span class="ic">{ICON["pin"]}</span><div><strong>Free pickup &mdash; <span class="free">Free</span></strong><span class="d">Ready at our Little Ferry, NJ warehouse. Mon&ndash;Fri 10am&ndash;5pm. {dep} non-refundable deposit online, balance at pickup.</span></div></div>
+  <div class="fulfil-opt"><span class="ic">{ICON["pin"]}</span><div><strong>Free pickup &mdash; <span class="free">Free</span></strong><span class="d">Ready in Little Ferry, NJ (Mon&ndash;Fri 10am&ndash;5pm) or the Bronx, NY (call to schedule). {dep} non-refundable deposit online, balance at pickup.</span></div></div>
   <div class="fulfil-opt"><span class="ic">{ICON["truck"]}</span><div><strong>Free local delivery{"" if not s["localDelivery"]["fee"] else " &mdash; " + fee_text(s["localDelivery"]["fee"])}</strong><span class="d">Free across {s["localDelivery"]["zoneLabel"]}. {money(s["localDelivery"]["extended"]["fee"])} for Long Island and up to {s["localDelivery"]["extended"]["radiusMiles"]} miles. {dep} non-refundable deposit online, balance on delivery.</span></div></div>
   <div class="fulfil-opt"><span class="ic">{ICON["box"]}</span><div><strong>Shipped to your address &mdash; <span data-ship-rate="{p["category"]}">{money(rate)}</span> per unit</strong><span class="d">Pay in full online. Shipping is calculated at checkout. Ships about 90% assembled in a crate &mdash; handlebars, wheels and a few other parts may need to be attached before it is ready to ride. Assembly instructions are included.</span></div></div>
 </div>'''
@@ -391,7 +391,7 @@ def build_home():
           "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "17:00"}],
           "areaServed": "New York Metro Area", "sameAs": ["https://www.facebook.com/NYCATVWAREHOUSE"]}
     fulfil = f'''<section class="fulfil-strip"><div class="container"><div class="fulfil-grid">
-  <div class="fulfil-card"><span class="ic">{ICON["pin"]}</span><div><h3>Free pickup</h3><p>Order online, then pick it up at our Little Ferry, NJ warehouse. No fee.</p><span class="tag">Free</span></div></div>
+  <div class="fulfil-card"><span class="ic">{ICON["pin"]}</span><div><h3>Free pickup</h3><p>Order online, then pick it up in Little Ferry, NJ or the Bronx, NY. No fee.</p><span class="tag">Free</span></div></div>
   <div class="fulfil-card"><span class="ic">{ICON["truck"]}</span><div><h3>Free local delivery</h3><p>Free across {s["localDelivery"]["zoneLabel"]}. Long Island and up to {s["localDelivery"]["extended"]["radiusMiles"]} miles: {money(s["localDelivery"]["extended"]["fee"])}.</p><span class="tag">Free / {money(s["localDelivery"]["extended"]["fee"])}</span></div></div>
   <div class="fulfil-card"><span class="ic">{ICON["box"]}</span><div><h3>Shipped to you</h3><p>Every model can be ordered online and shipped to your address. Ships about 90% assembled in a crate; handlebars, wheels and a few other parts may need to be attached.</p><span class="tag" style="background:var(--accent-soft);color:var(--accent)">Rates at checkout</span></div></div>
 </div></div></section>'''
@@ -404,7 +404,7 @@ def build_home():
     <div class="hero-content">
       <p class="eyebrow">NYC ATV Warehouse</p>
       <h1>Find your ride. <em>Order online.</em></h1>
-      <p>Scooters, ATVs, dirt bikes, go-karts, UTVs and e-bikes &mdash; shipped to your door, delivered locally for free, or ready for free pickup in Little Ferry, NJ.</p>
+      <p>Scooters, ATVs, dirt bikes, go-karts, UTVs and e-bikes &mdash; shipped to your door, delivered locally for free, or ready for free pickup in Little Ferry, NJ or the Bronx, NY.</p>
       <div class="hero-actions"><a class="btn btn-buy btn-lg" href="#shop">Shop now</a><a class="btn btn-outline btn-lg" href="shipping-pickup.html">Delivery &amp; pickup</a></div>
     </div>
     <a class="hero-card" href="{feat["url"]}" aria-label="Featured: {H.escape(feat["name"])}">
@@ -514,7 +514,7 @@ def build_shipping():
   <p>Order online, then choose the way you want to get it at checkout. Every in-stock model can be shipped, delivered locally for free, or picked up.</p></div>
 
   <div class="info-cards">
-    <div class="info-card"><span class="ic">{ICON["pin"]}</span><h3>Free pickup</h3><p>Pick up your order at our warehouse: {s["business"]["address"]}. {s["business"]["hours"].replace("-", "&ndash;")}. We&rsquo;ll contact you when it&rsquo;s ready. Pay a {money(s["deposit"]["amount"])} non-refundable deposit online; the balance is due at pickup.</p><div class="price free">Free</div></div>
+    <div class="info-card"><span class="ic">{ICON["pin"]}</span><h3>Free pickup</h3><p>Pick up your order at either location: {s["pickup"]["locations"][0]["address"]} ({s["pickup"]["locations"][0]["hours"].replace("-", "&ndash;")}) or {s["pickup"]["locations"][1]["address"]} (call {s["business"]["phone"]} to schedule). Choose your location at checkout. We&rsquo;ll contact you when it&rsquo;s ready. Pay a {money(s["deposit"]["amount"])} non-refundable deposit online; the balance is due at pickup.</p><div class="price free">Free</div></div>
     <div class="info-card"><span class="ic">{ICON["truck"]}</span><h3>Free local delivery</h3><p>Delivery is free across {s["localDelivery"]["zoneLabel"]}. Anywhere on Long Island (Nassau and Suffolk) and up to {s["localDelivery"]["extended"]["radiusMiles"]} miles from us is {money(s["localDelivery"]["extended"]["fee"])}. Enter your ZIP at checkout to see your price. Pay a {money(s["deposit"]["amount"])} non-refundable deposit online; the balance is due on delivery.</p><div class="price free">{fee_text(s["localDelivery"]["fee"])}</div></div>
     <div class="info-card"><span class="ic">{ICON["box"]}</span><h3>Shipped to you</h3><p>Ordering from out of town? We ship to your address. The rate depends on the type of vehicle and is shown before you pay. Shipped orders are paid in full online.</p><div class="price">Rate at checkout</div></div>
   </div>
