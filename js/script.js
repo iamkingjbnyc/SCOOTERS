@@ -342,7 +342,7 @@
       '<button class="btn btn-primary btn-block btn-lg" id="placeBtn2" type="button" style="margin-top:14px">Place order</button><div id="coError2" class="zone-msg bad" role="alert"></div></div>' +
       '</form></div>' +
       '<aside class="summary"><div class="co-card"><h2 style="margin-bottom:6px">Order summary</h2><div id="sumLines"></div><div class="sum-rows" id="sumRows"></div>' +
-      '<div class="co-actions"><button class="btn btn-primary btn-block btn-lg" id="placeBtn" type="button">Place order</button><p class="co-fine" id="coFine"></p>' +
+      '<div class="co-actions"><div class="assembly-note" id="assemblyNote2" style="display:none;margin:0 0 12px"><span class="ic">' + ICON.box + '</span><div><strong>' + esc(S.assembly.title) + '</strong><span>' + esc(S.assembly.text) + '</span></div></div><button class="btn btn-primary btn-block btn-lg" id="placeBtn" type="button">Place order</button><p class="co-fine" id="coFine"></p>' +
       '<div id="coError" class="zone-msg bad" role="alert"></div></div></div></aside></div></div>';
 
     var payNote = $('#payNote'), fine = $('#coFine');
@@ -386,6 +386,7 @@
       $('#addrBlock').classList.toggle('show', state.method !== 'pickup');
       $('#depositOkWrap').style.display = (t.balance ? 'block' : 'none');
       $('#assemblyNote').style.display = state.method === 'ship' ? 'flex' : 'none';
+      $('#assemblyNote2').style.display = state.method === 'ship' ? 'flex' : 'none';
       $('#pickupBox').classList.toggle('show', state.method === 'pickup');
       checkZone();
     }
