@@ -215,7 +215,7 @@
    "url": "atvs/xwolf-700cc-long-version.html",
    "image": "images/xwolf700long.jpg",
    "price": 7049.95,
-   "inStock": true
+   "inStock": false
   },
   {
    "id": "atvs-xwolf-700cc-short-version",
@@ -224,7 +224,7 @@
    "url": "atvs/xwolf-700cc-short-version.html",
    "image": "images/xwolf700short.jpg",
    "price": 6335.95,
-   "inStock": true
+   "inStock": false
   },
   {
    "id": "dirtbikes-db-21-70cc",
