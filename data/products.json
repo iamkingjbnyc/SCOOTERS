@@ -206,7 +206,7 @@
    "url": "atvs/xwolf-550-long-version.html",
    "image": "images/xwolf550long.png",
    "price": 6449.99,
-   "inStock": true
+   "inStock": false
   },
   {
    "id": "atvs-xwolf-700cc-long-version",
