@@ -72,7 +72,7 @@ def topbar():
   <div class="topbar-items">
     <span>{ICON["pin"]}Free pickup in Little Ferry, NJ / Bronx, NY</span>
     <span>{ICON["truck"]}Free local delivery &middot; NYC Metro</span>
-    <span>{ICON["box"]}Shipped to your door</span>
+    <span>{ICON["box"]}Shipped to the continental U.S.</span>
   </div>
   <a class="topbar-phone" href="{b["phoneHref"]}">Call {b["phone"]}</a>
 </div></div>'''
@@ -300,7 +300,7 @@ def fulfil_opts(p):
     return f'''<div class="fulfil-opts">
   <div class="fulfil-opt"><span class="ic">{ICON["pin"]}</span><div><strong>Free pickup &mdash; <span class="free">Free</span></strong><span class="d">Ready in Little Ferry, NJ (Mon&ndash;Fri 10am&ndash;5pm) or the Bronx, NY (10am&ndash;6pm). {dep} non-refundable deposit online, balance at pickup.</span></div></div>
   <div class="fulfil-opt"><span class="ic">{ICON["truck"]}</span><div><strong>Free local delivery{"" if not s["localDelivery"]["fee"] else " &mdash; " + fee_text(s["localDelivery"]["fee"])}</strong><span class="d">Free across {s["localDelivery"]["zoneLabel"]}. {money(s["localDelivery"]["extended"]["fee"])} for Long Island and up to {s["localDelivery"]["extended"]["radiusMiles"]} miles. {dep} non-refundable deposit online, balance on delivery.</span></div></div>
-  <div class="fulfil-opt"><span class="ic">{ICON["box"]}</span><div><strong>Shipped to your address &mdash; <span data-ship-rate="{p["category"]}">{money(rate)}</span> per unit</strong><span class="d">Pay in full online. Shipping is calculated at checkout. Ships about 90% assembled in a crate &mdash; handlebars, wheels and a few other parts may need to be attached before it is ready to ride. Assembly instructions are included.</span></div></div>
+  <div class="fulfil-opt"><span class="ic">{ICON["box"]}</span><div><strong>Shipped to your address &mdash; <span data-ship-rate="{p["category"]}">{money(rate)}</span> per unit</strong><span class="d">Pay in full online. Continental U.S. only. Ships about 90% assembled in a crate &mdash; handlebars, wheels and a few other parts may need to be attached before it is ready to ride. Assembly instructions are included.</span></div></div>
 </div>'''
 
 
@@ -404,7 +404,7 @@ def build_home():
     fulfil = f'''<section class="fulfil-strip"><div class="container"><div class="fulfil-grid">
   <div class="fulfil-card"><span class="ic">{ICON["pin"]}</span><div><h3>Free pickup</h3><p>Order online, then pick it up in Little Ferry, NJ or the Bronx, NY. No fee.</p><span class="tag">Free</span></div></div>
   <div class="fulfil-card"><span class="ic">{ICON["truck"]}</span><div><h3>Free local delivery</h3><p>Free across {s["localDelivery"]["zoneLabel"]}. Long Island and up to {s["localDelivery"]["extended"]["radiusMiles"]} miles: {money(s["localDelivery"]["extended"]["fee"])}.</p><span class="tag">Free / {money(s["localDelivery"]["extended"]["fee"])}</span></div></div>
-  <div class="fulfil-card"><span class="ic">{ICON["box"]}</span><div><h3>Shipped to you</h3><p>Every model can be ordered online and shipped to your address. Ships about 90% assembled in a crate; handlebars, wheels and a few other parts may need to be attached.</p><span class="tag" style="background:var(--accent-soft);color:var(--accent)">Rates at checkout</span></div></div>
+  <div class="fulfil-card"><span class="ic">{ICON["box"]}</span><div><h3>Shipped to you</h3><p>Every model can be ordered online and shipped to your address in the continental U.S. Ships about 90% assembled in a crate; handlebars, wheels and a few other parts may need to be attached.</p><span class="tag" style="background:var(--accent-soft);color:var(--accent)">Rates at checkout</span></div></div>
 </div></div></section>'''
     body = f'''{header("")}
 
@@ -527,7 +527,7 @@ def build_shipping():
   <div class="info-cards">
     <div class="info-card"><span class="ic">{ICON["pin"]}</span><h3>Free pickup</h3><p>Pick up your order at either location: {s["pickup"]["locations"][0]["address"]} ({s["pickup"]["locations"][0]["hours"].replace("-", "&ndash;")}) or {s["pickup"]["locations"][1]["address"]} ({s["pickup"]["locations"][1]["hours"].replace("-", "&ndash;")}). Choose your location at checkout. We&rsquo;ll contact you when it&rsquo;s ready. Pay a {money(s["deposit"]["amount"])} non-refundable deposit online; the balance is due at pickup.</p><div class="price free">Free</div></div>
     <div class="info-card"><span class="ic">{ICON["truck"]}</span><h3>Free local delivery</h3><p>Delivery is free across {s["localDelivery"]["zoneLabel"]}. Anywhere on Long Island (Nassau and Suffolk) and up to {s["localDelivery"]["extended"]["radiusMiles"]} miles from us is {money(s["localDelivery"]["extended"]["fee"])}. Enter your ZIP at checkout to see your price. Pay a {money(s["deposit"]["amount"])} non-refundable deposit online; the balance is due on delivery.</p><div class="price free">{fee_text(s["localDelivery"]["fee"])}</div></div>
-    <div class="info-card"><span class="ic">{ICON["box"]}</span><h3>Shipped to you</h3><p>Ordering from out of town? We ship to your address. The rate depends on the type of vehicle and is shown before you pay. Shipped orders are paid in full online.</p><div class="price">Rate at checkout</div></div>
+    <div class="info-card"><span class="ic">{ICON["box"]}</span><h3>Shipped to you</h3><p>Ordering from out of town? We ship to your address anywhere in the continental U.S. (the 48 contiguous states and Washington, DC; not Alaska, Hawaii or U.S. territories). The rate depends on the type of vehicle and is shown before you pay. Shipped orders are paid in full online.</p><div class="price">Rate at checkout</div></div>
   </div>
 
   <div class="prose">

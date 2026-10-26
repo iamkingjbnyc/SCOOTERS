@@ -416,6 +416,8 @@
         need('address1', val('address1').length > 3, 'Enter your street address.');
         need('city', val('city').length > 1, 'Enter your city.');
         need('state', /^[A-Za-z]{2}$/.test(val('state')), 'Use the 2-letter state.');
+        if (state.method === 'ship' && /^[A-Za-z]{2}$/.test(val('state')) && S.shipping.states.indexOf(val('state').toUpperCase()) === -1) need('state', false, 'We ship to the continental U.S. only.');
+        if (state.method === 'ship' && /^(006|007|008|009|967|968|969|995|996|997|998|999)/.test(val('zip'))) need('zip', false, 'We ship to the continental U.S. only.');
         var zipOk = /^\d{5}(-\d{4})?$/.test(val('zip'));
         need('zip', zipOk, 'Enter a 5-digit ZIP.');
         if (zipOk && state.method === 'local') need('zip', zipInLocalZone(val('zip')), 'Outside our delivery area.');
