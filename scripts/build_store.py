@@ -396,7 +396,7 @@ def build_home():
     picks = [i for i in picks if i in BY_ID]
     pick_cards = "\n".join(card(BY_ID[i]) for i in picks)
     tiles = [("scooters", "images/scooter.png"), ("atvs", "images/atv.jpg"), ("dirtbikes", "images/dirtbike.jpg"),
-             ("gokarts", "images/go-kart.jpg"), ("utvs", "images/utv.jfif"), ("ebikes", "images/gt2000.jfif"), ("helmets", "https://static.wixstatic.com/media/44abe9_c0193e991d684df3bef91337fc2631b3~mv2.jpeg/v1/crop/x_0,y_360,w_739,h_800/fill/w_640,h_693,al_c,q_85/file.jpg")]
+             ("gokarts", "images/go-kart.jpg"), ("utvs", "images/utv.jfif"), ("ebikes", "images/gt2000.jfif"), ("helmets", "images/helmets/sport-flip-up-led-tn-8635j-1.jpg")]
     tile_html = "".join(
         f'''<a class="category-card" href="{c}.html"><img{"" if i == 0 else " loading=\"lazy\" decoding=\"async\""} src="{im}" alt="{CAT_LABEL[c]} for sale at NYC ATV Warehouse"><div class="category-card-label"><h3>{CAT_LABEL[c]}</h3><span>{CAT_COUNT[c]} models</span></div></a>'''
         for i, (c, im) in enumerate(tiles))
