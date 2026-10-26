@@ -295,7 +295,7 @@ def fulfil_opts(p):
     return f'''<div class="fulfil-opts">
   <div class="fulfil-opt"><span class="ic">{ICON["pin"]}</span><div><strong>Free pickup &mdash; <span class="free">Free</span></strong><span class="d">Ready at our Little Ferry, NJ warehouse. Mon&ndash;Fri 10am&ndash;5pm. {dep} deposit online, balance at pickup.</span></div></div>
   <div class="fulfil-opt"><span class="ic">{ICON["truck"]}</span><div><strong>Free local delivery{"" if not s["localDelivery"]["fee"] else " &mdash; " + fee_text(s["localDelivery"]["fee"])}</strong><span class="d">Free across {s["localDelivery"]["zoneLabel"]}. {money(s["localDelivery"]["extended"]["fee"])} for Long Island and up to {s["localDelivery"]["extended"]["radiusMiles"]} miles. {dep} deposit online, balance on delivery.</span></div></div>
-  <div class="fulfil-opt"><span class="ic">{ICON["box"]}</span><div><strong>Shipped to your address &mdash; <span data-ship-rate="{p["category"]}">{money(rate)}</span> per unit</strong><span class="d">Pay in full online. Shipping is calculated at checkout. Ships about 90% assembled in a crate &mdash; handlebars, wheels and a few other parts may need to be attached before it is ready to ride.</span></div></div>
+  <div class="fulfil-opt"><span class="ic">{ICON["box"]}</span><div><strong>Shipped to your address &mdash; <span data-ship-rate="{p["category"]}">{money(rate)}</span> per unit</strong><span class="d">Pay in full online. Shipping is calculated at checkout. Ships about 90% assembled in a crate &mdash; handlebars, wheels and a few other parts may need to be attached before it is ready to ride. Assembly instructions are included.</span></div></div>
 </div>'''
 
 
