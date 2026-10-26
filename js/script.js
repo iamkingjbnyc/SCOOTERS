@@ -60,7 +60,8 @@
   function zipInLocalZone(zip) {
     var z = String(zip || '').replace(/\D/g, '');
     if (z.length < 5) return null;
-    return STORE.localDelivery.zipPrefixes.indexOf(z.slice(0, 3)) !== -1;
+    var L = STORE.localDelivery;
+    return L.zips ? L.zips.indexOf(z.slice(0, 5)) !== -1 : L.zipPrefixes.indexOf(z.slice(0, 3)) !== -1;
   }
   function isDeposit(method) { return !!(STORE.deposit && STORE.deposit.methods.indexOf(method) !== -1); }
   function dueToday(method, total) { return isDeposit(method) ? Math.min(STORE.deposit.amount, total) : total; }
