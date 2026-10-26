@@ -561,7 +561,7 @@ def build_shipping():
       <li><strong>Helmet-only orders:</strong> no deposit. Pay in full online for pickup, delivery or shipping.</li>
     </ul>
     <h2 id="financing">Financing available</h2>
-    <p>{s["financing"]["instruction"]} Affirm lets you split your purchase into monthly payments. To finance your whole order, pay the full amount today (check &ldquo;Pay the full amount today&rdquo; at checkout) and choose Affirm on the payment page. {s["financing"]["fine"]}</p>
+    <p>{s["financing"]["instruction"]} Affirm lets you split your purchase into monthly payments. Financing works on shipped orders, which are paid in full online. For pickup or local delivery, check &ldquo;Pay the full amount today&rdquo; at checkout (instead of the deposit) to finance the whole order, then choose Affirm on the payment page. {s["financing"]["fine"]}</p>
     <h2>After you order</h2>
     <p>We&rsquo;ll contact you within 1 business day to confirm your order and arrange pickup, delivery or shipping.</p>
     <h2>Before you buy</h2>
