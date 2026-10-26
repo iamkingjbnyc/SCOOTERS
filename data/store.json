@@ -2056,5 +2056,13 @@
   "title": "Ships 90% assembled in a crate",
   "text": "Your unit arrives about 90% assembled, securely packed in a crate. Handlebars, wheels and a few other parts may need to be attached before it is ready to ride. Assembly instructions are included.",
   "short": "Ships about 90% assembled in a crate. Handlebars, wheels and a few other parts may need to be attached before it is ready to ride."
+ },
+ "returns": {
+  "windowDays": 14,
+  "restockingPercent": 20,
+  "damageReportHours": 72,
+  "refundBusinessDays": "7-10",
+  "updated": "October 25, 2026",
+  "_confirm": true
  }
 }

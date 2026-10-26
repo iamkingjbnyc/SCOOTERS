@@ -123,6 +123,7 @@ def footer(base):
       <div class="footer-col"><h4>Shop</h4><ul>{shop}</ul></div>
       <div class="footer-col"><h4>Help</h4><ul>
         <li><a href="{base}shipping-pickup.html">Shipping, delivery &amp; pickup</a></li>
+        <li><a href="{base}returns.html">Return policy</a></li>
         <li><a href="{base}financing.html">Financing</a></li>
         <li><a href="{base}index.html#service">Service &amp; parts</a></li>
         <li><a href="{base}index.html#reviews">Reviews</a></li>
@@ -555,6 +556,70 @@ def build_shipping():
                                             "shipping-pickup"), body, ""))
 
 
+def build_returns():
+    s = STORE
+    r = s["returns"]
+    ph = s["business"]["phone"]
+    dep = money(s["deposit"]["amount"])
+    body = f'''{header("", "returns")}
+
+<main>
+<div class="container crumbs"><a href="index.html">Home</a><span>/</span>Return policy</div>
+<section style="padding-top:24px"><div class="container">
+  <div class="section-head"><p class="eyebrow">Policies</p><h1 class="section-title">Return policy</h1>
+  <p>Last updated {r["updated"]}. By placing an order you agree to this policy.</p></div>
+  <div class="prose">
+    <h2>1. Return window</h2>
+    <p>You may request a return within <strong>{r["windowDays"]} days</strong> of delivery (shipped and delivered orders) or of the day you pick up your unit.</p>
+
+    <h2>2. Condition of the unit</h2>
+    <p>The unit must be new and unused: never started, ridden or modified, with every part, the original crate or packaging, and all documents. Units that are used, damaged after delivery, altered or missing parts may be refused or have the refund reduced.</p>
+
+    <h2>3. How to start a return</h2>
+    <p>Call <a href="{s["business"]["phoneHref"]}">{ph}</a> or email <a href="mailto:{s["business"]["email"]}">{s["business"]["email"]}</a> with your order details. You need our approval before sending anything back. Returns sent without approval will not be accepted.</p>
+
+    <h2>4. Restocking fee and return shipping</h2>
+    <ul>
+      <li>A restocking fee of <strong>{r["restockingPercent"]}%</strong> of the unit price applies to returns.</li>
+      <li>You pay the freight to return the unit.</li>
+      <li>Original shipping and delivery charges are not refunded.</li>
+    </ul>
+
+    <h2>5. Deposit</h2>
+    <p>The {dep} deposit on pickup and local delivery orders is non-refundable. It covers assembly and/or delivery charges. The only exception is item 8 below (if we cannot fill your order).</p>
+
+    <h2>6. Shipped orders: inspect on delivery</h2>
+    <ul>
+      <li>Inspect the crate and the unit when it arrives, with the driver present if possible.</li>
+      <li>Write any visible damage or missing boxes on the delivery receipt before you sign.</li>
+      <li>Report damage or missing parts to us within <strong>{r["damageReportHours"]} hours</strong> of delivery, with photos. Keep all packaging.</li>
+      <li>Damage that is not reported in time may not be eligible for a claim.</li>
+    </ul>
+
+    <h2>7. Pickup and local delivery</h2>
+    <p>Inspect your unit before you accept it or take it away. Once you have accepted it, the rules above apply to any return.</p>
+
+    <h2>8. Orders we cannot fill</h2>
+    <p>If a unit is sold out or we cannot fill your order, we will cancel it and refund everything you paid, including the deposit.</p>
+
+    <h2>9. Refused deliveries</h2>
+    <p>If you refuse a delivery or miss your delivery appointment without telling us, you are responsible for the freight in both directions and any applicable fees, which will be deducted from your refund.</p>
+
+    <h2>Refunds</h2>
+    <p>Approved refunds go back to your original payment method within about {r["refundBusinessDays"]} business days after we receive and inspect the unit, less the fees above. Your bank may take additional time to post it.</p>
+
+    <h2>Questions</h2>
+    <p>Call <a href="{s["business"]["phoneHref"]}">{ph}</a> (Mon&ndash;Fri) or <a href="contact.html">contact us</a>.</p>
+  </div>
+</div></section>
+</main>
+
+{footer("")}'''
+    write("returns.html", page(head("Return Policy | NYC ATV Warehouse",
+                                    "Return policy for NYC ATV Warehouse: return window, restocking fee, deposit, shipping damage and refunds.",
+                                    "returns"), body, ""))
+
+
 def build_checkout():
     body = f'''{header("")}
 <main id="checkoutApp" class="checkout"><div class="container"><p style="padding:60px 0;text-align:center;color:var(--text-muted)">Loading your cart&hellip;</p></div></main>
@@ -585,7 +650,7 @@ def swap_chrome(path):
 
 def build_sitemap():
     s = open("sitemap.xml", encoding="utf-8").read()
-    for extra in ("shipping-pickup",):
+    for extra in ("shipping-pickup", "returns"):
         if f"/{extra}<" not in s:
             s = s.replace("</urlset>", f"  <url><loc>{SITE}/{extra}</loc><lastmod>2026-10-25</lastmod></url>\n</urlset>")
     write("sitemap.xml", s)
@@ -600,6 +665,7 @@ def main():
         build_product(p)
     build_home()
     build_shipping()
+    build_returns()
     build_checkout()
     swap_chrome("contact.html")
     swap_chrome("financing.html")
