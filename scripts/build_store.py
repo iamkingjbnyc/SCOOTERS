@@ -134,6 +134,7 @@ def footer(base):
         <li>207 Gates Rd<br>Little Ferry, NJ 07643</li>
         <li><a href="{b["phoneHref"]}">{b["phone"]}</a></li>
         <li>Mon&ndash;Fri: 10am&ndash;5pm<br>Sat&ndash;Sun: Closed</li>
+        <li><strong>Bronx pickup:</strong><br>4301 Bronx Blvd, Bronx, NY<br>Mon&ndash;Fri: 10am&ndash;6pm</li>
       </ul></div>
     </div>
     <div class="footer-bottom">
@@ -468,10 +469,10 @@ def build_home():
     <div class="section-head center">
       <p class="eyebrow">Why shop with us</p>
       <h2 class="section-title">The warehouse advantage</h2>
-      <p>A full warehouse stocked deep across six categories, backed by a team that actually rides &mdash; now open to order online, wherever you are.</p>
+      <p>A full warehouse stocked deep across seven categories, backed by a team that actually rides &mdash; now open to order online, wherever you are.</p>
     </div>
     <div class="feature-grid">
-      <div class="feature-card"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12l2-6h14l2 6M5 12h14v6H5z"/><circle cx="8" cy="18" r="1.6"/><circle cx="16" cy="18" r="1.6"/></svg><h3>Massive selection</h3><p>Six categories and 100+ models &mdash; chances are we already have what you&rsquo;re looking for.</p></div>
+      <div class="feature-card"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12l2-6h14l2 6M5 12h14v6H5z"/><circle cx="8" cy="18" r="1.6"/><circle cx="16" cy="18" r="1.6"/></svg><h3>Massive selection</h3><p>Seven categories and 100+ models &mdash; chances are we already have what you&rsquo;re looking for.</p></div>
       <div class="feature-card"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l3 6 6 1-4.5 4.5L17.5 20 12 17l-5.5 3 1-6.5L3 9l6-1 3-6z"/></svg><h3>Trusted locally</h3><p>Serving riders across NJ and the NYC metro with straightforward pricing and honest recommendations.</p></div>
       <div class="feature-card"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M7 15h4"/></svg><h3>Up to 30% off</h3><p>Select units discounted by up to 30% so you get the lowest price possible.</p></div>
       <div class="feature-card"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/></svg><h3>Full-service shop</h3><p>In-house service and a stocked parts counter, so keeping your ride running is never a hassle.</p></div>
