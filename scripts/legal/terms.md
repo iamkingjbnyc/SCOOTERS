@@ -63,7 +63,7 @@ To the fullest extent allowed by law:
 The Site, its text, photos, logos and design belong to us or our suppliers and may not be copied or used for commercial purposes without our written permission. Do not misuse the Site, attempt to break or overload it, or submit false orders. We do not guarantee the Site will always be available or error-free.
 
 ## 14. Communications
-By giving us your phone number and email you agree that we may contact you about your order, delivery, pickup, returns, warranty and service, including by call and text message. Message and data rates may apply.
+By giving us your phone number and email you agree that we may contact you about your order, delivery, pickup, returns, warranty and service, including by call and text message. We may also email you offers and promotions; you can unsubscribe at any time using the link in the email or by contacting us. We send marketing text messages only if you separately agree to receive them. Message and data rates may apply.
 
 ## 15. Governing law and disputes
 These terms are governed by the laws of the State of New Jersey, without regard to its conflict-of-law rules. Any dispute will be handled in the state or federal courts located in Bergen County, New Jersey, and you agree to that location, except where the law gives you the right to bring a claim somewhere else.
