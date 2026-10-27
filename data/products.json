@@ -628,8 +628,8 @@
    "category": "scooters",
    "url": "scooters/champion-200-efi.html",
    "image": "images/champion200efi.jpg",
-   "price": 1999.0,
-   "inStock": false
+   "price": 1799.0,
+   "inStock": true
   },
   {
    "id": "scooters-denali-49cc",
