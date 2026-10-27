@@ -125,6 +125,8 @@ def footer(base):
       <div class="footer-col"><h4>Help</h4><ul>
         <li><a href="{base}shipping-pickup.html">Shipping, delivery &amp; pickup</a></li>
         <li><a href="{base}returns.html">Return policy</a></li>
+        <li><a href="{base}privacy.html">Privacy policy</a></li>
+        <li><a href="{base}terms.html">Terms of service</a></li>
         <li><a href="{base}financing.html">Financing</a></li>
         <li><a href="{base}index.html#service">Service &amp; parts</a></li>
         <li><a href="{base}index.html#reviews">Reviews</a></li>
@@ -643,6 +645,54 @@ def build_returns():
                                     "returns"), body, ""))
 
 
+LEGAL_UPDATED = "October 26, 2026"
+
+
+def md_to_html(md):
+    """Tiny markdown subset (##, -, **bold**, [text](url)) for the legal pages."""
+    def inline(s):
+        s = H.escape(s, quote=False)
+        s = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", s)
+        s = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r'<a href="\2">\1</a>', s)
+        s = re.sub(r"(sales@nycatvwarehouse\.com)", r'<a href="mailto:\1">\1</a>', s)
+        return s
+    out, lst = [], False
+    for line in md.split("\n"):
+        if line.startswith("- "):
+            if not lst:
+                out.append("<ul>"); lst = True
+            out.append(f"<li>{inline(line[2:])}</li>")
+            continue
+        if lst:
+            out.append("</ul>"); lst = False
+        if line.startswith("## "):
+            out.append(f"<h2>{inline(line[3:])}</h2>")
+        elif line.strip():
+            out.append(f"<p>{inline(line)}</p>")
+    if lst:
+        out.append("</ul>")
+    return "\n".join(out)
+
+
+def build_legal(slug, title, intro, desc):
+    md = open(f"scripts/legal/{slug}.md", encoding="utf-8").read()
+    body = f'''{header("", slug)}
+
+<main>
+<div class="container crumbs"><a href="index.html">Home</a><span>/</span>{title}</div>
+<section style="padding-top:24px"><div class="container">
+  <div class="section-head"><p class="eyebrow">Policies</p><h1 class="section-title">{title}</h1>
+  <p>Last updated {LEGAL_UPDATED}. {intro}</p></div>
+  <div class="prose">
+{md_to_html(md)}
+  </div>
+</div></section>
+</main>
+
+{footer("")}'''
+    write(f"{slug}.html", page(head(f"{title} | NYC ATV Warehouse", desc, slug), body, ""))
+
+
 def build_checkout():
     body = f'''{header("")}
 <main id="checkoutApp" class="checkout"><div class="container"><p style="padding:60px 0;text-align:center;color:var(--text-muted)">Loading your cart&hellip;</p></div></main>
@@ -673,7 +723,7 @@ def swap_chrome(path):
 
 def build_sitemap():
     s = open("sitemap.xml", encoding="utf-8").read()
-    for extra in ("shipping-pickup", "returns"):
+    for extra in ("shipping-pickup", "returns", "privacy", "terms"):
         if f"/{extra}<" not in s:
             s = s.replace("</urlset>", f"  <url><loc>{SITE}/{extra}</loc><lastmod>2026-10-25</lastmod></url>\n</urlset>")
     for p in PRODUCTS:
@@ -696,6 +746,8 @@ def main():
     build_home()
     build_shipping()
     build_returns()
+    build_legal("privacy", "Privacy policy", "How we collect, use and protect your information.", "Privacy policy for NYC ATV Warehouse: what information we collect, how we use it, who we share it with, and your choices.")
+    build_legal("terms", "Terms of service", "These terms apply to your use of this website and to your orders.", "Terms of service for NYC ATV Warehouse: orders, payment, deposits, financing, pickup, delivery, shipping, warranty and safe use.")
     build_checkout()
     swap_chrome("contact.html")
     swap_chrome("financing.html")

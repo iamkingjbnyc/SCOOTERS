@@ -96,7 +96,10 @@ h2.section-title, h1.section-title { font-size: clamp(2rem, 4vw, 3rem); margin-b
 /* ===== Announcement bar ===== */
 .topbar { background: var(--navy); color: #e9eef5; font-size: 0.82rem; position: relative; z-index: 210; }
 .topbar-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 38px; }
-.topbar-items { display: flex; gap: 26px; flex-wrap: wrap; }
+.topbar-items { display: flex; gap: 8px 18px; flex-wrap: wrap; }
+.topbar-items span { white-space: nowrap; }
+@media (max-width: 1180px) and (min-width: 769px) { .topbar-items span:nth-child(3) { display: none; } }
+@media (max-width: 920px) and (min-width: 769px) { .topbar-items span:nth-child(2) { display: none; } }
 .topbar-items span { display: inline-flex; align-items: center; gap: 7px; font-weight: 500; }
 .topbar svg { width: 16px; height: 16px; color: var(--gold); flex-shrink: 0; }
 .topbar a.topbar-phone { font-weight: 700; letter-spacing: .03em; white-space: nowrap; }
