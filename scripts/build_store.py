@@ -408,7 +408,7 @@ def build_home():
              "ebikes-ouxi-gt-2000", "atvs-pentora-sport-250cc", "gokarts-t-rex-125cc", "utvs-cross-fire-200-efi"]
     picks = [i for i in picks if i in BY_ID]
     pick_cards = "\n".join(card(BY_ID[i]) for i in picks)
-    tiles = [("scooters", "images/scooter.png"), ("atvs", "images/atv.jpg"), ("dirtbikes", "images/dirtbike.jpg"),
+    tiles = [("scooters", "images/scooter.png"), ("atvs", "images/pentorasport250.jpg"), ("dirtbikes", "images/dirtbike.jpg"),
              ("gokarts", "images/go-kart.jpg"), ("utvs", "images/utv.jfif"), ("ebikes", "images/gt2000.jfif"), ("helmets", "images/helmets/sport-flip-up-led-tn-8635j-1.jpg")]
     tile_html = "".join(
         f'''<a class="category-card" href="{c}.html"><img{"" if i == 0 else " loading=\"lazy\" decoding=\"async\""} src="{im}" alt="{CAT_LABEL[c]} for sale at NYC ATV Warehouse"><div class="category-card-label"><h3>{CAT_LABEL[c]}</h3><span>{CAT_COUNT[c]} models</span></div></a>'''
