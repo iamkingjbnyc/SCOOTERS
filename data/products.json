@@ -710,7 +710,7 @@
    "url": "scooters/magnum-50cc.html",
    "image": "images/magnum50.jpg",
    "price": 799.0,
-   "inStock": true
+   "inStock": false
   },
   {
    "id": "scooters-marchal-x200-delivery-edition",
