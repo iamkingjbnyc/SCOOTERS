@@ -692,7 +692,7 @@
    "url": "scooters/intrepid-200.html",
    "image": "images/intrepid200.jpg",
    "price": 1399.0,
-   "inStock": true
+   "inStock": false
   },
   {
    "id": "scooters-jag-200",
