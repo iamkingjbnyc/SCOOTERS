@@ -620,7 +620,7 @@
    "url": "scooters/bullet-49cc.html",
    "image": "images/bullet49.jpg",
    "price": 1274.99,
-   "inStock": true
+   "inStock": false
   },
   {
    "id": "scooters-champion-200-efi",
