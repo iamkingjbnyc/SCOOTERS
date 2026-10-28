@@ -5633,65 +5633,6 @@
     "<strong>Extras:</strong> USB charger, rear box"
    ]
   },
-  "scooters-viper-49cc": {
-   "main": "images/viper49.jpg",
-   "thumbs": [
-    "images/viper49.jpg",
-    "images/viper49-2.jpg",
-    "images/viper49-3.jpg",
-    "images/viper49-4.jpg",
-    "images/viper49-5.jpg",
-    "images/viper49-6.jpg"
-   ],
-   "specs": [
-    [
-     "Engine",
-     "49cc, 4-stroke, single-cylinder, air-cooled"
-    ],
-    [
-     "Power",
-     "2.20kW @ 8000 rpm"
-    ],
-    [
-     "Top Speed",
-     "25 mph"
-    ],
-    [
-     "Fuel Capacity",
-     "4.2 liters"
-    ],
-    [
-     "Battery",
-     "12V 7Ah"
-    ],
-    [
-     "Starting",
-     "Electric / Kick"
-    ],
-    [
-     "Brakes",
-     "Front disc &middot; rear drum"
-    ],
-    [
-     "Tires",
-     "3.00-10 front &amp; rear"
-    ],
-    [
-     "Dimensions",
-     "1810 &times; 725 &times; 1050mm &middot; 1302mm wheelbase"
-    ],
-    [
-     "Weight",
-     "180 lbs dry / 200 lbs gross"
-    ]
-   ],
-   "description": "Viper 49cc scooter for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
-   "bullets": [
-    "<strong>Engine:</strong> 49cc, 2.2kW @ 8000 rpm",
-    "<strong>Top Speed:</strong> 25 mph",
-    "<strong>Starting:</strong> Electric + kick start"
-   ]
-  },
   "scooters-viper-st-50cc": {
    "main": "images/viperst50.jpg",
    "thumbs": [
@@ -6452,7 +6393,6 @@
    "scooters-jag-200",
    "scooters-vtr-200",
    "scooters-viper-150cc",
-   "scooters-viper-49cc",
    "scooters-viper-st-50cc",
    "scooters-focus-st-50cc",
    "scooters-focus-st-150cc",

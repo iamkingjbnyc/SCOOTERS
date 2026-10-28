@@ -839,15 +839,6 @@
    "inStock": true
   },
   {
-   "id": "scooters-viper-49cc",
-   "name": "Viper 49cc",
-   "category": "scooters",
-   "url": "scooters/viper-49cc.html",
-   "image": "images/viper49.jpg",
-   "price": 799.0,
-   "inStock": true
-  },
-  {
    "id": "scooters-viper-st-50cc",
    "name": "Viper ST-50cc",
    "category": "scooters",
