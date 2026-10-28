@@ -674,7 +674,7 @@
    "url": "scooters/focus-st-150cc.html",
    "image": "images/focusst150.jpg",
    "price": 1049.0,
-   "inStock": true
+   "inStock": false
   },
   {
    "id": "scooters-focus-st-50cc",
