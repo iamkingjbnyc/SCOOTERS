@@ -728,7 +728,7 @@
    "url": "scooters/milano-150.html",
    "image": "images/milano150.jpg",
    "price": 999.0,
-   "inStock": true
+   "inStock": false
   },
   {
    "id": "scooters-milano-50",
@@ -737,7 +737,7 @@
    "url": "scooters/milano-50.html",
    "image": "images/milano50.jpg",
    "price": 799.0,
-   "inStock": true
+   "inStock": false
   },
   {
    "id": "scooters-nevo-200",
