@@ -566,7 +566,7 @@
    "url": "ebikes/rfn-warrior-youth-sx-e5.html",
    "image": "images/rfnwarrioryouthsxe5.jpg",
    "price": 2549.0,
-   "inStock": true
+   "inStock": false
   },
   {
    "id": "ebikes-rfn-e2-pro-max",
