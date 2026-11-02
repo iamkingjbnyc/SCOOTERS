@@ -26,6 +26,8 @@ SITE = "https://nycatvwarehouse.com"
 PRODUCTS = json.load(open("data/products.json", encoding="utf-8"))["products"]
 CONTENT = json.load(open("data/content.json", encoding="utf-8"))
 STORE = json.load(open("data/store.json", encoding="utf-8"))
+PART_VARIANTS = (json.load(open("data/engine_part_variants.json", encoding="utf-8"))["parts"]
+                 if os.path.exists("data/engine_part_variants.json") else {})
 GTAG = open("scripts/snippets/gtag.html", encoding="utf-8").read()
 LIVECHAT = ""  # live chat widget removed at owner request
 TESTIMONIALS = open("scripts/snippets/testimonials.html", encoding="utf-8").read()
@@ -393,7 +395,71 @@ def fulfil_opts(p):
 </div>'''
 
 
+def variant_cards(p, base):
+    """Cards for each available variant of a part (e.g. Clutch Assy 01, 02, 03...)."""
+    b = STORE["business"]
+    out = []
+    for v in PART_VARIANTS.get(p["name"], []):
+        img = f'images/parts/variants/{v["id"]}.jpg' if v["photo"] else PARTS_IMG
+        out.append(f'''      <div class="bike-card variant-card">
+        <img loading="lazy" decoding="async" src="{A(base, img)}" alt="{H.escape(v["title"] + " " + v["desc"], quote=True)}">
+        <div class="bike-card-body">
+          <div class="bike-card-cat">{H.escape(p["name"])}</div>
+          <h3>{H.escape(v["title"])}</h3>
+          <p class="variant-desc">{H.escape(v["desc"])}</p>
+          <p class="bike-price call">Call for pricing</p>
+          <div class="card-actions"><a class="btn btn-dark" href="{b["phoneHref"]}">Call to order</a></div>
+        </div>
+      </div>''')
+    return "\n".join(out)
+
+
+def build_part_variants(p):
+    """Part page that lists every available variant of the part, with photos."""
+    c = CONTENT["products"][p["id"]]
+    cat, label = p["category"], CAT_LABEL[p["category"]]
+    base = "../"
+    b = STORE["business"]
+    vs = PART_VARIANTS[p["name"]]
+    n = len(vs)
+    sub = p.get("subcategory")
+    sub_label = next((lb for sl, lb, _, _ in SUBCATS.get(cat, []) if sl == sub), None)
+    sub_crumb = f'<a href="{base}{cat}-{sub}.html">{sub_label}</a><span>/</span>' if sub_label else ""
+    desc = (f'{p["name"]}: {n} {"option" if n == 1 else "options"} for scooters, ATVs, dirt bikes and go-karts. '
+            f'Call {b["phone"]} with your make, model and year to confirm fit and get pricing. Priced parts ship free in the continental U.S.')
+    body = f'''{header(base, cat)}
+
+<main>
+<div class="container crumbs"><a href="{base}index.html">Home</a><span>/</span><a href="{base}{cat}.html">{label}</a><span>/</span>{sub_crumb}{p["name"]}</div>
+
+<section class="page-head" style="padding-bottom:0"><div class="container">
+  <h1 class="section-title">{p["name"]}</h1>
+  <p>{n} {"option" if n == 1 else "options"} available. Call <a href="{b["phoneHref"]}">{b["phone"]}</a> with your make, model and year and we&rsquo;ll confirm which one fits and quote the price. Priced parts ship free in the continental U.S.</p>
+</div></section>
+
+<section class="shop-section"><div class="container">
+  <div class="bike-grid" id="variantGrid">
+{variant_cards(p, base)}
+  </div>
+</div></section>
+
+<section class="related section-alt" id="related" data-id="{p["id"]}" data-cat="{cat}">
+  <div class="container">
+    <div class="row-head"><h2>More {sub_label or label}</h2><a class="more" href="{base}{cat}-{sub}.html">View all {sub_label or label} &rarr;</a></div>
+    <div class="bike-grid"></div>
+  </div>
+</section>
+</main>
+
+{footer(base)}'''
+    ttl = f'{p["name"]} | {label} | NYC ATV Warehouse'
+    write(p["url"], page(head(ttl, desc, p["url"][:-5], None if c["main"].endswith(".svg") else c["main"], product_jsonld(p, c), base=base, og_type="product"),
+                         body, base, ""))
+
+
 def build_product(p):
+    if p["category"] == "parts" and PART_VARIANTS.get(p["name"]):
+        return build_part_variants(p)
     c = CONTENT["products"][p["id"]]
     cat, label = p["category"], CAT_LABEL[p["category"]]
     base = "../"
