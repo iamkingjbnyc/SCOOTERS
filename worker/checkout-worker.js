@@ -72,6 +72,9 @@ export function computeOrder(order, products, store) {
   });
 
   const method = order.method;
+  // Parts are shipping-only: an order containing a part can't be picked up or delivered locally.
+  if (store.rules && store.rules.parts && store.rules.parts.shippingOnly && lines.some((l) => l.p.category === "parts") && method !== "ship")
+    throw new OrderError("Orders that include parts are shipping-only. Please choose shipping.");
   let feeCents = 0, feeLabel = "", pickupLoc = null;
   const c = order.customer || {};
   if (!c.name || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(c.email || "") || String(c.phone || "").replace(/\D/g, "").length < 10)

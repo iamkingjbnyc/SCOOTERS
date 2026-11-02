@@ -1978,7 +1978,8 @@
    "atvs": 299,
    "gokarts": 299,
    "utvs": 499,
-   "helmets": 0
+   "helmets": 0,
+   "parts": 0
   },
   "states": [
    "AL",
@@ -2072,6 +2073,10 @@
    "localDeliveryMinSubtotal": 500,
    "_note": "Applies when every item in the order is a helmet. Local delivery is available if the order has a vehicle or the subtotal is at least this amount.",
    "_confirm": true
+  },
+  "parts": {
+   "shippingOnly": true,
+   "_note": "Any order that contains a part is shipping-only (no pickup, no local delivery), paid in full online. Parts ship free."
   }
  },
  "financing": {

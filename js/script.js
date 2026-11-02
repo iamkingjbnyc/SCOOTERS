@@ -5,7 +5,7 @@
   var BASE = document.body.getAttribute('data-base') || '';
   var CART_KEY = 'nycatv_cart_v1';
   var ORDER_KEY = 'nycatv_preview_order_v1';
-  var CAT_LABEL = { scooters: 'Scooters', atvs: 'ATVs', dirtbikes: 'Dirt Bikes', gokarts: 'Go-Karts', utvs: 'UTVs', ebikes: 'E-Bikes', helmets: 'Helmets' };
+  var CAT_LABEL = { scooters: 'Scooters', atvs: 'ATVs', dirtbikes: 'Dirt Bikes', gokarts: 'Go-Karts', utvs: 'UTVs', ebikes: 'E-Bikes', helmets: 'Helmets', parts: 'Parts' };
 
   var CATALOG = [], STORE = null, BY_ID = {};
 
@@ -68,6 +68,7 @@
   function zipInLocalZone(zip) { var t = zipTier(zip); return t === null ? null : t !== 'out'; }
   var currentZip = '';
   function helmetsOnly(lines) { return !!lines && lines.length > 0 && lines.every(function (l) { return l.p.category === 'helmets'; }); }
+  function hasParts(lines) { return !!lines && lines.some(function (l) { return l.p.category === 'parts'; }); } // parts orders are shipping-only
   function helmetRules() { return (STORE.rules && STORE.rules.helmetsOnly) || null; }
   var payFullFlag = false; // customer chose to pay the whole amount today (needed to finance it with Affirm)
   function depositEligible(method, lines) {
@@ -314,8 +315,9 @@
     if (S.pickup.enabled) methods.push('pickup');
     if (S.localDelivery.enabled) methods.push('local');
     if (S.shipping.enabled) methods.push('ship');
+    if (hasParts(lines) && methods.indexOf('ship') !== -1) methods = ['ship']; // parts ship free and can't be picked up or delivered locally
     function pickupLoc() { var el = document.querySelector('input[name=ploc]:checked'); var id = el ? el.value : S.pickup.locations[0].id; return S.pickup.locations.filter(function (L) { return L.id === id; })[0] || S.pickup.locations[0]; }
-    var state = { method: S.pickup.enabled ? 'pickup' : methods[0] };
+    var state = { method: methods.indexOf('pickup') !== -1 ? 'pickup' : methods[0] };
 
     var optHTML = {
       pickup: { ic: ICON.pin, t: S.pickup.label },
@@ -329,6 +331,7 @@
         if (!localAllowed(lines, subtotal())) return 'Not available for helmet-only orders under ' + money(helmetRules().localDeliveryMinSubtotal) + '. Add a vehicle or choose pickup or shipping.';
         return S.localDelivery.detail + (dep ? ' ' + amt + ' non-refundable deposit now, balance on delivery.' : ' Pay in full online.');
       }
+      if (hasParts(lines)) return 'Orders with parts are shipping-only. Parts ship free to the continental U.S. Paid in full online.';
       return S.shipping.detail + ' Paid in full online.';
     }
     function methodHTML(m) {
@@ -382,7 +385,7 @@
       $('#sumLines').innerHTML = lines.map(function (l) {
         return '<div class="sum-line"><img src="' + esc(img(l.p)) + '" alt=""><div><strong>' + esc(l.p.name) + '</strong><small>Qty ' + l.qty + '</small></div><span>' + money(l.p.price * l.qty) + '</span></div>';
       }).join('');
-      if (state.method === 'local' && !localAllowed(lines, subtotal())) { state.method = S.pickup.enabled ? 'pickup' : 'ship'; var rb = document.querySelector('input[name=method][value=' + state.method + ']'); if (rb) rb.checked = true; }
+      if (state.method === 'local' && !localAllowed(lines, subtotal())) { state.method = methods.indexOf('pickup') !== -1 ? 'pickup' : 'ship'; var rb = document.querySelector('input[name=method][value=' + state.method + ']'); if (rb) rb.checked = true; }
       methods.forEach(function (m) {
         var d = $('[data-md="' + m + '"]'); if (d) d.textContent = descFor(m);
         if (m === 'local') { var ok = localAllowed(lines, subtotal()), inp = document.querySelector('input[name=method][value=local]'); if (inp) { inp.disabled = !ok; inp.closest('label').style.opacity = ok ? '' : '.55'; } }
@@ -410,7 +413,7 @@
       $('#addrBlock').classList.toggle('show', state.method !== 'pickup');
       $('#depositOkWrap').style.display = (t.balance ? 'block' : 'none');
       $('#payFullWrap').style.display = (S.checkoutEndpoint && depositEligible(state.method, lines)) ? 'block' : 'none';
-      var needsAsm = state.method === 'ship' && lines.some(function (l) { return l.p.category !== 'helmets'; });
+      var needsAsm = state.method === 'ship' && lines.some(function (l) { return l.p.category !== 'helmets' && l.p.category !== 'parts'; });
       $('#assemblyNote').style.display = needsAsm ? 'flex' : 'none';
       $('#assemblyNote2').style.display = needsAsm ? 'flex' : 'none';
       $('#pickupBox').classList.toggle('show', state.method === 'pickup');
@@ -469,7 +472,7 @@
       if (S.checkoutEndpoint) {
         var snapS = {
           method: state.method, total: t.total, sub: t.sub, fee: t.fee, due: t.due, balance: t.balance, customer: order.customer, address: order.address, pickupName: state.method === 'pickup' ? pickupLoc().name + ' (' + pickupLoc().address + ')' : '',
-          items: lines.map(function (l) { return { name: l.p.name, qty: l.qty, price: l.p.price, image: l.p.image }; }), at: Date.now()
+          items: lines.map(function (l) { return { name: l.p.name, qty: l.qty, price: l.p.price, image: l.p.image, cat: l.p.category }; }), at: Date.now()
         };
         try { sessionStorage.setItem(ORDER_KEY, JSON.stringify(snapS)); } catch (e) { /* ignore */ }
         var label0 = btn.textContent;
@@ -532,7 +535,7 @@
     host.innerHTML = '<div class="container" style="max-width:760px"><div class="empty-state"><div class="success-icon">' + ICON.check + '</div>' +
       '<h1>' + (isPreview ? 'Order confirmation (preview)' : isRequest ? 'Thank you \u2014 we got your order!' : 'Thank you — order received!') + '</h1>' +
       '<p>' + (isPreview ? 'This is a preview of the page customers see after paying. No order was placed and no card was charged.' : isRequest ? 'We\u2019ll contact you within 1 business day to confirm your order and take payment. You have not been charged. Questions? Call ' + S.business.phone + '.' : 'We’ve emailed your receipt. We’ll contact you within 1 business day to arrange ' + (snap ? (snap.method === 'pickup' ? 'pickup' : snap.method === 'local' ? 'delivery' : 'shipping') : 'pickup, delivery or shipping') + '.') + '</p>' +
-      (snap && snap.method === 'ship' && snap.items.some(function (i) { return !/helmet/i.test(i.name); }) ? '<div class="assembly-note" style="text-align:left;max-width:560px;margin:16px auto 0"><span class="ic">' + ICON.box + '</span><div><strong>' + esc(S.assembly.title) + '</strong><span>' + esc(S.assembly.text) + '</span></div></div>' : '') +
+      (snap && snap.method === 'ship' && snap.items.some(function (i) { return i.cat ? (i.cat !== 'helmets' && i.cat !== 'parts') : !/helmet/i.test(i.name); }) ? '<div class="assembly-note" style="text-align:left;max-width:560px;margin:16px auto 0"><span class="ic">' + ICON.box + '</span><div><strong>' + esc(S.assembly.title) + '</strong><span>' + esc(S.assembly.text) + '</span></div></div>' : '') +
       (snap ? '<div class="co-card" style="text-align:left"><h2 style="font-size:1.4rem">Your order</h2>' +
         snap.items.map(function (i) { return '<div class="sum-line"><img src="' + esc(/^https?:/.test(i.image) ? i.image : BASE + i.image) + '" alt=""><div><strong>' + esc(i.name) + '</strong><small>Qty ' + i.qty + '</small></div><span>' + money(i.price * i.qty) + '</span></div>'; }).join('') +
         '<div class="sum-rows"><div><span>Subtotal</span><span>' + money(snap.sub) + '</span></div><div><span>' + (snap.method === 'pickup' ? 'Pickup' : snap.method === 'local' ? 'Local delivery' : 'Shipping') + '</span><span>' + (snap.fee ? money(snap.fee) : '<span class="free">Free</span>') + '</span></div><div class="t"><span>Order total</span><span>' + money(snap.total) + '</span></div>' +

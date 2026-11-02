@@ -32,7 +32,7 @@ TESTIMONIALS = open("scripts/snippets/testimonials.html", encoding="utf-8").read
 BY_ID = {p["id"]: p for p in PRODUCTS}
 
 CATS = [("scooters", "Scooters"), ("atvs", "ATVs"), ("dirtbikes", "Dirt Bikes"),
-        ("gokarts", "Go-Karts"), ("utvs", "UTVs"), ("ebikes", "E-Bikes"), ("helmets", "Helmets")]
+        ("gokarts", "Go-Karts"), ("utvs", "UTVs"), ("ebikes", "E-Bikes"), ("helmets", "Helmets"), ("parts", "Parts")]
 CAT_LABEL = dict(CATS)
 CAT_COUNT = {c: sum(1 for p in PRODUCTS if p["category"] == c) for c, _ in CATS}
 
@@ -228,7 +228,7 @@ def card(p, base=""):
 
 def side_cats(base, active=None):
     items = "".join(
-        f'<a href="{base}{c}.html"{" class=\"active\"" if c == active else ""}>{l}<span>{CAT_COUNT[c]}</span></a>' for c, l in CATS)
+        f'<a href="{base}{c}.html"{" class=\"active\"" if c == active else ""}>{l}<span>{CAT_COUNT[c] or "Call"}</span></a>' for c, l in CATS)
     return f'<div class="side-cats"><h3>Shop by category</h3>{items}</div>'
 
 
@@ -247,12 +247,24 @@ def build_category(cat):
     info = CONTENT["categories"][cat]
     label = CAT_LABEL[cat]
     intro = re.sub(r"\s*Call or stop by[^.]*\.", "", info["intro"]).strip()
-    intro += " Order online and have it shipped, delivered locally for free, or pick it up free."
+    if cat == "parts":
+        intro = info["intro"]  # parts are shipping-only, so skip the pickup/delivery sentence
+    else:
+        intro += " Order online and have it shipped, delivered locally for free, or pick it up free."
     prods = [p for p in PRODUCTS if p["category"] == cat]
     # keep the original on-page order from the old category page
     order = {pid: i for i, pid in enumerate(CONTENT["order"][cat])}
     prods.sort(key=lambda p: order.get(p["id"], 999))
     cards = "\n".join(card(p) for p in prods)
+    if not prods and cat == "parts":
+        b = STORE["business"]
+        cards = f'''      <div class="info-card" style="grid-column:1/-1">
+        <span class="ic">{ICON["box"]}</span>
+        <h3>Call for parts pricing</h3>
+        <p>We stock and can order parts for every type of vehicle we sell. Call <a href="{b["phoneHref"]}">{b["phone"]}</a> or <a href="contact.html">send us a message</a> with your make, model and year, and we&rsquo;ll quote the part. Parts ship free anywhere in the continental U.S. and are paid in full online.</p>
+        <a class="btn btn-primary btn-lg" href="{b["phoneHref"]}" style="margin-top:16px">Call {b["phone"]}</a>
+      </div>'''
+    count_text = f"{len(prods)} products" if prods else "Call for pricing"
     body = f'''{header("", cat)}
 
 <main>
@@ -267,7 +279,7 @@ def build_category(cat):
     <aside>{side_cats("", cat)}{side_box("")}</aside>
     <div>
       <div class="shop-toolbar">
-        <span class="shop-count">{len(prods)} products</span>
+        <span class="shop-count">{count_text}</span>
         <label class="shop-sort">Sort by
           <select id="sortSel"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="az">Name: A&ndash;Z</option></select>
         </label>
@@ -308,6 +320,11 @@ def fulfil_opts(p):
     s = STORE
     dep = money(s["deposit"]["amount"])
     rate = s["shipping"]["perUnitByCategory"].get(p["category"], 0)
+    if p["category"] == "parts":
+        return f'''<div class="fulfil-opts">
+  <div class="fulfil-opt"><span class="ic">{ICON["box"]}</span><div><strong>Free shipping</strong><span class="d">Parts ship free to anywhere in the continental U.S. Pay in full online.</span></div></div>
+  <div class="fulfil-opt"><span class="ic">{ICON["pin"]}</span><div><strong>Shipping only</strong><span class="d">Parts are not available for local pickup or local delivery.</span></div></div>
+</div>'''
     if p["category"] == "helmets":
         mn = money(s["rules"]["helmetsOnly"]["localDeliveryMinSubtotal"])
         return f'''<div class="fulfil-opts">
@@ -342,7 +359,7 @@ def build_product(p):
     <button class="btn btn-primary btn-lg" type="button" data-add="{p["id"]}" data-use-qty>Add to cart</button>
   </div>
   <div class="buy-row" style="margin-top:12px"><button class="btn btn-buy btn-lg btn-block" type="button" data-buy="{p["id"]}" data-use-qty>Buy it now</button></div>
-  <p class="buy-note">Choose shipping, local delivery or free pickup at checkout.</p>
+  <p class="buy-note">{"Parts ship free and are paid in full online." if cat == "parts" else "Choose shipping, local delivery or free pickup at checkout."}</p>
   <p class="buy-note fin-note"><strong>{STORE["financing"]["headline"]}.</strong> {STORE["financing"]["instruction"]}</p>
   {fulfil_opts(p)}
 </div>'''
@@ -409,9 +426,9 @@ def build_home():
     picks = [i for i in picks if i in BY_ID]
     pick_cards = "\n".join(card(BY_ID[i]) for i in picks)
     tiles = [("scooters", "images/scooter.png"), ("atvs", "images/pentorasport250.jpg"), ("dirtbikes", "images/dirtbike.jpg"),
-             ("gokarts", "images/go-kart.jpg"), ("utvs", "images/utv.jfif"), ("ebikes", "images/gt2000.jfif"), ("helmets", "images/helmets/sport-flip-up-led-tn-8635j-1.jpg")]
+             ("gokarts", "images/go-kart.jpg"), ("utvs", "images/utv.jfif"), ("ebikes", "images/gt2000.jfif"), ("helmets", "images/helmets/sport-flip-up-led-tn-8635j-1.jpg"), ("parts", "images/service.jpg")]
     tile_html = "".join(
-        f'''<a class="category-card" href="{c}.html"><img{"" if i == 0 else " loading=\"lazy\" decoding=\"async\""} src="{im}" alt="{CAT_LABEL[c]} for sale at NYC ATV Warehouse"><div class="category-card-label"><h3>{CAT_LABEL[c]}</h3><span>{CAT_COUNT[c]} models</span></div></a>'''
+        f'''<a class="category-card" href="{c}.html"><img{"" if i == 0 else " loading=\"lazy\" decoding=\"async\""} src="{im}" alt="{CAT_LABEL[c]} for sale at NYC ATV Warehouse"><div class="category-card-label"><h3>{CAT_LABEL[c]}</h3><span>{str(CAT_COUNT[c]) + " models" if CAT_COUNT[c] else "Call for pricing"}</span></div></a>'''
         for i, (c, im) in enumerate(tiles))
     ld = {"@context": "https://schema.org", "@type": "MotorcycleDealer", "@id": f"{SITE}/#business", "name": "NYC ATV Warehouse",
           "url": f"{SITE}/", "image": f"{SITE}/images/logo.png", "logo": f"{SITE}/images/logo.png",
@@ -471,10 +488,10 @@ def build_home():
     <div class="section-head center">
       <p class="eyebrow">Why shop with us</p>
       <h2 class="section-title">The warehouse advantage</h2>
-      <p>A full warehouse stocked deep across seven categories, backed by a team that actually rides &mdash; now open to order online, wherever you are.</p>
+      <p>A full warehouse stocked deep across eight categories, backed by a team that actually rides &mdash; now open to order online, wherever you are.</p>
     </div>
     <div class="feature-grid">
-      <div class="feature-card"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12l2-6h14l2 6M5 12h14v6H5z"/><circle cx="8" cy="18" r="1.6"/><circle cx="16" cy="18" r="1.6"/></svg><h3>Massive selection</h3><p>Seven categories and 100+ models &mdash; chances are we already have what you&rsquo;re looking for.</p></div>
+      <div class="feature-card"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12l2-6h14l2 6M5 12h14v6H5z"/><circle cx="8" cy="18" r="1.6"/><circle cx="16" cy="18" r="1.6"/></svg><h3>Massive selection</h3><p>Eight categories and 100+ models &mdash; chances are we already have what you&rsquo;re looking for.</p></div>
       <div class="feature-card"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l3 6 6 1-4.5 4.5L17.5 20 12 17l-5.5 3 1-6.5L3 9l6-1 3-6z"/></svg><h3>Trusted locally</h3><p>Serving riders across NJ and the NYC metro with straightforward pricing and honest recommendations.</p></div>
       <div class="feature-card"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M7 15h4"/></svg><h3>Up to 30% off</h3><p>Select units discounted by up to 30% so you get the lowest price possible.</p></div>
       <div class="feature-card"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/></svg><h3>Full-service shop</h3><p>In-house service and a stocked parts counter, so keeping your ride running is never a hassle.</p></div>
@@ -549,7 +566,7 @@ def build_shipping():
   <div class="info-cards">
     <div class="info-card"><span class="ic">{ICON["pin"]}</span><h3>Free pickup</h3><p>Pick up your order at either location: {s["pickup"]["locations"][0]["address"]} ({s["pickup"]["locations"][0]["hours"].replace("-", "&ndash;")}) or {s["pickup"]["locations"][1]["address"]} ({s["pickup"]["locations"][1]["hours"].replace("-", "&ndash;")}). Choose your location at checkout. We&rsquo;ll contact you when it&rsquo;s ready. Pay a {money(s["deposit"]["amount"])} non-refundable deposit online; the balance is due at pickup. Helmet-only orders are paid in full online, no deposit.</p><div class="price free">Free</div></div>
     <div class="info-card"><span class="ic">{ICON["truck"]}</span><h3>Free local delivery</h3><p>Delivery is free across {s["localDelivery"]["zoneLabel"]}. Anywhere on Long Island (Nassau and Suffolk) and up to {s["localDelivery"]["extended"]["radiusMiles"]} miles from us is {money(s["localDelivery"]["extended"]["fee"])}. Enter your ZIP at checkout to see your price. Pay a {money(s["deposit"]["amount"])} non-refundable deposit online; the balance is due on delivery. Helmet-only orders get local delivery only when the order is {money(s["rules"]["helmetsOnly"]["localDeliveryMinSubtotal"])} or more.</p><div class="price free">{fee_text(s["localDelivery"]["fee"])}</div></div>
-    <div class="info-card"><span class="ic">{ICON["box"]}</span><h3>Shipped to you</h3><p>Ordering from out of town? We ship to your address anywhere in the continental U.S. (the 48 contiguous states and Washington, DC; not Alaska, Hawaii or U.S. territories). The rate depends on the type of vehicle and is shown before you pay. Shipped orders are paid in full online. Helmets ship free.</p><div class="price">Rate at checkout</div></div>
+    <div class="info-card"><span class="ic">{ICON["box"]}</span><h3>Shipped to you</h3><p>Ordering from out of town? We ship to your address anywhere in the continental U.S. (the 48 contiguous states and Washington, DC; not Alaska, Hawaii or U.S. territories). The rate depends on the type of vehicle and is shown before you pay. Shipped orders are paid in full online. Helmets and parts ship free.</p><div class="price">Rate at checkout</div></div>
   </div>
 
   <div class="prose">
@@ -562,6 +579,7 @@ def build_shipping():
       <li><strong>Free pickup and free local delivery:</strong> pay a {money(s["deposit"]["amount"])} deposit online. {s["deposit"]["policyText"]} You pay the remaining balance when you pick up or when we deliver.</li>
       <li><strong>Shipping:</strong> pay the full amount online, including shipping.</li>
       <li><strong>Helmet-only orders:</strong> no deposit. Pay in full online for pickup, delivery or shipping.</li>
+      <li><strong>Parts:</strong> shipping only (no pickup or local delivery). Parts ship free and are paid in full online. An order that includes a part ships in full.</li>
     </ul>
     <h2 id="financing">Financing available</h2>
     <p>{s["financing"]["instruction"]} Affirm lets you split your purchase into monthly payments. Financing works on shipped orders, which are paid in full online. For pickup or local delivery, check &ldquo;Pay the full amount today&rdquo; at checkout (instead of the deposit) to finance the whole order, then choose Affirm on the payment page. {s["financing"]["fine"]}</p>
@@ -731,8 +749,9 @@ def build_sitemap():
             loc = f"{SITE}/{p['url'][:-5]}"
             if f"<loc>{loc}</loc>" not in s:
                 s = s.replace("</urlset>", f"  <url><loc>{loc}</loc><lastmod>2026-10-25</lastmod></url>\n</urlset>")
-    if f"<loc>{SITE}/helmets</loc>" not in s:
-        s = s.replace("</urlset>", f"  <url><loc>{SITE}/helmets</loc><lastmod>2026-10-25</lastmod></url>\n</urlset>")
+    for cat_page in ("helmets", "parts"):
+        if f"<loc>{SITE}/{cat_page}</loc>" not in s:
+            s = s.replace("</urlset>", f"  <url><loc>{SITE}/{cat_page}</loc><lastmod>2026-11-01</lastmod></url>\n</urlset>")
     write("sitemap.xml", s)
 
 

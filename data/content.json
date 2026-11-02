@@ -6372,6 +6372,12 @@
    "intro": "Helmets for riders of every kind: full face, flip-up, half face, German style and motocross.",
    "title_tag": "Helmets | NYC ATV Warehouse",
    "meta": "Shop motorcycle, ATV and motocross helmets at NYC ATV Warehouse: full face, flip-up, half face, German style and off-road helmets. Located in Little Ferry, NJ."
+  },
+  "parts": {
+   "title": "Parts",
+   "intro": "Replacement and repair parts for scooters, ATVs, dirt bikes, go-karts, UTVs and e-bikes. Parts pricing is by phone for now: call us with your make, model and year and we'll quote the part. Once a part is priced online it ships free anywhere in the continental U.S.",
+   "title_tag": "Parts | NYC ATV Warehouse",
+   "meta": "Parts for scooters, ATVs, dirt bikes, go-karts, UTVs and e-bikes from NYC ATV Warehouse in Little Ferry, NJ. Call 646-943-1858 for parts pricing. Priced parts ship free."
   }
  },
  "order": {
@@ -6496,6 +6502,7 @@
    "helmets-818-motocross-tn-8696b",
    "helmets-818-motocross-closed-face-tn-8686c",
    "helmets-159-tn-0700b"
-  ]
+  ],
+  "parts": []
  }
 }

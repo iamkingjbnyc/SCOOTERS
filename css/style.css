@@ -226,7 +226,7 @@ h2.section-title, h1.section-title { font-size: clamp(2rem, 4vw, 3rem); margin-b
 .fulfil-card .tag { display: inline-block; margin-top: 8px; font-size: .74rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--good); background: var(--good-soft); border-radius: 999px; padding: 3px 10px; }
 
 /* ===== Category tiles ===== */
-.category-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px; }
+.category-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
 .category-card { position: relative; display: block; border-radius: var(--radius); overflow: hidden; background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow); transition: transform .2s, border-color .2s, box-shadow .2s; }
 .category-card:hover { transform: translateY(-4px); border-color: var(--accent); box-shadow: var(--shadow-lg); }
 .category-card img { width: 100%; aspect-ratio: 1 / 1; object-fit: contain; background: #fff; padding: 14px; transition: transform .35s; }
