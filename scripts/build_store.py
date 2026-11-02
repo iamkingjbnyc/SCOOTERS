@@ -34,6 +34,10 @@ BY_ID = {p["id"]: p for p in PRODUCTS}
 CATS = [("scooters", "Scooters"), ("atvs", "ATVs"), ("dirtbikes", "Dirt Bikes"),
         ("gokarts", "Go-Karts"), ("utvs", "UTVs"), ("ebikes", "E-Bikes"), ("helmets", "Helmets"), ("parts", "Parts")]
 CAT_LABEL = dict(CATS)
+# subcategories: (slug, label, intro, meta). Page = <cat>-<slug>.html, products = <cat>/<name>.html
+SUBCATS = {"parts": [("engine", "Engine",
+                      "Engine parts: gaskets, clutch parts, cylinders, pistons, carburetors, filters, gears and more. Parts pricing is by phone for now: call us with your make, model and year and we'll quote the part. Priced parts ship free anywhere in the continental U.S.",
+                      "Engine parts for scooters, ATVs, dirt bikes and go-karts from NYC ATV Warehouse in Little Ferry, NJ: clutch, cylinder, piston, carburetor, gaskets and more. Call 646-943-1858 for pricing.")]}
 CAT_COUNT = {c: sum(1 for p in PRODUCTS if p["category"] == c) for c, _ in CATS}
 
 ICON = {
@@ -243,6 +247,9 @@ def side_box(base):
 
 
 # --------------------------------------------------------------------------- pages
+PARTS_IMG = "images/parts/engine-placeholder.svg"
+
+
 def build_category(cat):
     info = CONTENT["categories"][cat]
     label = CAT_LABEL[cat]
@@ -256,15 +263,27 @@ def build_category(cat):
     order = {pid: i for i, pid in enumerate(CONTENT["order"][cat])}
     prods.sort(key=lambda p: order.get(p["id"], 999))
     cards = "\n".join(card(p) for p in prods)
-    if not prods and cat == "parts":
+    if cat == "parts":
         b = STORE["business"]
-        cards = f'''      <div class="info-card" style="grid-column:1/-1">
+        tiles = "".join(
+            f'<a class="category-card" href="{cat}-{sl}.html"><img src="{PARTS_IMG}" alt="{lb} parts"><div class="category-card-label"><h3>{lb}</h3><span>{sum(1 for q in prods if q.get("subcategory") == sl)} parts</span></div></a>'
+            for sl, lb, _, _ in SUBCATS[cat])
+        cards = f'''      <div class="category-grid" style="grid-column:1/-1;grid-template-columns:repeat(3,1fr);margin-bottom:8px">{tiles}</div>
+      <div class="info-card" style="grid-column:1/-1">
         <span class="ic">{ICON["box"]}</span>
         <h3>Call for parts pricing</h3>
         <p>We stock and can order parts for every type of vehicle we sell. Call <a href="{b["phoneHref"]}">{b["phone"]}</a> or <a href="contact.html">send us a message</a> with your make, model and year, and we&rsquo;ll quote the part. Parts ship free anywhere in the continental U.S. and are paid in full online.</p>
         <a class="btn btn-primary btn-lg" href="{b["phoneHref"]}" style="margin-top:16px">Call {b["phone"]}</a>
       </div>'''
     count_text = f"{len(prods)} products" if prods else "Call for pricing"
+    toolbar = f'''<div class="shop-toolbar">
+        <span class="shop-count">{count_text}</span>
+        <label class="shop-sort">Sort by
+          <select id="sortSel"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="az">Name: A&ndash;Z</option></select>
+        </label>
+      </div>'''
+    if cat == "parts":
+        toolbar = ""
     body = f'''{header("", cat)}
 
 <main>
@@ -278,12 +297,7 @@ def build_category(cat):
   <div class="container shop-layout">
     <aside>{side_cats("", cat)}{side_box("")}</aside>
     <div>
-      <div class="shop-toolbar">
-        <span class="shop-count">{count_text}</span>
-        <label class="shop-sort">Sort by
-          <select id="sortSel"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="az">Name: A&ndash;Z</option></select>
-        </label>
-      </div>
+      {toolbar}
       <div class="bike-grid" id="productGrid">
 {cards}
       </div>
@@ -298,11 +312,51 @@ def build_category(cat):
     write(f"{cat}.html", page(head(info["title_tag"], info["meta"], cat, jsonld=ld), body, ""))
 
 
+def build_subcategory(cat, sub, label, intro, meta):
+    cat_label = CAT_LABEL[cat]
+    prods = [p for p in PRODUCTS if p["category"] == cat and p.get("subcategory") == sub]
+    cards = "\n".join(card(p) for p in prods)
+    page_name = f"{cat}-{sub}"
+    body = f'''{header("", cat)}
+
+<main>
+<div class="container crumbs"><a href="index.html">Home</a><span>/</span><a href="{cat}.html">{cat_label}</a><span>/</span>{label}</div>
+<section class="page-head" style="padding-bottom:0"><div class="container">
+  <h1 class="section-title">{label} {cat_label}</h1>
+  <p>{intro}</p>
+</div></section>
+
+<section style="padding-top:26px">
+  <div class="container shop-layout">
+    <aside>{side_cats("", cat)}{side_box("")}</aside>
+    <div>
+      <div class="shop-toolbar">
+        <span class="shop-count">{len(prods)} parts</span>
+        <label class="shop-sort">Sort by
+          <select id="sortSel"><option value="featured">Featured</option><option value="az">Name: A&ndash;Z</option></select>
+        </label>
+      </div>
+      <div class="bike-grid" id="productGrid">
+{cards}
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+{footer("")}'''
+    ld = {"@context": "https://schema.org", "@type": "ItemList", "name": f"{label} {cat_label}",
+          "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": f"{SITE}/{p['url'][:-5]}"} for i, p in enumerate(prods)]}
+    write(f"{page_name}.html", page(head(f"{label} {cat_label} | NYC ATV Warehouse", meta, page_name, jsonld=ld), body, ""))
+
+
 def product_jsonld(p, c):
-    imgs = [A(SITE + "/", t) for t in c["thumbs"]]
+    imgs = [A(SITE + "/", t) for t in c["thumbs"] if not t.endswith(".svg")]
     d = {"@context": "https://schema.org", "@type": "Product", "name": p["name"], "description": c["description"],
-         "category": CAT_LABEL[p["category"]], "url": f"{SITE}/{p['url'][:-5]}", "image": imgs,
+         "category": CAT_LABEL[p["category"]], "url": f"{SITE}/{p['url'][:-5]}",
          "brand": {"@type": "Brand", "name": "NYC ATV Warehouse"}}
+    if imgs:
+        d["image"] = imgs
     if buyable(p) or (soldout(p) and isinstance(p.get("price"), (int, float)) and p["price"] > 0):
         d["offers"] = {"@type": "Offer", "url": f"{SITE}/{p['url'][:-5]}", "priceCurrency": "USD",
                        "price": f"{p['price']:.2f}".rstrip("0").rstrip("."),
@@ -374,12 +428,15 @@ def build_product(p):
             price = '<div class="pdp-price call">Call for pricing</div>'
             stock = ""
             buy = f'''<div class="buy-box"><a class="btn btn-primary btn-lg btn-block" href="{STORE["business"]["phoneHref"]}">Call {STORE["business"]["phone"]} to order</a>
-  <p class="buy-note">Online pricing for this model is coming soon.</p></div>'''
+  <p class="buy-note">{"Call us for pricing and fitment on this part." if cat == "parts" else "Online pricing for this model is coming soon."}</p></div>'''
         mobile = ""
+    sub = p.get("subcategory")
+    sub_label = next((lb for sl, lb, _, _ in SUBCATS.get(cat, []) if sl == sub), None)
+    sub_crumb = f'<a href="{base}{cat}-{sub}.html">{sub_label}</a><span>/</span>' if sub_label else ""
     body = f'''{header(base, cat)}
 
 <main>
-<div class="container crumbs"><a href="{base}index.html">Home</a><span>/</span><a href="{base}{cat}.html">{label}</a><span>/</span>{p["name"]}</div>
+<div class="container crumbs"><a href="{base}index.html">Home</a><span>/</span><a href="{base}{cat}.html">{label}</a><span>/</span>{sub_crumb}{p["name"]}</div>
 
 <section class="pdp" id="pdp" data-id="{p["id"]}">
   <div class="container pdp-grid">
@@ -413,7 +470,7 @@ def build_product(p):
 {mobile}
 {footer(base)}'''
     ttl = f'{p["name"]} | {label} | NYC ATV Warehouse'
-    write(p["url"], page(head(ttl, desc, p["url"][:-5], c["main"], product_jsonld(p, c), base=base, og_type="product"),
+    write(p["url"], page(head(ttl, desc, p["url"][:-5], None if c["main"].endswith(".svg") else c["main"], product_jsonld(p, c), base=base, og_type="product"),
                          body, base, "has-buybar" if mobile else ""))
 
 
@@ -428,7 +485,7 @@ def build_home():
     tiles = [("scooters", "images/scooter.png"), ("atvs", "images/pentorasport250.jpg"), ("dirtbikes", "images/dirtbike.jpg"),
              ("gokarts", "images/go-kart.jpg"), ("utvs", "images/utv.jfif"), ("ebikes", "images/gt2000.jfif"), ("helmets", "images/helmets/sport-flip-up-led-tn-8635j-1.jpg"), ("parts", "images/service.jpg")]
     tile_html = "".join(
-        f'''<a class="category-card" href="{c}.html"><img{"" if i == 0 else " loading=\"lazy\" decoding=\"async\""} src="{im}" alt="{CAT_LABEL[c]} for sale at NYC ATV Warehouse"><div class="category-card-label"><h3>{CAT_LABEL[c]}</h3><span>{str(CAT_COUNT[c]) + " models" if CAT_COUNT[c] else "Call for pricing"}</span></div></a>'''
+        f'''<a class="category-card" href="{c}.html"><img{"" if i == 0 else " loading=\"lazy\" decoding=\"async\""} src="{im}" alt="{CAT_LABEL[c]} for sale at NYC ATV Warehouse"><div class="category-card-label"><h3>{CAT_LABEL[c]}</h3><span>{(str(CAT_COUNT[c]) + (" parts" if c == "parts" else " models")) if CAT_COUNT[c] else "Call for pricing"}</span></div></a>'''
         for i, (c, im) in enumerate(tiles))
     ld = {"@context": "https://schema.org", "@type": "MotorcycleDealer", "@id": f"{SITE}/#business", "name": "NYC ATV Warehouse",
           "url": f"{SITE}/", "image": f"{SITE}/images/logo.png", "logo": f"{SITE}/images/logo.png",
@@ -745,11 +802,11 @@ def build_sitemap():
         if f"/{extra}<" not in s:
             s = s.replace("</urlset>", f"  <url><loc>{SITE}/{extra}</loc><lastmod>2026-10-25</lastmod></url>\n</urlset>")
     for p in PRODUCTS:
-        if p["category"] == "helmets":
+        if p["category"] in ("helmets", "parts"):
             loc = f"{SITE}/{p['url'][:-5]}"
             if f"<loc>{loc}</loc>" not in s:
                 s = s.replace("</urlset>", f"  <url><loc>{loc}</loc><lastmod>2026-10-25</lastmod></url>\n</urlset>")
-    for cat_page in ("helmets", "parts"):
+    for cat_page in ("helmets", "parts", "parts-engine"):
         if f"<loc>{SITE}/{cat_page}</loc>" not in s:
             s = s.replace("</urlset>", f"  <url><loc>{SITE}/{cat_page}</loc><lastmod>2026-11-01</lastmod></url>\n</urlset>")
     write("sitemap.xml", s)
@@ -762,6 +819,9 @@ def main():
         build_category(c)
     for p in PRODUCTS:
         build_product(p)
+    for c, subs in SUBCATS.items():
+        for sl, lb, intro, meta in subs:
+            build_subcategory(c, sl, lb, intro, meta)
     build_home()
     build_shipping()
     build_returns()
@@ -771,7 +831,10 @@ def main():
     swap_chrome("contact.html")
     swap_chrome("financing.html")
     build_sitemap()
-    missing = [p["id"] for p in PRODUCTS if not buyable(p)]
+    missing = [p["id"] for p in PRODUCTS if not buyable(p) and p["category"] != "parts"]
+    n_parts = sum(1 for p in PRODUCTS if p["category"] == "parts" and not buyable(p))
+    if n_parts:
+        print(f"{n_parts} parts are call-for-pricing (set a price in data/products.json to sell them online).")
     print(f"Built {len(PRODUCTS)} product pages, {len(CATS)} category pages, home, checkout, shipping.")
     if missing:
         print("Not purchasable online (no price yet):", ", ".join(missing))
