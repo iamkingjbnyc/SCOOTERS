@@ -979,7 +979,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/air-box.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/air-box.jpg",
    "price": null,
    "inStock": true
   },
@@ -989,7 +989,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/air-filter.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/air-filter.jpg",
    "price": null,
    "inStock": true
   },
@@ -999,7 +999,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/air-intake-boot.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/air-intake-boot.jpg",
    "price": null,
    "inStock": true
   },
@@ -1009,7 +1009,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/air-return-valve.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/air-return-valve.jpg",
    "price": null,
    "inStock": true
   },
@@ -1019,7 +1019,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/alternator.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/alternator.jpg",
    "price": null,
    "inStock": true
   },
@@ -1029,7 +1029,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/balance-shaft-assy.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/balance-shaft-assy.jpg",
    "price": null,
    "inStock": true
   },
@@ -1039,7 +1039,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/base-gasket.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/base-gasket.jpg",
    "price": null,
    "inStock": true
   },
@@ -1049,7 +1049,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/cam-chain-tensioner.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/cam-chain-tensioner.jpg",
    "price": null,
    "inStock": true
   },
@@ -1059,7 +1059,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/cam-shaft-cover-gasket.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/cam-shaft-cover-gasket.jpg",
    "price": null,
    "inStock": true
   },
@@ -1069,7 +1069,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/camshaft-assy.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/camshaft-assy.jpg",
    "price": null,
    "inStock": true
   },
@@ -1079,7 +1079,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/carburetor.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/carburetor.jpg",
    "price": null,
    "inStock": true
   },
@@ -1089,7 +1089,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/carburetor-gasket.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/carburetor-gasket.jpg",
    "price": null,
    "inStock": true
   },
@@ -1099,7 +1099,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/carburetor-insulator.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/carburetor-insulator.jpg",
    "price": null,
    "inStock": true
   },
@@ -1109,7 +1109,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/chain.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/chain.jpg",
    "price": null,
    "inStock": true
   },
@@ -1119,7 +1119,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/chain-cover.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/chain-cover.jpg",
    "price": null,
    "inStock": true
   },
@@ -1129,7 +1129,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/chain-guide.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/chain-guide.jpg",
    "price": null,
    "inStock": true
   },
@@ -1139,7 +1139,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/clutch-adjuster-bearing.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/clutch-adjuster-bearing.jpg",
    "price": null,
    "inStock": true
   },
@@ -1149,7 +1149,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/clutch-adjuster-plate.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/clutch-adjuster-plate.jpg",
    "price": null,
    "inStock": true
   },
@@ -1159,7 +1159,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/clutch-assy.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/clutch-assy.jpg",
    "price": null,
    "inStock": true
   },
@@ -1169,7 +1169,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/clutch-bolt.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/clutch-bolt.jpg",
    "price": null,
    "inStock": true
   },
@@ -1179,7 +1179,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/clutch-cover.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/clutch-cover.jpg",
    "price": null,
    "inStock": true
   },
@@ -1189,7 +1189,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/clutch-cover-gasket.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/clutch-cover-gasket.jpg",
    "price": null,
    "inStock": true
   },
@@ -1199,7 +1199,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/clutch-cover-kit.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/clutch-cover-kit.jpg",
    "price": null,
    "inStock": true
   },
@@ -1209,7 +1209,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/clutch-hold-washer.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/clutch-hold-washer.jpg",
    "price": null,
    "inStock": true
   },
@@ -1219,7 +1219,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/clutch-oil-sleeve.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/clutch-oil-sleeve.jpg",
    "price": null,
    "inStock": true
   },
@@ -1229,7 +1229,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/clutch-outer-guide.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/clutch-outer-guide.jpg",
    "price": null,
    "inStock": true
   },
@@ -1239,7 +1239,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/clutch-pad-set.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/clutch-pad-set.jpg",
    "price": null,
    "inStock": true
   },
@@ -1249,7 +1249,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/clutch-shoe-assy.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/clutch-shoe-assy.jpg",
    "price": null,
    "inStock": true
   },
@@ -1259,7 +1259,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/clutch-sleeve.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/clutch-sleeve.jpg",
    "price": null,
    "inStock": true
   },
@@ -1269,7 +1269,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/clutch-spring.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/clutch-spring.jpg",
    "price": null,
    "inStock": true
   },
@@ -1279,7 +1279,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/clutch-top-cover.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/clutch-top-cover.jpg",
    "price": null,
    "inStock": true
   },
@@ -1289,7 +1289,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/coolant-reservoir.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/coolant-reservoir.jpg",
    "price": null,
    "inStock": true
   },
@@ -1299,7 +1299,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/crank-case.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/crank-case.jpg",
    "price": null,
    "inStock": true
   },
@@ -1309,7 +1309,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/crank-shaft.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/crank-shaft.jpg",
    "price": null,
    "inStock": true
   },
@@ -1319,7 +1319,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/crankcase-cover.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/crankcase-cover.jpg",
    "price": null,
    "inStock": true
   },
@@ -1329,7 +1329,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/crankcase-cover-gasket.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/crankcase-cover-gasket.jpg",
    "price": null,
    "inStock": true
   },
@@ -1339,7 +1339,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/cylinder.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/cylinder.jpg",
    "price": null,
    "inStock": true
   },
@@ -1349,7 +1349,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/cylinder-and-piston.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/cylinder-and-piston.jpg",
    "price": null,
    "inStock": true
   },
@@ -1359,7 +1359,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/cylinder-head-assy.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/cylinder-head-assy.jpg",
    "price": null,
    "inStock": true
   },
@@ -1369,7 +1369,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/cylinder-head-stud.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/cylinder-head-stud.jpg",
    "price": null,
    "inStock": true
   },
@@ -1379,7 +1379,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/cylinder-head-timing-cover.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/cylinder-head-timing-cover.jpg",
    "price": null,
    "inStock": true
   },
@@ -1389,7 +1389,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/cylinder-head-top-cover.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/cylinder-head-top-cover.jpg",
    "price": null,
    "inStock": true
   },
@@ -1399,7 +1399,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/cylinder-head-top-cover-bolts.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/cylinder-head-top-cover-bolts.jpg",
    "price": null,
    "inStock": true
   },
@@ -1409,7 +1409,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/cylinder-head-top-cover-gasket.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/cylinder-head-top-cover-gasket.jpg",
    "price": null,
    "inStock": true
   },
@@ -1419,7 +1419,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/cylinder-head-empty.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/cylinder-head-empty.jpg",
    "price": null,
    "inStock": true
   },
@@ -1429,7 +1429,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/cylinder-rubber-gasket.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/cylinder-rubber-gasket.jpg",
    "price": null,
    "inStock": true
   },
@@ -1439,7 +1439,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/dipstick.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/dipstick.jpg",
    "price": null,
    "inStock": true
   },
@@ -1449,7 +1449,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/dowel-pin.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/dowel-pin.jpg",
    "price": null,
    "inStock": true
   },
@@ -1459,7 +1459,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/drive-belt.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/drive-belt.jpg",
    "price": null,
    "inStock": true
   },
@@ -1469,7 +1469,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/drive-belt-cover.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/drive-belt-cover.jpg",
    "price": null,
    "inStock": true
   },
@@ -1479,7 +1479,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/drive-belt-cover-gasket.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/drive-belt-cover-gasket.jpg",
    "price": null,
    "inStock": true
   },
@@ -1489,7 +1489,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/drive-face-gear.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/drive-face-gear.jpg",
    "price": null,
    "inStock": true
   },
@@ -1499,7 +1499,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/drive-shaft.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/drive-shaft.jpg",
    "price": null,
    "inStock": true
   },
@@ -1509,7 +1509,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/dust-cover.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/dust-cover.jpg",
    "price": null,
    "inStock": true
   },
@@ -1519,7 +1519,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/emission-control-module.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/emission-control-module.jpg",
    "price": null,
    "inStock": true
   },
@@ -1529,7 +1529,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/engine.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/engine.jpg",
    "price": null,
    "inStock": true
   },
@@ -1539,7 +1539,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/engine-cover.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/engine-cover.jpg",
    "price": null,
    "inStock": true
   },
@@ -1549,7 +1549,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/engine-gasket-set.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/engine-gasket-set.jpg",
    "price": null,
    "inStock": true
   },
@@ -1559,7 +1559,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/engine-mount.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/engine-mount.jpg",
    "price": null,
    "inStock": true
   },
@@ -1569,7 +1569,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/final-gear.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/final-gear.jpg",
    "price": null,
    "inStock": true
   },
@@ -1579,7 +1579,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/final-shaft.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/final-shaft.jpg",
    "price": null,
    "inStock": true
   },
@@ -1589,7 +1589,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/fly-wheel.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/fly-wheel.jpg",
    "price": null,
    "inStock": true
   },
@@ -1599,7 +1599,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/fly-wheel-key-lock.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/fly-wheel-key-lock.jpg",
    "price": null,
    "inStock": true
   },
@@ -1609,7 +1609,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/fork-shaft.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/fork-shaft.jpg",
    "price": null,
    "inStock": true
   },
@@ -1619,7 +1619,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/front-sprocket.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/front-sprocket.jpg",
    "price": null,
    "inStock": true
   },
@@ -1629,7 +1629,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/fuel-filter.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/fuel-filter.jpg",
    "price": null,
    "inStock": true
   },
@@ -1639,7 +1639,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/fuel-pump-petcock.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/fuel-pump-petcock.jpg",
    "price": null,
    "inStock": true
   },
@@ -1649,7 +1649,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/gear-box.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/gear-box.jpg",
    "price": null,
    "inStock": true
   },
@@ -1659,7 +1659,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/gear-box-gasket.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/gear-box-gasket.jpg",
    "price": null,
    "inStock": true
   },
@@ -1669,7 +1669,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/gear-box-shell.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/gear-box-shell.jpg",
    "price": null,
    "inStock": true
   },
@@ -1679,7 +1679,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/gear-control-set.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/gear-control-set.jpg",
    "price": null,
    "inStock": true
   },
@@ -1689,7 +1689,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/gear-shifter.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/gear-shifter.jpg",
    "price": null,
    "inStock": true
   },
@@ -1699,7 +1699,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/gear-shifter-shaft.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/gear-shifter-shaft.jpg",
    "price": null,
    "inStock": true
   },
@@ -1709,7 +1709,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/head-gasket.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/head-gasket.jpg",
    "price": null,
    "inStock": true
   },
@@ -1719,7 +1719,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/head-gasket-set.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/head-gasket-set.jpg",
    "price": null,
    "inStock": true
   },
@@ -1729,7 +1729,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/head-valve-cover.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/head-valve-cover.jpg",
    "price": null,
    "inStock": true
   },
@@ -1739,7 +1739,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/idle-gear.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/idle-gear.jpg",
    "price": null,
    "inStock": true
   },
@@ -1749,7 +1749,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/idle-shaft-gear.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/idle-shaft-gear.jpg",
    "price": null,
    "inStock": true
   },
@@ -1759,7 +1759,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/intake.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/intake.jpg",
    "price": null,
    "inStock": true
   },
@@ -1769,7 +1769,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/intake-bolt.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/intake-bolt.jpg",
    "price": null,
    "inStock": true
   },
@@ -1779,7 +1779,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/kick-start-catch-gear.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/kick-start-catch-gear.jpg",
    "price": null,
    "inStock": true
   },
@@ -1789,7 +1789,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/kick-start-gear.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/kick-start-gear.jpg",
    "price": null,
    "inStock": true
   },
@@ -1799,7 +1799,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/kick-start-lever.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/kick-start-lever.jpg",
    "price": null,
    "inStock": true
   },
@@ -1809,7 +1809,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/kick-start-shaft-assy.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/kick-start-shaft-assy.jpg",
    "price": null,
    "inStock": true
   },
@@ -1819,7 +1819,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/kick-start-spindle.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/kick-start-spindle.jpg",
    "price": null,
    "inStock": true
   },
@@ -1829,7 +1829,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/kick-start-spindle-bushing.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/kick-start-spindle-bushing.jpg",
    "price": null,
    "inStock": true
   },
@@ -1839,7 +1839,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/kick-start-spring.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/kick-start-spring.jpg",
    "price": null,
    "inStock": true
   },
@@ -1849,7 +1849,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/manifold-gasket.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/manifold-gasket.jpg",
    "price": null,
    "inStock": true
   },
@@ -1869,7 +1869,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/oil-chain.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/oil-chain.jpg",
    "price": null,
    "inStock": true
   },
@@ -1879,7 +1879,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/oil-filter.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/oil-filter.jpg",
    "price": null,
    "inStock": true
   },
@@ -1889,7 +1889,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/oil-filter-cover.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/oil-filter-cover.jpg",
    "price": null,
    "inStock": true
   },
@@ -1899,7 +1899,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/oil-pump.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/oil-pump.jpg",
    "price": null,
    "inStock": true
   },
@@ -1909,7 +1909,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/piston-ring.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/piston-ring.jpg",
    "price": null,
    "inStock": true
   },
@@ -1919,7 +1919,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/piston-set.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/piston-set.jpg",
    "price": null,
    "inStock": true
   },
@@ -1929,7 +1929,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/primary-drive-gear.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/primary-drive-gear.jpg",
    "price": null,
    "inStock": true
   },
@@ -1939,7 +1939,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/pull-start.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/pull-start.jpg",
    "price": null,
    "inStock": true
   },
@@ -1949,7 +1949,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/pull-start-catch-plate.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/pull-start-catch-plate.jpg",
    "price": null,
    "inStock": true
   },
@@ -1959,7 +1959,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/racing-clutch.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/racing-clutch.jpg",
    "price": null,
    "inStock": true
   },
@@ -1969,7 +1969,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/radiator.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/radiator.jpg",
    "price": null,
    "inStock": true
   },
@@ -1979,7 +1979,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/radiator-cap.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/radiator-cap.jpg",
    "price": null,
    "inStock": true
   },
@@ -1989,7 +1989,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/radiator-fan.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/radiator-fan.jpg",
    "price": null,
    "inStock": true
   },
@@ -1999,7 +1999,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/ratchet-nut-for-variator.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/ratchet-nut-for-variator.jpg",
    "price": null,
    "inStock": true
   },
@@ -2009,7 +2009,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/rear-drive-shaft.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/rear-drive-shaft.jpg",
    "price": null,
    "inStock": true
   },
@@ -2019,7 +2019,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/rear-idle-sprocket-assy.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/rear-idle-sprocket-assy.jpg",
    "price": null,
    "inStock": true
   },
@@ -2029,7 +2029,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/reverse-gear.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/reverse-gear.jpg",
    "price": null,
    "inStock": true
   },
@@ -2039,7 +2039,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/rocker-arm-assy.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/rocker-arm-assy.jpg",
    "price": null,
    "inStock": true
   },
@@ -2049,7 +2049,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/rubber-o-ring.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/rubber-o-ring.jpg",
    "price": null,
    "inStock": true
   },
@@ -2059,7 +2059,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/seal.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/seal.jpg",
    "price": null,
    "inStock": true
   },
@@ -2069,7 +2069,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/seal-set.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/seal-set.jpg",
    "price": null,
    "inStock": true
   },
@@ -2079,7 +2079,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/shifter-shaft.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/shifter-shaft.jpg",
    "price": null,
    "inStock": true
   },
@@ -2089,7 +2089,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/spark-plugs.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/spark-plugs.jpg",
    "price": null,
    "inStock": true
   },
@@ -2099,7 +2099,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/sprocket-lock.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/sprocket-lock.jpg",
    "price": null,
    "inStock": true
   },
@@ -2119,7 +2119,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/starter-bendix.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/starter-bendix.jpg",
    "price": null,
    "inStock": true
   },
@@ -2129,7 +2129,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/starter-chain.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/starter-chain.jpg",
    "price": null,
    "inStock": true
   },
@@ -2139,7 +2139,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/starter-chain-tensioner.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/starter-chain-tensioner.jpg",
    "price": null,
    "inStock": true
   },
@@ -2149,7 +2149,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/starter-clutch.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/starter-clutch.jpg",
    "price": null,
    "inStock": true
   },
@@ -2159,7 +2159,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/starter-clutch-assy.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/starter-clutch-assy.jpg",
    "price": null,
    "inStock": true
   },
@@ -2169,7 +2169,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/starter-clutch-gear.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/starter-clutch-gear.jpg",
    "price": null,
    "inStock": true
   },
@@ -2179,7 +2179,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/stator-cover.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/stator-cover.jpg",
    "price": null,
    "inStock": true
   },
@@ -2189,7 +2189,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/stator-cover-gasket.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/stator-cover-gasket.jpg",
    "price": null,
    "inStock": true
   },
@@ -2199,7 +2199,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/stator-fan.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/stator-fan.jpg",
    "price": null,
    "inStock": true
   },
@@ -2209,7 +2209,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/stator-plate.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/stator-plate.jpg",
    "price": null,
    "inStock": true
   },
@@ -2229,7 +2229,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/stator-plate-gasket.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/stator-plate-gasket.jpg",
    "price": null,
    "inStock": true
   },
@@ -2249,7 +2249,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/temperature-sensor.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/temperature-sensor.jpg",
    "price": null,
    "inStock": true
   },
@@ -2259,7 +2259,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/thermostat.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/thermostat.jpg",
    "price": null,
    "inStock": true
   },
@@ -2269,7 +2269,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/thermostat-cover.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/thermostat-cover.jpg",
    "price": null,
    "inStock": true
   },
@@ -2279,7 +2279,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/timing-chain.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/timing-chain.jpg",
    "price": null,
    "inStock": true
   },
@@ -2289,7 +2289,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/timing-chain-cover-gasket.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/timing-chain-cover-gasket.jpg",
    "price": null,
    "inStock": true
   },
@@ -2299,7 +2299,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/timing-chain-roller-set.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/timing-chain-roller-set.jpg",
    "price": null,
    "inStock": true
   },
@@ -2309,7 +2309,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/timing-chain-rotter.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/timing-chain-rotter.jpg",
    "price": null,
    "inStock": true
   },
@@ -2319,7 +2319,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/timing-cover-gasket.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/timing-cover-gasket.jpg",
    "price": null,
    "inStock": true
   },
@@ -2329,7 +2329,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/timing-gear.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/timing-gear.jpg",
    "price": null,
    "inStock": true
   },
@@ -2339,7 +2339,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/transmission-case.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/transmission-case.jpg",
    "price": null,
    "inStock": true
   },
@@ -2349,7 +2349,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/valve-cover-gasket.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/valve-cover-gasket.jpg",
    "price": null,
    "inStock": true
   },
@@ -2359,7 +2359,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/valve-keeper.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/valve-keeper.jpg",
    "price": null,
    "inStock": true
   },
@@ -2369,7 +2369,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/valve-seal.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/valve-seal.jpg",
    "price": null,
    "inStock": true
   },
@@ -2379,7 +2379,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/valve-set.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/valve-set.jpg",
    "price": null,
    "inStock": true
   },
@@ -2389,7 +2389,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/variator.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/variator.jpg",
    "price": null,
    "inStock": true
   },
@@ -2399,7 +2399,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/variator-clip.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/variator-clip.jpg",
    "price": null,
    "inStock": true
   },
@@ -2409,7 +2409,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/variator-fan.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/variator-fan.jpg",
    "price": null,
    "inStock": true
   },
@@ -2419,7 +2419,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/variator-roller.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/variator-roller.jpg",
    "price": null,
    "inStock": true
   },
@@ -2429,7 +2429,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/washer.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/washer.jpg",
    "price": null,
    "inStock": true
   },
@@ -2439,7 +2439,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/water-hose.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/water-hose.jpg",
    "price": null,
    "inStock": true
   },
@@ -2449,7 +2449,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/water-pipe.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/water-pipe.jpg",
    "price": null,
    "inStock": true
   },
@@ -2459,7 +2459,7 @@
    "category": "parts",
    "subcategory": "engine",
    "url": "parts/water-pump.html",
-   "image": "images/parts/engine-placeholder.svg",
+   "image": "images/parts/water-pump.jpg",
    "price": null,
    "inStock": true
   }
