@@ -40,12 +40,16 @@ def main():
         d = json.load(open(f, encoding="utf-8"))
         cat, sub = d["category"], d["subcategory"]
         seen = set()
-        for name in d["items"]:
+        for item in d["items"]:
+            # an item is either a plain name or {"name", "photo", "variants": [{"name","fit","desc","photos"}]}
+            rec = item if isinstance(item, dict) else {"name": item}
+            name = rec["name"]
             slug = slugify(name)
             assert slug not in seen, f"duplicate part page name: {slug}"
             seen.add(slug)
             pid = f"{cat}-{sub}-{slug}"
-            img = photo_for(slug)
+            variants = rec.get("variants") or []
+            img = rec.get("photo") or photo_for(slug)
             entry = by_id.get(pid) or {"id": pid}
             entry.update({"name": name, "category": cat, "subcategory": sub, "url": f"{cat}/{slug}.html",
                           "image": img, "price": None, "inStock": True} if "price" not in entry or entry["price"] is None
@@ -55,6 +59,7 @@ def main():
                 by_id[pid] = entry
             cj["products"][pid] = {
                 "main": img, "thumbs": [img],
+                **({"variants": variants} if variants else {}),
                 "bullets": [f"{sub.title()} part", "Call for fitment and pricing", "Ships free once priced"],
                 "specs": [["Category", f"Parts / {sub.title()}"], ["Pricing", f"Call {PHONE}"],
                           ["Shipping", "Free, continental U.S. only"]],

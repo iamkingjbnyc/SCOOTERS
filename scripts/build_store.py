@@ -393,8 +393,63 @@ def fulfil_opts(p):
 </div>'''
 
 
+def build_part_variants(p, c):
+    """Supplier-style part page: the list of versions (name, fitment, photos, description)."""
+    cat, label = p["category"], CAT_LABEL[p["category"]]
+    base = "../"
+    b = STORE["business"]
+    sub = p.get("subcategory")
+    sub_label = next((lb for sl, lb, _, _ in SUBCATS.get(cat, []) if sl == sub), None)
+    sub_crumb = f'<a href="{base}{cat}-{sub}.html">{sub_label}</a><span>/</span>' if sub_label else ""
+    rows = []
+    for v in c["variants"]:
+        photos = v.get("photos") or []
+        vn = H.escape(v["name"], quote=True)
+        if photos:
+            thumbs = ""
+            if len(photos) > 1:
+                thumbs = '<div class="variant-thumbs">' + "".join(
+                    f'<img loading="lazy" decoding="async" src="{A(base, t)}" class="thumb{" active" if i == 0 else ""}" alt="{vn} photo {i + 1}">'
+                    for i, t in enumerate(photos)) + "</div>"
+            media = f'<div class="variant-media"><div class="variant-main"><img loading="lazy" decoding="async" src="{A(base, photos[0])}" alt="{vn}"></div>{thumbs}</div>'
+        else:
+            media = ""
+        fit = f'<p class="variant-fit"><strong>Fits:</strong> {H.escape(v["fit"])}</p>' if v.get("fit") else ""
+        desc = f'<p class="variant-desc">{H.escape(v["desc"])}</p>' if v.get("desc") else ""
+        rows.append(f'''      <article class="variant{"" if photos else " no-photo"}">
+        {media}
+        <div class="variant-info">
+          <h2>{H.escape(v["name"])}</h2>
+          {fit}
+          {desc}
+          <div class="variant-price"><span class="call">Call for pricing</span><a class="btn btn-primary" href="{b["phoneHref"]}">Call {b["phone"]}</a></div>
+        </div>
+      </article>''')
+    n = len(c["variants"])
+    body = f'''{header(base, cat)}
+
+<main>
+<div class="container crumbs"><a href="{base}index.html">Home</a><span>/</span><a href="{base}{cat}.html">{label}</a><span>/</span>{sub_crumb}{p["name"]}</div>
+<section class="page-head" style="padding-bottom:0"><div class="container">
+  <h1 class="section-title">{p["name"]}</h1>
+  <p>{n} version{"s" if n != 1 else ""} listed. Match the fitment line to your vehicle, then call <a href="{b["phoneHref"]}">{b["phone"]}</a> for pricing. Once priced, parts ship free in the continental U.S. and are paid in full online.</p>
+</div></section>
+<section style="padding-top:20px"><div class="container variant-list">
+{chr(10).join(rows)}
+</div></section>
+</main>
+
+{footer(base)}'''
+    first = next((ph for v in c["variants"] for ph in (v.get("photos") or [])), None)
+    ttl = f'{p["name"]} | {label} | NYC ATV Warehouse'
+    desc_meta = f'{p["name"]}: {n} version{"s" if n != 1 else ""} with fitment details. Call {b["phone"]} for pricing. NYC ATV Warehouse, Little Ferry, NJ.'
+    write(p["url"], page(head(ttl, desc_meta, p["url"][:-5], first, base=base), body, base))
+
+
 def build_product(p):
     c = CONTENT["products"][p["id"]]
+    if c.get("variants"):
+        return build_part_variants(p, c)
     cat, label = p["category"], CAT_LABEL[p["category"]]
     base = "../"
     desc = c["description"].replace("Full specs, pricing, and availability.",

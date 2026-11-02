@@ -237,6 +237,14 @@
         t.classList.add('active');
       });
     });
+    $$('.variant-thumbs .thumb').forEach(function (t) {
+      t.addEventListener('click', function () {
+        var box = t.closest('.variant-media'); if (!box) return;
+        var main = box.querySelector('.variant-main img'); if (main) main.src = t.src;
+        box.querySelectorAll('.thumb').forEach(function (x) { x.classList.remove('active'); });
+        t.classList.add('active');
+      });
+    });
   }
 
   function cardHTML(p) {
