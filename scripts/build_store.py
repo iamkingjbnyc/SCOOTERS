@@ -249,7 +249,8 @@ def side_box(base):
 
 
 # --------------------------------------------------------------------------- pages
-PARTS_IMG = "images/parts/engine-placeholder.svg"
+PARTS_IMG = "images/parts/engine-placeholder.svg"  # fallback for parts and variants without a photo
+PARTS_TILE_IMG = "images/parts/hero-engine.jpg"  # Parts page Engine subcategory tile
 
 
 def build_category(cat):
@@ -268,7 +269,7 @@ def build_category(cat):
     if cat == "parts":
         b = STORE["business"]
         tiles = "".join(
-            f'<a class="category-card" href="{cat}-{sl}.html"><img src="{PARTS_IMG}" alt="{lb} parts"><div class="category-card-label"><h3>{lb}</h3><span>{sum(1 for q in prods if q.get("subcategory") == sl)} parts</span></div></a>'
+            f'<a class="category-card" href="{cat}-{sl}.html"><img src="{PARTS_TILE_IMG}" alt="{lb} parts"><div class="category-card-label"><h3>{lb}</h3><span>{sum(1 for q in prods if q.get("subcategory") == sl)} parts</span></div></a>'
             for sl, lb, _, _ in SUBCATS[cat])
         cards = f'''      <div class="category-grid" style="grid-column:1/-1;grid-template-columns:repeat(3,1fr);margin-bottom:8px">{tiles}</div>
       <div class="info-card" style="grid-column:1/-1">
@@ -549,7 +550,7 @@ def build_home():
     picks = [i for i in picks if i in BY_ID]
     pick_cards = "\n".join(card(BY_ID[i]) for i in picks)
     tiles = [("scooters", "images/scooter.png"), ("atvs", "images/pentorasport250.jpg"), ("dirtbikes", "images/dirtbike.jpg"),
-             ("gokarts", "images/go-kart.jpg"), ("utvs", "images/utv.jfif"), ("ebikes", "images/gt2000.jfif"), ("helmets", "images/helmets/sport-flip-up-led-tn-8635j-1.jpg"), ("parts", "images/service.jpg")]
+             ("gokarts", "images/go-kart.jpg"), ("utvs", "images/utv.jfif"), ("ebikes", "images/gt2000.jfif"), ("helmets", "images/helmets/sport-flip-up-led-tn-8635j-1.jpg"), ("parts", "images/parts/hero-parts.jpg")]
     tile_html = "".join(
         f'''<a class="category-card" href="{c}.html"><img{"" if i == 0 else " loading=\"lazy\" decoding=\"async\""} src="{im}" alt="{CAT_LABEL[c]} for sale at NYC ATV Warehouse"><div class="category-card-label"><h3>{CAT_LABEL[c]}</h3><span>{(str(CAT_COUNT[c]) + (" parts" if c == "parts" else " models")) if CAT_COUNT[c] else "Call for pricing"}</span></div></a>'''
         for i, (c, im) in enumerate(tiles))
