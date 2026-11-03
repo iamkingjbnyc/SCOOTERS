@@ -26,8 +26,10 @@ SITE = "https://nycatvwarehouse.com"
 PRODUCTS = json.load(open("data/products.json", encoding="utf-8"))["products"]
 CONTENT = json.load(open("data/content.json", encoding="utf-8"))
 STORE = json.load(open("data/store.json", encoding="utf-8"))
-PART_VARIANTS = (json.load(open("data/engine_part_variants.json", encoding="utf-8"))["parts"]
-                 if os.path.exists("data/engine_part_variants.json") else {})
+PART_VARIANTS = {}
+for _vf in ("data/engine_part_variants.json", "data/electric_part_variants.json"):
+    if os.path.exists(_vf):
+        PART_VARIANTS.update(json.load(open(_vf, encoding="utf-8"))["parts"])
 GTAG = open("scripts/snippets/gtag.html", encoding="utf-8").read()
 LIVECHAT = ""  # live chat widget removed at owner request
 TESTIMONIALS = open("scripts/snippets/testimonials.html", encoding="utf-8").read()
