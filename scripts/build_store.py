@@ -13,6 +13,7 @@ Outputs: index.html, the six category pages, every page under scooters/ atvs/
 dirtbikes/ gokarts/ utvs/ ebikes/, shipping-pickup.html, checkout.html,
 order-complete.html, and the header/footer on contact.html and financing.html.
 """
+import glob
 import html as H
 import json
 import os
@@ -27,9 +28,8 @@ PRODUCTS = json.load(open("data/products.json", encoding="utf-8"))["products"]
 CONTENT = json.load(open("data/content.json", encoding="utf-8"))
 STORE = json.load(open("data/store.json", encoding="utf-8"))
 PART_VARIANTS = {}
-for _vf in ("data/engine_part_variants.json", "data/electric_part_variants.json"):
-    if os.path.exists(_vf):
-        PART_VARIANTS.update(json.load(open(_vf, encoding="utf-8"))["parts"])
+for _vf in sorted(glob.glob("data/*_part_variants.json")):
+    PART_VARIANTS.update(json.load(open(_vf, encoding="utf-8"))["parts"])
 GTAG = open("scripts/snippets/gtag.html", encoding="utf-8").read()
 LIVECHAT = ""  # live chat widget removed at owner request
 TESTIMONIALS = open("scripts/snippets/testimonials.html", encoding="utf-8").read()
@@ -44,7 +44,13 @@ SUBCATS = {"parts": [("engine", "Engine",
                       "Engine parts for scooters, ATVs, dirt bikes and go-karts from NYC ATV Warehouse in Little Ferry, NJ: clutch, cylinder, piston, carburetor, gaskets and more. Call 646-943-1858 for pricing."),
                      ("electric", "Electric",
                       "Electric parts: batteries, switches, lights, coils, CDI boxes, regulators, wire harnesses and more. Parts pricing is by phone for now: call us with your make, model and year and we'll quote the part. Priced parts ship free anywhere in the continental U.S.",
-                      "Electric parts for scooters, ATVs, dirt bikes and go-karts from NYC ATV Warehouse in Little Ferry, NJ: batteries, switches, lights, coils, CDI boxes and more. Call 646-943-1858 for pricing.")]}
+                      "Electric parts for scooters, ATVs, dirt bikes and go-karts from NYC ATV Warehouse in Little Ferry, NJ: batteries, switches, lights, coils, CDI boxes and more. Call 646-943-1858 for pricing."),
+                     ("frame", "Frame",
+                      "Frame and chassis parts: A-arms, bumpers, racks, shocks, handlebars, brakes, seats, cables, foot pegs and more. Parts pricing is by phone for now: call us with your make, model and year and we'll quote the part. Priced parts ship free anywhere in the continental U.S.",
+                      "Frame and chassis parts for scooters, ATVs, dirt bikes, go-karts and UTVs from NYC ATV Warehouse in Little Ferry, NJ: A-arms, bumpers, racks, shocks, handlebars, brakes and more. Call 646-943-1858 for pricing."),
+                     ("tools", "Tools",
+                      "Specialty tools: clutch pullers, magneto pullers, chain tools, valve tools and more. Pricing is by phone for now: call us and we'll quote the tool. Priced items ship free anywhere in the continental U.S.",
+                      "Specialty scooter, ATV and motorcycle tools from NYC ATV Warehouse in Little Ferry, NJ: clutch pullers, magneto pullers, chain tools and valve tools. Call 646-943-1858 for pricing.")]}
 CAT_COUNT = {c: sum(1 for p in PRODUCTS if p["category"] == c) for c, _ in CATS}
 
 ICON = {
@@ -255,7 +261,8 @@ def side_box(base):
 
 # --------------------------------------------------------------------------- pages
 PARTS_IMG = "images/parts/engine-placeholder.svg"  # fallback for parts and variants without a photo
-PARTS_TILE_IMG = {"engine": "images/parts/hero-engine.jpg", "electric": "images/parts/hero-electric.jpg"}  # Parts page subcategory tiles
+PARTS_TILE_IMG = {"engine": "images/parts/hero-engine.jpg", "electric": "images/parts/hero-electric.jpg",
+                  "frame": "images/parts/hero-frame.jpg", "tools": "images/parts/hero-tools.jpg"}  # Parts page subcategory tiles
 
 
 def build_category(cat):
@@ -276,7 +283,7 @@ def build_category(cat):
         tiles = "".join(
             f'<a class="category-card" href="{cat}-{sl}.html"><img src="{PARTS_TILE_IMG.get(sl, PARTS_IMG)}" alt="{lb} parts"><div class="category-card-label"><h3>{lb}</h3><span>{sum(1 for q in prods if q.get("subcategory") == sl)} parts</span></div></a>'
             for sl, lb, _, _ in SUBCATS[cat])
-        cards = f'''      <div class="category-grid" style="grid-column:1/-1;grid-template-columns:repeat(3,1fr);margin-bottom:8px">{tiles}</div>
+        cards = f'''      <div class="category-grid" style="grid-column:1/-1;margin-bottom:8px">{tiles}</div>
       <div class="info-card" style="grid-column:1/-1">
         <span class="ic">{ICON["box"]}</span>
         <h3>Call for parts pricing</h3>
@@ -878,7 +885,7 @@ def build_sitemap():
             loc = f"{SITE}/{p['url'][:-5]}"
             if f"<loc>{loc}</loc>" not in s:
                 s = s.replace("</urlset>", f"  <url><loc>{loc}</loc><lastmod>2026-10-25</lastmod></url>\n</urlset>")
-    for cat_page in ("helmets", "parts", "parts-engine", "parts-electric"):
+    for cat_page in ["helmets", "parts"] + [f"parts-{_sl}" for _sl, *_ in SUBCATS["parts"]]:
         if f"<loc>{SITE}/{cat_page}</loc>" not in s:
             s = s.replace("</urlset>", f"  <url><loc>{SITE}/{cat_page}</loc><lastmod>2026-11-01</lastmod></url>\n</urlset>")
     write("sitemap.xml", s)

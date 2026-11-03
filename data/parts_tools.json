@@ -1,0 +1,27 @@
+{
+ "_note": "Parts shown under Parts > Tools. Add names here, then run: python3 scripts/add_parts.py && python3 scripts/build_store.py. Photos: drop images/parts/<slug>.jpg (slug = page file name) and re-run both scripts.",
+ "category": "parts",
+ "subcategory": "tools",
+ "items": [
+  "Tools 01",
+  "Tools 02",
+  "Tools 03",
+  "Tools 04",
+  "Tools 05",
+  "Tools 06",
+  "Tools 07",
+  "Tools 08",
+  "Tools 09",
+  "Tools 10",
+  "Tools 11",
+  "Tools 12",
+  "Tools 13",
+  "Tools 14",
+  "Tools 16",
+  "Tools 17",
+  "Tools 20",
+  "Tools 21",
+  "Tools 22",
+  "UTV Jack"
+ ]
+}

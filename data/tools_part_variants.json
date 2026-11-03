@@ -1,0 +1,165 @@
+{
+ "_note": "Variants listed on each Parts > Tools part page (from the jjjimports.com parts list). Photos: images/parts/variants/<id>.jpg. Rebuild with: python3 scripts/build_store.py",
+ "parts": {
+  "Tools 01": [
+   {
+    "id": "5821",
+    "title": "Tools 01",
+    "desc": "Tool-DD08001, piston pin take-out, piston 40mm-100mm, pull-out piston pin10mm-25mm, 50 /70 /90 /100 /110 /125 /150cc",
+    "photo": true
+   }
+  ],
+  "Tools 02": [
+   {
+    "id": "5822",
+    "title": "Tools 02",
+    "desc": "Tool-DD08002, GY-6, pull out a supper clutch",
+    "photo": true
+   }
+  ],
+  "Tools 03": [
+   {
+    "id": "5823",
+    "title": "Tools 03",
+    "desc": "Tool-DD08003, disassemble big chain tool, for motorcycle #425--#528",
+    "photo": true
+   }
+  ],
+  "Tools 04": [
+   {
+    "id": "5824",
+    "title": "Tools 04",
+    "desc": "Tool-DD08005, Clutch Puller, (M19-M29), 70, 100, 125, C50 /70 CD50 /70 CJ70 Clutch and CG 125, CB125S, JH125, GL145, XF125",
+    "photo": true
+   }
+  ],
+  "Tools 05": [
+   {
+    "id": "5825",
+    "title": "Tools 05",
+    "desc": "Tool-DD08006, clutch tool, m-19, 70, 100, 125cc",
+    "photo": true
+   }
+  ],
+  "Tools 06": [
+   {
+    "id": "5826",
+    "title": "Tools 06",
+    "desc": "Tool-DD08007, honda clutch tool, m-19, 70, 90, 100, 125cc",
+    "photo": true
+   }
+  ],
+  "Tools 07": [
+   {
+    "id": "5827",
+    "title": "Tools 07",
+    "desc": "Tool-DD08009, CG Engine 150/200/250cc, disassembly helical gear, motocycle CG",
+    "photo": true
+   }
+  ],
+  "Tools 08": [
+   {
+    "id": "5828",
+    "title": "Tools 08",
+    "desc": "Tool-DD08010, WY125 timed gear disassembly tool, WY125 /JH125 motocycle engine",
+    "photo": true
+   }
+  ],
+  "Tools 09": [
+   {
+    "id": "5829",
+    "title": "Tools 09",
+    "desc": "Tool-DD08012, 3-way magneto puller, I.D M28x1, O.D M27x1, Bolt M16x1.5, Honda , WY125, SB125T, CG125, JH70, JH125, GY-6",
+    "photo": true
+   }
+  ],
+  "Tools 10": [
+   {
+    "id": "5830",
+    "title": "Tools 10",
+    "desc": "Tool-DD08013, bipolar magneto puller, I.D M24*1, O.D M27*1, Bolt m16*1.5, use 50 & 150cc, GY-6",
+    "photo": true
+   }
+  ],
+  "Tools 11": [
+   {
+    "id": "5831",
+    "title": "Tools 11",
+    "desc": "Tool-DD08014, JH70, Magneto puller, O.D M27x1, JH70, CG125 & GY6",
+    "photo": true
+   }
+  ],
+  "Tools 12": [
+   {
+    "id": "5832",
+    "title": "Tools 12",
+    "desc": "Tool-DD08016, WY125 magneto puller, I.D M28x1, Bolt M16x1.5, WY125",
+    "photo": true
+   }
+  ],
+  "Tools 13": [
+   {
+    "id": "5833",
+    "title": "Tools 13",
+    "desc": "Tool-DD08017, GN250 magneto puller, I.D CM35x1.5, Bolt M16x1.5, Yamaha 250",
+    "photo": true
+   }
+  ],
+  "Tools 14": [
+   {
+    "id": "5834",
+    "title": "Tools 14",
+    "desc": "Tool-DD08019, CG125 single magneto puller, CB125T, O.D M16x1.5, CG125, JH125, QJ125",
+    "photo": true
+   }
+  ],
+  "Tools 16": [
+   {
+    "id": "5836",
+    "title": "Tools 16",
+    "desc": "Tool-DD08033 (L), Combo Omnipotence Magneto puller, I.D M28x1, O.D M28 x1, I.D M27x1.5, O.D M30x1.5, I.D M28x1.0, O.D M27x1.0, I.D M16x1.5",
+    "photo": true
+   }
+  ],
+  "Tools 17": [
+   {
+    "id": "5837",
+    "title": "Tools 17",
+    "desc": "50-250cc, intake & exhaust valve tool",
+    "photo": true
+   }
+  ],
+  "Tools 20": [
+   {
+    "id": "6128",
+    "title": "Tools 20",
+    "desc": "Magneto puller",
+    "photo": true
+   }
+  ],
+  "Tools 21": [
+   {
+    "id": "10084",
+    "title": "Tools 21",
+    "desc": "Master tool for chain adjuster",
+    "photo": false
+   }
+  ],
+  "Tools 22": [
+   {
+    "id": "10085",
+    "title": "Tools 22",
+    "desc": "Tap M20x1.5",
+    "photo": false
+   }
+  ],
+  "UTV Jack": [
+   {
+    "id": "5610",
+    "title": "UTV JACK 01",
+    "desc": "FARM TRUCK 650 4X4 UTV 650JP",
+    "photo": true
+   }
+  ]
+ }
+}
