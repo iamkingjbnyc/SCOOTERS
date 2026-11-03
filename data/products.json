@@ -2462,6 +2462,646 @@
    "image": "images/parts/water-pump.jpg",
    "price": null,
    "inStock": true
+  },
+  {
+   "id": "parts-electric-battery",
+   "name": "Battery",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/battery.html",
+   "image": "images/parts/battery.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-battery-charger",
+   "name": "Battery Charger",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/battery-charger.html",
+   "image": "images/parts/battery-charger.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-battery-wire",
+   "name": "Battery Wire",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/battery-wire.html",
+   "image": "images/parts/battery-wire.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-brake-sensor",
+   "name": "Brake Sensor",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/brake-sensor.html",
+   "image": "images/parts/brake-sensor.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-capacitor",
+   "name": "Capacitor",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/capacitor.html",
+   "image": "images/parts/capacitor.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-cdi-box",
+   "name": "CDI Box",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/cdi-box.html",
+   "image": "images/parts/cdi-box.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-charge-coil",
+   "name": "Charge Coil",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/charge-coil.html",
+   "image": "images/parts/charge-coil.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-coil",
+   "name": "Coil",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/coil.html",
+   "image": "images/parts/coil.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-control-board",
+   "name": "Control Board",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/control-board.html",
+   "image": "images/parts/control-board.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-electric-box-cover",
+   "name": "Electric Box Cover",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/electric-box-cover.html",
+   "image": "images/parts/electric-box-cover.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-electric-choke",
+   "name": "Electric Choke",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/electric-choke.html",
+   "image": "images/parts/electric-choke.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-electric-gear-shifter-motor",
+   "name": "Electric Gear Shifter Motor",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/electric-gear-shifter-motor.html",
+   "image": "images/parts/electric-gear-shifter-motor.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-electric-shifter",
+   "name": "Electric Shifter",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/electric-shifter.html",
+   "image": "images/parts/electric-shifter.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-electric-throttle-housing",
+   "name": "Electric Throttle Housing",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/electric-throttle-housing.html",
+   "image": "images/parts/electric-throttle-housing.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-emergency-switch",
+   "name": "Emergency Switch",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/emergency-switch.html",
+   "image": "images/parts/emergency-switch.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-flasher",
+   "name": "Flasher",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/flasher.html",
+   "image": "images/parts/flasher.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-front-position-light",
+   "name": "Front Position Light",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/front-position-light.html",
+   "image": "images/parts/front-position-light.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-fuel-float",
+   "name": "Fuel Float",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/fuel-float.html",
+   "image": "images/parts/fuel-float.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-fuse",
+   "name": "Fuse",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/fuse.html",
+   "image": "images/parts/fuse.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-fuse-box",
+   "name": "Fuse Box",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/fuse-box.html",
+   "image": "images/parts/fuse-box.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-gear-display",
+   "name": "Gear Display",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/gear-display.html",
+   "image": "images/parts/gear-display.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-gear-panel",
+   "name": "Gear Panel",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/gear-panel.html",
+   "image": "images/parts/gear-panel.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-gear-sensor",
+   "name": "Gear Sensor",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/gear-sensor.html",
+   "image": "images/parts/gear-sensor.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-headlight",
+   "name": "Headlight",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/headlight.html",
+   "image": "images/parts/headlight.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-headlight-socket-assy",
+   "name": "Headlight Socket Assy",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/headlight-socket-assy.html",
+   "image": "images/parts/headlight-socket-assy.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-headlight-switch",
+   "name": "Headlight Switch",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/headlight-switch.html",
+   "image": "images/parts/headlight-switch.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-high-beam-switch",
+   "name": "High Beam Switch",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/high-beam-switch.html",
+   "image": "images/parts/high-beam-switch.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-horn",
+   "name": "Horn",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/horn.html",
+   "image": "images/parts/horn.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-horn-button",
+   "name": "Horn Button",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/horn-button.html",
+   "image": "images/parts/horn-button.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-ignition-collar",
+   "name": "Ignition Collar",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/ignition-collar.html",
+   "image": "images/parts/ignition-collar.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-ignition-switch",
+   "name": "Ignition Switch",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/ignition-switch.html",
+   "image": "images/parts/ignition-switch.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-instrument-light",
+   "name": "Instrument Light",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/instrument-light.html",
+   "image": "images/parts/instrument-light.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-intelligent-attitude-board",
+   "name": "Intelligent Attitude Board",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/intelligent-attitude-board.html",
+   "image": "images/parts/intelligent-attitude-board.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-kill-and-start-switch",
+   "name": "Kill & Start Switch",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/kill-and-start-switch.html",
+   "image": "images/parts/kill-and-start-switch.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-kill-switch",
+   "name": "Kill Switch",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/kill-switch.html",
+   "image": "images/parts/kill-switch.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-left-front-turn-signal",
+   "name": "Left Front Turn Signal",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/left-front-turn-signal.html",
+   "image": "images/parts/left-front-turn-signal.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-left-rear-turn-signal",
+   "name": "Left Rear Turn Signal",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/left-rear-turn-signal.html",
+   "image": "images/parts/left-rear-turn-signal.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-light-bulb",
+   "name": "Light Bulb",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/light-bulb.html",
+   "image": "images/parts/light-bulb.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-magneto-stator",
+   "name": "Magneto Stator",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/magneto-stator.html",
+   "image": "images/parts/magneto-stator.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-main-switch-leftandright",
+   "name": "Main Switch (Left&right)",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/main-switch-leftandright.html",
+   "image": "images/parts/main-switch-leftandright.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-neutral-light-assy",
+   "name": "Neutral Light Assy",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/neutral-light-assy.html",
+   "image": "images/parts/neutral-light-assy.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-neutral-light-indicator",
+   "name": "Neutral Light Indicator",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/neutral-light-indicator.html",
+   "image": "images/parts/neutral-light-indicator.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-neutral-light-indicator-assy",
+   "name": "Neutral Light Indicator Assy",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/neutral-light-indicator-assy.html",
+   "image": "images/parts/neutral-light-indicator-assy.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-pick-up-coil",
+   "name": "Pick Up Coil",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/pick-up-coil.html",
+   "image": "images/parts/pick-up-coil.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-rear-tag-light",
+   "name": "Rear Tag Light",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/rear-tag-light.html",
+   "image": "images/parts/engine-placeholder.svg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-regulator",
+   "name": "Regulator",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/regulator.html",
+   "image": "images/parts/regulator.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-remote-control-box",
+   "name": "Remote Control Box",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/remote-control-box.html",
+   "image": "images/parts/remote-control-box.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-resistor",
+   "name": "Resistor",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/resistor.html",
+   "image": "images/parts/resistor.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-reverse-light-indicator-assy",
+   "name": "Reverse Light Indicator Assy",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/reverse-light-indicator-assy.html",
+   "image": "images/parts/reverse-light-indicator-assy.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-right-front-turn-signal",
+   "name": "Right Front Turn Signal",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/right-front-turn-signal.html",
+   "image": "images/parts/right-front-turn-signal.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-right-rear-turn-signal",
+   "name": "Right Rear Turn Signal",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/right-rear-turn-signal.html",
+   "image": "images/parts/right-rear-turn-signal.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-scooter-pm3-player",
+   "name": "Scooter PM3 Player",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/scooter-pm3-player.html",
+   "image": "images/parts/scooter-pm3-player.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-seat-rails",
+   "name": "Seat Rails",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/seat-rails.html",
+   "image": "images/parts/seat-rails.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-spark-plug-cap",
+   "name": "Spark Plug Cap",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/spark-plug-cap.html",
+   "image": "images/parts/spark-plug-cap.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-speedometer",
+   "name": "Speedometer",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/speedometer.html",
+   "image": "images/parts/speedometer.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-speedometer-sensor",
+   "name": "Speedometer Sensor",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/speedometer-sensor.html",
+   "image": "images/parts/speedometer-sensor.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-start-relay",
+   "name": "Start Relay",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/start-relay.html",
+   "image": "images/parts/start-relay.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-start-switch",
+   "name": "Start Switch",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/start-switch.html",
+   "image": "images/parts/start-switch.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-starter",
+   "name": "Starter",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/starter.html",
+   "image": "images/parts/starter.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-starter-module-control",
+   "name": "Starter Module Control",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/starter-module-control.html",
+   "image": "images/parts/starter-module-control.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-taillight-assy",
+   "name": "Taillight Assy",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/taillight-assy.html",
+   "image": "images/parts/taillight-assy.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-taillight-socket",
+   "name": "Taillight Socket",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/taillight-socket.html",
+   "image": "images/parts/taillight-socket.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-turn-signal-switch",
+   "name": "Turn Signal Switch",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/turn-signal-switch.html",
+   "image": "images/parts/turn-signal-switch.jpg",
+   "price": null,
+   "inStock": true
+  },
+  {
+   "id": "parts-electric-wire-harness",
+   "name": "Wire Harness",
+   "category": "parts",
+   "subcategory": "electric",
+   "url": "parts/wire-harness.html",
+   "image": "images/parts/wire-harness.jpg",
+   "price": null,
+   "inStock": true
   }
  ]
 }

@@ -13,6 +13,7 @@ Outputs: index.html, the six category pages, every page under scooters/ atvs/
 dirtbikes/ gokarts/ utvs/ ebikes/, shipping-pickup.html, checkout.html,
 order-complete.html, and the header/footer on contact.html and financing.html.
 """
+import glob
 import html as H
 import json
 import os
@@ -26,8 +27,9 @@ SITE = "https://nycatvwarehouse.com"
 PRODUCTS = json.load(open("data/products.json", encoding="utf-8"))["products"]
 CONTENT = json.load(open("data/content.json", encoding="utf-8"))
 STORE = json.load(open("data/store.json", encoding="utf-8"))
-PART_VARIANTS = (json.load(open("data/engine_part_variants.json", encoding="utf-8"))["parts"]
-                 if os.path.exists("data/engine_part_variants.json") else {})
+PART_VARIANTS = {}
+for _f in sorted(glob.glob("data/*_part_variants.json")):
+    PART_VARIANTS.update(json.load(open(_f, encoding="utf-8"))["parts"])
 GTAG = open("scripts/snippets/gtag.html", encoding="utf-8").read()
 LIVECHAT = ""  # live chat widget removed at owner request
 TESTIMONIALS = open("scripts/snippets/testimonials.html", encoding="utf-8").read()
@@ -39,7 +41,10 @@ CAT_LABEL = dict(CATS)
 # subcategories: (slug, label, intro, meta). Page = <cat>-<slug>.html, products = <cat>/<name>.html
 SUBCATS = {"parts": [("engine", "Engine",
                       "Engine parts: gaskets, clutch parts, cylinders, pistons, carburetors, filters, gears and more. Parts pricing is by phone for now: call us with your make, model and year and we'll quote the part. Priced parts ship free anywhere in the continental U.S.",
-                      "Engine parts for scooters, ATVs, dirt bikes and go-karts from NYC ATV Warehouse in Little Ferry, NJ: clutch, cylinder, piston, carburetor, gaskets and more. Call 646-943-1858 for pricing.")]}
+                      "Engine parts for scooters, ATVs, dirt bikes and go-karts from NYC ATV Warehouse in Little Ferry, NJ: clutch, cylinder, piston, carburetor, gaskets and more. Call 646-943-1858 for pricing."),
+                     ("electric", "Electric",
+                      "Electric parts: batteries, chargers, headlights, switches, CDI boxes, coils, regulators, starters, turn signals, wire harnesses and more. Parts pricing is by phone for now: call us with your make, model and year and we'll quote the part. Priced parts ship free anywhere in the continental U.S.",
+                      "Electrical parts for scooters, ATVs, dirt bikes and go-karts from NYC ATV Warehouse in Little Ferry, NJ: batteries, chargers, headlights, switches, CDI, coils, starters and more. Call 646-943-1858 for pricing.")]}
 CAT_COUNT = {c: sum(1 for p in PRODUCTS if p["category"] == c) for c, _ in CATS}
 
 ICON = {
@@ -872,7 +877,7 @@ def build_sitemap():
             loc = f"{SITE}/{p['url'][:-5]}"
             if f"<loc>{loc}</loc>" not in s:
                 s = s.replace("</urlset>", f"  <url><loc>{loc}</loc><lastmod>2026-10-25</lastmod></url>\n</urlset>")
-    for cat_page in ("helmets", "parts", "parts-engine"):
+    for cat_page in ("helmets", "parts", "parts-engine", "parts-electric"):
         if f"<loc>{SITE}/{cat_page}</loc>" not in s:
             s = s.replace("</urlset>", f"  <url><loc>{SITE}/{cat_page}</loc><lastmod>2026-11-01</lastmod></url>\n</urlset>")
     write("sitemap.xml", s)

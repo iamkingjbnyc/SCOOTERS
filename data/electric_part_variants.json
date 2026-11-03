@@ -1,0 +1,3403 @@
+{
+ "_note": "Variants listed on each Parts > Electric part page (from the jjjimports.com parts list). Photos: images/parts/variants/<id>.jpg. Rebuild with: python3 scripts/build_store.py",
+ "parts": {
+  "Battery": [
+   {
+    "id": "9114",
+    "title": "MSP 01",
+    "desc": "12V4AH, (Unsealed)",
+    "photo": false
+   },
+   {
+    "id": "9115",
+    "title": "MSP 02",
+    "desc": "12V5AH, (Unsealed)",
+    "photo": false
+   },
+   {
+    "id": "9116",
+    "title": "MSP 03",
+    "desc": "12V7AH, (Unsealed) YTX7A-BS, (L150mm x W85mm x H90mm), 6 pcs Per Box, Total Weight 35.2 lbs",
+    "photo": false
+   },
+   {
+    "id": "9117",
+    "title": "MSP 04",
+    "desc": "12V9AH (Unsealed)",
+    "photo": false
+   },
+   {
+    "id": "9118",
+    "title": "MSP 05",
+    "desc": "12V14AH (Unsealed)",
+    "photo": false
+   },
+   {
+    "id": "9119",
+    "title": "MSP 06",
+    "desc": "**Sealed**,12V4AH, MSP KJJ4L-4 , Silica Gel Battery",
+    "photo": false
+   },
+   {
+    "id": "9120",
+    "title": "MSP 07",
+    "desc": "**Sealed**,12V5AH, MSP KJJ5, Silica Gel Battery,10 pcs Per Box, total wieght 43 lbs",
+    "photo": false
+   },
+   {
+    "id": "9121",
+    "title": "MSP 08",
+    "desc": "**Sealed**,12V7AH, Silica Gel Battery",
+    "photo": false
+   },
+   {
+    "id": "9122",
+    "title": "MSP 09",
+    "desc": "**Sealed**,12V9AH, Silica Gel Battery",
+    "photo": false
+   },
+   {
+    "id": "9123",
+    "title": "MSP 10",
+    "desc": "12V7AH, (Unsealed), KGX7L-BS, (L110mm x W69mm x H128mm), 10 pcs Per Box, Total Weight",
+    "photo": false
+   },
+   {
+    "id": "9111",
+    "title": "MGM 06",
+    "desc": "12V7Ah, Unsealed, YTX7A-BS, 5 7/8 x 3 3/8 x 3 5/8, 6 pcs per box, total weight 33.5 lbs.",
+    "photo": false
+   }
+  ],
+  "Battery Charger": [
+   {
+    "id": "3078",
+    "title": "Battery Charger 01",
+    "desc": "ATV, Moped & GK: 12v plug style (3-pins) also for dune buggies",
+    "photo": true
+   },
+   {
+    "id": "3079",
+    "title": "Battery Charger 02",
+    "desc": "ATV, Moped & GK: 12v alligator clips also fit dune buggies",
+    "photo": true
+   },
+   {
+    "id": "4236",
+    "title": "Battery Charger 06",
+    "desc": "Clip, output dc 12v MAX 1a",
+    "photo": true
+   },
+   {
+    "id": "7546",
+    "title": "Battery Charger 08",
+    "desc": "Balance Scooter 36v-42v",
+    "photo": true
+   },
+   {
+    "id": "8198",
+    "title": "Battery Charger 09",
+    "desc": "Kids Ride 12v on charger",
+    "photo": false
+   }
+  ],
+  "Battery Wire": [
+   {
+    "id": "4891",
+    "title": "Battery Wire (Fuse Box) 01",
+    "desc": "ATV: All 110-125cc",
+    "photo": true
+   },
+   {
+    "id": "4892",
+    "title": "Battery Wire Negative 01",
+    "desc": "Red wire w/ two terminals",
+    "photo": true
+   },
+   {
+    "id": "8201",
+    "title": "Battery Wire Positive 01",
+    "desc": "Black wire w/ two terminals",
+    "photo": false
+   }
+  ],
+  "Brake Sensor": [
+   {
+    "id": "942",
+    "title": "Brake Sensor 01",
+    "desc": "ATV & DB: 50, 90, 110 & 125cc, Universal rear brake foot pedal sensor with wire",
+    "photo": true
+   },
+   {
+    "id": "943",
+    "title": "Brake Sensor 02",
+    "desc": "ATV, Moped & DB: universal left or right brake levers, rear & front drum brakes",
+    "photo": true
+   },
+   {
+    "id": "944",
+    "title": "Brake Sensor 03",
+    "desc": "ATV & Moped: Universal left brake lever, master cylinder",
+    "photo": true
+   },
+   {
+    "id": "4360",
+    "title": "Brake Sensor 04",
+    "desc": "ATV, Moped & DB: Universal right brake lever, master cylinder",
+    "photo": true
+   },
+   {
+    "id": "4361",
+    "title": "Brake Sensor 05",
+    "desc": "Moped: Gator150T, universal, right",
+    "photo": true
+   },
+   {
+    "id": "5128",
+    "title": "Brake Sensor 06",
+    "desc": "ATV: Mountopz 110cc, rear master cylinder",
+    "photo": true
+   },
+   {
+    "id": "8243",
+    "title": "Brake Sensor 09",
+    "desc": "GK: Go-Kart 200D",
+    "photo": false
+   },
+   {
+    "id": "9130",
+    "title": "Brake Sensor 10",
+    "desc": "Brake Sensor 10",
+    "photo": false
+   }
+  ],
+  "Capacitor": [
+   {
+    "id": "7200",
+    "title": "Capacitor 01",
+    "desc": "Coil 24 UF +/- 350 -25/70 c (50/60Hz) CBB61",
+    "photo": true
+   },
+   {
+    "id": "7201",
+    "title": "Capacitor 02",
+    "desc": "20UF +/- 5% Po SH 350 VAC -25/70 c 50/60Hz",
+    "photo": true
+   }
+  ],
+  "CDI Box": [
+   {
+    "id": "1715",
+    "title": "CDI 01",
+    "desc": "ATV DB & GK: AC power (alternating current), five prong with brown color plug for all Chinese 50, 70, 90, 110 & 125cc, 4 stroke horizontal single cylinder honda style engines",
+    "photo": true
+   },
+   {
+    "id": "1716",
+    "title": "CDI 02",
+    "desc": "ATV: Panther 110TT H4",
+    "photo": true
+   },
+   {
+    "id": "1717",
+    "title": "CDI 03",
+    "desc": "ATV DB & GK: AC power (alternating current) five prong with green color plug, for Chinese 50, 70, 90, 110 & 125cc 4 stroke horizontal single cylinder honda style engine",
+    "photo": true
+   },
+   {
+    "id": "1718",
+    "title": "CDI 04/05/06/07/11/14/15",
+    "desc": "ATV DB & Moped: AC power (alternating current), six prong with two square plugs for Chinese 90,125, 135,150, 200 & 250cc a single cylinder 4 stroke with air & liquid-cooled",
+    "photo": true
+   },
+   {
+    "id": "1722",
+    "title": "CDI 08",
+    "desc": "ATV: Panther 250JS 2",
+    "photo": true
+   },
+   {
+    "id": "1723",
+    "title": "CDI 09",
+    "desc": "ATV: Panther 250JS",
+    "photo": true
+   },
+   {
+    "id": "1724",
+    "title": "CDI 10",
+    "desc": "ATV & Moped: DC ECU power (direct current) 8 prong with one plug for Chinese 260 & 300cc, 1 cylinder, 4 stroke engine w/ liquid-cooled SOCH/ Linhai & Yamaha clone",
+    "photo": true
+   },
+   {
+    "id": "1727",
+    "title": "CDI 13",
+    "desc": "ATV, DB & GK: DC power (direct current) 4 prone w/ green plug for chinese 70, 90,110 &125cc, 4 stroke, 1 cylinder",
+    "photo": true
+   },
+   {
+    "id": "1730",
+    "title": "CDI 16/17/18/19/21",
+    "desc": "Moped: DB: XB-38, AC power (alternating current) 6 prong w/ 2 rounded plugs for Chinese 49, 50, 80, 100, 122 & 150cc GY-6 &",
+    "photo": true
+   },
+   {
+    "id": "1734",
+    "title": "CDI 20",
+    "desc": "Moped: Gator 250cc",
+    "photo": true
+   },
+   {
+    "id": "1736",
+    "title": "CDI 22",
+    "desc": "ATV, Moped, GK & UTV: DC power (direct current) 6 prong w/ 2 rounded plugs for 250cc, 1 cylinder, 4 stroke, liquid-cooled GY-6/CF-250 & Honda CN 250 a vertical engine",
+    "photo": true
+   },
+   {
+    "id": "1738",
+    "title": "CDI 24/25",
+    "desc": "ATV: Cyclone 250RL/250JP",
+    "photo": true
+   },
+   {
+    "id": "1740",
+    "title": "CDI 26",
+    "desc": "Moped: Lifan 200 GY-5",
+    "photo": true
+   },
+   {
+    "id": "2507",
+    "title": "CDI 28",
+    "desc": "Moped: Lifan 250",
+    "photo": true
+   },
+   {
+    "id": "3237",
+    "title": "CDI 30",
+    "desc": "ATV: Jaguar 125",
+    "photo": true
+   },
+   {
+    "id": "3238",
+    "title": "CDI 31",
+    "desc": "ATV: 400cc",
+    "photo": true
+   },
+   {
+    "id": "3239",
+    "title": "CDI 32",
+    "desc": "Moped: Gator 250B",
+    "photo": true
+   },
+   {
+    "id": "4417",
+    "title": "CDI 34",
+    "desc": "ATV: 300cc Linhai",
+    "photo": true
+   },
+   {
+    "id": "4806",
+    "title": "CDI 35",
+    "desc": "ATV, DB & GK: AC power (alternating current) 5 prong w/ 1 plug for 70, 90,110, & 125cc 4 stoke, 1 cylinder Honda style horizontal engine, high performance",
+    "photo": true
+   },
+   {
+    "id": "4807",
+    "title": "CDI 36",
+    "desc": "Engine CG w/ high performence",
+    "photo": true
+   },
+   {
+    "id": "4935",
+    "title": "CDI 37",
+    "desc": "Moped: AC power (alternating current) 6 prong w/ 2 rounded plugs for 49, 50, 80, 100, 125 & 150cc, GY-6 & QMB 139 4 stroke engine, high performance golden color",
+    "photo": true
+   },
+   {
+    "id": "4939",
+    "title": "CDI 38",
+    "desc": "Moped: AC power (alternating current) six prone w/ 2 rounded plugs for 49, 50, up grade 80, 100, 125 & 150cc GY-6",
+    "photo": true
+   },
+   {
+    "id": "4940",
+    "title": "CDI 39",
+    "desc": "Moped: 50 to 150cc GY-6 engine, unlimited no Rev-DC, black color",
+    "photo": true
+   },
+   {
+    "id": "6889",
+    "title": "CDI 40",
+    "desc": "ATV, DB & Moped: AC power (alternating current) 2 prong w/ 1 plug (2 male bullet plug & 1 female bullet plug) for 40 QMB Minerelli based, 2 stoke engine",
+    "photo": true
+   },
+   {
+    "id": "5708",
+    "title": "CDI 41",
+    "desc": "ATV, DB & Moped: 5 prone, not for 50 to 125cc engine",
+    "photo": true
+   },
+   {
+    "id": "7818",
+    "title": "CDI 42",
+    "desc": "ATV & UTV: DC ECU power (direct current) 8 prone w/ 1 plug, for Linhai 400cc, 1 cylinder, 4 stroke, liquid-cooled SOHC engine P# 27340",
+    "photo": true
+   },
+   {
+    "id": "8268",
+    "title": "CDI 43",
+    "desc": "ATV: Linhai 260cc 4x4,22001A,TCI(speed limited)",
+    "photo": false
+   },
+   {
+    "id": "8269",
+    "title": "CDI 44",
+    "desc": "Moped: DC current no Rev limit, 6 prone, w/ 2 rounded plugs for 49, 50, upgrade 80, 100, 125, & 150cc GY-6 & QMB 139 4 stroke engine w/ orange color, high performance",
+    "photo": false
+   },
+   {
+    "id": "8270",
+    "title": "CDI 45",
+    "desc": "ATV: Mad Max 250cc ( DC power )",
+    "photo": false
+   },
+   {
+    "id": "9131",
+    "title": "CDI 46",
+    "desc": "ATV: 4x4, 300cc Linhai ( Cdi # 43 Possible Replacement )",
+    "photo": false
+   }
+  ],
+  "Charge Coil": [
+   {
+    "id": "5466",
+    "title": "Charge Coil 01",
+    "desc": "ATV: Panther 110CC",
+    "photo": true
+   }
+  ],
+  "Coil": [
+   {
+    "id": "4083",
+    "title": "Coil 01/02/04",
+    "desc": "ATV: Mountop110/110RX4, RX5, RX8, CL/CL2/CL3,125H,125B & 300cc, horizontal engine",
+    "photo": true
+   },
+   {
+    "id": "4081",
+    "title": "Coil 03",
+    "desc": "ATV & DB: New 2019, 125cc XB-38, Engine 50, 90, 110 &125cc , horizontal engine",
+    "photo": true
+   },
+   {
+    "id": "4079",
+    "title": "Coil 05/6/7/8/10/12/13",
+    "desc": "ATV & DB: Engine 50, 90, 110, 125, 150, 200 and 250cc, ingition coil, horizontal & CG engine",
+    "photo": true
+   },
+   {
+    "id": "4073",
+    "title": "Coil 11/34/35",
+    "desc": "ATV & Moped: Panther 300UT & Gator 250B",
+    "photo": true
+   },
+   {
+    "id": "4064",
+    "title": "Coil 20/21/23/24",
+    "desc": "Moped: 50cc and 150cc for GY-6, 139QMB & 1P39QMB, ignition coil",
+    "photo": true
+   },
+   {
+    "id": "1768",
+    "title": "Coil 22/27",
+    "desc": "GK & Moped: Gator 250 & Cyclone 150R",
+    "photo": true
+   },
+   {
+    "id": "1771",
+    "title": "Coil 25/33",
+    "desc": "ATV & DB: Engine 50, 90, 110 & 125cc, horizontal engine, ingition coil",
+    "photo": true
+   },
+   {
+    "id": "1772",
+    "title": "Coil 26",
+    "desc": "GK: Cyclone 150",
+    "photo": true
+   },
+   {
+    "id": "1774",
+    "title": "Coil 28",
+    "desc": "Moped: Pocket Bike 47cc",
+    "photo": true
+   },
+   {
+    "id": "4808",
+    "title": "COIL 36",
+    "desc": "Moped: Engine 50cc & 150cc, GY-6 ignition coil, high performance",
+    "photo": true
+   },
+   {
+    "id": "7599",
+    "title": "COIL 39",
+    "desc": "GK: Go-Kart 200 MID",
+    "photo": true
+   },
+   {
+    "id": "7819",
+    "title": "COIL 40",
+    "desc": "UTV: Linhai 400, 4x4, DC ECU power (direct current), P# 22012",
+    "photo": true
+   },
+   {
+    "id": "9132",
+    "title": "Coil 41",
+    "desc": "DB: XB-88 ( Dirt Bike 250cc )",
+    "photo": false
+   },
+   {
+    "id": "9133",
+    "title": "Coil 42",
+    "desc": "DB: Viper 150cc, Hawk 250, dual sport",
+    "photo": false
+   }
+  ],
+  "Control Board": [
+   {
+    "id": "7548",
+    "title": "Control Board 01",
+    "desc": "Moped: Hover Board, balance scooter",
+    "photo": true
+   }
+  ],
+  "Electric Box Cover": [
+   {
+    "id": "6753",
+    "title": "Electric Box Cover 01",
+    "desc": "GK: Go-Kart 110cc",
+    "photo": true
+   },
+   {
+    "id": "6754",
+    "title": "Electric Box Cover 02",
+    "desc": "GK: Go-Kart 150cc",
+    "photo": true
+   },
+   {
+    "id": "6755",
+    "title": "Electric Box Cover 03",
+    "desc": "GK: Go-Kart 250cc",
+    "photo": true
+   }
+  ],
+  "Electric Choke": [
+   {
+    "id": "1779",
+    "title": "Electric Choke 01",
+    "desc": "Moped: Gator 50/150cc",
+    "photo": true
+   }
+  ],
+  "Electric Gear Shifter Motor": [
+   {
+    "id": "5504",
+    "title": "Electric Gear Shifter Motor 01",
+    "desc": "ATV: ODES 400",
+    "photo": true
+   }
+  ],
+  "Electric Shifter": [
+   {
+    "id": "5503",
+    "title": "Electric Shifter 01",
+    "desc": "ATV: ODES 400, 4X4",
+    "photo": true
+   }
+  ],
+  "Electric Throttle Housing": [
+   {
+    "id": "1781",
+    "title": "Electric Throttle Housing 01",
+    "desc": "Electric Scooter ET 350",
+    "photo": true
+   }
+  ],
+  "Emergency Switch": [
+   {
+    "id": "1782",
+    "title": "Emergency Switch 01",
+    "desc": "Moped: Gator 150 / 150T",
+    "photo": true
+   }
+  ],
+  "Flasher": [
+   {
+    "id": "1785",
+    "title": "Flasher01",
+    "desc": "Moped: 50 & 150cc, turn signal flasher",
+    "photo": true
+   },
+   {
+    "id": "1791",
+    "title": "Flasher 03/04/05",
+    "desc": "DB: Hawk 250, GK: Cyclone 250R, Cyclone 650JP & Lifan 200,",
+    "photo": true
+   },
+   {
+    "id": "8101",
+    "title": "Flasher 09",
+    "desc": "Moped: Gator 250RTS (DF250RTS), 01020011",
+    "photo": true
+   },
+   {
+    "id": "8371",
+    "title": "Flasher 10",
+    "desc": "UTV: Commando 125 (GK 6125A)",
+    "photo": false
+   }
+  ],
+  "Front Position Light": [
+   {
+    "id": "7453",
+    "title": "Front Position Light 01",
+    "desc": "Moped: Gator 50-S3 & Gator 50S",
+    "photo": true
+   },
+   {
+    "id": "8450",
+    "title": "Front Position Light 02",
+    "desc": "Moped: Gator 50E, 50E2,50E3 & 50B,150B,150E,150E2,150E3 & All Vip Modles",
+    "photo": false
+   }
+  ],
+  "Fuel Float": [
+   {
+    "id": "1795",
+    "title": "Fuel Float 03/06",
+    "desc": "Moped: Gator 150 & Magnum 150",
+    "photo": true
+   },
+   {
+    "id": "1796",
+    "title": "Fuel Float 04/08/15",
+    "desc": "Moped: Gator 50-S3, Gator 50-F2, Gator 150 F2, Magnum 50, Gator 50B, Gator 50E, Gator 50-S2 (3780A-ADAF-9000)",
+    "photo": true
+   },
+   {
+    "id": "1799",
+    "title": "Fuel Float 07",
+    "desc": "GK: Cyclone 250RL",
+    "photo": true
+   },
+   {
+    "id": "7489",
+    "title": "Fuel Float 12",
+    "desc": "GK: Go-Kart 200F & 200D (DF200F / DF200GKD)",
+    "photo": true
+   },
+   {
+    "id": "7531",
+    "title": "Fuel Float 13",
+    "desc": "UTV: Challenger 150cc",
+    "photo": true
+   },
+   {
+    "id": "7756",
+    "title": "Fuel Float 14",
+    "desc": "GK: Go-Kart 125H (DF125GKA-H), #: 10040058",
+    "photo": true
+   },
+   {
+    "id": "8481",
+    "title": "Fuel Float 16",
+    "desc": "UTV: Challenger 300",
+    "photo": false
+   },
+   {
+    "id": "8482",
+    "title": "Fuel Float 17",
+    "desc": "Moped: Gator 150SST (DF150SST)",
+    "photo": false
+   },
+   {
+    "id": "8067",
+    "title": "Fuel Float 18",
+    "desc": "Moped: Gator 50STT (DF 50STT)",
+    "photo": true
+   },
+   {
+    "id": "8484",
+    "title": "Fuel Float 20",
+    "desc": "Moped: Gator 50SRT (DF50SRT), #:10040079",
+    "photo": false
+   },
+   {
+    "id": "8486",
+    "title": "Fuel Float 22",
+    "desc": "Moped: Gator 250RTS, #: DF10040069",
+    "photo": false
+   },
+   {
+    "id": "8487",
+    "title": "Fuel Float 23",
+    "desc": "Mad Max 250cc",
+    "photo": false
+   },
+   {
+    "id": "9134",
+    "title": "Fuel Float 25",
+    "desc": "ATV: LINHAI 300cc ( 25020 )",
+    "photo": false
+   },
+   {
+    "id": "9135",
+    "title": "Fuel Float 26",
+    "desc": "Moped: Gator 50-E3",
+    "photo": false
+   },
+   {
+    "id": "9136",
+    "title": "Fuel Float 27",
+    "desc": "Moped: ( 2021 ) Gator 150-C , ( 2021 ) Gator 50-F3",
+    "photo": false
+   },
+   {
+    "id": "9137",
+    "title": "Fuel Float 28",
+    "desc": "DB: Hawk 250",
+    "photo": false
+   },
+   {
+    "id": "9138",
+    "title": "Fuel Float 29",
+    "desc": "Moped: ( 2021 ) Gator 150-T4",
+    "photo": false
+   }
+  ],
+  "Fuse": [
+   {
+    "id": "4909",
+    "title": "Fuse 01",
+    "desc": "Cylinder fuses 5-30 AMP",
+    "photo": true
+   },
+   {
+    "id": "4910",
+    "title": "Fuse 02",
+    "desc": "10A, 250V",
+    "photo": true
+   },
+   {
+    "id": "9140",
+    "title": "Fuse 03",
+    "desc": "Blade Fuse,15A, 12V",
+    "photo": false
+   }
+  ],
+  "Fuse Box": [
+   {
+    "id": "1800",
+    "title": "Fuse Box 02",
+    "desc": "ATV, GK & Moped: 50, 90, 110, 125, 150, 200 & 250cc, Universal inline fuse holder",
+    "photo": true
+   }
+  ],
+  "Gear Display": [
+   {
+    "id": "8520",
+    "title": "Gear Display 06",
+    "desc": "ATV: Mountopz 150CL-2",
+    "photo": false
+   },
+   {
+    "id": "8521",
+    "title": "Gear Display 07",
+    "desc": "UTV: Commando 125cc (GK-6125A)",
+    "photo": false
+   }
+  ],
+  "Gear Panel": [
+   {
+    "id": "1806",
+    "title": "Gear Panel 02",
+    "desc": "ATV: Jaguar 125",
+    "photo": true
+   }
+  ],
+  "Gear Sensor": [
+   {
+    "id": "6785",
+    "title": "Gear Sensor 03",
+    "desc": "ATV: Mountopz / Lynx 125cc, forward & reverse",
+    "photo": true
+   },
+   {
+    "id": "8524",
+    "title": "Gear Sensor 04",
+    "desc": "ATV: Mountopz 150UT (3125DX-2)",
+    "photo": false
+   },
+   {
+    "id": "8525",
+    "title": "Gear Sensor 05",
+    "desc": "ATV: Mountopz 150CL (3125CXC)",
+    "photo": false
+   },
+   {
+    "id": "8526",
+    "title": "Gear Sensor 06",
+    "desc": "ATV: Hawk 250",
+    "photo": false
+   },
+   {
+    "id": "8527",
+    "title": "Gear Sensor 07",
+    "desc": "ATV: Linhai 260, 4x4, speed sensor #: 25601",
+    "photo": false
+   },
+   {
+    "id": "9142",
+    "title": "Gear Sensor 09",
+    "desc": "ATV: LINHAI 300cc 4x4, ( Up Sensor ) (21344 )",
+    "photo": false
+   },
+   {
+    "id": "9143",
+    "title": "Gear Sensor 10",
+    "desc": "DB:XB-88",
+    "photo": false
+   }
+  ],
+  "Headlight": [
+   {
+    "id": "1837",
+    "title": "Headlight 30/31",
+    "desc": "ATV: Mountopz 125H & Panther 110SD /110TTH5",
+    "photo": true
+   },
+   {
+    "id": "1839",
+    "title": "Headlight 32",
+    "desc": "ATV: Panther 110TTB & 150MD",
+    "photo": true
+   },
+   {
+    "id": "1847",
+    "title": "Headlight 40/88",
+    "desc": "Moped: Gator 50F",
+    "photo": true
+   },
+   {
+    "id": "1858",
+    "title": "Headlight 51/63",
+    "desc": "ATV: Mountopz 110 & Lynx 110",
+    "photo": true
+   },
+   {
+    "id": "7790",
+    "title": "Headlight 80/85",
+    "desc": "GK: Go-Kart 200F(GK200F) /Go-Kart 110 (DF110GKB), top",
+    "photo": false
+   },
+   {
+    "id": "7601",
+    "title": "Headlight 81",
+    "desc": "ATV: Mountopz 150UT, left & right",
+    "photo": true
+   },
+   {
+    "id": "7642",
+    "title": "Headlight 82",
+    "desc": "GK: Go-Kart 125 (GK6125), coolster",
+    "photo": true
+   },
+   {
+    "id": "7693",
+    "title": "Headlight 83",
+    "desc": "Moped: Gator 150 to 200SST (DF200 SST), right",
+    "photo": true
+   },
+   {
+    "id": "7694",
+    "title": "Headlight 84",
+    "desc": "Moped: Gator 150 to 200SST (DF200 SST), Left",
+    "photo": true
+   },
+   {
+    "id": "8590",
+    "title": "Headlight 86",
+    "desc": "ATV: Mountopz 150CL-2, right",
+    "photo": false
+   },
+   {
+    "id": "8591",
+    "title": "Headlight 87",
+    "desc": "ATV: Mountopz 150CL-2, left",
+    "photo": false
+   },
+   {
+    "id": "7893",
+    "title": "Headlight 90",
+    "desc": "Moped: Gator 50STT",
+    "photo": true
+   },
+   {
+    "id": "8592",
+    "title": "Headlight 91",
+    "desc": "UTV: commando 125 (GK 6125A)",
+    "photo": false
+   },
+   {
+    "id": "8594",
+    "title": "Headlight 93",
+    "desc": "Moped: Gator 50SRT (DF50SRT)",
+    "photo": false
+   },
+   {
+    "id": "8595",
+    "title": "Headlight 94",
+    "desc": "Moped: Gator 50S3 & Gator 50S2",
+    "photo": false
+   },
+   {
+    "id": "8596",
+    "title": "Headlight 95",
+    "desc": "UTV: Challenger 150 & 300",
+    "photo": false
+   },
+   {
+    "id": "8598",
+    "title": "Headlight 99",
+    "desc": "ATV: Mountopz 125CL, CL2 & CL3, left",
+    "photo": false
+   },
+   {
+    "id": "8599",
+    "title": "Headlight 100",
+    "desc": "ATV: Mountopz 125CL, CL2 & CL3, right",
+    "photo": false
+   },
+   {
+    "id": "8600",
+    "title": "Headlight 101",
+    "desc": "ATV: Lynx 125RX8 & Mountopz 110RX4,125RX5,125RX8, led headlight",
+    "photo": false
+   },
+   {
+    "id": "8605",
+    "title": "Headlight 108",
+    "desc": "UTV: Rancher 200 (DF200GKV-N), top roll bar, #: 09010061",
+    "photo": false
+   },
+   {
+    "id": "8606",
+    "title": "Headlight 109",
+    "desc": "GK: Go-Kart 125 (coolster 6125), new 2019",
+    "photo": false
+   },
+   {
+    "id": "8608",
+    "title": "Headlight 111",
+    "desc": "Moped: Gator 150E-3",
+    "photo": false
+   },
+   {
+    "id": "9144",
+    "title": "Headlight 112",
+    "desc": "GK; GK-125B (GK6125B)",
+    "photo": false
+   },
+   {
+    "id": "9145",
+    "title": "Headlight 113",
+    "desc": "DB: Dirt-Bike Headlight Assy For X-88,250cc (Y887701RU15)",
+    "photo": false
+   },
+   {
+    "id": "9146",
+    "title": "Headlight 114",
+    "desc": "Moped: Gator 50-E3 (BD50QT-2A)",
+    "photo": false
+   },
+   {
+    "id": "9147",
+    "title": "Headlight 115",
+    "desc": "UTV: (2020),Rancher 200 (DF200GKV-N), Round LED Headlight,2 Right,2 Left.(09010041,09010042)",
+    "photo": false
+   },
+   {
+    "id": "9148",
+    "title": "Headlight 116",
+    "desc": "ATV: LINHAI 300cc 4x4, High Beam ( 27455 )",
+    "photo": false
+   },
+   {
+    "id": "9149",
+    "title": "Headlight 117",
+    "desc": "ATV: LINHAI 300cc 4x4, Dipped Headlight ( 27456 )",
+    "photo": false
+   },
+   {
+    "id": "9150",
+    "title": "Headlight 118",
+    "desc": "ATV: Madix 125",
+    "photo": false
+   },
+   {
+    "id": "9151",
+    "title": "Headlight 119",
+    "desc": "ATV: Mad Max 250cc",
+    "photo": false
+   },
+   {
+    "id": "9155",
+    "title": "Headlight 123",
+    "desc": "GK: GO-KART 150-T * Top Bar Head Light *",
+    "photo": false
+   },
+   {
+    "id": "9156",
+    "title": "Headlight 124",
+    "desc": "GK: DF 125-GK-S. ( Left )",
+    "photo": false
+   },
+   {
+    "id": "9157",
+    "title": "Headlight 125",
+    "desc": "GK: DF 125-GK-S. ( Right )",
+    "photo": false
+   },
+   {
+    "id": "9158",
+    "title": "Headlight 126",
+    "desc": "GK: Go-Kart 200G",
+    "photo": false
+   },
+   {
+    "id": "9159",
+    "title": "Headlight 127",
+    "desc": "GK: Go-Kart 200G * Top Bar Head Light *",
+    "photo": false
+   },
+   {
+    "id": "9160",
+    "title": "Headlight 128",
+    "desc": "GK: GK-200-T4",
+    "photo": false
+   },
+   {
+    "id": "9161",
+    "title": "Headlight 129",
+    "desc": "GK: Go-Kart 200-T, GK-200-T4 * Top Bar Head Light *",
+    "photo": false
+   },
+   {
+    "id": "9162",
+    "title": "Headlight 130",
+    "desc": "GK: GK-125-T, 150-T, Right side",
+    "photo": false
+   },
+   {
+    "id": "9163",
+    "title": "Headlight 131",
+    "desc": "GK: GK-125-T, 150-T, left side",
+    "photo": false
+   },
+   {
+    "id": "9164",
+    "title": "Headlight 132",
+    "desc": "Moped: ( 2021 ) Gator 150-C , ( 2021 ) Gator 50-F3",
+    "photo": false
+   },
+   {
+    "id": "9165",
+    "title": "Headlight 133",
+    "desc": "Moped: ( 2021 ) Gator 150-T",
+    "photo": false
+   },
+   {
+    "id": "9166",
+    "title": "Headlight 134",
+    "desc": "Hawk 250cc",
+    "photo": false
+   },
+   {
+    "id": "9167",
+    "title": "Headlight 135",
+    "desc": "GK: New Commando 125T,32",
+    "photo": false
+   },
+   {
+    "id": "9168",
+    "title": "Headlight 136",
+    "desc": "ATV: RPS 200-UT ( Metal Wheels By TIKING ).",
+    "photo": false
+   },
+   {
+    "id": "9169",
+    "title": "Headlight 137",
+    "desc": "Moped: Grace 50",
+    "photo": false
+   },
+   {
+    "id": "9170",
+    "title": "Headlight 138",
+    "desc": "Moped: Gator 50 JOG,",
+    "photo": false
+   },
+   {
+    "id": "9171",
+    "title": "Headlight 139",
+    "desc": "Moped: Gator 50-P",
+    "photo": false
+   }
+  ],
+  "Headlight Socket Assy": [
+   {
+    "id": "8609",
+    "title": "Headlight Socket 03",
+    "desc": "ATV: Panther 110UT",
+    "photo": false
+   }
+  ],
+  "Headlight Switch": [
+   {
+    "id": "1863",
+    "title": "Headlight Switch 01/02/03/04",
+    "desc": "Moped: Gator 50 /150 & magnum 50 /magnum 250",
+    "photo": true
+   },
+   {
+    "id": "8610",
+    "title": "Headlight Switch 05",
+    "desc": "UTV: Commando 125cc (GK-6125A)",
+    "photo": false
+   }
+  ],
+  "High Beam Switch": [
+   {
+    "id": "1867",
+    "title": "High Beam Switch 01/03",
+    "desc": "Moped: Gator 50 & Magnum 50",
+    "photo": true
+   },
+   {
+    "id": "1868",
+    "title": "High Beam Switch 02/04/05*",
+    "desc": "Moped: Gator 50F2 (ZN50QT-62) & 150F2, 3 pin dimmer switch, short /long case, #: 35201-GZ-9000",
+    "photo": true
+   },
+   {
+    "id": "1872",
+    "title": "High Beam Switch 06",
+    "desc": "GK: Cyclone 110JP",
+    "photo": true
+   },
+   {
+    "id": "5287",
+    "title": "High Beam Switch 08",
+    "desc": "UTV: Rancher 200 (DF200GKV-N), #: 10010080",
+    "photo": true
+   },
+   {
+    "id": "9172",
+    "title": "High Beam Switch 09",
+    "desc": "Moped: ( 2021 ) Gator 150-C , ( 2021 ) Gator 50-F3",
+    "photo": false
+   }
+  ],
+  "Horn": [
+   {
+    "id": "3083",
+    "title": "Horn 01/02/03/04/06/07**",
+    "desc": "GK & Moped: 50,110,125,150, 200 & 250cc, universal 12v horn",
+    "photo": true
+   }
+  ],
+  "Horn Button": [
+   {
+    "id": "1874",
+    "title": "Horn Button 01/03/04/09",
+    "desc": "Moped & GK: Gator 50 /250, Magnum 50 & cyclone 650JP",
+    "photo": true
+   },
+   {
+    "id": "1875",
+    "title": "Horn Button 02/05/06",
+    "desc": "Moped: Gator 50F2 (ZN50QT-62) /150F2 & Magnum 250, #: 35206-GZ-9000",
+    "photo": true
+   },
+   {
+    "id": "8615",
+    "title": "Horn Button 10",
+    "desc": "UTV: Commando 125cc (GK-6125A)",
+    "photo": false
+   }
+  ],
+  "Ignition Collar": [
+   {
+    "id": "5407",
+    "title": "Ignition Collar 01",
+    "desc": "Moped: Gator 150B",
+    "photo": true
+   },
+   {
+    "id": "5408",
+    "title": "Ignition Collar 02",
+    "desc": "Moped: Gator 150",
+    "photo": true
+   }
+  ],
+  "Ignition Switch": [
+   {
+    "id": "1883",
+    "title": "Ignition Switch 01",
+    "desc": "ATV & DB: Universal ignition, key switch assembly, 9 prong plug w/ 6 wires",
+    "photo": true
+   },
+   {
+    "id": "1884",
+    "title": "Ignition Switch 02/5/6/8/10/14",
+    "desc": "ATV & DB: Universal ignition, key switch assembly, male plug w/ 4 wires",
+    "photo": true
+   },
+   {
+    "id": "1889",
+    "title": "Ignition Switch 07",
+    "desc": "ATV: Panther 125, 250PL & 200MD",
+    "photo": true
+   },
+   {
+    "id": "1893",
+    "title": "Ignition Switch 11",
+    "desc": "ATV: Panther 300UT",
+    "photo": true
+   },
+   {
+    "id": "1897",
+    "title": "Ignition Switch 15/37",
+    "desc": "Fuxin 260, Hisun 400",
+    "photo": true
+   },
+   {
+    "id": "1900",
+    "title": "Ignition Switch 18/52/70",
+    "desc": "MOPED: Gator 50-S3, Gator 50,Solana 50cc, Pony 50cc, MD50QT-3, Complete assembly w/ keys and 5-pin connector",
+    "photo": true
+   },
+   {
+    "id": "1901",
+    "title": "Ignition Switch 19/20/25/53",
+    "desc": "Moped: YY50QT-21, MP-050B, HY50QT-8, YY150T-22, complete assembly with keys and 4-pin connector, various models",
+    "photo": true
+   },
+   {
+    "id": "1903",
+    "title": "Ignition Switch 21/26/27/56",
+    "desc": "Moped: Gator 150F (& YY150T-12, HY150T-5, CY150-B), complete assembly with keys and 4-pin connector",
+    "photo": true
+   },
+   {
+    "id": "1904",
+    "title": "Ignition Switch 22",
+    "desc": "Moped: Gator 150R",
+    "photo": true
+   },
+   {
+    "id": "1906",
+    "title": "Ignition Switch 24",
+    "desc": "Moped: Magnum 50",
+    "photo": true
+   },
+   {
+    "id": "1910",
+    "title": "Ignition Switch 28/29**",
+    "desc": "GK: KD-250GKC-2, KD-150GKC-2, KD-49FM5 & various models, complete assembly on/off, start with keys and 3-pin connector",
+    "photo": true
+   },
+   {
+    "id": "1915",
+    "title": "Ignition Switch 33",
+    "desc": "Moped: Lifan 200, GY-5",
+    "photo": true
+   },
+   {
+    "id": "3385",
+    "title": "Ignition Switch 43/62",
+    "desc": "UTV & GK: commando 125cc (GK-6125A), change plug fit for GK110, 125H, 200D/F2/E/H, complete assembly on, off, start with keys and 5-pin connector, fit GK 150 & 250cc various models",
+    "photo": true
+   },
+   {
+    "id": "5125",
+    "title": "Ignition Switch 50",
+    "desc": "ATV & DB: Universal ignition, key switch assembly, male plug with 4 wires",
+    "photo": true
+   },
+   {
+    "id": "8620",
+    "title": "Ignition Switch 59",
+    "desc": "GK: Go-Kart 110 (DF110GKB)",
+    "photo": false
+   },
+   {
+    "id": "8621",
+    "title": "Ignition Switch 60",
+    "desc": "Moped: Gator 50STT, #: 10080046",
+    "photo": false
+   },
+   {
+    "id": "8623",
+    "title": "Ignition Switch 63",
+    "desc": "ATV: Linhai 260, 4x4, #: 20111",
+    "photo": false
+   },
+   {
+    "id": "8624",
+    "title": "Ignition Switch 64",
+    "desc": "Moped: Gator 150SST (DF150SST)",
+    "photo": false
+   },
+   {
+    "id": "8625",
+    "title": "Ignition Switch 65",
+    "desc": "Moped: Gator 250RTS (DF250RTS), #: 10080023",
+    "photo": false
+   },
+   {
+    "id": "8626",
+    "title": "Ignition Switch 66",
+    "desc": "Moped: Gator 50-M, Gator 50SRT (DF50SRT), #: 10080051",
+    "photo": false
+   },
+   {
+    "id": "8631",
+    "title": "Ignition Switch 71",
+    "desc": "Mad Max 250cc",
+    "photo": false
+   },
+   {
+    "id": "9173",
+    "title": "Ignition Switch 72",
+    "desc": "DB: Dirt-Bike X-88,250cc (Code:Y31780101b)",
+    "photo": false
+   },
+   {
+    "id": "9174",
+    "title": "Ignition Switch 73",
+    "desc": "Moped: Gator 150-F3",
+    "photo": false
+   },
+   {
+    "id": "9175",
+    "title": "Ignition Switch 74",
+    "desc": "GK: DF 125-GK-S.",
+    "photo": false
+   },
+   {
+    "id": "9176",
+    "title": "Ignition Switch 75",
+    "desc": "Moped: Gator 150-C , ( 2021 ) Gator 50-F3.",
+    "photo": false
+   },
+   {
+    "id": "9178",
+    "title": "Ignition Switch 77",
+    "desc": "Moped: Gator 50-J,",
+    "photo": false
+   },
+   {
+    "id": "9179",
+    "title": "Ignition Switch 78",
+    "desc": "Moped: ( 2021 ) Gator 150-F4 ( Falcon 150 )",
+    "photo": false
+   },
+   {
+    "id": "9180",
+    "title": "Ignition Switch 79",
+    "desc": "Moped: Gator 50-P",
+    "photo": false
+   },
+   {
+    "id": "9181",
+    "title": "Ignition Switch 80",
+    "desc": "Moped: Grace 50",
+    "photo": false
+   },
+   {
+    "id": "9183",
+    "title": "Ignition Switch 82",
+    "desc": "Moped: Gator 50SST (DF-200SST)",
+    "photo": false
+   },
+   {
+    "id": "9184",
+    "title": "Ignition Switch 83",
+    "desc": "Moped: (2022) Gator 150-T (Marshal 150)",
+    "photo": false
+   },
+   {
+    "id": "10159",
+    "title": "Ignition Switch 84",
+    "desc": "GK: GK 125-GKS (DF125GKS) 10080009",
+    "photo": false
+   },
+   {
+    "id": "10161",
+    "title": "Ignition Switch 85",
+    "desc": "DB: EGL A12 ( Two Plugs, 5 Wires, 3 And 2 )",
+    "photo": false
+   }
+  ],
+  "Instrument Light": [
+   {
+    "id": "7545",
+    "title": "Instrument Light 01",
+    "desc": "Instrument Light Panel",
+    "photo": true
+   }
+  ],
+  "Intelligent Attitude Board": [
+   {
+    "id": "7549",
+    "title": "Intelligent Attitude Board 01",
+    "desc": "Hover Board (Balance Scooter)",
+    "photo": true
+   }
+  ],
+  "Kill & Start Switch": [
+   {
+    "id": "1921",
+    "title": "Kill And Start Switch 02/04",
+    "desc": "DB: QB 213-A & Broncho 250",
+    "photo": true
+   }
+  ],
+  "Kill Switch": [
+   {
+    "id": "1923",
+    "title": "Kill Switch 01/02",
+    "desc": "Moped: Gator 50, Gator 50F2 & Gator 150 (ZN50QT-62)",
+    "photo": true
+   },
+   {
+    "id": "8654",
+    "title": "Kill Switch 03",
+    "desc": "Moped: Magnum 150RL",
+    "photo": true
+   },
+   {
+    "id": "1928",
+    "title": "Kill Switch 07/11/13",
+    "desc": "ATV & DB: 50cc-250cc, universal",
+    "photo": true
+   },
+   {
+    "id": "1929",
+    "title": "Kill Switch 08/19",
+    "desc": "DB: Broncho 125",
+    "photo": true
+   },
+   {
+    "id": "3275",
+    "title": "Kill Switch 09",
+    "desc": "All model, right",
+    "photo": true
+   },
+   {
+    "id": "8655",
+    "title": "Kill Switch 15",
+    "desc": "Moped: Gator 150F2",
+    "photo": false
+   },
+   {
+    "id": "8656",
+    "title": "Kill Switch 16",
+    "desc": "UTV: Commando 125 (GK6125A)",
+    "photo": false
+   },
+   {
+    "id": "8657",
+    "title": "Kill Switch 17",
+    "desc": "ATV: Lynx110, 125RX8 & 125CL2",
+    "photo": false
+   },
+   {
+    "id": "8658",
+    "title": "Kill Switch 18",
+    "desc": "DB: XB-88 ( Dirt Bike 250cc )",
+    "photo": false
+   },
+   {
+    "id": "9186",
+    "title": "Kill Switch 19",
+    "desc": "DB: Universal Kill Switch ( Female Plug ) ( compatible whit 08 and 18 )",
+    "photo": false
+   }
+  ],
+  "Left Front Turn Signal": [
+   {
+    "id": "3618",
+    "title": "Left Front Turn Signal 04/23",
+    "desc": "Moped: Gator 50F, 50F2 & R",
+    "photo": true
+   },
+   {
+    "id": "3619",
+    "title": "Left Front Turn Signal 05/26",
+    "desc": "GATOR150B-GATOR50B",
+    "photo": true
+   },
+   {
+    "id": "3625",
+    "title": "Left Front Turn Signal 11",
+    "desc": "ATV: Jaguar 200",
+    "photo": true
+   },
+   {
+    "id": "7569",
+    "title": "Left Front Turn Signal 24/27",
+    "desc": "GK: Go-Kart 125H (DF125GKA-H), #: 09020087",
+    "photo": true
+   },
+   {
+    "id": "8666",
+    "title": "Left Front Turn Signal 28",
+    "desc": "Moped: Gator 250RTS (DF250RTS), #: 09020145",
+    "photo": false
+   },
+   {
+    "id": "7894",
+    "title": "Left Front Turn Signal 29",
+    "desc": "Moped: Gator 50SRT (DF50SRT), #: 09020110",
+    "photo": true
+   },
+   {
+    "id": "8667",
+    "title": "Left Front Turn Signal 30",
+    "desc": "ATV: Hawk 250",
+    "photo": false
+   },
+   {
+    "id": "8668",
+    "title": "Left Front Turn Signal 31",
+    "desc": "Moped: Brancho 250, #: 09020070",
+    "photo": false
+   },
+   {
+    "id": "8669",
+    "title": "Left Front Turn Signal 32",
+    "desc": "UTV: Commando 125cc (GK-6125A) yellow, same as right #33",
+    "photo": false
+   },
+   {
+    "id": "8670",
+    "title": "Left Front Turn Signal 34",
+    "desc": "Moped: Gator 50S3",
+    "photo": false
+   },
+   {
+    "id": "9188",
+    "title": "Left Front Turn Signal 36",
+    "desc": "Moped: ( 2021 ) Gator 150-T",
+    "photo": false
+   },
+   {
+    "id": "9189",
+    "title": "Left Front Turn Signal 37",
+    "desc": "Moped: Gator 150SST(DF150SST) $: 09020110",
+    "photo": false
+   },
+   {
+    "id": "9190",
+    "title": "Left Front Turn Signal 38",
+    "desc": "Moped: ( 2021 ) Gator",
+    "photo": false
+   },
+   {
+    "id": "9191",
+    "title": "Left Front Turn Signal 39",
+    "desc": "Moped: Gator 50M",
+    "photo": false
+   },
+   {
+    "id": "9192",
+    "title": "Left Front Turn Signal 40",
+    "desc": "GK: New Commando 125T",
+    "photo": false
+   },
+   {
+    "id": "9195",
+    "title": "Left Front Turn Signal 43",
+    "desc": "Moped: Gator 50-P left",
+    "photo": false
+   }
+  ],
+  "Left Rear Turn Signal": [
+   {
+    "id": "3654",
+    "title": "Left Rear Turn Signal 04",
+    "desc": "Moped: Gator 50B",
+    "photo": true
+   },
+   {
+    "id": "3655",
+    "title": "Left Rear Turn Signal 05",
+    "desc": "Chopper 90-110cc",
+    "photo": true
+   },
+   {
+    "id": "8671",
+    "title": "Left Rear Turn Signal 14",
+    "desc": "GK: Go-Kart 125H (DF125GKA-H), #: 09020086, same as left front turn signal 24",
+    "photo": false
+   },
+   {
+    "id": "8672",
+    "title": "Left Rear Turn Signal 15",
+    "desc": "Moped: Gator 250RTS (DF250RTS), #:09020147",
+    "photo": false
+   },
+   {
+    "id": "8673",
+    "title": "Left Rear Turn Signal 16",
+    "desc": "Moped: Gator 250RTE (DF250RTE), #: 09020068",
+    "photo": false
+   },
+   {
+    "id": "8674",
+    "title": "Left Rear Turn Signal 17",
+    "desc": "Moped: Gator 50SRT (DF50SRT), #: 09020112",
+    "photo": false
+   },
+   {
+    "id": "8675",
+    "title": "Left Rear Turn Signal 18",
+    "desc": "Moped: Brancho 250, #: 09020072",
+    "photo": false
+   },
+   {
+    "id": "8676",
+    "title": "Left Rear Turn Signal 19",
+    "desc": "UTV: Commando 125cc (GK-6125A), yellow",
+    "photo": false
+   },
+   {
+    "id": "9196",
+    "title": "Left Rear Turn Signal 20",
+    "desc": "Moped: Gator 150SST(DF150SST) $: 09020112",
+    "photo": false
+   },
+   {
+    "id": "9198",
+    "title": "Left Rear Turn Signal 22",
+    "desc": "GK: GK-200-T4",
+    "photo": false
+   }
+  ],
+  "Light Bulb": [
+   {
+    "id": "1932",
+    "title": "Light Bulb 01/02",
+    "desc": "ATV, GK & Moped: 12V 10 /5W (Turn,Tail)",
+    "photo": true
+   },
+   {
+    "id": "1934",
+    "title": "Light Bulb 03",
+    "desc": "ATV, GK & Moped: 12V 18 /18W (head)",
+    "photo": true
+   },
+   {
+    "id": "1935",
+    "title": "Light Bulb 04",
+    "desc": "ATV, GK & Moped: 12V 21 /5W (Tail)",
+    "photo": true
+   },
+   {
+    "id": "1936",
+    "title": "Light Bulb 05",
+    "desc": "ATV, GK & Moped: 12V 35 /35W (head)",
+    "photo": true
+   },
+   {
+    "id": "1937",
+    "title": "Light Bulb 06",
+    "desc": "ATV, GK & Moped: 12V P21 /5W (tail)",
+    "photo": true
+   },
+   {
+    "id": "1938",
+    "title": "Light Bulb 07",
+    "desc": "Moped: 50 & 150cc, 12V R10W (turn, tail)",
+    "photo": true
+   },
+   {
+    "id": "1939",
+    "title": "Light Bulb 08",
+    "desc": "Moped: 50 & 150cc, 12V R10W (turn,tail)",
+    "photo": true
+   },
+   {
+    "id": "1940",
+    "title": "Light Bulb 09",
+    "desc": "Moped: 50 & 150cc, 12V 35/35W, #:BA20D (head)",
+    "photo": true
+   },
+   {
+    "id": "1941",
+    "title": "Light Bulb 10",
+    "desc": "Moped: 50 & 150cc, DU 12V 3W (turn)",
+    "photo": true
+   },
+   {
+    "id": "1942",
+    "title": "Light Bulb 11",
+    "desc": "Moped: 50 & 150cc, H4 12V 60/55W P43T (head)",
+    "photo": true
+   },
+   {
+    "id": "1943",
+    "title": "Light Bulb 12",
+    "desc": "NJH3 12V 55W (head)",
+    "photo": true
+   },
+   {
+    "id": "1944",
+    "title": "Light Bulb 13",
+    "desc": "Moped: 50 & 150cc, S2 12V 35/35W (head)",
+    "photo": true
+   },
+   {
+    "id": "1945",
+    "title": "Light Bulb 14",
+    "desc": "Moped: 50 & 150cc, 12V 35W/35W (head)",
+    "photo": true
+   },
+   {
+    "id": "1946",
+    "title": "Light Bulb 15",
+    "desc": "Moped: 50 & 150cc, XY 12V 10W (turn)",
+    "photo": true
+   },
+   {
+    "id": "4237",
+    "title": "Light Bulb 16",
+    "desc": "Moped: 50 & 150cc, 12V 18 /18W (head)",
+    "photo": true
+   },
+   {
+    "id": "4238",
+    "title": "Light Bulb 17",
+    "desc": "Moped: 50 & 150cc, 12V 1.7W",
+    "photo": true
+   },
+   {
+    "id": "4239",
+    "title": "Light Bulb 18",
+    "desc": "Moped: 50 & 150cc, DM 12V 10W",
+    "photo": true
+   },
+   {
+    "id": "4240",
+    "title": "Light Bulb 19",
+    "desc": "Moped: 50 & 150cc, 12V 10 /5W (turn, tail)",
+    "photo": true
+   },
+   {
+    "id": "4241",
+    "title": "Light Bulb 20",
+    "desc": "Moped: 50 & 150cc, 12V 25W /25W (head)",
+    "photo": true
+   },
+   {
+    "id": "7342",
+    "title": "Light Bulb 21",
+    "desc": "12V 35W hid style headlight bulb (blue). Note: Do not touch class",
+    "photo": true
+   },
+   {
+    "id": "7550",
+    "title": "Light Bulb 22",
+    "desc": "12V 35/35W (HIS)",
+    "photo": true
+   },
+   {
+    "id": "7695",
+    "title": "Light Bulb 23",
+    "desc": "Moped: Gator 200SST, 12V 35W",
+    "photo": true
+   },
+   {
+    "id": "8677",
+    "title": "Light Bulb 24",
+    "desc": "12V 80V, led head light",
+    "photo": false
+   },
+   {
+    "id": "8678",
+    "title": "Light Bulb 25",
+    "desc": "Moped: 50 & 150cc, led head light",
+    "photo": false
+   },
+   {
+    "id": "8679",
+    "title": "Light Bulb 26",
+    "desc": "Moped: 50 & 150cc, 12V 80V 16W, led head light",
+    "photo": false
+   },
+   {
+    "id": "8680",
+    "title": "Light Bulb 27",
+    "desc": "Moped: Gator 50SRT, FSL H1 12V35W 6Z 23, #: 00608018 (head)",
+    "photo": false
+   },
+   {
+    "id": "8681",
+    "title": "Light Bulb 28",
+    "desc": "BA20-B ( 12V. 18/18W )",
+    "photo": false
+   },
+   {
+    "id": "9199",
+    "title": "Light Bulb 29",
+    "desc": "GK: GK 125-T/150-T, LED. Headlight Buld, DC9V-DC85V",
+    "photo": false
+   },
+   {
+    "id": "9200",
+    "title": "Light Bulb 30",
+    "desc": "Moped: Gator 50-E3, LED. 10-80V. 780-1800LM. USE 30000 Hr",
+    "photo": false
+   },
+   {
+    "id": "9201",
+    "title": "Light Bulb 31",
+    "desc": "Moped: Gator 200-SST, , LED. Headlight Buld",
+    "photo": false
+   }
+  ],
+  "Magneto Stator": [
+   {
+    "id": "2098",
+    "title": "Magneto Stator 01/03",
+    "desc": "Horizontal engine 50 & 150cc, 2-coil half-wave, electrical & kick start",
+    "photo": true
+   },
+   {
+    "id": "2099",
+    "title": "Magneto Stator 02",
+    "desc": "Horizontal engine 50 & 125cc, 6-coil half-wave, electrical start",
+    "photo": true
+   },
+   {
+    "id": "2101",
+    "title": "Magneto Stator 04",
+    "desc": "ATV: Panther 110UT",
+    "photo": true
+   },
+   {
+    "id": "2103",
+    "title": "Magneto Stator 06/07/11",
+    "desc": "ATV: Panther 200UT",
+    "photo": true
+   },
+   {
+    "id": "2106",
+    "title": "Magneto Stator 09",
+    "desc": "ATV: Panther 300UT (out104mm, in 42mm)",
+    "photo": true
+   },
+   {
+    "id": "2107",
+    "title": "Magneto Stator 10",
+    "desc": "Horizontal engine 50 & 150cc, kick start",
+    "photo": true
+   },
+   {
+    "id": "3337",
+    "title": "Magneto Stator 12",
+    "desc": "Engine 50cc, GY-6, 8-coil, 3-pin connector 2 single wires",
+    "photo": true
+   },
+   {
+    "id": "2109",
+    "title": "Magneto Stator 13",
+    "desc": "Engine 150cc, GY-6, 8-coil, 3 wires, 3-pin connector 2 single wires",
+    "photo": true
+   },
+   {
+    "id": "2111",
+    "title": "Magneto Stator 15",
+    "desc": "Engine 50cc, GY-6, 8-coil, 3 wires, 3-pin connector 2 single wires",
+    "photo": true
+   },
+   {
+    "id": "2112",
+    "title": "Magneto Stator 16/32",
+    "desc": "Moped: Gator 150 , GY-6, 8-coil, 3 wires, 4-pin, connector 2 single wires",
+    "photo": true
+   },
+   {
+    "id": "2113",
+    "title": "Magneto Stator 17",
+    "desc": "GK: Cyclone 110",
+    "photo": true
+   },
+   {
+    "id": "2116",
+    "title": "Magneto Stator 20",
+    "desc": "CH-125-A",
+    "photo": true
+   },
+   {
+    "id": "4603",
+    "title": "Magneto Stator 26",
+    "desc": "Linhai 300 (Ice Bear), (out 93mm & in 35mm)",
+    "photo": true
+   },
+   {
+    "id": "4604",
+    "title": "Magneto Stator 27",
+    "desc": "Horizontal engine 50 & 125cc, 2-coil, half-wave, electrical & kick start",
+    "photo": true
+   },
+   {
+    "id": "4605",
+    "title": "Magneto Stator 28",
+    "desc": "DB: QG 210 (70cc) & QG 213A (110cc) QG 214-S(125cc) 2 Coil 125cc Model For Coolster And Other Brand Dirt-Bike",
+    "photo": true
+   },
+   {
+    "id": "4388",
+    "title": "Magneto Stator 31",
+    "desc": "DB: 125cc, 7 coil",
+    "photo": true
+   },
+   {
+    "id": "6383",
+    "title": "Magneto Stator 35",
+    "desc": "Moped: Gator 150T, new",
+    "photo": true
+   },
+   {
+    "id": "6334",
+    "title": "Magneto Stator 37",
+    "desc": "Tao Tao 125cc",
+    "photo": true
+   },
+   {
+    "id": "7090",
+    "title": "Magneto Stator 38",
+    "desc": "Engine 250cc (GN ,CG,CB), Zhongsheng, Longxing & Lifan",
+    "photo": true
+   },
+   {
+    "id": "7740",
+    "title": "Magneto Stator 41",
+    "desc": "GK, Moped & UTV: Gator 150F2, 150SST & Go-Kart 200-D /F /H /E & Rancher 200 (DF200GKD /GKF /GKG /GKE, GKV-N), #: 1.20.16.01.01002",
+    "photo": true
+   },
+   {
+    "id": "8684",
+    "title": "Magneto Stator 43",
+    "desc": "DB: X-38 (X-Motor), 125cc",
+    "photo": false
+   },
+   {
+    "id": "8686",
+    "title": "Magneto Stator 45",
+    "desc": "Moped: Gator 250RTS(DF250RTS), #: 82120-IA27-000160",
+    "photo": false
+   },
+   {
+    "id": "7903",
+    "title": "Magneto Stator 46",
+    "desc": "DB: Viper 150",
+    "photo": true
+   },
+   {
+    "id": "8687",
+    "title": "Magneto Stator 47",
+    "desc": "ATV: Mountopz 125RX4, 5, 6, 7 & 8",
+    "photo": false
+   },
+   {
+    "id": "8688",
+    "title": "Magneto Stator 48",
+    "desc": "Moped: Gator 150E (new), GY-6",
+    "photo": false
+   },
+   {
+    "id": "8689",
+    "title": "Magneto Stator 49",
+    "desc": "ATV: Lynx 110 & 125RX8/CL2/B, 6-coil",
+    "photo": false
+   },
+   {
+    "id": "9202",
+    "title": "Magneto Stator 50",
+    "desc": "ATV: LINHAI 300cc (out104mm, in 42mm) magneto stator 09 possible replacement (#: 24005A )",
+    "photo": false
+   },
+   {
+    "id": "9203",
+    "title": "Magneto Stator 51",
+    "desc": "DB: X-88, For X-Motor 125cc.... ( 2020 )",
+    "photo": false
+   }
+  ],
+  "Main Switch (Left&right)": [
+   {
+    "id": "1950",
+    "title": "Main Switch 04 & 14",
+    "desc": "ATV: Panther 110RX",
+    "photo": true
+   },
+   {
+    "id": "1957",
+    "title": "Main Switch 11/13",
+    "desc": "ATV: Panther 110TTH, left",
+    "photo": true
+   },
+   {
+    "id": "1961",
+    "title": "Main Switch 15/16",
+    "desc": "ATV: Panther 110UT & LX, left",
+    "photo": true
+   },
+   {
+    "id": "1986",
+    "title": "Main Switch 40",
+    "desc": "Moped: LF 250, left",
+    "photo": true
+   },
+   {
+    "id": "3373",
+    "title": "Main Switch 51/93",
+    "desc": "DB & Moped: QG -213A & Pocket Bike 49cc, right",
+    "photo": true
+   },
+   {
+    "id": "3378",
+    "title": "Main Switch 56/61/73/94",
+    "desc": "Moped: Gator 50S-3 / 50 E-3 / Gator 50F / Magnum 50L, LEFT SIDE ( MAIN SWITCH #72/73/157 SAME, SHORT CABLES )",
+    "photo": true
+   },
+   {
+    "id": "4979",
+    "title": "Main Switch 59/63",
+    "desc": "ATV: Mountopz 110-125cc & ATV 50-250cc, left",
+    "photo": true
+   },
+   {
+    "id": "4415",
+    "title": "Main Switch 64",
+    "desc": "ATV: Mountopz 150UT2/150UT/150CL2",
+    "photo": true
+   },
+   {
+    "id": "5950",
+    "title": "Main Switch 69",
+    "desc": "Moped: Gator 50B, right",
+    "photo": true
+   },
+   {
+    "id": "7324",
+    "title": "Main Switch 72/73/157",
+    "desc": "Moped:Gator Razor 230 Pro ( GY 125A ) * 3520A-B08-A100-D * Prescott 50I / Gator 50F. LEFT SIDE, ( MAIN SWITCH #:56, 61, 73,94 SAME, LONG WIRES as substitutes )",
+    "photo": true
+   },
+   {
+    "id": "7466",
+    "title": "Main Switch 75",
+    "desc": "Moped: Gator 50E, F &150E, left",
+    "photo": true
+   },
+   {
+    "id": "7467",
+    "title": "Main Switch 76",
+    "desc": "Moped: Gator 50E & F, right",
+    "photo": true
+   },
+   {
+    "id": "7791",
+    "title": "Main Switch 78/120",
+    "desc": "Moped: Gator 50S-3 / 50 E-3 / Gator 50F / Magnum 50L, LEFT SIDE ( MAIN SWITCH #72/73/157 SAME, SHORT CABLES )",
+    "photo": true
+   },
+   {
+    "id": "7696",
+    "title": "Main Switch 79",
+    "desc": "Moped: Gator 50STF (DF50STF), left",
+    "photo": true
+   },
+   {
+    "id": "7896",
+    "title": "Main Switch 83/86/102",
+    "desc": "Moped: ( LEFT ) Gator 150-T, 150-F3, 150-T2/Gator 50SST/200SST & DF 50STT /SRT , #: 10010095",
+    "photo": true
+   },
+   {
+    "id": "7897",
+    "title": "Main Switch 84/89",
+    "desc": "Moped: DF GATOR 50 SST/200 SST & Ralley 50A /A2 (JL50QT-A/A2) & Dykon 50, right",
+    "photo": true
+   },
+   {
+    "id": "8690",
+    "title": "Main Switch 85",
+    "desc": "Moped: Gator 250RTS (DF250RTS), left, #:10010029",
+    "photo": false
+   },
+   {
+    "id": "7989",
+    "title": "Main Switch 87",
+    "desc": "Moped: Gator 50S2, right",
+    "photo": true
+   },
+   {
+    "id": "8693",
+    "title": "Main Switch 90",
+    "desc": "Moped: Gator 250RTS (DF250RTS)",
+    "photo": false
+   },
+   {
+    "id": "8695",
+    "title": "Main Switch 92/97",
+    "desc": "ATV: Lynx110 / Lynx 125RX8 / Lynx 125CL2 / Madix 125 / Madix 110D / Madix 110-N / Madix 125-T( Left main controler )",
+    "photo": false
+   },
+   {
+    "id": "8698",
+    "title": "Main Switch 95",
+    "desc": "Moped: Gator 50S3, right",
+    "photo": false
+   },
+   {
+    "id": "8699",
+    "title": "Main Switch 96",
+    "desc": "ATV: Mad Max 250cc",
+    "photo": false
+   },
+   {
+    "id": "9204",
+    "title": "Main Switch 99",
+    "desc": "ATV: LINHAI 300cc ( 25007 )",
+    "photo": false
+   }
+  ],
+  "Neutral Light Assy": [
+   {
+    "id": "7433",
+    "title": "Neutral Light Assy 02",
+    "desc": "ATV: Mountopz 150UT",
+    "photo": false
+   }
+  ],
+  "Neutral Light Indicator": [
+   {
+    "id": "6078",
+    "title": "Neutral Light Indicator 01",
+    "desc": "PANTHER 110 RX 5",
+    "photo": true
+   }
+  ],
+  "Neutral Light Indicator Assy": [
+   {
+    "id": "6079",
+    "title": "Neutral Light Indicator Assy 01",
+    "desc": "ATV: Panther 110RX5",
+    "photo": true
+   }
+  ],
+  "Pick Up Coil": [
+   {
+    "id": "5422",
+    "title": "Pick Up Coil 01",
+    "desc": "Moped: Gator 250",
+    "photo": true
+   },
+   {
+    "id": "5460",
+    "title": "Pick Up Coil 02",
+    "desc": "ATV: Panther 110",
+    "photo": true
+   }
+  ],
+  "Rear Tag Light": [
+   {
+    "id": "8890",
+    "title": "Rear Tag Light",
+    "desc": "Moped: Gator 150 /250 & Magnum 150 /150RL",
+    "photo": false
+   }
+  ],
+  "Regulator": [
+   {
+    "id": "2004",
+    "title": "Regulator 01/02",
+    "desc": "ATV: Panther 110LX, Panther 110UT",
+    "photo": true
+   },
+   {
+    "id": "2006",
+    "title": "Regulator 03",
+    "desc": "ATV: Panther 150MD",
+    "photo": true
+   },
+   {
+    "id": "2008",
+    "title": "Regulator 05",
+    "desc": "ATV: Panther 300UT",
+    "photo": true
+   },
+   {
+    "id": "2009",
+    "title": "Regulator 06/08/09/25",
+    "desc": "ATV, DB, GK & Moped: 50-150cc, horizontal GY-6, 4-pin, full-wave voltage regulator",
+    "photo": true
+   },
+   {
+    "id": "2010",
+    "title": "Regulator 07",
+    "desc": "ATV: Jaguar 200",
+    "photo": true
+   },
+   {
+    "id": "2013",
+    "title": "Regulator 10",
+    "desc": "ATV: Fuxin 260",
+    "photo": true
+   },
+   {
+    "id": "2014",
+    "title": "Regulator 11/13/14/15/20/21/28",
+    "desc": "ATV, DB, GK & Moped: 50-125cc, GATOR 150E-2 horizontal GY-6, 4 pole half wave voltage",
+    "photo": true
+   },
+   {
+    "id": "2015",
+    "title": "Regulator 12",
+    "desc": "DB: Broncho 250",
+    "photo": true
+   },
+   {
+    "id": "2019",
+    "title": "Regulator 16/22",
+    "desc": "Moped: Gator 150 & Magnum 150RL",
+    "photo": true
+   },
+   {
+    "id": "2020",
+    "title": "Regulator 17/23/31",
+    "desc": "ATV, DB & GK,Moped : 125-250cc, CG, 4-pin silver gray voltage",
+    "photo": true
+   },
+   {
+    "id": "2021",
+    "title": "Regulator 18/24",
+    "desc": "Engine 250cc, GY-6, new 5 wire (same 6 wire), water cooled",
+    "photo": true
+   },
+   {
+    "id": "2022",
+    "title": "Regulator 19",
+    "desc": "Moped: Gator 250, small",
+    "photo": true
+   },
+   {
+    "id": "2028",
+    "title": "Regulator 26",
+    "desc": "Moped: Lifan 250",
+    "photo": true
+   },
+   {
+    "id": "3244",
+    "title": "Regulator 27",
+    "desc": "DB: Broncho 150/ 200",
+    "photo": true
+   },
+   {
+    "id": "3245",
+    "title": "Regulator 28",
+    "desc": "ATV: Jaguar 125, new",
+    "photo": true
+   },
+   {
+    "id": "3246",
+    "title": "Regulator 29",
+    "desc": "Moped: Gator 150T",
+    "photo": true
+   },
+   {
+    "id": "3247",
+    "title": "Regulator 30",
+    "desc": "ATV: Panther 110UT",
+    "photo": true
+   },
+   {
+    "id": "3249",
+    "title": "Regulator 32",
+    "desc": "ATV: 250",
+    "photo": true
+   },
+   {
+    "id": "7328",
+    "title": "Regulator 41",
+    "desc": "Moped: Gator 150F2 & 150F, DC Regulator",
+    "photo": true
+   },
+   {
+    "id": "7475",
+    "title": "Regulator 42",
+    "desc": "Moped: Gator 50E & 150E",
+    "photo": true
+   },
+   {
+    "id": "7744",
+    "title": "Regulator 43",
+    "desc": "GK: Go-Kart 200F (DF200F), #:01020017",
+    "photo": true
+   },
+   {
+    "id": "8121",
+    "title": "Regulator 45",
+    "desc": "Moped: Gator 250RTS (DF250RTS), #: 01020025 01020025",
+    "photo": true
+   },
+   {
+    "id": "8894",
+    "title": "Regulator 46",
+    "desc": "ATV: Linhai 260, 4x4, regulator rectiifier, #: 22007,",
+    "photo": false
+   },
+   {
+    "id": "8895",
+    "title": "Regulator 47",
+    "desc": "UTV: Rancher 250, #: 01020017",
+    "photo": false
+   },
+   {
+    "id": "8896",
+    "title": "Regulator 48",
+    "desc": "Moped: Gator 150F",
+    "photo": false
+   },
+   {
+    "id": "8897",
+    "title": "Regulator 49",
+    "desc": "GK: Go-Kart 200MID-2A",
+    "photo": false
+   },
+   {
+    "id": "8898",
+    "title": "Regulator 50",
+    "desc": "DB: XB-88 ( Dirt Bike 250cc )",
+    "photo": false
+   },
+   {
+    "id": "8899",
+    "title": "Regulator 51",
+    "desc": "ATV: Mad Max 250cc",
+    "photo": false
+   },
+   {
+    "id": "9205",
+    "title": "Regulator 52",
+    "desc": "ATV: LINHAI 300cc ( 27747 )",
+    "photo": false
+   },
+   {
+    "id": "9206",
+    "title": "Regulator 53",
+    "desc": "Moped: Gator 150-F3",
+    "photo": false
+   },
+   {
+    "id": "9207",
+    "title": "Regulator 54",
+    "desc": "Moped: Gator 50SRT #: 01020073",
+    "photo": false
+   },
+   {
+    "id": "9208",
+    "title": "Regulator 55",
+    "desc": "Moped: (2022) Gator 150-F4 (ZN150T-7F)",
+    "photo": false
+   },
+   {
+    "id": "9209",
+    "title": "Regulator 56",
+    "desc": "Moped: Gator 50-JOG ( 31600-DGW-E001 )",
+    "photo": false
+   }
+  ],
+  "Remote Control Box": [
+   {
+    "id": "4250",
+    "title": "Remote Control 10",
+    "desc": "ATV: Mountopz 110 /125cc & Lynx 110 /125cc",
+    "photo": true
+   },
+   {
+    "id": "7476",
+    "title": "Remote Control 12",
+    "desc": "Moped: Gators (all new)",
+    "photo": true
+   },
+   {
+    "id": "8903",
+    "title": "Remote Control 16",
+    "desc": "GK: Go-Kart 110cc",
+    "photo": false
+   },
+   {
+    "id": "9212",
+    "title": "Remote Control 19",
+    "desc": "Moped: Moped: (2022) Gator 150-F4 (ZN150T-7F), Gator 50-JOG (2021)",
+    "photo": false
+   },
+   {
+    "id": "9213",
+    "title": "Remote Control 20",
+    "desc": "Moped: Gator 150F3",
+    "photo": false
+   }
+  ],
+  "Resistor": [
+   {
+    "id": "9214",
+    "title": "Resistor 03",
+    "desc": "ATV: LINHAI 300cc 4x4, ( 32044 )",
+    "photo": false
+   }
+  ],
+  "Reverse Light Indicator Assy": [
+   {
+    "id": "6081",
+    "title": "Reverse Light Indicator Assy 01",
+    "desc": "PANTHER 110 RX 5",
+    "photo": true
+   }
+  ],
+  "Right Front Turn Signal": [
+   {
+    "id": "3636",
+    "title": "Right Front Turn Signal 04/23",
+    "desc": "Moped: Gator 50F, F2 & R",
+    "photo": true
+   },
+   {
+    "id": "3637",
+    "title": "Right Front Turn Signal 05",
+    "desc": "Moped: Gator 50B /150B & 50 E2 /150E2",
+    "photo": true
+   },
+   {
+    "id": "7578",
+    "title": "Right Front Turn Signal 24/27",
+    "desc": "GK: Go-Kart 200F /D & 125-H (DF200F /DF200GKD & DF125GKA-H), #: 09020087",
+    "photo": true
+   },
+   {
+    "id": "8913",
+    "title": "Right Front Turn Signal 28",
+    "desc": "Moped: Gator 250RTS (DF250RTS), #:09020146",
+    "photo": false
+   },
+   {
+    "id": "8914",
+    "title": "Right Front Turn Signal 29",
+    "desc": "Moped: Gator 50SR (DF50SRT), #:09020111",
+    "photo": false
+   },
+   {
+    "id": "8915",
+    "title": "Right Front Turn Signal 30",
+    "desc": "ATV: Hawk 250",
+    "photo": false
+   },
+   {
+    "id": "8916",
+    "title": "Right Front Turn Signal 31",
+    "desc": "UTV: Challenger 150",
+    "photo": false
+   },
+   {
+    "id": "8917",
+    "title": "Right Front Turn Signal 32",
+    "desc": "DB: Brancho 250, #: 09020071",
+    "photo": false
+   },
+   {
+    "id": "8918",
+    "title": "Right Front Turn Signal 33",
+    "desc": "UTV: Commando 125cc (GK-6125A), yellow",
+    "photo": false
+   },
+   {
+    "id": "8919",
+    "title": "Right Front Turn Signal 35",
+    "desc": "Moped: Gator 50S3",
+    "photo": false
+   },
+   {
+    "id": "9216",
+    "title": "Right Front Turn Signal 37",
+    "desc": "Moped: ( 2021 ) Gator 150-T",
+    "photo": false
+   },
+   {
+    "id": "9217",
+    "title": "Right Front Turn Signal 38",
+    "desc": "Moped: Gator 150SST(DF150SST) $: 09020111",
+    "photo": false
+   },
+   {
+    "id": "9218",
+    "title": "Right Front Turn Signal 39",
+    "desc": "Moped: ( 2021 ) Gator",
+    "photo": false
+   },
+   {
+    "id": "9219",
+    "title": "Right Front Turn Signal 40",
+    "desc": "Moped: Gator 50M..",
+    "photo": false
+   },
+   {
+    "id": "9220",
+    "title": "Right Front Turn Signal 41",
+    "desc": "GK: New Commando 125T,..",
+    "photo": false
+   },
+   {
+    "id": "9221",
+    "title": "Right Front Turn Signal 42",
+    "desc": "Moped: Lower Front Turn Signal, Gator 50 JOG, ( For Upper, Right Front Turn Signal 04/23 )",
+    "photo": false
+   },
+   {
+    "id": "9223",
+    "title": "Right Front Turn Signal 44",
+    "desc": "Moped: Gator 50-P right",
+    "photo": false
+   }
+  ],
+  "Right Rear Turn Signal": [
+   {
+    "id": "3666",
+    "title": "Right Rear Turn Signal 04",
+    "desc": "Moped: Gator 50E2 /150E2 & 50B /150B",
+    "photo": true
+   },
+   {
+    "id": "8920",
+    "title": "Right Rear Turn Signal 14",
+    "desc": "GK: Go-Kart 200F /D & 125H (DF200F /DF200GKD & DF125GKA-H), same as right #24, #: 09020087",
+    "photo": false
+   },
+   {
+    "id": "8921",
+    "title": "Right Rear Turn Signal 15",
+    "desc": "Moped: Gator 250RT (DF250RTS), #: 09020148",
+    "photo": false
+   },
+   {
+    "id": "8922",
+    "title": "Right Rear Turn Signal 16",
+    "desc": "Moped: Gator 250RT (DF250RTE), #:09020069",
+    "photo": false
+   },
+   {
+    "id": "8923",
+    "title": "Right Rear Turn Signal 17",
+    "desc": "Moped: Gator 50SR (DF50SRT), #: 09020113",
+    "photo": false
+   },
+   {
+    "id": "8924",
+    "title": "Right Rear Turn Signal 18",
+    "desc": "Moped: Brancho 250, #: 09020073",
+    "photo": false
+   },
+   {
+    "id": "8925",
+    "title": "Right Rear Turn Signal 19",
+    "desc": "UTV: Commando 125cc (GK-6125A), yellow",
+    "photo": false
+   },
+   {
+    "id": "9224",
+    "title": "Right Rear Turn Signal 20",
+    "desc": "Moped: Gator 150SST(DF150SST) $: 09020113",
+    "photo": false
+   },
+   {
+    "id": "9226",
+    "title": "Right Rear Turn Signal 22",
+    "desc": "GK: GK-200-T4...",
+    "photo": false
+   }
+  ],
+  "Scooter PM3 Player": [
+   {
+    "id": "7289",
+    "title": "Scooter Mp3 Player 02",
+    "desc": "Moped: TY-611. 3 inch speaker, micro SD, USB, MP3, radio FM, remote control",
+    "photo": true
+   },
+   {
+    "id": "7290",
+    "title": "Scooter Mp3 Player 03",
+    "desc": "Moped: TY-738, anti-theft alarm, MP3, radio FM, SD /MMC card, USB, clock, remote control",
+    "photo": true
+   },
+   {
+    "id": "7291",
+    "title": "Scooter MP3 Player 04",
+    "desc": "Moped: (2022) Gator 150-F4 (ZN150T-7F)",
+    "photo": true
+   },
+   {
+    "id": "7292",
+    "title": "Scooter MP3 Player 05",
+    "desc": "Moped: (2022) Gator 150-T (Marshal 150)",
+    "photo": true
+   }
+  ],
+  "Seat Rails": [
+   {
+    "id": "5637",
+    "title": "Seat Rails 01",
+    "desc": "UTV: Farm Truck 650JP, 4x4",
+    "photo": true
+   }
+  ],
+  "Spark Plug Cap": [
+   {
+    "id": "4062",
+    "title": "Spark Plug Cap 01",
+    "desc": "ATV, DB & GK: Horizontal Engine, 90¡ã spark plug cap",
+    "photo": true
+   },
+   {
+    "id": "4063",
+    "title": "Spark Plug Cap 02",
+    "desc": "Moped: 150cc, GY-6, 120¡ã spark plug cap",
+    "photo": true
+   },
+   {
+    "id": "5986",
+    "title": "Spark Plug Cap 03",
+    "desc": "ATV: Metal cap",
+    "photo": true
+   },
+   {
+    "id": "6563",
+    "title": "Spark Plug Cap 04",
+    "desc": "Moped: Metal",
+    "photo": true
+   }
+  ],
+  "Speedometer": [
+   {
+    "id": "2038",
+    "title": "Speedometer 10",
+    "desc": "Moped: Magnum 50L",
+    "photo": true
+   },
+   {
+    "id": "7482",
+    "title": "Speedometer 36",
+    "desc": "Moped: Gator 150E2 & 150E",
+    "photo": true
+   },
+   {
+    "id": "7483",
+    "title": "Speedometer 37",
+    "desc": "Moped: Gator 50S",
+    "photo": true
+   },
+   {
+    "id": "7724",
+    "title": "Speedometer 41",
+    "desc": "GK: Go-Kart 200F /D (DF200F /DF200GKD)",
+    "photo": true
+   },
+   {
+    "id": "9016",
+    "title": "Speedometer 43",
+    "desc": "UTV: Commando 125CC (GK-6125A)",
+    "photo": false
+   },
+   {
+    "id": "9018",
+    "title": "Speedometer 45",
+    "desc": "ATV: Linhai 260, 4x4, meter, #: 30101G",
+    "photo": false
+   },
+   {
+    "id": "9019",
+    "title": "Speedometer 46",
+    "desc": "DB: Hawk 250",
+    "photo": false
+   },
+   {
+    "id": "9021",
+    "title": "Speedometer 48",
+    "desc": "Moped: Brancho 250, #: 10050030",
+    "photo": false
+   },
+   {
+    "id": "7994",
+    "title": "Speedometer 51",
+    "desc": "Moped: Gator 150F2",
+    "photo": true
+   },
+   {
+    "id": "9024",
+    "title": "Speedometer 52",
+    "desc": "UTV: Rancher 200 (DF200GKV-N), #: 10050037",
+    "photo": false
+   },
+   {
+    "id": "9026",
+    "title": "Speedometer 54",
+    "desc": "Moped: Gator 50S3",
+    "photo": false
+   },
+   {
+    "id": "9027",
+    "title": "Speedometer 55",
+    "desc": "ATV: Mad Max 250cc",
+    "photo": false
+   },
+   {
+    "id": "9227",
+    "title": "Speedometer 56",
+    "desc": "Moped: Gator 50-E3 (BD50QT-2A)..",
+    "photo": false
+   },
+   {
+    "id": "9229",
+    "title": "Speedometer 58",
+    "desc": "Moped: Gator 50-M",
+    "photo": false
+   },
+   {
+    "id": "9230",
+    "title": "Speedometer 59",
+    "desc": "Moped: ( 2021 ) Gator 150-C.",
+    "photo": false
+   },
+   {
+    "id": "9231",
+    "title": "Speedometer 60",
+    "desc": "Moped: ( 2021 ) Gator 150-T",
+    "photo": false
+   },
+   {
+    "id": "9232",
+    "title": "Speedometer 61",
+    "desc": "Moped: ( 2021 ) Gator 50-F3.",
+    "photo": false
+   },
+   {
+    "id": "9233",
+    "title": "Speedometer 62",
+    "desc": "Moped: Gator 200-SST , DF200SST(10050063)",
+    "photo": false
+   },
+   {
+    "id": "9234",
+    "title": "Speedometer 63",
+    "desc": "Moped: Gator 50STT (DF 50STT)",
+    "photo": false
+   },
+   {
+    "id": "9239",
+    "title": "Speedometer 67",
+    "desc": "Moped: Gator 50-P",
+    "photo": false
+   },
+   {
+    "id": "9240",
+    "title": "Speedometer 68",
+    "desc": "Moped: (2022) Gator 150-T (Marshal 150)",
+    "photo": false
+   },
+   {
+    "id": "9241",
+    "title": "Speedometer 69",
+    "desc": "DIRT BIKE: Gator 250RTT-H",
+    "photo": false
+   }
+  ],
+  "Speedometer Sensor": [
+   {
+    "id": "7424",
+    "title": "Speedometer Sensor 03/09",
+    "desc": "UTV: Commando 125cc (GK-6125A)",
+    "photo": true
+   },
+   {
+    "id": "7583",
+    "title": "Speedometer Sensor 06/13",
+    "desc": "UTV: Challenger 150 & Rancher 200, #: 10040026",
+    "photo": true
+   },
+   {
+    "id": "7656",
+    "title": "Speedometer Sensor 07",
+    "desc": "Moped: Gator 200SST, #: 10040055",
+    "photo": true
+   },
+   {
+    "id": "7725",
+    "title": "Speedometer Sensor 08",
+    "desc": "GK: Go-Kart 200F / (DF200F /GKD)",
+    "photo": true
+   },
+   {
+    "id": "9040",
+    "title": "Speedometer Sensor 10/11",
+    "desc": "Moped: Gator 50STT (DF50STT new), 50SRT & 150SST",
+    "photo": false
+   },
+   {
+    "id": "9041",
+    "title": "Speedometer Sensor 12",
+    "desc": "Moped: Gator 250RTS",
+    "photo": false
+   },
+   {
+    "id": "9242",
+    "title": "Speedometer Sensor 13",
+    "desc": "ATV: LINHAI 300cc, 4x4, speed sensor #: 25601",
+    "photo": false
+   },
+   {
+    "id": "9243",
+    "title": "Speedometer Sensor 14",
+    "desc": "Moped: Gator 50-M",
+    "photo": false
+   },
+   {
+    "id": "9244",
+    "title": "Speedometer Sensor 15",
+    "desc": "Moped: DF-50SST,",
+    "photo": false
+   },
+   {
+    "id": "9246",
+    "title": "Speedometer Sensor 16",
+    "desc": "DIRT BIKE: Gator 250RTT-H",
+    "photo": false
+   }
+  ],
+  "Start Relay": [
+   {
+    "id": "2058",
+    "title": "Start Relay 01/02/03",
+    "desc": "Engine 2 & 4 stroke, 12 volt, 2 wires, electric start",
+    "photo": true
+   },
+   {
+    "id": "2061",
+    "title": "Start Relay 04",
+    "desc": "Universal solenoid, 20 AMP fuse, all vehicle types",
+    "photo": true
+   },
+   {
+    "id": "2062",
+    "title": "Start Relay 05/07/08/09",
+    "desc": "Engine 2 & 4 stroke, 12 volt, 2 wires, electric start",
+    "photo": true
+   },
+   {
+    "id": "2063",
+    "title": "Start Relay 06/21",
+    "desc": "Moped: Gator 250RT (DF250RTS), 2 volt, 2 wires, 2 & 4 stroke, #: 01020027",
+    "photo": true
+   },
+   {
+    "id": "2069",
+    "title": "Start Relay 11",
+    "desc": "ATV: Jaguar 400",
+    "photo": true
+   },
+   {
+    "id": "5625",
+    "title": "Start Relay 15",
+    "desc": "UTV: Farm Truck 650JP, 4x4, #: JR103 12V",
+    "photo": true
+   },
+   {
+    "id": "7728",
+    "title": "Start Relay 20",
+    "desc": "GK & UTV: Go-Kart 200D /F /H /E & Rancher 200 (DF200GKD /GKF /GKG /GKE & GKV-N), #:01020041",
+    "photo": true
+   },
+   {
+    "id": "9063",
+    "title": "Start Relay 22",
+    "desc": "ATV: Linhai 260, 4x4, #: 22004 GK: LCARH-1C-12D ( 80A/60A 14VDC )",
+    "photo": false
+   },
+   {
+    "id": "9247",
+    "title": "Start Relay 23",
+    "desc": "GK: 200-GSA",
+    "photo": false
+   },
+   {
+    "id": "9249",
+    "title": "Start Relay 24",
+    "desc": "DB:X-88",
+    "photo": false
+   }
+  ],
+  "Start Switch": [
+   {
+    "id": "2072",
+    "title": "Start Switch 01/03",
+    "desc": "Engine 125 &150cc, GY-6, starter button switch",
+    "photo": true
+   },
+   {
+    "id": "2073",
+    "title": "Start Switch 02/04/05",
+    "desc": "Moped: Gator 150 & Magnum 150RL /250",
+    "photo": true
+   },
+   {
+    "id": "5293",
+    "title": "Start Switch 07",
+    "desc": "Moped: Gator 150-C , ( 2021 ) Gator 50-F3, Gator 50F2,(ZN50QT-62) & 150F2, special edition 150 (JCL), #:35152-GZ-9000..",
+    "photo": true
+   },
+   {
+    "id": "9250",
+    "title": "Start Switch 09",
+    "desc": "DB: X-29 Manual, X36, X33, X38, A10, A11",
+    "photo": false
+   }
+  ],
+  "Starter": [
+   {
+    "id": "2078",
+    "title": "Starter 01",
+    "desc": "ATV, DB & GK: Hotizontal engine, 3 holes. 12 volt, electric,18 Pcs Per Box",
+    "photo": true
+   },
+   {
+    "id": "2079",
+    "title": "Starter 02/10",
+    "desc": "Moped: 150cc, GY-6, 4 stroke, 12 volt, electric",
+    "photo": true
+   },
+   {
+    "id": "2080",
+    "title": "Starter 03/16",
+    "desc": "ATV & Moped: Panther 200MD & Lifan 200, GY-5 (( 9 splines ))",
+    "photo": true
+   },
+   {
+    "id": "2081",
+    "title": "Starter 04",
+    "desc": "ATV: Panther 200UT (( 11 splines ))",
+    "photo": true
+   },
+   {
+    "id": "2082",
+    "title": "Starter 05",
+    "desc": "ATV: Panther 250JS",
+    "photo": true
+   },
+   {
+    "id": "2085",
+    "title": "Starter 08",
+    "desc": "ATV, DB & GK: 50-125cc, hotizontal engine, 12 volt, 12 teeth",
+    "photo": true
+   },
+   {
+    "id": "2086",
+    "title": "Starter 09",
+    "desc": "Moped: 50cc, GY-6, 12 volt, electric QMB139, 4-stroke",
+    "photo": true
+   },
+   {
+    "id": "2088",
+    "title": "Starter 11/12/13/14",
+    "desc": "GK & Moped: Gator 250 /Magnum 250RL & Cyclone 250 /250Rl",
+    "photo": true
+   },
+   {
+    "id": "3339",
+    "title": "Starter 21",
+    "desc": "150cc",
+    "photo": true
+   },
+   {
+    "id": "4866",
+    "title": "Starter 26",
+    "desc": "ATV & DB: 125-150cc, 10 spline shaf",
+    "photo": true
+   },
+   {
+    "id": "9066",
+    "title": "Starter 33",
+    "desc": "Moped: Gator 250RTS(DF250RTS), #: 82200-ME05-020280",
+    "photo": false
+   },
+   {
+    "id": "9251",
+    "title": "Starter 35",
+    "desc": "ATV: LINHAI 300cc ( 24101 )",
+    "photo": false
+   }
+  ],
+  "Starter Module Control": [
+   {
+    "id": "4060",
+    "title": "Starter Module Control",
+    "desc": "ATV: Avanti 300",
+    "photo": true
+   },
+   {
+    "id": "4061",
+    "title": "Starter Module Control 02",
+    "desc": "ATV: Jaguar 125",
+    "photo": true
+   }
+  ],
+  "Taillight Assy": [
+   {
+    "id": "2340",
+    "title": "Taillight Assy 15",
+    "desc": "Moped: Gator 50 (YY50QT-6)",
+    "photo": true
+   },
+   {
+    "id": "3588",
+    "title": "Taillight Assy 16",
+    "desc": "Moped: Gator 50S3, 50, 50S & 50S2",
+    "photo": true
+   },
+   {
+    "id": "2341",
+    "title": "Taillight Assy 17/18/66",
+    "desc": "Moped: Gator 50E3, 50E2, 150E, 150E2, 150-E3, 50R & 150B..",
+    "photo": true
+   },
+   {
+    "id": "2345",
+    "title": "Taillight Assy 21/27/64",
+    "desc": "ATV: 50, 70, 90, 110cc, led rear tail lights",
+    "photo": true
+   },
+   {
+    "id": "2352",
+    "title": "Taillight Assy 28/30/42",
+    "desc": "ATV: Mountopz 150CL (3150CXC)",
+    "photo": true
+   },
+   {
+    "id": "2353",
+    "title": "Taillight Assy 29/53",
+    "desc": "ATV: Panther 70B & 110BC",
+    "photo": true
+   },
+   {
+    "id": "2362",
+    "title": "Taillight Assy 38/39",
+    "desc": "ATV: Panther 110RX4, RX5, TTB & SD",
+    "photo": true
+   },
+   {
+    "id": "4152",
+    "title": "Taillight Assy 63",
+    "desc": "110BC(1)",
+    "photo": true
+   },
+   {
+    "id": "7485",
+    "title": "Taillight Assy 69",
+    "desc": "DB & Moped: Gator 150E & Dinali 200cc",
+    "photo": true
+   },
+   {
+    "id": "7487",
+    "title": "Taillight Assy 71",
+    "desc": "Moped: Gator 150F (YB150QT-7)",
+    "photo": true
+   },
+   {
+    "id": "7585",
+    "title": "Taillight Assy 73",
+    "desc": "ATV: Mountopz 110RX4,125RX5/125RX8/125H/125CL/125CL2/125CL3 & Lynx 125CL2/125B/125RX8",
+    "photo": true
+   },
+   {
+    "id": "7801",
+    "title": "Taillight Assy 74/94",
+    "desc": "GK: Go-Kart 200F (DF200GKF)",
+    "photo": false
+   },
+   {
+    "id": "7745",
+    "title": "Taillight Assy 75",
+    "desc": "GK: Go-Kart 125H (DF125GKA-H)",
+    "photo": true
+   },
+   {
+    "id": "9092",
+    "title": "Taillight Assy 77",
+    "desc": "UTV: Commando 125cc (GK-6125A), red",
+    "photo": false
+   },
+   {
+    "id": "9093",
+    "title": "Taillight Assy 78/92",
+    "desc": "Moped: Gator 50STT(DF50STT) & 50SRT (DF50SRT) Gator 50 M",
+    "photo": false
+   },
+   {
+    "id": "9096",
+    "title": "Taillight Assy 81",
+    "desc": "Moped: Gator 150SST(DF150SST) $: 09030050",
+    "photo": false
+   },
+   {
+    "id": "9100",
+    "title": "Taillight Assy 86",
+    "desc": "ATV: Mountopz 125B (3125B)",
+    "photo": false
+   },
+   {
+    "id": "9102",
+    "title": "Taillight Assy 88",
+    "desc": "Moped: Gator 250RTS (DF250RTS)",
+    "photo": false
+   },
+   {
+    "id": "9103",
+    "title": "Taillight Assy 89",
+    "desc": "ATV: Mad Max 250cc",
+    "photo": false
+   },
+   {
+    "id": "9259",
+    "title": "Taillight Assy 90",
+    "desc": "DB: Dirt-Bike X-88,250cc (Y338701)",
+    "photo": false
+   },
+   {
+    "id": "9262",
+    "title": "Taillight Assy 93",
+    "desc": "GK: GK-125-T ..",
+    "photo": false
+   },
+   {
+    "id": "9264",
+    "title": "Taillight Assy 95",
+    "desc": "Moped: ( 2021 ) Gator 150-T",
+    "photo": false
+   },
+   {
+    "id": "9267",
+    "title": "Taillight Assy 98",
+    "desc": "GK: Commando 125-T",
+    "photo": false
+   },
+   {
+    "id": "9268",
+    "title": "Taillight Assy 99",
+    "desc": "ATV: LINHAI 300cc 4x4, ( 25053 )",
+    "photo": false
+   },
+   {
+    "id": "9269",
+    "title": "Taillight Assy 100",
+    "desc": "DIRT BIKE: Gator 250RTT-H",
+    "photo": false
+   },
+   {
+    "id": "9270",
+    "title": "Taillight Assy 101",
+    "desc": "(2022) Gator 150-F4 (ZN150T-7F)",
+    "photo": false
+   }
+  ],
+  "Taillight Socket": [
+   {
+    "id": "7398",
+    "title": "Taillight Socket 09",
+    "desc": "Moped: Gator 50, single metal case",
+    "photo": true
+   }
+  ],
+  "Turn Signal Switch": [
+   {
+    "id": "2121",
+    "title": "Turn Signal Switch 01/02/04/05",
+    "desc": "Moped & GK: Gator 150-C , ( 2021 ) Gator 50-F3,Gator 50F2 (ZN50QT-62) /150F2 /50 & Magnum 150RL & Cyclone 110JP, #: 35202-GZ-9000",
+    "photo": true
+   },
+   {
+    "id": "9271",
+    "title": "Turn Signal Switch 10",
+    "desc": "UTV: Commando 125cc (GK-6125A)",
+    "photo": false
+   }
+  ],
+  "Wire Harness": [
+   {
+    "id": "4621",
+    "title": "Wire Harness 69",
+    "desc": "ATV: Mountopz 110RX4",
+    "photo": true
+   },
+   {
+    "id": "4622",
+    "title": "Wire Harness 70",
+    "desc": "ATV: Mountopz 110",
+    "photo": true
+   },
+   {
+    "id": "4411",
+    "title": "Wire Harness 71",
+    "desc": "ATV: Mountopz 125RX5",
+    "photo": true
+   },
+   {
+    "id": "4412",
+    "title": "Wire Harness 72",
+    "desc": "ATV: Mountopz 150 UT, Mountopz 200 UT ( 3150 DX-4, 3175 DX-4 )",
+    "photo": true
+   },
+   {
+    "id": "4565",
+    "title": "Wire Harness 73",
+    "desc": "DB: QG 125cc (Coolster)",
+    "photo": true
+   },
+   {
+    "id": "4566",
+    "title": "Wire Harness 74",
+    "desc": "DB: QG 210 (70cc Coolster)",
+    "photo": true
+   },
+   {
+    "id": "7407",
+    "title": "Wire Harness 83",
+    "desc": "ATV: Mountopz 125RX6 (3125RX8), new",
+    "photo": true
+   },
+   {
+    "id": "7408",
+    "title": "Wire Harness 84",
+    "desc": "ATV: Mountopz 125CL (3125C), new",
+    "photo": true
+   },
+   {
+    "id": "7887",
+    "title": "Wire Harness 88",
+    "desc": "DB: XB-38, 125cc w/ clutch, 17\" & 14\" tires, main wire harness",
+    "photo": true
+   },
+   {
+    "id": "9272",
+    "title": "Wire Harness 89",
+    "desc": "GK: Go-Kart 125H (DF125GKA-H), #: 08010071",
+    "photo": false
+   },
+   {
+    "id": "9273",
+    "title": "Wire Harness 90",
+    "desc": "ATV: Mountopz 150CL2, Mountopz 200 CL2 ( 3150CXC, 3175 CXC )",
+    "photo": false
+   },
+   {
+    "id": "8016",
+    "title": "Wire Harness 98",
+    "desc": "Moped: Gator150 F2",
+    "photo": true
+   },
+   {
+    "id": "8054",
+    "title": "Wire Harness 99",
+    "desc": "ATV: Mountopz 125B (3125B), #: DQL-EA020",
+    "photo": false
+   },
+   {
+    "id": "9282",
+    "title": "Wire Harness 102",
+    "desc": "ATV: Mountopz 125H (3125A-2)",
+    "photo": false
+   },
+   {
+    "id": "9283",
+    "title": "Wire Harness 103",
+    "desc": "GK: Go-Kart 125 (GK6125)",
+    "photo": false
+   },
+   {
+    "id": "9284",
+    "title": "Wire Harness 104",
+    "desc": "UTV: Commando 125 (GK6125A)",
+    "photo": false
+   },
+   {
+    "id": "9285",
+    "title": "Wire Harness 105",
+    "desc": "ATV: Mountopz 125CL2",
+    "photo": false
+   },
+   {
+    "id": "9286",
+    "title": "Wire Harness 106",
+    "desc": "GK: Go-Kart 200E (DF200GKE), 4 seats",
+    "photo": false
+   },
+   {
+    "id": "9291",
+    "title": "Wire Harness 111",
+    "desc": "Moped: Gator 50S3",
+    "photo": false
+   },
+   {
+    "id": "9292",
+    "title": "Wire Harness 112",
+    "desc": "DB: QG213A",
+    "photo": false
+   },
+   {
+    "id": "9293",
+    "title": "Wire Harness 113",
+    "desc": "DB: XB-88 ( Dirt Bike 250cc )",
+    "photo": false
+   },
+   {
+    "id": "9295",
+    "title": "Wire Harness 115",
+    "desc": "DB: X-29,For X-Motor 125cc 17/14 Wheel",
+    "photo": false
+   },
+   {
+    "id": "9296",
+    "title": "Wire Harness 116",
+    "desc": "DB: X-69,For X-Motor 140cc 19\"/17\" Wheel",
+    "photo": false
+   },
+   {
+    "id": "9297",
+    "title": "Wire Harness 117",
+    "desc": "GK : GO-KART 125-T.. GO-KART 150-T",
+    "photo": false
+   },
+   {
+    "id": "9298",
+    "title": "Wire Harness 118",
+    "desc": "GK: GK 200-F2/200GKA/200GKR/200F,(GKF:08010020,GKR:08010112)",
+    "photo": false
+   },
+   {
+    "id": "9302",
+    "title": "Wire Harness 122",
+    "desc": "Moped: Gator 50-E3",
+    "photo": false
+   },
+   {
+    "id": "9305",
+    "title": "Wire Harness 125",
+    "desc": "DB: X-88 ( 250cc ).. Off Road",
+    "photo": false
+   },
+   {
+    "id": "9306",
+    "title": "Wire Harness 126",
+    "desc": "DB: X-88 ( 250cc ).. Street Legal",
+    "photo": false
+   },
+   {
+    "id": "9307",
+    "title": "Wire Harness 127",
+    "desc": "GK: DF 125-GKS.",
+    "photo": false
+   },
+   {
+    "id": "9314",
+    "title": "Wire Harness 134",
+    "desc": "Moped: ( 2021 ) Gator 150-T",
+    "photo": false
+   },
+   {
+    "id": "9315",
+    "title": "Wire Harness 135",
+    "desc": "GK: GK-200-T4.",
+    "photo": false
+   },
+   {
+    "id": "9317",
+    "title": "Wire Harness 137",
+    "desc": "Moped: Gator 50SST #: 08010073",
+    "photo": false
+   },
+   {
+    "id": "9318",
+    "title": "Wire Harness 138",
+    "desc": "Moped: Gator 200SST #: 08010078",
+    "photo": false
+   },
+   {
+    "id": "9319",
+    "title": "Wire Harness 139",
+    "desc": "DB: X-36. X-28, X-29, XB-38,125ccElectric start wire harness",
+    "photo": false
+   },
+   {
+    "id": "9320",
+    "title": "Wire Harness 140",
+    "desc": "DB: Hawk 250",
+    "photo": false
+   },
+   {
+    "id": "9322",
+    "title": "Wire Harness 142",
+    "desc": "GK: New Commando 125T",
+    "photo": false
+   },
+   {
+    "id": "9330",
+    "title": "Wire Harness 150",
+    "desc": "DB: Dirt Bike A10, A11,",
+    "photo": false
+   },
+   {
+    "id": "9331",
+    "title": "Wire Harness 151",
+    "desc": "ATV: LINHAI 300cc",
+    "photo": false
+   },
+   {
+    "id": "9335",
+    "title": "Wire Harness 155",
+    "desc": "Moped: (2022) Gator 150-F4 (ZN150T-7F)",
+    "photo": false
+   },
+   {
+    "id": "9337",
+    "title": "Wire Harness 157",
+    "desc": "DIRT BIKE: Gator 250RTT-H",
+    "photo": false
+   },
+   {
+    "id": "10160",
+    "title": "Wire Harness 158",
+    "desc": "GK: GK 125-GKS (DF125GKS) 08010088",
+    "photo": false
+   }
+  ]
+ }
+}
