@@ -16702,6 +16702,75 @@
     ]
    ],
    "description": "UTV Jack: tools part from NYC ATV Warehouse in Little Ferry, NJ. Call 646-943-1858 with your make, model and year to confirm fit and get pricing. Priced parts ship free in the continental U.S."
+  },
+  "ebikes-actbest-ranger-st-2-0": {
+   "main": "images/rangerst.jpg",
+   "thumbs": [
+    "images/rangerst.jpg",
+    "images/rangerst-2.jpg",
+    "images/rangerst-3.jpg",
+    "images/rangerst-4.jpg"
+   ],
+   "specs": [
+    [
+     "Motor",
+     "1800W peak rear hub motor, 110 Nm torque"
+    ],
+    [
+     "Battery",
+     "48V 13Ah removable lithium, dual-lock"
+    ],
+    [
+     "Top Speed",
+     "36+ mph"
+    ],
+    [
+     "Range",
+     "Up to 75 miles (pedal assist)"
+    ],
+    [
+     "Tires",
+     "26 &times; 4.0in fat tires"
+    ],
+    [
+     "Brakes",
+     "Front &amp; rear disc brakes"
+    ],
+    [
+     "Suspension",
+     "Adjustable front fork with lockout"
+    ],
+    [
+     "Gears",
+     "Shimano 7-speed"
+    ],
+    [
+     "Frame",
+     "Low step-through &middot; fits riders 5&#8242;7&#8243;&ndash;6&#8242;5&#8243;"
+    ],
+    [
+     "Weight",
+     "77.2 lbs"
+    ],
+    [
+     "Max Load",
+     "500 lbs &middot; rear rack 55 lbs"
+    ],
+    [
+     "Extras",
+     "Color display, front &amp; rear lights, fenders, rear rack, thumb throttle, IPX5"
+    ],
+    [
+     "Colors",
+     "White / Light Blue / Dark Gray"
+    ]
+   ],
+   "description": "Actbest Ranger ST 2.0 step-through fat tire electric bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Motor:</strong> 1800W peak",
+    "<strong>Range:</strong> up to 75 miles",
+    "<strong>Top Speed:</strong> 36+ mph"
+   ]
   }
  },
  "categories": {
@@ -16865,7 +16934,8 @@
    "ebikes-v8-max-dual-battery",
    "ebikes-evo-20",
    "ebikes-evo16",
-   "ebikes-gt-s-2000"
+   "ebikes-gt-s-2000",
+   "ebikes-actbest-ranger-st-2-0"
   ],
   "helmets": [
    "helmets-sport-flip-up-led-tn-8635j",

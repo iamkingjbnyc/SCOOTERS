@@ -596,6 +596,15 @@
    "inStock": true
   },
   {
+   "id": "ebikes-actbest-ranger-st-2-0",
+   "name": "Actbest Ranger ST 2.0",
+   "category": "ebikes",
+   "url": "ebikes/actbest-ranger-st-2-0.html",
+   "image": "images/rangerst.jpg",
+   "price": 799.0,
+   "inStock": true
+  },
+  {
    "id": "gokarts-jaguar-200-efi",
    "name": "Jaguar 200 EFI",
    "category": "gokarts",
