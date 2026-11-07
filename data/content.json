@@ -16840,6 +16840,75 @@
     "<strong>Range:</strong> up to 80 miles",
     "<strong>Top Speed:</strong> 28 mph"
    ]
+  },
+  "ebikes-qlife-triker-2-0": {
+   "main": "images/triker2.jpg",
+   "thumbs": [
+    "images/triker2.jpg",
+    "images/triker2-2.jpg",
+    "images/triker2-3.jpg",
+    "images/triker2-4.jpg"
+   ],
+   "specs": [
+    [
+     "Motor",
+     "350W rear hub motor, 1200W peak"
+    ],
+    [
+     "Battery",
+     "48V 10.4Ah removable lithium, UL 2271 certified"
+    ],
+    [
+     "Top Speed",
+     "18 mph (Class 2)"
+    ],
+    [
+     "Range",
+     "Up to 55 miles (pedal assist)"
+    ],
+    [
+     "Tires",
+     "18 &times; 3.0in fat tires"
+    ],
+    [
+     "Brakes",
+     "Front &amp; rear disc brakes plus parking brake"
+    ],
+    [
+     "Suspension",
+     "Front suspension fork"
+    ],
+    [
+     "Gears",
+     "Single speed, rear differential"
+    ],
+    [
+     "Frame",
+     "Folding step-through 3-wheel frame &middot; fits riders 4&#8242;11&#8243;&ndash;6&#8242;1&#8243;"
+    ],
+    [
+     "Seat",
+     "Oversized padded seat with adjustable backrest"
+    ],
+    [
+     "Max Load",
+     "400 lbs &middot; rear basket 120 lbs"
+    ],
+    [
+     "Extras",
+     "Front &amp; rear baskets, LCD display, front light, rear brake light, fenders, IPX5"
+    ],
+    [
+     "Colors",
+     "Black / White / Gray"
+    ]
+   ],
+   "description": "Qlife Triker 2.0 folding 3-wheel electric trike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Motor:</strong> 1200W peak",
+    "<strong>Range:</strong> up to 55 miles",
+    "<strong>Top Speed:</strong> 18 mph"
+   ]
   }
  },
  "categories": {
@@ -17005,7 +17074,8 @@
    "ebikes-evo16",
    "ebikes-gt-s-2000",
    "ebikes-actbest-ranger-st-2-0",
-   "ebikes-qlife-cityone-plus-st"
+   "ebikes-qlife-cityone-plus-st",
+   "ebikes-qlife-triker-2-0"
   ],
   "helmets": [
    "helmets-sport-flip-up-led-tn-8635j",
