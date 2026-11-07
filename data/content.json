@@ -16771,6 +16771,75 @@
     "<strong>Range:</strong> up to 75 miles",
     "<strong>Top Speed:</strong> 36+ mph"
    ]
+  },
+  "ebikes-qlife-cityone-plus-st": {
+   "main": "images/cityoneplus.jpg",
+   "thumbs": [
+    "images/cityoneplus.jpg",
+    "images/cityoneplus-2.jpg",
+    "images/cityoneplus-3.jpg",
+    "images/cityoneplus-4.jpg"
+   ],
+   "specs": [
+    [
+     "Motor",
+     "1200W peak rear hub motor"
+    ],
+    [
+     "Battery",
+     "48V 15Ah lithium, T&Uuml;V certified"
+    ],
+    [
+     "Top Speed",
+     "28 mph"
+    ],
+    [
+     "Range",
+     "Up to 80 miles (pedal assist)"
+    ],
+    [
+     "Tires",
+     "26 &times; 2.1in city tires"
+    ],
+    [
+     "Brakes",
+     "Front &amp; rear mechanical disc brakes"
+    ],
+    [
+     "Suspension",
+     "60mm front suspension fork"
+    ],
+    [
+     "Gears",
+     "Shimano 7-speed"
+    ],
+    [
+     "Frame",
+     "Low step-through, upright riding position &middot; fits riders 5&#8242;1&#8243;&ndash;6&#8242;3&#8243;"
+    ],
+    [
+     "Weight",
+     "70.6 lbs"
+    ],
+    [
+     "Max Load",
+     "350 lbs &middot; rear rack 120 lbs"
+    ],
+    [
+     "Extras",
+     "LCD display, front &amp; rear lights, fenders, rear rack, IPX5"
+    ],
+    [
+     "Colors",
+     "Black / White / Light Blue / Mint Green"
+    ]
+   ],
+   "description": "Qlife Cityone Plus ST step-through electric commuter bike for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Motor:</strong> 1200W peak",
+    "<strong>Range:</strong> up to 80 miles",
+    "<strong>Top Speed:</strong> 28 mph"
+   ]
   }
  },
  "categories": {
@@ -16935,7 +17004,8 @@
    "ebikes-evo-20",
    "ebikes-evo16",
    "ebikes-gt-s-2000",
-   "ebikes-actbest-ranger-st-2-0"
+   "ebikes-actbest-ranger-st-2-0",
+   "ebikes-qlife-cityone-plus-st"
   ],
   "helmets": [
    "helmets-sport-flip-up-led-tn-8635j",
