@@ -402,7 +402,7 @@ def fulfil_opts(p):
   <div class="fulfil-opt"><span class="ic">{ICON["truck"]}</span><div><strong>Local delivery</strong><span class="d">Available when your order includes a scooter, e-bike or other vehicle, or when your helmet order is {mn} or more. Otherwise choose free pickup or free shipping.</span></div></div>
 </div>'''
     return f'''<div class="fulfil-opts">
-  <div class="fulfil-opt"><span class="ic">{ICON["pin"]}</span><div><strong>Free pickup &mdash; <span class="free">Free</span></strong><span class="d">Ready in Little Ferry, NJ (Mon&ndash;Fri 10am&ndash;5pm) or the Bronx, NY (Mon&ndash;Fri 10am&ndash;6pm). {dep} non-refundable deposit online, balance at pickup.</span></div></div>
+  <div class="fulfil-opt"><span class="ic">{ICON["pin"]}</span><div><strong>Free pickup &mdash; <span class="free">Free</span></strong><span class="d">Ready in Little Ferry, NJ (Mon&ndash;Fri 10am&ndash;5pm) or the Bronx, NY (Mon&ndash;Fri 10am&ndash;6pm). Pay in full online, no deposit. Finance the whole order with Affirm.</span></div></div>
   <div class="fulfil-opt"><span class="ic">{ICON["truck"]}</span><div><strong>Free local delivery{"" if not s["localDelivery"]["fee"] else " &mdash; " + fee_text(s["localDelivery"]["fee"])}</strong><span class="d">Free across {s["localDelivery"]["zoneLabel"]}. {money(s["localDelivery"]["extended"]["fee"])} for Long Island and up to {s["localDelivery"]["extended"]["radiusMiles"]} miles. {dep} non-refundable deposit online, balance on delivery.</span></div></div>
   <div class="fulfil-opt"><span class="ic">{ICON["box"]}</span><div><strong>Shipped to your address &mdash; <span data-ship-rate="{p["category"]}">{money(rate)}</span> per unit</strong><span class="d">Pay in full online. Continental U.S. only.{"" if p["category"] == "helmets" else " Ships about 90% assembled in a crate &mdash; handlebars, wheels and a few other parts may need to be attached before it is ready to ride. Assembly instructions are included."}</span></div></div>
 </div>'''
@@ -700,7 +700,7 @@ def build_shipping():
   <p>Order online, then choose the way you want to get it at checkout. Every in-stock model can be shipped, delivered locally for free, or picked up.</p></div>
 
   <div class="info-cards">
-    <div class="info-card"><span class="ic">{ICON["pin"]}</span><h3>Free pickup</h3><p>Pick up your order at either location: {s["pickup"]["locations"][0]["address"]} ({s["pickup"]["locations"][0]["hours"].replace("-", "&ndash;")}) or {s["pickup"]["locations"][1]["address"]} ({s["pickup"]["locations"][1]["hours"].replace("-", "&ndash;")}). Choose your location at checkout. We&rsquo;ll contact you when it&rsquo;s ready. Pay a {money(s["deposit"]["amount"])} non-refundable deposit online; the balance is due at pickup. Helmet-only orders are paid in full online, no deposit.</p><div class="price free">Free</div></div>
+    <div class="info-card"><span class="ic">{ICON["pin"]}</span><h3>Free pickup</h3><p>Pick up your order at either location: {s["pickup"]["locations"][0]["address"]} ({s["pickup"]["locations"][0]["hours"].replace("-", "&ndash;")}) or {s["pickup"]["locations"][1]["address"]} ({s["pickup"]["locations"][1]["hours"].replace("-", "&ndash;")}). Choose your location at checkout. We&rsquo;ll contact you when it&rsquo;s ready. Pay in full online, no deposit, and you can finance the whole order with Affirm.</p><div class="price free">Free</div></div>
     <div class="info-card"><span class="ic">{ICON["truck"]}</span><h3>Free local delivery</h3><p>Delivery is free across {s["localDelivery"]["zoneLabel"]}. Anywhere on Long Island (Nassau and Suffolk) and up to {s["localDelivery"]["extended"]["radiusMiles"]} miles from us is {money(s["localDelivery"]["extended"]["fee"])}. Enter your ZIP at checkout to see your price. Pay a {money(s["deposit"]["amount"])} non-refundable deposit online; the balance is due on delivery. Helmet-only orders get local delivery only when the order is {money(s["rules"]["helmetsOnly"]["localDeliveryMinSubtotal"])} or more.</p><div class="price free">{fee_text(s["localDelivery"]["fee"])}</div></div>
     <div class="info-card"><span class="ic">{ICON["box"]}</span><h3>Shipped to you</h3><p>Ordering from out of town? We ship to your address anywhere in the continental U.S. (the 48 contiguous states and Washington, DC; not Alaska, Hawaii or U.S. territories). The rate depends on the type of vehicle and is shown before you pay. Shipped orders are paid in full online. Helmets and parts ship free.</p><div class="price">Rate at checkout</div></div>
   </div>
@@ -712,13 +712,14 @@ def build_shipping():
     <p>{STORE["assembly"]["text"]}</p>
     <h2>How payment works</h2>
     <ul>
-      <li><strong>Free pickup and free local delivery:</strong> pay a {money(s["deposit"]["amount"])} deposit online. {s["deposit"]["policyText"]} You pay the remaining balance when you pick up or when we deliver.</li>
+      <li><strong>Free pickup:</strong> pay the full amount online, no deposit. You can finance the whole order with Affirm.</li>
+      <li><strong>Free local delivery:</strong> pay a {money(s["deposit"]["amount"])} deposit online. {s["deposit"]["policyText"]} You pay the remaining balance when we deliver.</li>
       <li><strong>Shipping:</strong> pay the full amount online, including shipping.</li>
       <li><strong>Helmet-only orders:</strong> no deposit. Pay in full online for pickup, delivery or shipping.</li>
       <li><strong>Parts:</strong> shipping only (no pickup or local delivery). Parts ship free and are paid in full online. An order that includes a part ships in full.</li>
     </ul>
     <h2 id="financing">Financing available</h2>
-    <p>{s["financing"]["instruction"]} Affirm lets you split your purchase into monthly payments. Financing works on shipped orders, which are paid in full online. For pickup or local delivery, check &ldquo;Pay the full amount today&rdquo; at checkout (instead of the deposit) to finance the whole order, then choose Affirm on the payment page. {s["financing"]["fine"]}</p>
+    <p>{s["financing"]["instruction"]} Affirm lets you split your purchase into monthly payments. Financing works on pickup and shipped orders, which are paid in full online. For local delivery, check &ldquo;Pay the full amount today&rdquo; at checkout (instead of the deposit) to finance the whole order, then choose Affirm on the payment page. {s["financing"]["fine"]}</p>
     <h2>After you order</h2>
     <p>We&rsquo;ll contact you within 1 business day to confirm your order and arrange pickup, delivery or shipping.</p>
     <h2>Before you buy</h2>
@@ -764,7 +765,7 @@ def build_returns():
     </ul>
 
     <h2>5. Deposit</h2>
-    <p>The {dep} deposit on pickup and local delivery orders is non-refundable. It covers assembly and/or delivery charges. The only exception is item 8 below (if we cannot fill your order).</p>
+    <p>The {dep} deposit on local delivery orders is non-refundable. It covers assembly and/or delivery charges. The only exception is item 8 below (if we cannot fill your order).</p>
 
     <h2>6. Shipped orders: inspect on delivery</h2>
     <ul>

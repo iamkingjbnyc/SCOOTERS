@@ -2045,11 +2045,10 @@
  "deposit": {
   "amount": 100,
   "methods": [
-   "pickup",
    "local"
   ],
   "_confirm": true,
-  "note": "Pickup and local delivery: this deposit is paid online; the balance is collected at pickup/delivery. Shipping is paid in full online.",
+  "note": "Local delivery only: this deposit is paid online; the balance is collected on delivery. Pickup and shipping are paid in full online.",
   "policy": "non-refundable",
   "policyText": "The deposit is non-refundable. It covers assembly and/or delivery charges and is credited toward your order total.",
   "short": "Non-refundable."
@@ -2084,7 +2083,7 @@
   "provider": "Affirm",
   "headline": "Financing available",
   "short": "Financing available with Affirm",
-  "instruction": "Choose Affirm as your payment method at checkout. Financing is available on shipped orders too.",
-  "fine": "Subject to approval. Affirm rates and terms vary; some purchases may qualify for 0% APR. Pay in full today (not a deposit) to finance the whole order."
+  "instruction": "Choose Affirm as your payment method at checkout. Financing is available on pickup and shipped orders.",
+  "fine": "Subject to approval. Affirm rates and terms vary; some purchases may qualify for 0% APR. Pickup and shipped orders are paid in full, so the whole order can be financed."
  }
 }
