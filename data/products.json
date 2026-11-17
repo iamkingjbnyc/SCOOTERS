@@ -209,6 +209,15 @@
    "inStock": true
   },
   {
+   "id": "atvs-terminator-300cc-4x4",
+   "name": "Terminator 300cc 4x4",
+   "category": "atvs",
+   "url": "atvs/terminator-300cc-4x4.html",
+   "image": "images/terminator300.jpg",
+   "price": 3999.0,
+   "inStock": true
+  },
+  {
    "id": "atvs-xwolf-550-long-version",
    "name": "XWOLF 550 – Long Version",
    "category": "atvs",
