@@ -65,6 +65,15 @@
    "inStock": true
   },
   {
+   "id": "atvs-cyber-roamer-250-efi-with-winch",
+   "name": "Cyber Roamer 250 EFI with Winch",
+   "category": "atvs",
+   "url": "atvs/cyber-roamer-250-efi-with-winch.html",
+   "image": "images/cyberroamer250.jpg",
+   "price": 3499.0,
+   "inStock": true
+  },
+  {
    "id": "atvs-cyber-roamer-300-efi",
    "name": "Cyber Roamer 300 EFI",
    "category": "atvs",

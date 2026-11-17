@@ -16909,6 +16909,85 @@
     "<strong>Range:</strong> up to 55 miles",
     "<strong>Top Speed:</strong> 18 mph"
    ]
+  },
+  "atvs-cyber-roamer-250-efi-with-winch": {
+   "main": "images/cyberroamer250.jpg",
+   "thumbs": [
+    "images/cyberroamer250.jpg",
+    "images/cyberroamer250-2.jpg",
+    "images/cyberroamer250-3.jpg",
+    "images/cyberroamer250-4.jpg",
+    "images/cyberroamer250-5.jpg",
+    "images/cyberroamer250-6.jpg"
+   ],
+   "specs": [
+    [
+     "Engine",
+     "224.2cc, single-cylinder, SOHC, 4-stroke, EFI"
+    ],
+    [
+     "Power",
+     "10.8kW @ 7500 rpm &middot; 15.5 N&middot;m torque @ 6100 rpm"
+    ],
+    [
+     "Top Speed",
+     "~43 mph (70 km/h)"
+    ],
+    [
+     "Transmission",
+     "CVT, F+N+R"
+    ],
+    [
+     "Drive",
+     "Chain, rear-wheel drive"
+    ],
+    [
+     "Fuel Capacity",
+     "14 liters (steel tank w/ oil sensor)"
+    ],
+    [
+     "Brakes",
+     "Hydraulic disc, front (hand) &amp; rear (foot)"
+    ],
+    [
+     "Tires",
+     "23x7-10 front &middot; 22x10-10 rear, alloy wheels"
+    ],
+    [
+     "Suspension",
+     "Double wishbone independent front &middot; flat fork rear"
+    ],
+    [
+     "Weight",
+     "205 kg curb"
+    ],
+    [
+     "Max Load",
+     "150 kg (2-seat capacity)"
+    ],
+    [
+     "Dimensions",
+     "2050mm &times; 1100mm &times; 1225mm &middot; 1200mm wheelbase"
+    ],
+    [
+     "Ground Clearance",
+     "170mm &middot; Seat Height: 840mm"
+    ],
+    [
+     "Extras",
+     "LED lighting, USB port, front/rear racks, backrest"
+    ],
+    [
+     "Winch",
+     "Front-mounted electric winch included"
+    ]
+   ],
+   "description": "Cyber Roamer 250 EFI ATV with winch for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 250cc EFI",
+    "<strong>Includes:</strong> front winch",
+    "<strong>Specs:</strong> Call for full details"
+   ]
   }
  },
  "categories": {
@@ -17003,6 +17082,7 @@
    "atvs-terminator-300cc",
    "atvs-pentora-hunter-200-efi",
    "atvs-cyber-roamer-250-efi",
+   "atvs-cyber-roamer-250-efi-with-winch",
    "atvs-pentora-sport-250cc",
    "atvs-commander-200cc-efi",
    "atvs-commander-200cc",
