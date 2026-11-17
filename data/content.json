@@ -16988,77 +16988,6 @@
     "<strong>Includes:</strong> front winch",
     "<strong>Specs:</strong> Call for full details"
    ]
-  },
-  "atvs-terminator-300cc-4x4": {
-   "main": "images/terminator300.jpg",
-   "thumbs": [
-    "images/terminator300.jpg",
-    "images/terminator300-2.jpg",
-    "images/terminator300-3.jpg",
-    "images/terminator300-4.jpg",
-    "images/terminator300-5.jpg",
-    "images/terminator300-6.jpg"
-   ],
-   "specs": [
-    [
-     "Engine",
-     "257cc (marketed as 300cc), carbureted, 4-stroke, single-cylinder, SOHC, water-cooled"
-    ],
-    [
-     "Power",
-     "22 HP @ 6500 rpm &middot; 14.8 lb-ft torque @ 5500 rpm"
-    ],
-    [
-     "Compression Ratio",
-     "10.3:1"
-    ],
-    [
-     "Drive",
-     "2WD or 4WD switchable"
-    ],
-    [
-     "Starting",
-     "Electric, T.C.I. ignition"
-    ],
-    [
-     "Fuel Capacity",
-     "3.8 gallons"
-    ],
-    [
-     "Brakes",
-     "Hydraulic disc, both sides &middot; front/rear hand &amp; foot parking brake"
-    ],
-    [
-     "Tires",
-     "AT24x8-12 front &middot; AT24x11-10 rear"
-    ],
-    [
-     "Suspension",
-     "McPherson independent front &middot; socket centering rear"
-    ],
-    [
-     "Weight",
-     "618 lbs"
-    ],
-    [
-     "Dimensions",
-     "83 &times; 46 &times; 50 in &middot; 51 in wheelbase"
-    ],
-    [
-     "Ground Clearance",
-     "7.2 in"
-    ],
-    [
-     "Rider Age",
-     "16+"
-    ]
-   ],
-   "description": "Terminator 300cc 4x4 ATV for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
-   "bullets": [
-    "<strong>Engine:</strong> 257cc water-cooled",
-    "<strong>Power:</strong> 22 HP",
-    "<strong>Drive:</strong> 2WD/4WD switchable"
-   ]
   }
  },
  "categories": {
@@ -17151,7 +17080,6 @@
    "atvs-xwolf-700cc-short-version",
    "atvs-xwolf-550-long-version",
    "atvs-terminator-300cc",
-   "atvs-terminator-300cc-4x4",
    "atvs-pentora-hunter-200-efi",
    "atvs-cyber-roamer-250-efi",
    "atvs-cyber-roamer-250-efi-with-winch",
