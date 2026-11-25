@@ -610,12 +610,6 @@ def build_home():
       <p>Scooters, ATVs, dirt bikes, go-karts, UTVs and e-bikes &mdash; shipped to your door, delivered locally for free, or ready for free pickup in Little Ferry, NJ or the Bronx, NY.</p>
       <div class="hero-actions"><a class="btn btn-buy btn-lg" href="#shop">Shop now</a><a class="btn btn-outline btn-lg" href="shipping-pickup.html">Delivery &amp; pickup</a></div>
     </div>
-    <a class="hero-card" href="{feat["url"]}" aria-label="Featured: {H.escape(feat["name"])}">
-      <span class="hc-tag">Featured</span>
-      <img src="{fc["main"]}" alt="{H.escape(feat["name"])}">
-      <span class="hc-name">{feat["name"]}</span>
-      <span class="hc-price">{money(feat["price"]) if buyable(feat) else "Call for pricing"}</span>
-    </a>
   </div>
 </div></section>
 
