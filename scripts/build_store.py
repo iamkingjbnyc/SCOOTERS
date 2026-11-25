@@ -566,6 +566,24 @@ def build_home():
     tile_html = "".join(
         f'''<a class="category-card" href="{c}.html"><img{"" if i == 0 else " loading=\"lazy\" decoding=\"async\""} src="{im}" alt="{CAT_LABEL[c]} for sale at NYC ATV Warehouse"><div class="category-card-label"><h3>{CAT_LABEL[c]}</h3><span>{(str(CAT_COUNT[c]) + (" parts" if c == "parts" else " models")) if CAT_COUNT[c] else "Call for pricing"}</span></div></a>'''
         for i, (c, im) in enumerate(tiles))
+    promo_rows = [
+        ("images/promo/rxr-110-holiday.jpg", "atvs-rxr-110cc", None, "RXR 110cc automatic with reverse &mdash; holiday gift"),
+        ("images/promo/apollo-dbx15.jpg", "dirtbikes-db-x15-125cc-new-frame", None, "Apollo DBX15 125cc dirt bike with manual clutch"),
+        ("images/promo/apollo-blazer-9.jpg", "atvs-blazer-9-125cc", None, "Apollo Blazer 9 125cc ATV, automatic with reverse"),
+        ("images/promo/apollo-cyber-roamer-250.jpg", "atvs-cyber-roamer-250-efi-with-winch", None, "Apollo Cyber Roamer 250 EFI ATV with winch and hitch"),
+        ("images/promo/spider-deluxe-200.jpg", None, "gokarts.html", "Spider Deluxe 200cc go-kart, automatic with reverse"),
+        ("images/promo/apollo-mini-commander.jpg", "atvs-mini-commander-110cc", None, "Apollo Mini Commander 110cc youth ATV"),
+    ]
+    promo_tiles = ""
+    for im, pid, href, alt in promo_rows:
+        if pid and pid in BY_ID:
+            pp = BY_ID[pid]
+            href = pp["url"]
+            price = f'From {money(pp["price"])}' if buyable(pp) else "Call for pricing"
+        else:
+            price = "See go-karts"
+        promo_tiles += (f'<a class="promo-tile" href="{href}"><img loading="lazy" decoding="async" width="800" height="1000" src="{im}" alt="{alt}">'
+                        f'<span class="promo-cap"><b>{price}</b><i>Shop now &rarr;</i></span></a>\n')
     ld = {"@context": "https://schema.org", "@type": "MotorcycleDealer", "@id": f"{SITE}/#business", "name": "NYC ATV Warehouse",
           "url": f"{SITE}/", "image": f"{SITE}/images/logo.png", "logo": f"{SITE}/images/logo.png",
           "description": "Scooters, ATVs, dirt bikes, go-karts, UTVs and e-bikes. Shipped to your door, delivered locally for free, or free pickup in Little Ferry, NJ.",
@@ -607,6 +625,14 @@ def build_home():
   <div class="container">
     <div class="row-head"><h2>Shop by category</h2></div>
     <div class="category-grid">{tile_html}</div>
+  </div>
+</section>
+
+<section class="promo-band" id="rides">
+  <div class="container">
+    <div class="row-head"><h2>Featured rides</h2><a class="more" href="atvs.html">Browse all ATVs &rarr;</a></div>
+    <div class="promo-grid">
+{promo_tiles}    </div>
   </div>
 </section>
 
