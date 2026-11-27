@@ -1971,6 +1971,7 @@
   "countries": [
    "US"
   ],
+  "plowAssemblyFee": 100,
   "perUnitByCategory": {
    "ebikes": 125,
    "scooters": 249,

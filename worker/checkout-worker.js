@@ -104,7 +104,8 @@ export function computeOrder(order, products, store) {
       if (store.shipping.states && !store.shipping.states.includes(a.state.toUpperCase())) throw new OrderError("We ship to the continental U.S. only.");
       if (/^(006|007|008|009|967|968|969|995|996|997|998|999)/.test(a.zip)) throw new OrderError("We ship to the continental U.S. only.");
       const per = store.shipping.perUnitByCategory;
-      feeCents = lines.reduce((n, l) => n + Math.round((per[l.p.category] || 0) * 100) * l.qty, 0);
+      const plowFee = store.shipping.plowAssemblyFee || 0; // plow ships unassembled
+      feeCents = lines.reduce((n, l) => n + Math.round(((per[l.p.category] || 0) + (l.p.plow ? plowFee : 0)) * 100) * l.qty, 0);
       feeLabel = store.shipping.label;
     }
   } else {

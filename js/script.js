@@ -55,7 +55,8 @@
   /* ---------- fulfillment math (checkout worker mirrors this) ---------- */
   function shippingCost(lines) {
     var per = STORE.shipping.perUnitByCategory || {};
-    return lines.reduce(function (n, l) { return n + (per[l.p.category] || 0) * l.qty; }, 0);
+    var plow = STORE.shipping.plowAssemblyFee || 0; // plow ships unassembled: assembly fee per unit with a plow
+    return lines.reduce(function (n, l) { return n + ((per[l.p.category] || 0) + (l.p.plow ? plow : 0)) * l.qty; }, 0);
   }
   function zipTier(zip) {
     var z = String(zip || '').replace(/\D/g, '');

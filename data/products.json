@@ -5001,6 +5001,7 @@
   },
   {
    "id": "atvs-pentora-ut-200-snow-plow",
+  "plow": true,
    "name": "Pentora UT 200 with Snow Plow",
    "category": "atvs",
    "url": "atvs/pentora-ut-200-snow-plow.html",

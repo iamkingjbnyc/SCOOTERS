@@ -401,10 +401,17 @@ def fulfil_opts(p):
   <div class="fulfil-opt"><span class="ic">{ICON["box"]}</span><div><strong>Free shipping</strong><span class="d">Free shipping on all helmets to anywhere in the continental U.S. Pay in full online.</span></div></div>
   <div class="fulfil-opt"><span class="ic">{ICON["truck"]}</span><div><strong>Local delivery</strong><span class="d">Available when your order includes a scooter, e-bike or other vehicle, or when your helmet order is {mn} or more. Otherwise choose free pickup or free shipping.</span></div></div>
 </div>'''
+    plow_fee = s["shipping"].get("plowAssemblyFee", 0) if p.get("plow") else 0
+    if plow_fee:
+        ship_rate_html = f'{money(rate + plow_fee)} per unit'
+        plow_note = f' The snow plow ships unassembled and must be assembled &mdash; a {money(plow_fee)} plow assembly fee is included in this shipping price.'
+    else:
+        ship_rate_html = f'<span data-ship-rate="{p["category"]}">{money(rate)}</span> per unit'
+        plow_note = ""
     return f'''<div class="fulfil-opts">
   <div class="fulfil-opt"><span class="ic">{ICON["pin"]}</span><div><strong>Free pickup &mdash; <span class="free">Free</span></strong><span class="d">Ready in Little Ferry, NJ (Mon&ndash;Fri 10am&ndash;5pm) or the Bronx, NY (Mon&ndash;Fri 10am&ndash;6pm). Pay in full online, no deposit. Finance the whole order with Affirm.</span></div></div>
   <div class="fulfil-opt"><span class="ic">{ICON["truck"]}</span><div><strong>Free local delivery{"" if not s["localDelivery"]["fee"] else " &mdash; " + fee_text(s["localDelivery"]["fee"])}</strong><span class="d">Free across {s["localDelivery"]["zoneLabel"]}. {money(s["localDelivery"]["extended"]["fee"])} for Long Island and up to {s["localDelivery"]["extended"]["radiusMiles"]} miles. {dep} non-refundable deposit online, balance on delivery.</span></div></div>
-  <div class="fulfil-opt"><span class="ic">{ICON["box"]}</span><div><strong>Shipped to your address &mdash; <span data-ship-rate="{p["category"]}">{money(rate)}</span> per unit</strong><span class="d">Pay in full online. Continental U.S. only.{"" if p["category"] == "helmets" else " Ships about 90% assembled in a crate &mdash; handlebars, wheels and a few other parts may need to be attached before it is ready to ride. Assembly instructions are included."}</span></div></div>
+  <div class="fulfil-opt"><span class="ic">{ICON["box"]}</span><div><strong>Shipped to your address &mdash; {ship_rate_html}</strong><span class="d">Pay in full online. Continental U.S. only.{"" if p["category"] == "helmets" else " Ships about 90% assembled in a crate &mdash; handlebars, wheels and a few other parts may need to be attached before it is ready to ride. Assembly instructions are included."}{plow_note}</span></div></div>
 </div>'''
 
 
