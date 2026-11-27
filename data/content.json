@@ -16993,6 +16993,78 @@
     "<strong>Includes:</strong> front winch",
     "<strong>Specs:</strong> Call for full details"
    ]
+  },
+  "atvs-pentora-ut-200-snow-plow": {
+   "main": "images/pentorout200-plow.jpg",
+   "thumbs": [
+    "images/pentorout200-plow.jpg",
+    "images/pentorout200-plow-2.jpg",
+    "images/pentorout200-plow-3.jpg"
+   ],
+   "specs": [
+    [
+     "Package",
+     "Pentora UT 200 EFI utility ATV with front snow plow installed"
+    ],
+    [
+     "Engine",
+     "177.3cc, single-cylinder, 4-stroke, forced-air cooled, EFI"
+    ],
+    [
+     "Power",
+     "9.9 hp @ 7500 rpm &middot; 7.4 lb-ft torque @ 6000 rpm"
+    ],
+    [
+     "Transmission",
+     "CVT automatic with reverse, automatic centrifugal dry clutch, chain drive, electric start"
+    ],
+    [
+     "Brakes",
+     "Front &amp; rear hydraulic disc, linked hand and foot control"
+    ],
+    [
+     "Tires / Wheels",
+     "23x7-10 front &middot; 22x10-10 rear, 10in rims"
+    ],
+    [
+     "Suspension",
+     "Hydraulic shocks front &amp; rear"
+    ],
+    [
+     "Lighting",
+     "LED headlight, LED tail light, turn signals"
+    ],
+    [
+     "Utility",
+     "Front bumper, front &amp; rear cargo racks, rear backrest, tow hitch"
+    ],
+    [
+     "Rated Load",
+     "276 lbs"
+    ],
+    [
+     "Weight",
+     "421 lbs net (with tow hitch and front bumper, before plow) &middot; 474 lbs gross"
+    ],
+    [
+     "Dimensions",
+     "67.9 &times; 43.3 &times; 50.4 in (L&times;W&times;H) &middot; 44.5 in wheelbase"
+    ],
+    [
+     "Seat Height / Clearance",
+     "33.9 in seat &middot; 12.6 in chassis ground clearance"
+    ],
+    [
+     "Rider Age",
+     "16+"
+    ]
+   ],
+   "description": "Pentora UT 200 EFI utility ATV with snow plow for sale at NYC ATV Warehouse in Little Ferry, NJ. Full specs, pricing, and availability.",
+   "bullets": [
+    "<strong>Engine:</strong> 177cc EFI",
+    "<strong>Includes:</strong> Snow plow",
+    "<strong>Rider Age:</strong> 16+"
+   ]
   }
  },
  "categories": {
@@ -17079,6 +17151,7 @@
    "scooters-rocket-150cc"
   ],
   "atvs": [
+   "atvs-pentora-ut-200-snow-plow",
    "atvs-xwolf-700cc-long-version",
    "atvs-cyber-roamer-300-efi",
    "atvs-maximus-450l",

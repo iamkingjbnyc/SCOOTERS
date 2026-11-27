@@ -4998,6 +4998,15 @@
    "image": "images/parts/utv-jack.jpg",
    "price": null,
    "inStock": true
+  },
+  {
+   "id": "atvs-pentora-ut-200-snow-plow",
+   "name": "Pentora UT 200 with Snow Plow",
+   "category": "atvs",
+   "url": "atvs/pentora-ut-200-snow-plow.html",
+   "image": "images/pentorout200-plow.jpg",
+   "price": 3999.0,
+   "inStock": true
   }
  ]
 }
